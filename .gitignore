@@ -27,3 +27,5 @@ env/
 *.new
 *.bak
 *.tmp
+*.json
+backups/
