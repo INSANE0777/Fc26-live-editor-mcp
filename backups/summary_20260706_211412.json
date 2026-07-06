@@ -1,0 +1,359 @@
+{
+  "backup_path": "C:\\fc26-mcp\\backups\\SquadsFIFER'sBeta1xRODE'sNewSeasonModAlpha3_20260706_211412",
+  "total_clubs": 855,
+  "total_players": 22438,
+  "top_clubs": [
+    {
+      "teamid": 111592,
+      "name": "NG - FA",
+      "players": 569
+    },
+    {
+      "teamid": 131368,
+      "name": "NG - FA Women",
+      "players": 147
+    },
+    {
+      "teamid": 132670,
+      "name": "Serie A Historic",
+      "players": 48
+    },
+    {
+      "teamid": 132672,
+      "name": "Premier League Historic",
+      "players": 48
+    },
+    {
+      "teamid": 243,
+      "name": "Real Madrid",
+      "players": 45
+    },
+    {
+      "teamid": 241,
+      "name": "FC Barcelona",
+      "players": 41
+    },
+    {
+      "teamid": 1477,
+      "name": "Jeonbuk Hyundai Motors",
+      "players": 41
+    },
+    {
+      "teamid": 5,
+      "name": "Chelsea",
+      "players": 40
+    },
+    {
+      "teamid": 34,
+      "name": "FC Schalke 04",
+      "players": 40
+    },
+    {
+      "teamid": 245,
+      "name": "Ajax",
+      "players": 40
+    },
+    {
+      "teamid": 237,
+      "name": "Sporting CP",
+      "players": 39
+    },
+    {
+      "teamid": 246,
+      "name": "Feyenoord",
+      "players": 39
+    },
+    {
+      "teamid": 1792,
+      "name": "Norwich City",
+      "players": 39
+    },
+    {
+      "teamid": 1876,
+      "name": "River Plate",
+      "players": 39
+    },
+    {
+      "teamid": 2056,
+      "name": "Daegu FC",
+      "players": 39
+    },
+    {
+      "teamid": 112115,
+      "name": "Gangwon FC",
+      "players": 39
+    },
+    {
+      "teamid": 112558,
+      "name": "Suwon FC",
+      "players": 39
+    },
+    {
+      "teamid": 131826,
+      "name": "Recoleta FC",
+      "players": 39
+    },
+    {
+      "teamid": 175,
+      "name": "VfL Wolfsburg",
+      "players": 38
+    },
+    {
+      "teamid": 244,
+      "name": "Real Zaragoza",
+      "players": 38
+    },
+    {
+      "teamid": 605,
+      "name": "Al Hilal",
+      "players": 38
+    },
+    {
+      "teamid": 1474,
+      "name": "Pohang Steelers",
+      "players": 38
+    },
+    {
+      "teamid": 112390,
+      "name": "Al Fateh",
+      "players": 38
+    },
+    {
+      "teamid": 112555,
+      "name": "FC Anyang",
+      "players": 38
+    },
+    {
+      "teamid": 1013,
+      "name": "San Lorenzo de Almagro",
+      "players": 37
+    },
+    {
+      "teamid": 1790,
+      "name": "Portsmouth",
+      "players": 37
+    },
+    {
+      "teamid": 1793,
+      "name": "Reading",
+      "players": 37
+    },
+    {
+      "teamid": 1874,
+      "name": "Ferencv\u00e1rosi TC",
+      "players": 37
+    },
+    {
+      "teamid": 1877,
+      "name": "Boca Juniors",
+      "players": 37
+    },
+    {
+      "teamid": 1906,
+      "name": "AZ",
+      "players": 37
+    },
+    {
+      "teamid": 111674,
+      "name": "Al Shabab",
+      "players": 37
+    },
+    {
+      "teamid": 112689,
+      "name": "Platense",
+      "players": 37
+    },
+    {
+      "teamid": 112716,
+      "name": "Cerro Porte\u00f1o",
+      "players": 37
+    },
+    {
+      "teamid": 132674,
+      "name": "La Liga Historic",
+      "players": 37
+    },
+    {
+      "teamid": 3,
+      "name": "Blackburn Rovers",
+      "players": 36
+    },
+    {
+      "teamid": 18,
+      "name": "Tottenham Hotspur",
+      "players": 36
+    },
+    {
+      "teamid": 32,
+      "name": "Bayer 04 Leverkusen",
+      "players": 36
+    },
+    {
+      "teamid": 66,
+      "name": "Olympique Lyonnais",
+      "players": 36
+    },
+    {
+      "teamid": 165,
+      "name": "SpVgg Greuther F\u00fcrth",
+      "players": 36
+    },
+    {
+      "teamid": 894,
+      "name": "FC Z\u00fcrich",
+      "players": 36
+    },
+    {
+      "teamid": 1713,
+      "name": "FC Winterthur",
+      "players": 36
+    },
+    {
+      "teamid": 1797,
+      "name": "Rotherham United",
+      "players": 36
+    },
+    {
+      "teamid": 1903,
+      "name": "FC Utrecht",
+      "players": 36
+    },
+    {
+      "teamid": 2055,
+      "name": "Gimcheon Sangmu",
+      "players": 36
+    },
+    {
+      "teamid": 110069,
+      "name": "CD Mirand\u00e9s",
+      "players": 36
+    },
+    {
+      "teamid": 111205,
+      "name": "Classic XI",
+      "players": 36
+    },
+    {
+      "teamid": 111713,
+      "name": "San Mart\u00edn de San Juan",
+      "players": 36
+    },
+    {
+      "teamid": 113037,
+      "name": "Al Riyadh",
+      "players": 36
+    },
+    {
+      "teamid": 9,
+      "name": "Liverpool",
+      "players": 35
+    },
+    {
+      "teamid": 11,
+      "name": "Manchester United",
+      "players": 35
+    }
+  ],
+  "top_players": [
+    {
+      "playerid": 190042,
+      "name": "Player#190042",
+      "overallrating": 95
+    },
+    {
+      "playerid": 237067,
+      "name": "Player#237067",
+      "overallrating": 95
+    },
+    {
+      "playerid": 1397,
+      "name": "Player#1397",
+      "overallrating": 94
+    },
+    {
+      "playerid": 37576,
+      "name": "Player#37576",
+      "overallrating": 94
+    },
+    {
+      "playerid": 28130,
+      "name": "Player#28130",
+      "overallrating": 93
+    },
+    {
+      "playerid": 190045,
+      "name": "Player#190045",
+      "overallrating": 93
+    },
+    {
+      "playerid": 238399,
+      "name": "Player#238399",
+      "overallrating": 93
+    },
+    {
+      "playerid": 41,
+      "name": "Player#41",
+      "overallrating": 92
+    },
+    {
+      "playerid": 168473,
+      "name": "Player#168473",
+      "overallrating": 92
+    },
+    {
+      "playerid": 190048,
+      "name": "Player#190048",
+      "overallrating": 92
+    },
+    {
+      "playerid": 230025,
+      "name": "Player#230025",
+      "overallrating": 92
+    },
+    {
+      "playerid": 238380,
+      "name": "Player#238380",
+      "overallrating": 92
+    },
+    {
+      "playerid": 238439,
+      "name": "Player#238439",
+      "overallrating": 92
+    },
+    {
+      "playerid": 247553,
+      "name": "Player#247553",
+      "overallrating": 92
+    },
+    {
+      "playerid": 254642,
+      "name": "Player#254642",
+      "overallrating": 92
+    },
+    {
+      "playerid": 488,
+      "name": "Player#488",
+      "overallrating": 91
+    },
+    {
+      "playerid": 1114,
+      "name": "Player#1114",
+      "overallrating": 91
+    },
+    {
+      "playerid": 1179,
+      "name": "Player#1179",
+      "overallrating": 91
+    },
+    {
+      "playerid": 1625,
+      "name": "Player#1625",
+      "overallrating": 91
+    },
+    {
+      "playerid": 5003,
+      "name": "Player#5003",
+      "overallrating": 91
+    }
+  ]
+}

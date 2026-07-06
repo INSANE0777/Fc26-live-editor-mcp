@@ -499,8 +499,7 @@ function handlers.execute_lua(cmd)
         result = tostring(result)
     end
     if #result > MAX_RESULT_LEN then
-        result = result:sub(1, MAX_RESULT_LEN) .. "
-...[truncated]"
+        result = result:sub(1, MAX_RESULT_LEN) .. "\n...[truncated]"
     end
     return { success = true, result = result }
 end
