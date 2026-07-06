@@ -111,12 +111,12 @@ def tool_list():
             },
             {
                 "name": "le_list_clubs",
-                "description": "List all clubs/teams from the Live Editor database.",
-                "inputSchema": {"type": "object", "properties": {}}
+                "description": "List clubs/teams from Live Editor.",
+                "inputSchema": {"type": "object", "properties": {"limit": {"type": "integer"}}}
             },
             {
                 "name": "le_search_players",
-                "description": "Search players by name via Live Editor.",
+                "description": "Search players by name.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -128,12 +128,12 @@ def tool_list():
             },
             {
                 "name": "le_get_player_club",
-                "description": "Get a player's current club via Live Editor.",
+                "description": "Get a player's current club.",
                 "inputSchema": {"type": "object", "properties": _player_arg_schema()}
             },
             {
                 "name": "le_transfer_player",
-                "description": "Transfer a player to a new club via Live Editor.",
+                "description": "Transfer a player to a club.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -149,7 +149,7 @@ def tool_list():
             },
             {
                 "name": "le_loan_player",
-                "description": "Loan a player to a new club via Live Editor.",
+                "description": "Loan a player to a club.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -162,12 +162,12 @@ def tool_list():
             },
             {
                 "name": "le_release_player",
-                "description": "Release a player to free agents via Live Editor.",
+                "description": "Release a player to free agents.",
                 "inputSchema": {"type": "object", "properties": _player_arg_schema()}
             },
             {
                 "name": "le_terminate_loan",
-                "description": "Terminate a player's loan via Live Editor.",
+                "description": "Terminate a player's loan.",
                 "inputSchema": {"type": "object", "properties": _player_arg_schema()}
             },
             {
@@ -218,32 +218,32 @@ def tool_list():
             },
             {
                 "name": "le_get_transfer_budget",
-                "description": "Get the user's club transfer budget. Career Mode only.",
+                "description": "Get transfer budget (Career Mode).",
                 "inputSchema": {"type": "object", "properties": {}}
             },
             {
                 "name": "le_set_transfer_budget",
-                "description": "Set the user's club transfer budget. Career Mode only.",
+                "description": "Set transfer budget (Career Mode).",
                 "inputSchema": {"type": "object", "properties": {"value": {"type": "integer"}}, "required": ["value"]}
             },
             {
                 "name": "le_get_db_tables",
-                "description": "List accessible database table names.",
+                "description": "List database tables.",
                 "inputSchema": {"type": "object", "properties": {}}
             },
             {
                 "name": "le_get_db_fields",
-                "description": "Get field descriptions for a database table.",
+                "description": "List fields of a database table.",
                 "inputSchema": {"type": "object", "properties": {"table": {"type": "string"}}, "required": ["table"]}
             },
             {
                 "name": "le_get_db_rows",
-                "description": "Get rows from a database table.",
+                "description": "Read rows from a database table (default 50).",
                 "inputSchema": {"type": "object", "properties": {"table": {"type": "string"}, "limit": {"type": "integer"}}, "required": ["table"]}
             },
             {
                 "name": "le_edit_db_field",
-                "description": "Edit a field in a database row.",
+                "description": "Edit a database field.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -258,27 +258,27 @@ def tool_list():
             },
             {
                 "name": "le_insert_db_row",
-                "description": "Insert a new row into a database table.",
+                "description": "Insert a database row.",
                 "inputSchema": {"type": "object", "properties": {"table": {"type": "string"}, "row": {"type": "object"}}, "required": ["table", "row"]}
             },
             {
                 "name": "le_delete_db_row",
-                "description": "Delete a row from a database table.",
+                "description": "Delete a database row.",
                 "inputSchema": {"type": "object", "properties": {"table": {"type": "string"}, "row": {"type": "object"}}, "required": ["table", "row"]}
             },
             {
                 "name": "le_get_players_stats",
-                "description": "Get current season stats for all players.",
+                "description": "Get all player stats (default 50).",
                 "inputSchema": {"type": "object", "properties": {"limit": {"type": "integer"}}}
             },
             {
                 "name": "le_get_player_stats",
-                "description": "Get current season stats for a specific player.",
+                "description": "Get stats for one player.",
                 "inputSchema": {"type": "object", "properties": _player_arg_schema()}
             },
             {
                 "name": "le_execute_lua",
-                "description": "Execute arbitrary Lua code inside Live Editor. Use with caution.",
+                "description": "Run custom Lua (powerful, use carefully).",
                 "inputSchema": {"type": "object", "properties": {"code": {"type": "string"}}, "required": ["code"]}
             }
         ]
@@ -352,7 +352,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.5"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.6"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue

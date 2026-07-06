@@ -120,14 +120,16 @@ end
 function handlers.list_clubs(cmd)
     local rows = GetDBTableRows("teams")
     local clubs = {}
-    for _, row in ipairs(rows) do
+    local limit = cmd.limit or 100
+    for i, row in ipairs(rows) do
+        if i > limit then break end
         table.insert(clubs, {
             teamid = tonumber(row.teamid.value),
             teamname = safe_name(row.teamname and row.teamname.value),
             abbreviation = safe_name(row.teamabbreviation and row.teamabbreviation.value)
         })
     end
-    return { success = true, clubs = clubs, count = #clubs }
+    return { success = true, clubs = clubs, count = #clubs, limit = limit }
 end
 
 function handlers.search_players(cmd)
@@ -289,7 +291,7 @@ function handlers.get_db_rows(cmd)
     if not table_name then return { success = false, error = "table required" } end
     local rows = GetDBTableRows(table_name)
     local out = {}
-    local limit = cmd.limit or 1000
+    local limit = cmd.limit or 50
     for i, row in ipairs(rows) do
         if i > limit then break end
         table.insert(out, row_to_plain(row))
@@ -402,7 +404,7 @@ end
 
 function handlers.get_players_stats(cmd)
     local stats = GetPlayersStats()
-    local limit = cmd.limit or 200
+    local limit = cmd.limit or 50
     local out = {}
     for i, s in ipairs(stats) do
         if i > limit then break end
