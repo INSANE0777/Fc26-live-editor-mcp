@@ -21,17 +21,8 @@ local IN_DIR  = BRIDGE_ROOT .. "/in"
 local OUT_DIR = BRIDGE_ROOT .. "/out"
 local LOG_DIR = BRIDGE_ROOT .. "/logs"
 
-local function ensure_bridge_dirs()
-    for _, d in ipairs({BRIDGE_ROOT, IN_DIR, OUT_DIR, LOG_DIR}) do
-        local ok = os.rename(d, d)
-        if not ok then
-            os.execute('mkdir "' .. d:gsub("/", "\\") .. '"')
-        end
-    end
-end
 
 local function log(msg)
-    ensure_bridge_dirs()
     local f = io.open(LOG_DIR .. "/bridge.log", "a")
     if f then
         f:write(os.date("%Y-%m-%d %H:%M:%S") .. " " .. tostring(msg) .. "\n")
@@ -41,9 +32,6 @@ local function log(msg)
         Log("[MCP Bridge] " .. tostring(msg))
     end
 end
-
--- First thing: make sure bridge dirs exist
-ensure_bridge_dirs()
 
 local function write_result(id, payload)
     local path = OUT_DIR .. "/" .. id .. ".json"
@@ -566,14 +554,8 @@ while true do
     if Sleep then
         Sleep(100)
     else
-        -- Fallback that does not busy-wait (Windows ping trick ~100ms)
-        local ok_sleep = pcall(function() return os.execute("ping -n 1 -w 100 127.0.0.1 >nul 2>&1") end)
-        if not ok_sleep then
-            local start = os.clock()
-            for i = 1, 10 do
-                if os.clock() - start >= 0.1 then break end
-                io.read(0)
-            end
-        end
+        -- Fallback busy-wait if Sleep() is not available
+        local start = os.clock()
+        while os.clock() - start < 0.1 do end
     end
 end
