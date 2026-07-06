@@ -54,6 +54,11 @@ def send_command(method, arguments):
     with open(in_path, "w", encoding="utf-8") as f:
         json.dump(payload, f)
 
+    # Append command id to the queue so Lua can discover it without running dir/popen
+    queue_path = _in_dir / "_queue.txt"
+    with open(queue_path, "a", encoding="utf-8") as f:
+        f.write(cmd_id + "\n")
+
     waited = 0.0
     while waited < MAX_WAIT:
         if out_path.exists():
@@ -347,7 +352,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.0"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.1"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue

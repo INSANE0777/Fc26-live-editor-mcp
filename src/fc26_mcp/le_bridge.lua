@@ -12,21 +12,13 @@
 local json = require "imports/external/json"
 
 -- Bridge root path. The script expects subfolders: in, out, logs
+-- These folders are created by the fc26-mcp-live Python server. Run it before this script.
 local BRIDGE_ROOT = os.getenv("FC26_BRIDGE_ROOT") or "C:/Users/Afjal/Downloads/Example folder - Copy/LE/FC 26 LE v26.3.5/le_bridge"
 BRIDGE_ROOT = BRIDGE_ROOT:gsub("\\", "/")
 
 local IN_DIR  = BRIDGE_ROOT .. "/in"
 local OUT_DIR = BRIDGE_ROOT .. "/out"
 local LOG_DIR = BRIDGE_ROOT .. "/logs"
-
-local function ensure_dir(path)
-    os.execute('mkdir "' .. path .. '" 2>nul')
-end
-
-ensure_dir(BRIDGE_ROOT)
-ensure_dir(IN_DIR)
-ensure_dir(OUT_DIR)
-ensure_dir(LOG_DIR)
 
 local function log(msg)
     local f = io.open(LOG_DIR .. "/bridge.log", "a")
@@ -429,15 +421,24 @@ local function process_file(path, id)
 end
 
 local function poll_once()
-    local handle = io.popen('dir /b "' .. IN_DIR .. '" 2>nul')
-    if not handle then return end
-    for filename in handle:lines() do
-        if filename:match("%.json$") then
-            local id = filename:sub(1, -6)
-            process_file(IN_DIR .. "/" .. filename, id)
+    local queue_path = IN_DIR .. "/_queue.txt"
+    local proc_path = IN_DIR .. "/_queue.proc"
+
+    -- Atomically move queue to a processing file so the Python side can keep appending safely
+    local ok = os.rename(queue_path, proc_path)
+    if not ok then return end
+
+    local q = io.open(proc_path, "r")
+    if not q then return end
+    for line in q:lines() do
+        local id = line:match("^%s*(%S+)%s*$")
+        if id then
+            local cmd_path = IN_DIR .. "/" .. id .. ".json"
+            process_file(cmd_path, id)
         end
     end
-    handle:close()
+    q:close()
+    os.remove(proc_path)
 end
 
 log("Full MCP bridge started. Polling " .. IN_DIR)

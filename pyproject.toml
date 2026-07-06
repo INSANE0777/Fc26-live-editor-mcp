@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fc26-mcp"
-version = "0.2.0"
+version = "0.2.1"
 description = "MCP servers for EA SPORTS FC 26 squad editing and Live Editor control"
 readme = "README.md"
 license = {text = "MIT"}
