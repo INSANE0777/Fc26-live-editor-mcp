@@ -352,7 +352,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.1"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.2"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue
@@ -361,7 +361,15 @@ def main():
         elif method == "tools/call":
             name = params.get("name")
             args = params.get("arguments", {})
-            print(json.dumps(handle_call(id_, name, args)), flush=True)
+            call_result = handle_call(id_, name, args)
+            if "error" in call_result:
+                print(json.dumps(call_result), flush=True)
+            else:
+                mcp_result = {
+                    "content": [{"type": "text", "text": json.dumps(call_result["result"])}],
+                    "isError": False
+                }
+                print(json.dumps(make_result(id_, mcp_result)), flush=True)
         else:
             print(json.dumps(make_error(id_, -32601, f"Method not found: {method}")), flush=True)
 
