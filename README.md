@@ -13,14 +13,22 @@ Two servers are included:
 
 ## Install
 
+From PyPI:
+
 ```bash
 pip install fc26-mcp
 ```
 
-Or from source:
+From GitHub:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/fc26-mcp.git
+pip install git+https://github.com/INSANE0777/Fc26-live-editor-mcp.git
+```
+
+From source:
+
+```bash
+git clone https://github.com/INSANE0777/Fc26-live-editor-mcp.git
 cd fc26-mcp
 pip install -e .
 ```
