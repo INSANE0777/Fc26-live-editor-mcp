@@ -54,15 +54,15 @@ local function normalize_team_arg(arg)
     if type(arg) == "string" then
         local n = tonumber(arg)
         if n then return n end
-        local lower_arg = string.lower(arg)
+        local lower_arg = strip_accents(string.lower(arg))
         local rows = GetDBTableRows("teams") or {}
         local best_id = nil
         local best_score = 0
         for _, row in ipairs(rows) do
             local name = safe_name(row.teamname and row.teamname.value)
             local abbr = safe_name(row.teamabbreviation and row.teamabbreviation.value)
-            local lower_name = string.lower(name)
-            local lower_abbr = string.lower(abbr)
+            local lower_name = strip_accents(string.lower(name))
+            local lower_abbr = strip_accents(string.lower(abbr))
             if lower_name == lower_arg or lower_abbr == lower_arg then
                 return tonumber(row.teamid.value)
             end
@@ -86,19 +86,39 @@ local function normalize_team_arg(arg)
     return nil
 end
 
+local function strip_accents(str)
+    local map = {
+        ["á"]="a", ["à"]="a", ["â"]="a", ["ä"]="a", ["ã"]="a", ["å"]="a", ["æ"]="ae",
+        ["é"]="e", ["è"]="e", ["ê"]="e", ["ë"]="e",
+        ["í"]="i", ["ì"]="i", ["î"]="i", ["ï"]="i",
+        ["ó"]="o", ["ò"]="o", ["ô"]="o", ["ö"]="o", ["õ"]="o", ["ø"]="o",
+        ["ú"]="u", ["ù"]="u", ["û"]="u", ["ü"]="u",
+        ["ç"]="c", ["ñ"]="n", ["š"]="s", ["ć"]="c", ["č"]="c",
+        ["đ"]="d", ["ž"]="z", ["ř"]="r", ["ł"]="l", ["ß"]="ss",
+        ["Á"]="A", ["À"]="A", ["Â"]="A", ["Ä"]="A", ["Ã"]="A",
+        ["É"]="E", ["È"]="E", ["Ê"]="E", ["Ë"]="E",
+        ["Í"]="I", ["Ì"]="I", ["Î"]="I", ["Ï"]="I",
+        ["Ó"]="O", ["Ò"]="O", ["Ô"]="O", ["Ö"]="O", ["Õ"]="O",
+        ["Ú"]="U", ["Ù"]="U", ["Û"]="U", ["Ü"]="U",
+        ["Ç"]="C", ["Ñ"]="N", ["Š"]="S", ["Ć"]="C", ["Č"]="C",
+        ["Đ"]="D", ["Ž"]="Z", ["Ř"]="R", ["Ł"]="L"
+    }
+    return (str:gsub(".", map))
+end
+
 local function normalize_player_arg(arg)
     if type(arg) == "number" then return arg end
     if type(arg) == "string" then
         local n = tonumber(arg)
         if n then return n end
-        local lower_arg = string.lower(arg)
+        local lower_arg = strip_accents(string.lower(arg))
         local rows = GetDBTableRows("players") or {}
         local best_id = nil
         local best_score = 0
         for _, row in ipairs(rows) do
             local pid = tonumber(row.playerid.value)
             local pname = safe_name(GetPlayerName(pid))
-            local lower_pname = string.lower(pname)
+            local lower_pname = strip_accents(string.lower(pname))
             if string.find(lower_pname, lower_arg, 1, true) then
                 return pid
             end
@@ -174,11 +194,12 @@ function handlers.search_players(cmd)
     if not ok or not rows then
         return { success = false, error = "Could not read players table" }
     end
+    local lower_name = strip_accents(string.lower(name))
     local results = {}
     for _, row in ipairs(rows) do
         local pid = tonumber(row.playerid.value)
         local pname = safe_name(GetPlayerName(pid))
-        if string.find(string.lower(pname), string.lower(name), 1, true) then
+        if string.find(strip_accents(string.lower(pname)), lower_name, 1, true) then
             table.insert(results, {
                 playerid = pid,
                 name = pname,
@@ -188,6 +209,28 @@ function handlers.search_players(cmd)
         end
     end
     return { success = true, players = results, count = #results }
+end
+
+function handlers.list_team_players(cmd)
+    local teamid = cmd.teamid or normalize_team_arg(cmd.team)
+    if not teamid then return { success = false, error = "team or teamid required" } end
+    local ok, rows = pcall(GetDBTableRows, "teamplayerlinks")
+    if not ok or not rows then
+        return { success = false, error = "Could not read teamplayerlinks table" }
+    end
+    local results = {}
+    for _, row in ipairs(rows) do
+        if tonumber(row.teamid.value) == teamid then
+            local pid = tonumber(row.playerid.value)
+            table.insert(results, {
+                playerid = pid,
+                name = safe_name(GetPlayerName(pid)),
+                teamid = teamid,
+                teamname = safe_name(GetTeamName(teamid))
+            })
+        end
+    end
+    return { success = true, teamid = teamid, teamname = safe_name(GetTeamName(teamid)), players = results, count = #results }
 end
 
 function handlers.get_player_club(cmd)

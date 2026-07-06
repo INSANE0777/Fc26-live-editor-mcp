@@ -132,6 +132,17 @@ def tool_list():
                 "inputSchema": {"type": "object", "properties": _player_arg_schema()}
             },
             {
+                "name": "le_list_team_players",
+                "description": "List all players in a club/team.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "teamid": {"type": "integer", "description": "Team ID."},
+                        "team": {"type": "string", "description": "Team name (if ID not provided)."}
+                    }
+                }
+            },
+            {
                 "name": "le_transfer_player",
                 "description": "Transfer a player to a club.",
                 "inputSchema": {
@@ -361,7 +372,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.11"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.12"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue
