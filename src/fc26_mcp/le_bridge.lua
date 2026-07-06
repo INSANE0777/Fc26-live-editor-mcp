@@ -21,14 +21,29 @@ local IN_DIR  = BRIDGE_ROOT .. "/in"
 local OUT_DIR = BRIDGE_ROOT .. "/out"
 local LOG_DIR = BRIDGE_ROOT .. "/logs"
 
+local function ensure_bridge_dirs()
+    for _, d in ipairs({BRIDGE_ROOT, IN_DIR, OUT_DIR, LOG_DIR}) do
+        local ok = os.rename(d, d)
+        if not ok then
+            os.execute('mkdir "' .. d:gsub("/", "\\") .. '"')
+        end
+    end
+end
+
 local function log(msg)
+    ensure_bridge_dirs()
     local f = io.open(LOG_DIR .. "/bridge.log", "a")
     if f then
         f:write(os.date("%Y-%m-%d %H:%M:%S") .. " " .. tostring(msg) .. "\n")
         f:close()
     end
-    Log("[MCP Bridge] " .. tostring(msg))
+    if Log then
+        Log("[MCP Bridge] " .. tostring(msg))
+    end
 end
+
+-- First thing: make sure bridge dirs exist
+ensure_bridge_dirs()
 
 local function write_result(id, payload)
     local path = OUT_DIR .. "/" .. id .. ".json"
@@ -52,13 +67,32 @@ local function normalize_team_arg(arg)
         local n = tonumber(arg)
         if n then return n end
         local lower_arg = string.lower(arg)
-        local rows = GetDBTableRows("teams")
+        local rows = GetDBTableRows("teams") or {}
+        local best_id = nil
+        local best_score = 0
         for _, row in ipairs(rows) do
             local name = safe_name(row.teamname and row.teamname.value)
             local abbr = safe_name(row.teamabbreviation and row.teamabbreviation.value)
-            if string.lower(name) == lower_arg or string.lower(abbr) == lower_arg then
+            local lower_name = string.lower(name)
+            local lower_abbr = string.lower(abbr)
+            if lower_name == lower_arg or lower_abbr == lower_arg then
                 return tonumber(row.teamid.value)
             end
+            -- fuzzy substring match
+            if string.find(lower_name, lower_arg, 1, true) or string.find(lower_abbr, lower_arg, 1, true) then
+                return tonumber(row.teamid.value)
+            end
+            local score = 0
+            if #lower_arg > 0 and #lower_name > 0 then
+                score = #lower_arg / #lower_name
+            end
+            if score > best_score then
+                best_score = score
+                best_id = tonumber(row.teamid.value)
+            end
+        end
+        if best_score >= 0.5 then
+            return best_id
         end
     end
     return nil
@@ -70,7 +104,7 @@ local function normalize_player_arg(arg)
         local n = tonumber(arg)
         if n then return n end
         local lower_arg = string.lower(arg)
-        local rows = GetDBTableRows("players")
+        local rows = GetDBTableRows("players") or {}
         local best_id = nil
         local best_score = 0
         for _, row in ipairs(rows) do
@@ -80,24 +114,33 @@ local function normalize_player_arg(arg)
             if string.find(lower_pname, lower_arg, 1, true) then
                 return pid
             end
-            local matches = 0
-            local max_len = math.max(#lower_arg, #lower_pname)
-            for i = 1, max_len do
-                if lower_arg:sub(i,i) == lower_pname:sub(i,i) then
-                    matches = matches + 1
-                end
+            -- simple length ratio fallback (exact names often same length)
+            local score = 0
+            if #lower_arg > 0 and #lower_pname > 0 then
+                score = #lower_arg / #lower_pname
             end
-            local score = matches / max_len
             if score > best_score then
                 best_score = score
                 best_id = pid
             end
         end
-        if best_score > 0.6 then
+        if best_score >= 0.5 then
             return best_id
         end
     end
     return nil
+end
+
+-- Validate that a database table exists
+local function check_table_exists(table_name)
+    if not (LE and LE.db and LE.db.GetTable) then
+        return false, "Live Editor v2 database API not available"
+    end
+    local ok, table_obj = pcall(function() return LE.db:GetTable(table_name) end)
+    if not ok or not table_obj then
+        return false, "Table not found: " .. tostring(table_name)
+    end
+    return true, table_obj
 end
 
 -- Helper to convert DBRow to plain table
@@ -118,7 +161,10 @@ function handlers.ping(cmd)
 end
 
 function handlers.list_clubs(cmd)
-    local rows = GetDBTableRows("teams")
+    local ok, rows = pcall(GetDBTableRows, "teams")
+    if not ok or not rows then
+        return { success = false, error = "Could not read teams table" }
+    end
     local clubs = {}
     local limit = cmd.limit or 100
     for i, row in ipairs(rows) do
@@ -134,8 +180,12 @@ end
 
 function handlers.search_players(cmd)
     local name = cmd.name or ""
+    if name == "" then return { success = false, error = "name required" } end
     local limit = cmd.limit or 20
-    local rows = GetDBTableRows("players")
+    local ok, rows = pcall(GetDBTableRows, "players")
+    if not ok or not rows then
+        return { success = false, error = "Could not read players table" }
+    end
     local results = {}
     for _, row in ipairs(rows) do
         local pid = tonumber(row.playerid.value)
@@ -237,6 +287,7 @@ end
 function handlers.set_player_sharpness(cmd)
     local playerid = normalize_player_arg(cmd.player or cmd.playerid)
     if not playerid then return { success = false, error = "Player not found" } end
+    if cmd.value == nil then return { success = false, error = "value required" } end
     SetPlayerSharpness(playerid, cmd.value)
     return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), sharpness = cmd.value }
 end
@@ -244,6 +295,7 @@ end
 function handlers.set_player_morale(cmd)
     local playerid = normalize_player_arg(cmd.player or cmd.playerid)
     if not playerid then return { success = false, error = "Player not found" } end
+    if cmd.value == nil then return { success = false, error = "value required" } end
     SetPlayerMorale(playerid, cmd.value)
     return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), morale = cmd.value }
 end
@@ -251,6 +303,7 @@ end
 function handlers.set_player_form(cmd)
     local playerid = normalize_player_arg(cmd.player or cmd.playerid)
     if not playerid then return { success = false, error = "Player not found" } end
+    if cmd.value == nil then return { success = false, error = "value required" } end
     SetPlayerForm(playerid, cmd.value)
     return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), form = cmd.value }
 end
@@ -258,6 +311,7 @@ end
 function handlers.set_player_fitness(cmd)
     local playerid = normalize_player_arg(cmd.player or cmd.playerid)
     if not playerid then return { success = false, error = "Player not found" } end
+    if cmd.value == nil then return { success = false, error = "value required" } end
     SetPlayerFitness(playerid, cmd.value)
     return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), fitness = cmd.value }
 end
@@ -278,7 +332,11 @@ end
 function handlers.get_db_fields(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
-    local fields = GetDBTableFields(table_name)
+    local ok, fields_or_obj = pcall(GetDBTableFields, table_name)
+    if not ok then
+        return { success = false, error = "Table not found or not accessible: " .. tostring(table_name) }
+    end
+    local fields = fields_or_obj
     local out = {}
     for _, f in ipairs(fields) do
         table.insert(out, { name = f.name, type = f.type, depth = f.depth, rangelow = f.rangelow })
@@ -289,7 +347,10 @@ end
 function handlers.get_db_rows(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
-    local rows = GetDBTableRows(table_name)
+    local ok, rows = pcall(GetDBTableRows, table_name)
+    if not ok or not rows then
+        return { success = false, error = "Table not found or not accessible: " .. tostring(table_name) }
+    end
     local out = {}
     local limit = cmd.limit or 50
     for i, row in ipairs(rows) do
@@ -307,12 +368,9 @@ function handlers.edit_db_field(cmd)
     local field_name = cmd.field
     if not field_name then return { success = false, error = "field required" } end
 
-    -- Use Live Editor v2 database API
-    if not (LE and LE.db and LE.db.GetTable) then
-        return { success = false, error = "Live Editor v2 database API not available" }
-    end
+    local ok, table_obj = check_table_exists(table_name)
+    if not ok then return { success = false, error = table_obj } end
 
-    local table_obj = LE.db:GetTable(table_name)
     local record = table_obj:GetFirstRecord()
     local found = false
     while record > 0 do
@@ -339,10 +397,12 @@ function handlers.insert_db_row(cmd)
         row_data[k] = tostring(v)
     end
 
+    local ok, table_obj = check_table_exists(table_name)
+    if not ok then return { success = false, error = table_obj } end
+
     -- Try v2 API first
-    if LE and LE.db and LE.db.GetTable then
-        local ok, result = pcall(function()
-            local table_obj = LE.db:GetTable(table_name)
+    if table_obj.InsertRecord or table_obj.AddRecord then
+        local ok2, result = pcall(function()
             if table_obj.InsertRecord then
                 return table_obj:InsertRecord(row_data)
             elseif table_obj.AddRecord then
@@ -350,27 +410,28 @@ function handlers.insert_db_row(cmd)
             end
             return nil
         end)
-        if ok and result then
+        if ok2 and result then
             return { success = true, table = table_name, row = row_to_plain(result) }
         end
     end
 
     -- Fall back to v1 API
-    local row = InsertDBTableRow(table_name, row_data)
+    local ok3, row = pcall(InsertDBTableRow, table_name, row_data)
+    if not ok3 then
+        return { success = false, error = "Insert failed: " .. tostring(row) }
+    end
     return { success = true, table = table_name, row = row_to_plain(row) }
 end
 
 function handlers.delete_db_row(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
-
-    -- Use Live Editor v2 database API
-    if not (LE and LE.db and LE.db.GetTable) then
-        return { success = false, error = "Live Editor v2 database API not available" }
-    end
-
     local target = cmd.row or {}
-    local table_obj = LE.db:GetTable(table_name)
+    if not next(target) then return { success = false, error = "row filter required" } end
+
+    local ok, table_obj = check_table_exists(table_name)
+    if not ok then return { success = false, error = table_obj } end
+
     local record = table_obj:GetFirstRecord()
     local found = false
     while record > 0 do
@@ -431,10 +492,17 @@ function handlers.execute_lua(cmd)
     if not ok then
         return { success = false, error = tostring(result) }
     end
+    local MAX_RESULT_LEN = 50000
     if type(result) == "table" then
-        return { success = true, result = json.encode(result) }
+        result = json.encode(result)
+    else
+        result = tostring(result)
     end
-    return { success = true, result = tostring(result) }
+    if #result > MAX_RESULT_LEN then
+        result = result:sub(1, MAX_RESULT_LEN) .. "
+...[truncated]"
+    end
+    return { success = true, result = result }
 end
 
 local function process_file(path, id)
@@ -499,7 +567,14 @@ while true do
     if Sleep then
         Sleep(500)
     else
-        local start = os.clock()
-        while os.clock() - start < 0.5 do end
+        -- Fallback that does not busy-wait (Windows ping trick ~500ms)
+        local ok_sleep = pcall(function() return os.execute("ping -n 1 -w 500 127.0.0.1 >nul 2>&1") end)
+        if not ok_sleep then
+            local start = os.clock()
+            for i = 1, 10 do
+                if os.clock() - start >= 0.5 then break end
+                io.read(0)
+            end
+        end
     end
 end

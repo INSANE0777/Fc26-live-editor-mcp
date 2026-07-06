@@ -18,14 +18,20 @@ DEFAULT_SQUAD = "SquadsFIFER'sBeta1xRODE'sNewSeasonModAlpha3"
 DEFAULT_META = str(pkg_resources.files("fc26_mcp.data") / "fifa_ng_db-meta-fc26.xml")
 
 _squad = None
+_squad_error = None
 
 
 def get_squad():
-    global _squad
-    if _squad is None:
+    global _squad, _squad_error
+    if _squad is None and _squad_error is None:
         squad_path = os.environ.get("FIFA_SQUAD_FILE", DEFAULT_SQUAD)
         meta_path = os.environ.get("FIFA_META_FILE", DEFAULT_META)
-        _squad = SquadFile(squad_path, meta_path)
+        try:
+            _squad = SquadFile(squad_path, meta_path)
+        except Exception as e:
+            _squad_error = str(e)
+    if _squad_error:
+        raise RuntimeError(f"Squad file error: {_squad_error}")
     return _squad
 
 
@@ -209,6 +215,7 @@ def handle_search_players(args):
     limit = args.get("limit", 20)
     if not isinstance(limit, int) or limit <= 0:
         limit = 20
+    limit = min(limit, 200)  # cap to avoid context blowup
 
     teams = {t["teamid"]: t for t in sq.get_table("teams")}
     players = sq.get_table("players")
@@ -364,7 +371,8 @@ def handle_call(id_, name, args):
         else:
             return make_error(id_, -32601, f"Unknown tool: {name}")
     except Exception as e:
-        return make_error(id_, -32603, str(e))
+        import traceback
+        return make_error(id_, -32603, str(e), {"traceback": traceback.format_exc()})
 
 
 def main():
@@ -405,7 +413,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-squad-file-mcp", "version": "0.2.6"}
+                "serverInfo": {"name": "fc26-squad-file-mcp", "version": "0.2.7"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue

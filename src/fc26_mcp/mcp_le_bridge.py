@@ -299,7 +299,8 @@ def handle_call(id_, name, args):
         else:
             return make_error(id_, -32601, f"Unknown tool: {name}")
     except Exception as e:
-        return make_error(id_, -32603, str(e))
+        import traceback
+        return make_error(id_, -32603, str(e), {"traceback": traceback.format_exc()})
 
 
 def install_lua(le_scripts_path):
@@ -352,7 +353,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.6"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.7"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue
