@@ -299,22 +299,33 @@ end
 function handlers.edit_db_field(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
-    local rows = GetDBTableRows(table_name)
-    local target = cmd.row or {}
     local match_field = cmd.match_field or "playerid"
-    local match_value = tostring(cmd.match_value)
-    local found = nil
-    for _, row in ipairs(rows) do
-        if row[match_field] and tostring(row[match_field].value) == match_value then
-            found = row
+    if cmd.match_value == nil then return { success = false, error = "match_value required" } end
+    local field_name = cmd.field
+    if not field_name then return { success = false, error = "field required" } end
+
+    -- Use Live Editor v2 database API
+    if not (LE and LE.db and LE.db.GetTable) then
+        return { success = false, error = "Live Editor v2 database API not available" }
+    end
+
+    local table_obj = LE.db:GetTable(table_name)
+    local record = table_obj:GetFirstRecord()
+    local found = false
+    while record > 0 do
+        local record_value = table_obj:GetRecordFieldValue(record, match_field)
+        if tostring(record_value) == tostring(cmd.match_value) then
+            table_obj:SetRecordFieldValue(record, field_name, cmd.value)
+            found = true
             break
         end
+        record = table_obj:GetNextValidRecord()
     end
+
     if not found then
         return { success = false, error = "Row not found in " .. table_name }
     end
-    EditDBTableField(table_name, found, cmd.field, tostring(cmd.value))
-    return { success = true, table = table_name, field = cmd.field, value = cmd.value }
+    return { success = true, table = table_name, field = field_name, value = cmd.value }
 end
 
 function handlers.insert_db_row(cmd)
@@ -324,6 +335,24 @@ function handlers.insert_db_row(cmd)
     for k, v in pairs(row_data) do
         row_data[k] = tostring(v)
     end
+
+    -- Try v2 API first
+    if LE and LE.db and LE.db.GetTable then
+        local ok, result = pcall(function()
+            local table_obj = LE.db:GetTable(table_name)
+            if table_obj.InsertRecord then
+                return table_obj:InsertRecord(row_data)
+            elseif table_obj.AddRecord then
+                return table_obj:AddRecord(row_data)
+            end
+            return nil
+        end)
+        if ok and result then
+            return { success = true, table = table_name, row = row_to_plain(result) }
+        end
+    end
+
+    -- Fall back to v1 API
     local row = InsertDBTableRow(table_name, row_data)
     return { success = true, table = table_name, row = row_to_plain(row) }
 end
@@ -331,27 +360,43 @@ end
 function handlers.delete_db_row(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
-    local rows = GetDBTableRows(table_name)
+
+    -- Use Live Editor v2 database API
+    if not (LE and LE.db and LE.db.GetTable) then
+        return { success = false, error = "Live Editor v2 database API not available" }
+    end
+
     local target = cmd.row or {}
-    local found = nil
-    for _, row in ipairs(rows) do
+    local table_obj = LE.db:GetTable(table_name)
+    local record = table_obj:GetFirstRecord()
+    local found = false
+    while record > 0 do
         local match = true
         for k, v in pairs(target) do
-            if not row[k] or tostring(row[k].value) ~= tostring(v) then
+            local record_value = table_obj:GetRecordFieldValue(record, k)
+            if tostring(record_value) ~= tostring(v) then
                 match = false
                 break
             end
         end
         if match then
-            found = row
+            if table_obj.DeleteRecord then
+                table_obj:DeleteRecord(record)
+            elseif table_obj.RemoveRecord then
+                table_obj:RemoveRecord(record)
+            else
+                return { success = false, error = "DeleteRecord/RemoveRecord not available" }
+            end
+            found = true
             break
         end
+        record = table_obj:GetNextValidRecord()
     end
+
     if not found then
         return { success = false, error = "Row not found in " .. table_name }
     end
-    local ok = DeleteDBTableRow(table_name, found)
-    return { success = ok, table = table_name }
+    return { success = true, table = table_name }
 end
 
 function handlers.get_players_stats(cmd)
