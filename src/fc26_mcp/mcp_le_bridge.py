@@ -308,7 +308,15 @@ def install_lua(le_scripts_path):
     le_scripts_path.mkdir(parents=True, exist_ok=True)
     src = pkg_resources.files("fc26_mcp") / "le_bridge.lua"
     dst = Path(le_scripts_path) / "le_bridge.lua"
-    shutil.copy(str(src), str(dst))
+    # Auto-detect bridge root from scripts path (LiveEditor/lua/scripts -> LiveEditor/le_bridge)
+    le_root = dst.parent.parent.parent
+    bridge_root = le_root / "le_bridge"
+    lua_text = src.read_text(encoding="utf-8")
+    lua_text = lua_text.replace(
+        'local BRIDGE_ROOT = os.getenv("FC26_BRIDGE_ROOT") or "C:/FC26LiveEditor/le_bridge"',
+        f'local BRIDGE_ROOT = os.getenv("FC26_BRIDGE_ROOT") or "{bridge_root.as_posix()}"'
+    )
+    dst.write_text(lua_text, encoding="utf-8")
     return str(dst)
 
 
@@ -353,7 +361,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.10"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.11"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue
