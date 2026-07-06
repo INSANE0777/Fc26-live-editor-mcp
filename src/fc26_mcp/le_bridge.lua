@@ -428,6 +428,9 @@ function handlers.execute_lua(cmd)
     if not ok then
         return { success = false, error = tostring(result) }
     end
+    if type(result) == "table" then
+        return { success = true, result = json.encode(result) }
+    end
     return { success = true, result = tostring(result) }
 end
 
