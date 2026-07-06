@@ -565,14 +565,14 @@ log("Full MCP bridge started. Polling " .. IN_DIR)
 while true do
     poll_once()
     if Sleep then
-        Sleep(500)
+        Sleep(100)
     else
-        -- Fallback that does not busy-wait (Windows ping trick ~500ms)
-        local ok_sleep = pcall(function() return os.execute("ping -n 1 -w 500 127.0.0.1 >nul 2>&1") end)
+        -- Fallback that does not busy-wait (Windows ping trick ~100ms)
+        local ok_sleep = pcall(function() return os.execute("ping -n 1 -w 100 127.0.0.1 >nul 2>&1") end)
         if not ok_sleep then
             local start = os.clock()
             for i = 1, 10 do
-                if os.clock() - start >= 0.5 then break end
+                if os.clock() - start >= 0.1 then break end
                 io.read(0)
             end
         end
