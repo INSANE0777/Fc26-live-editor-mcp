@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fc26-mcp"
+version = "0.2.0"
+description = "MCP servers for EA SPORTS FC 26 squad editing and Live Editor control"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Afjal"}
+]
+keywords = ["fc26", "fifa", "mcp", "live-editor", "squad-file", "modding"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+]
+
+[project.scripts]
+fc26-mcp-file = "fc26_mcp.mcp_server:main"
+fc26-mcp-live = "fc26_mcp.mcp_le_bridge:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+fc26_mcp = ["data/*.xml", "le_bridge.lua"]

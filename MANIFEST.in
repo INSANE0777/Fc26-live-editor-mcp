@@ -1,0 +1,3 @@
+include README.md README_LE_BRIDGE.md LICENSE mcp_config.json
+recursive-include src/fc26_mcp/data *.xml
+recursive-include src/fc26_mcp *.lua
