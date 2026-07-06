@@ -35,6 +35,16 @@ pip install -e .
 
 ---
 
+## Paths
+
+The package uses placeholder paths. Set your actual paths via command-line flags or environment variables:
+
+| What | Flag | Environment Variable | Example |
+|------|------|---------------------|---------|
+| Squad file | `--squad-file` | `FIFA_SQUAD_FILE` | `C:\Path\To\Your\SquadsFile` |
+| Live Editor bridge folder | `--bridge-root` | `FC26_BRIDGE_ROOT` | `C:\Path\To\Your\FC 26 LE\le_bridge` |
+| Live Editor scripts folder | `--install-lua` | — | `C:\Path\To\Your\FC 26 LE\lua\scripts` |
+
 ## Quick start
 
 ### 1. Squad file MCP
@@ -52,14 +62,14 @@ The bundled FC 26 metadata is used automatically. You can override it with `--me
 3. Install the Lua bridge into Live Editor once:
 
 ```bash
-fc26-mcp-live --install-lua "C:\Path\To\FC 26 LE v26.3.5\lua\scripts"
+fc26-mcp-live --install-lua "C:\Path\To\Your\FC 26 LE\lua\scripts"
 ```
 
 4. In Live Editor, go to **Features → Lua Engine** and run `le_bridge.lua`.
 5. Start the MCP server:
 
 ```bash
-fc26-mcp-live --bridge-root "C:\Path\To\FC 26 LE v26.3.5\le_bridge"
+fc26-mcp-live --bridge-root "C:\Path\To\Your\FC 26 LE\le_bridge"
 ```
 
 ---
@@ -105,7 +115,7 @@ Use `mcp_config.json` as a template, or add these servers manually:
       "command": "fc26-mcp-live",
       "args": [
         "--bridge-root",
-        "C:\Path\To\FC 26 LE v26.3.5\le_bridge"
+        "C:\Path\To\Your\FC 26 LE\le_bridge"
       ]
     }
   }

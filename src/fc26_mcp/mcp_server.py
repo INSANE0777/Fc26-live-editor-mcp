@@ -405,7 +405,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-squad-file-mcp", "version": "0.2.4"}
+                "serverInfo": {"name": "fc26-squad-file-mcp", "version": "0.2.5"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue

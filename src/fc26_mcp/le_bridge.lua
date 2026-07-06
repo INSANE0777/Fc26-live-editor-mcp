@@ -13,7 +13,8 @@ local json = require "imports/external/json"
 
 -- Bridge root path. The script expects subfolders: in, out, logs
 -- These folders are created by the fc26-mcp-live Python server. Run it before this script.
-local BRIDGE_ROOT = os.getenv("FC26_BRIDGE_ROOT") or "C:/Users/Afjal/Downloads/Example folder - Copy/LE/FC 26 LE v26.3.5/le_bridge"
+-- Override this with the FC26_BRIDGE_ROOT environment variable, or edit the fallback below.
+local BRIDGE_ROOT = os.getenv("FC26_BRIDGE_ROOT") or "C:/FC26LiveEditor/le_bridge"
 BRIDGE_ROOT = BRIDGE_ROOT:gsub("\\", "/")
 
 local IN_DIR  = BRIDGE_ROOT .. "/in"

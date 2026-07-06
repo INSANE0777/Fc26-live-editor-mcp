@@ -2,6 +2,10 @@
 
 This MCP bridge lets an AI assistant control FC 26 **through Live Editor** while the game is running. It exposes most of the Live Editor Lua API as MCP tools.
 
+## Paths
+
+The bridge needs to know where your Live Editor folder is. Use `--install-lua` and `--bridge-root` with your actual path, or set the `FC26_BRIDGE_ROOT` environment variable.
+
 ## Install
 
 ```bash
@@ -18,7 +22,7 @@ After installation:
 You must copy `le_bridge.lua` into your Live Editor scripts folder once:
 
 ```bash
-fc26-mcp-live --install-lua "C:\Path\To\FC 26 LE v26.3.5\lua\scripts"
+fc26-mcp-live --install-lua "C:\Path\To\Your\FC 26 LE\lua\scripts"
 ```
 
 ## How it works
@@ -38,7 +42,7 @@ fc26-mcp-live --install-lua "C:\Path\To\FC 26 LE v26.3.5\lua\scripts"
 5. Start the MCP server:
 
 ```bash
-fc26-mcp-live --bridge-root "C:\Path\To\FC 26 LE v26.3.5\le_bridge"
+fc26-mcp-live --bridge-root "C:\Path\To\Your\FC 26 LE\le_bridge"
 ```
 
 ## MCP client config
@@ -50,7 +54,7 @@ fc26-mcp-live --bridge-root "C:\Path\To\FC 26 LE v26.3.5\le_bridge"
       "command": "fc26-mcp-live",
       "args": [
         "--bridge-root",
-        "C:\Path\To\FC 26 LE v26.3.5\le_bridge"
+        "C:\Path\To\Your\FC 26 LE\le_bridge"
       ]
     }
   }

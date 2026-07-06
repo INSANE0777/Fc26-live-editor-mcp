@@ -1,24 +1,27 @@
 {
+  "_comment": "Replace placeholder paths with your actual FC 26 and Live Editor paths",
   "mcpServers": {
     "fc26-squad-file": {
       "command": "fc26-mcp-file",
       "args": [
         "--squad-file",
-        "C:\Users\Afjal\AppData\Local\EA SPORTS FC 26\settings\SquadsFIFER'sBeta1xRODE'sNewSeasonModAlpha3"
+        "C:\Path\To\Your\SquadsFile"
       ],
       "env": {
-        "FIFA_SQUAD_FILE": "C:\Users\Afjal\AppData\Local\EA SPORTS FC 26\settings\SquadsFIFER'sBeta1xRODE'sNewSeasonModAlpha3"
-      }
+        "FIFA_SQUAD_FILE": "C:\Path\To\Your\SquadsFile"
+      },
+      "lifecycle": "lazy"
     },
     "fc26-live-editor": {
       "command": "fc26-mcp-live",
       "args": [
         "--bridge-root",
-        "C:\Users\Afjal\Downloads\Example folder - Copy\LE\FC 26 LE v26.3.5\le_bridge"
+        "C:\Path\To\Your\FC 26 LE\le_bridge"
       ],
       "env": {
-        "FC26_BRIDGE_ROOT": "C:\Users\Afjal\Downloads\Example folder - Copy\LE\FC 26 LE v26.3.5\le_bridge"
-      }
+        "FC26_BRIDGE_ROOT": "C:\Path\To\Your\FC 26 LE\le_bridge"
+      },
+      "lifecycle": "lazy"
     }
   }
 }
