@@ -50,6 +50,9 @@ local function safe_name(name)
     return tostring(name or "")
 end
 
+local function strip_accents(str)
+    if str == nil then return "" end
+
 local function normalize_team_arg(arg)
     if type(arg) == "number" then return arg end
     if type(arg) == "string" then
@@ -87,8 +90,7 @@ local function normalize_team_arg(arg)
     return nil
 end
 
-local function strip_accents(str)
-    if str == nil then return "" end
+
     local map = {
         ["á"]="a", ["à"]="a", ["â"]="a", ["ä"]="a", ["ã"]="a", ["å"]="a", ["æ"]="ae",
         ["é"]="e", ["è"]="e", ["ê"]="e", ["ë"]="e",
