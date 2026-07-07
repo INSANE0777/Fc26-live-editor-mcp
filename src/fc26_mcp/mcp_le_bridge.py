@@ -13,7 +13,7 @@ from pathlib import Path
 
 DEFAULT_BRIDGE_ROOT = r"C:\FC26LiveEditor\le_bridge"  # override with --bridge-root or FC26_BRIDGE_ROOT env var
 POLL_INTERVAL = 0.2
-MAX_WAIT = 30
+MAX_WAIT = 120
 
 _bridge_root = Path(DEFAULT_BRIDGE_ROOT)
 _in_dir = _bridge_root / "in"
@@ -378,7 +378,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.23"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.24"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue
