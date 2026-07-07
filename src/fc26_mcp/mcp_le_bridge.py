@@ -34,6 +34,7 @@ def ensure_dirs():
     _in_dir.mkdir(exist_ok=True)
     _out_dir.mkdir(exist_ok=True)
     _log_dir.mkdir(exist_ok=True)
+    (_bridge_root / "cache").mkdir(exist_ok=True)
 
 
 def log(msg):
