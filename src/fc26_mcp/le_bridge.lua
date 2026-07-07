@@ -695,6 +695,8 @@ local function poll_once()
     os.remove(proc_path)
 end
 
+_G.fc26_handlers = handlers
+
 log("Full MCP bridge started. Polling " .. IN_DIR)
 
 while true do
