@@ -88,6 +88,7 @@ local function normalize_team_arg(arg)
 end
 
 local function strip_accents(str)
+    if str == nil then return "" end
     local map = {
         ["á"]="a", ["à"]="a", ["â"]="a", ["ä"]="a", ["ã"]="a", ["å"]="a", ["æ"]="ae",
         ["é"]="e", ["è"]="e", ["ê"]="e", ["ë"]="e",
@@ -104,7 +105,21 @@ local function strip_accents(str)
         ["Ç"]="C", ["Ñ"]="N", ["Š"]="S", ["Ć"]="C", ["Č"]="C",
         ["Đ"]="D", ["Ž"]="Z", ["Ř"]="R", ["Ł"]="L"
     }
-    return (str:gsub(".", map))
+    -- Lua 5.1 gsub(".") matches bytes, not UTF-8 chars, so iterate UTF-8 chars manually
+    local out = {}
+    local i = 1
+    while i <= #str do
+        local byte = str:byte(i)
+        local len = 1
+        if byte >= 240 then len = 4
+        elseif byte >= 224 then len = 3
+        elseif byte >= 192 then len = 2
+        end
+        local char = str:sub(i, i + len - 1)
+        table.insert(out, map[char] or char)
+        i = i + len
+    end
+    return table.concat(out)
 end
 
 -- Persistent name caches (loaded from disk, rebuilt on first use if missing)
