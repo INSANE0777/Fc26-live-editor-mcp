@@ -372,7 +372,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.12"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.21"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue
