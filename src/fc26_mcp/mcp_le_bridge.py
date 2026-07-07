@@ -110,6 +110,11 @@ def tool_list():
                 "inputSchema": {"type": "object", "properties": {}}
             },
             {
+                "name": "le_rebuild_caches",
+                "description": "Rebuild player/team name caches. Use after editing players/teams.",
+                "inputSchema": {"type": "object", "properties": {}}
+            },
+            {
                 "name": "le_list_clubs",
                 "description": "List clubs/teams from Live Editor.",
                 "inputSchema": {"type": "object", "properties": {"limit": {"type": "integer"}}}
@@ -372,7 +377,7 @@ def main():
             print(json.dumps(make_result(id_, {
                 "protocolVersion": params.get("protocolVersion", "2024-11-05"),
                 "capabilities": {"tools": {}},
-                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.21"}
+                "serverInfo": {"name": "fc26-live-editor-mcp", "version": "0.2.22"}
             })), flush=True)
         elif method == "notifications/initialized":
             continue
