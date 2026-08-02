@@ -237,11 +237,17 @@ class SquadFile:
         self.tables_meta = self._read_table_index()
 
     def save(self, output_path=None):
-        """Write modified db_data back into FBCHUNKS wrapper. CRC is zeroed."""
+        """Write modified db_data back into FBCHUNKS wrapper. CRC is zeroed.
+        Updates the DB size field and the main-header section-size field (offset 14),
+        since deleting records changes the file length."""
         if output_path is None:
             output_path = self.path
-        # Replace the DB section in raw
+        # 1. Update the DB size field inside the DB header (8 bytes after DB magic)
+        struct.pack_into("<I", self.db_data, 8, len(self.db_data))
+        # 2. Replace the DB section in raw (may change file length)
         self.raw[self.db_offset:self.db_offset + self.db_size] = self.db_data
+        # 3. Update the main-header section-size field at offset 14: size = len - 1126
+        struct.pack_into("<I", self.raw, 14, len(self.raw) - 1126)
         # Zero the CRC in the main header (offset 1126 + len(save_type_squads) + 4?)
         # The main header starts at 1126. SaveType_Squads is at 1126. CRC is 4 bytes after.
         crc_offset = 1126 + len(b"SaveType_Squads\x00") + 4
