@@ -198,6 +198,44 @@ class SquadFile:
         else:
             raise NotImplementedError("Only integer fields can be updated currently")
 
+    def delete_record(self, table_name, rec_idx):
+        """Remove a record from a table. Shifts later tables' offsets since data is contiguous."""
+        records, fields = self._parse_table(table_name)
+        if rec_idx < 0 or rec_idx >= len(records):
+            raise IndexError(f"rec_idx {rec_idx} out of range for {table_name}")
+        entry = next((m for m in self.tables_meta if m["name"] == table_name), None)
+        if entry is None:
+            raise KeyError(f"Table {table_name} not found")
+
+        pos = self._tables_start + entry["offset"]
+        record_size = struct.unpack_from("<I", self.db_data, pos + 4)[0]
+        # valid_records is a 2-byte value at pos + 4 + 4 + 10 = pos + 18
+        valid_pos = pos + 4 + 4 + 10
+        valid = struct.unpack_from("<H", self.db_data, valid_pos)[0]
+
+        rec_pos = records[rec_idx]["__rec_pos"]
+        # Shift bytes down to remove the record
+        del self.db_data[rec_pos:rec_pos + record_size]
+        # Decrement valid records count
+        struct.pack_into("<H", self.db_data, valid_pos, valid - 1)
+
+        # Update offsets of all tables that come after this one in the index
+        # (table data regions are contiguous, so later tables shift down)
+        index_start = 24
+        tc = struct.unpack_from("<I", self.db_data, 16)[0]
+        for i in range(tc):
+            off_pos = index_start + i * 8 + 4
+            t_off = struct.unpack_from("<I", self.db_data, off_pos)[0]
+            if t_off > entry["offset"]:
+                struct.pack_into("<I", self.db_data, off_pos, t_off - record_size)
+
+        # Invalidate cache so subsequent reads re-parse
+        self._records.pop(table_name, None)
+        self._table_fields.pop(table_name, None)
+        self._dirty.add(table_name)
+        # Re-read table index since offsets changed
+        self.tables_meta = self._read_table_index()
+
     def save(self, output_path=None):
         """Write modified db_data back into FBCHUNKS wrapper. CRC is zeroed."""
         if output_path is None:

@@ -208,6 +208,16 @@ def handle_list_clubs(args):
     return {"clubs": out, "count": len(out)}
 
 
+FREE_AGENT_TEAM = 111592  # NG - FA
+
+
+def _club_ids(sq):
+    """Team IDs that are clubs (clubworth != 0) plus the free-agent team.
+    National teams have clubworth == 0 and are NOT in this set."""
+    teams = sq.get_table("teams")
+    return {t["teamid"] for t in teams if t["clubworth"] != 0} | {FREE_AGENT_TEAM}
+
+
 def handle_search_players(args):
     sq = get_squad()
     name = (args.get("name") or "").lower()
@@ -221,7 +231,7 @@ def handle_search_players(args):
     players = sq.get_table("players")
     dc = {r["nameid"]: r["name"] for r in sq.get_table("dcplayernames")}
     links = sq.get_table("teamplayerlinks")
-    club_ids = {l["teamid"] for l in sq.get_table("leagueteamlinks")}
+    club_ids = _club_ids(sq)
 
     player_team = {}
     for l in links:
@@ -266,7 +276,7 @@ def handle_get_player_club(args):
 
     teams = {t["teamid"]: t for t in sq.get_table("teams")}
     links = sq.get_table("teamplayerlinks")
-    club_ids = {l["teamid"] for l in sq.get_table("leagueteamlinks")}
+    club_ids = _club_ids(sq)
 
     club_link = None
     any_link = None
@@ -324,25 +334,23 @@ def handle_apply_transfers(args):
     sq = get_squad()
     transfers = _normalize_transfers(sq, args.get("transfers", []))
 
-    leagueteamlinks = sq.get_table("leagueteamlinks")
-    club_team_ids = {l["teamid"] for l in leagueteamlinks}
+    club_team_ids = _club_ids(sq)
 
     records, _ = sq._parse_table("teamplayerlinks")
     applied = []
     for tr in transfers:
         pid = tr["playerid"]
         tid = tr["new_teamid"]
-        target_is_club = tid in club_team_ids
-
+        # Update ALL club links (loan + parent) to the target team; leave national-team links untouched
         matching = [
             (i, r) for i, r in enumerate(records)
-            if r["playerid"] == pid and (r["teamid"] in club_team_ids) == target_is_club
+            if r["playerid"] == pid and r["teamid"] in club_team_ids
         ]
         if not matching:
-            raise ValueError(f"Player {tr['player_name']} has no {'club' if target_is_club else 'national team'} link")
+            raise ValueError(f"Player {tr['player_name']} has no club link")
 
-        rec_idx, rec = matching[0]
-        sq.update_field("teamplayerlinks", rec_idx, "teamid", tid)
+        for rec_idx, _rec in matching:
+            sq.update_field("teamplayerlinks", rec_idx, "teamid", tid)
         applied.append(tr)
 
     output = args.get("output_file")

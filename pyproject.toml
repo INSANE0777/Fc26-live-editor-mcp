@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fc26-mcp"
-version = "0.2.29"
+version = "0.3.0"
 description = "MCP servers for EA SPORTS FC 26 squad editing and Live Editor control"
 readme = "README.md"
 license = {text = "MIT"}
@@ -29,6 +29,7 @@ classifiers = [
 [project.scripts]
 fc26-mcp-file = "fc26_mcp.mcp_server:main"
 fc26-mcp-live = "fc26_mcp.mcp_le_bridge:main"
+fc26-mcp-gui = "fc26_mcp.gui:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
