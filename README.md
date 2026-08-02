@@ -33,6 +33,28 @@ cd fc26-mcp
 pip install -e .
 ```
 
+## GUI editor
+
+A desktop GUI (tkinter, no extra dependencies) for opening a squad file and
+editing it entirely in the UI — no MCP client or Live Editor needed:
+
+```bash
+fc26-mcp-gui                      # open via file dialog
+fc26-mcp-gui "path/to/Squads..."  # open a specific squad file directly
+```
+
+Features:
+- Browse / search / edit / delete rows in **all 78 DB tables** (filter box per table)
+- **Player search** by name or ID, showing current club and loan status
+- **One-click transfers** — pick a player + target team, applies to all club links
+  (national team links are preserved automatically)
+- **Terminate loans** — removes the `playerloans` row(s)
+- **Auto-backup** before you save, plus a manual Backup button
+- Unsaved-changes indicator; Save writes back to the same file (or a copy)
+
+Note: the squad file's `dcplayernames` table is incomplete (~6k of ~22k players),
+so many players show `?` as their name — search by **player ID** for those.
+
 ---
 
 ## Paths
