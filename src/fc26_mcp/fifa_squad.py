@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Core library for reading/writing FC 26 FBCHUNKS/T3DB squad files."""
+"""Core library for reading/writing FC 26 FBCHUNKS/T3DB squad and career files."""
 
+import re
 import struct
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -248,14 +249,10 @@ class SquadFile:
         self.raw[self.db_offset:self.db_offset + self.db_size] = self.db_data
         # 3. Update the main-header section-size field at offset 14: size = len - 1126
         struct.pack_into("<I", self.raw, 14, len(self.raw) - 1126)
-        # Zero the CRC in the main header (offset 1126 + len(save_type_squads) + 4?)
-        # The main header starts at 1126. SaveType_Squads is at 1126. CRC is 4 bytes after.
-        crc_offset = 1126 + len(b"SaveType_Squads\x00") + 4
-        # Actually, simpler: zero the 4 bytes after SaveType_Squads in main header
-        main_header_start = 1126
-        save_type = b"SaveType_Squads\x00"
-        crc_pos = main_header_start + len(save_type)
-        # The save_squads code writes: save_type, then 4 bytes CRC
+        # Zero the CRC right after the SaveType_* string in the main header (offset 1126)
+        m = re.search(rb"SaveType_[A-Za-z]+\x00", bytes(self.raw[1126:1180]))
+        save_type = m.group(0) if m else b"SaveType_Squads\x00"
+        crc_pos = 1126 + len(save_type)
         self.raw[crc_pos:crc_pos+4] = b"\x00\x00\x00\x00"
         Path(output_path).write_bytes(self.raw)
 
@@ -305,3 +302,64 @@ class SquadFile:
 
 def find_squad_files(directory="."):
     return [str(p) for p in Path(directory).glob("Squads*") if p.is_file()]
+
+
+def detect_save_type(path):
+    """Return 'career', 'squad' or None based on the FBCHUNKS SaveType string."""
+    try:
+        raw = Path(path).read_bytes()[:2048]
+    except OSError:
+        return None
+    if not raw.startswith(FBCHUNKS):
+        return None
+    m = re.search(rb"SaveType_([A-Za-z]+)", raw)
+    if not m:
+        return None
+    kind = m.group(1).decode("ascii", "ignore").lower()
+    return "career" if kind.startswith("career") else "squad" if kind == "squads" else kind
+
+
+def find_career_files(directory="."):
+    """Career-mode save files (CmMgrC*, ...), like find_squad_files."""
+    return [str(p) for p in Path(directory).glob("CmMgr*") if p.is_file()]
+
+
+def career_overview(sq):
+    """Human-readable summary of the active career (career_users, manager, calendar, contracts).
+    Never raises on tables absent in the file."""
+    info = {}
+
+    def row(table, fields):
+        try:
+            records, _ = sq._parse_table(table)
+        except KeyError:
+            return None
+        if not records:
+            return None
+        return {f: records[0].get(f) for f in fields if f in records[0]}
+
+    user = row("career_users", ["firstname", "commonname", "surname", "clubteamid",
+                                 "nationalteamid", "leagueid", "primarycompobjid",
+                                 "usertype", "wage", "seasoncount", "sponsorid"])
+    if user:
+        info["user"] = user
+        info["mode"] = "player" if user.get("usertype") == 1 else "manager"
+        first = user.get("commonname") or (user.get("firstname") or "") + " " + (user.get("surname") or "")
+        info["user_display"] = first.strip() or "Player"
+
+    mgr = row("career_manager", ["firstnameid", "surnameid", "personid", "nationalityid",
+                                  "teamid", "reputation", "isuser"])
+    if mgr:
+        info["manager"] = mgr
+
+    cal = row("career_calendar", ["day", "month", "year", "season", "date"])
+    if cal:
+        info["calendar"] = cal
+
+    try:
+        contracts, _ = sq._parse_table("career_playercontract")
+    except KeyError:
+        contracts = []
+    info["contracts"] = len(contracts)
+
+    return info

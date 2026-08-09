@@ -12,13 +12,26 @@ import os
 import difflib
 from pathlib import Path
 
-from fc26_mcp.fifa_squad import SquadFile
+from fc26_mcp.fifa_squad import SquadFile, detect_save_type, find_career_files, career_overview
 
 DEFAULT_SQUAD = "SquadsFIFER'sBeta1xRODE'sNewSeasonModAlpha3"
 DEFAULT_META = str(pkg_resources.files("fc26_mcp.data") / "fifa_ng_db-meta-fc26.xml")
+SETTINGS_DIR = Path(os.environ.get("LOCALAPPDATA", "")) / "EA SPORTS FC 26" / "settings"
 
 _squad = None
 _squad_error = None
+
+
+def set_file(path):
+    """Switch the active file (squad OR career save) and validate it loads."""
+    global _squad, _squad_error
+    p = Path(path)
+    if not p.exists():
+        raise FileNotFoundError(f"File not found: {p}")
+    kind = detect_save_type(p) or "unknown"
+    _squad = SquadFile(str(p), DEFAULT_META)
+    _squad_error = None
+    return {"path": str(p), "kind": kind, "tables": sorted(m["name"] for m in _squad.tables_meta if m["name"])}
 
 
 def get_squad():
@@ -82,6 +95,66 @@ def tool_list():
                         "name": {"type": "string", "description": "Player name (if ID not provided)."}
                     }
                 }
+            },
+            {
+                "name": "list_career_saves",
+                "description": "List FC 26 career-mode save files (CmMgr*) found in the settings directory.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "directory": {"type": "string", "description": "Optional settings dir. Defaults to LOCALAPPDATA\\EA SPORTS FC 26\\settings."}
+                    }
+                }
+            },
+            {
+                "name": "set_active_file",
+                "description": "Open a squad file OR career save as the active file for all tools. Returns kind + available tables.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "path": {"type": "string", "description": "Full path to a Squads* or CmMgr* file."}
+                    },
+                    "required": ["path"]
+                }
+            },
+            {
+                "name": "list_db_tables",
+                "description": "Tables present in the active file (squad tables for squads, the 33 career tables for career saves).",
+                "inputSchema": {"type": "object", "properties": {}}
+            },
+            {
+                "name": "get_table_data",
+                "description": "Read rows of any DB table in the active file with their fields.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "table": {"type": "string", "description": "Table name, e.g. career_users or teamplayerlinks."},
+                        "fields": {"type": "string", "description": "Comma-separated field subset (optional)."},
+                        "filter": {"type": "string", "description": "Optional substring filter across cell values."},
+                        "limit": {"type": "integer", "description": "Max rows. Default 50, max 500."}
+                    },
+                    "required": ["table"]
+                }
+            },
+            {
+                "name": "edit_table_field",
+                "description": "Set an integer field on a row of the active file's DB table. Career: e.g. career_users.clubteamid / wage.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "table": {"type": "string"},
+                        "row": {"type": "integer", "description": "Row index (0-based, as returned by get_table_data)."},
+                        "field": {"type": "string"},
+                        "value": {"type": "integer"},
+                        "save_path": {"type": "string", "description": "Optional output path to save immediately. Default: no save."}
+                    },
+                    "required": ["table", "row", "field", "value"]
+                }
+            },
+            {
+                "name": "get_career_overview",
+                "description": "Decoded summary of the active career file: user/manager/career_users record, calendar, contract count.",
+                "inputSchema": {"type": "object", "properties": {}}
             },
             {
                 "name": "plan_transfers",
@@ -364,9 +437,89 @@ def handle_apply_transfers(args):
     return {"applied": applied, "saved_to": str(saved_path), "count": len(applied)}
 
 
+def handle_list_career_saves(args):
+    directory = Path(args.get("directory") or SETTINGS_DIR)
+    if not directory.exists():
+        return {"saves": [], "message": f"Settings dir not found: {directory}"}
+    files = []
+    for p in sorted(find_career_files(directory), reverse=True):
+        fp = Path(p)
+        files.append({"path": str(fp), "name": fp.name, "size": fp.stat().st_size,
+                      "kind": detect_save_type(fp)})
+    return {"saves": files, "count": len(files)}
+
+
+def handle_set_active_file(args):
+    return set_file(args.get("path"))
+
+
+def handle_list_db_tables(args):
+    sq = get_squad()
+    return {"tables": sorted(m["name"] for m in sq.tables_meta if m["name"]), "count": len(sq.tables_meta)}
+
+
+def handle_get_table_data(args):
+    sq = get_squad()
+    table = args.get("table")
+    if not table:
+        raise ValueError("table required")
+    records, fields = sq._parse_table(table)
+    wanted = [f["name"] for f in fields]
+    subset = args.get("fields")
+    if subset:
+        subset_set = {s.strip() for s in subset.split(",") if s.strip()}
+        wanted = [f for f in wanted if f in subset_set]
+    filt = (args.get("filter") or "").lower()
+    limit = args.get("limit", 50)
+    if not isinstance(limit, int) or limit <= 0:
+        limit = 50
+    limit = min(limit, 500)
+    rows = []
+    for rec in records:
+        row = {f: rec.get(f) for f in wanted}
+        if filt and not any(filt in str(v).lower() for v in row.values() if v is not None):
+            continue
+        rows.append(row)
+        if len(rows) >= limit:
+            break
+    return {"table": table, "fields": wanted, "rows": rows, "count": len(records), "returned": len(rows)}
+
+
+def handle_edit_table_field(args):
+    sq = get_squad()
+    table = args.get("table")
+    row = args.get("row")
+    field = args.get("field")
+    value = args.get("value")
+    if not table or row is None or not field or value is None:
+        raise ValueError("table, row, field, value required")
+    sq.update_field(table, int(row), field, int(value))
+    save_path = args.get("save_path")
+    if save_path:
+        sq.save(save_path)
+        return {"ok": True, "table": table, "row": int(row), "field": field, "value": int(value), "saved_to": save_path}
+    return {"ok": True, "table": table, "row": int(row), "field": field, "value": int(value), "saved": False}
+
+
+def handle_get_career_overview(args):
+    return career_overview(get_squad())
+
+
 def handle_call(id_, name, args):
     try:
-        if name == "list_clubs":
+        if name == "list_career_saves":
+            return make_result(id_, handle_list_career_saves(args or {}))
+        elif name == "set_active_file":
+            return make_result(id_, handle_set_active_file(args or {}))
+        elif name == "list_db_tables":
+            return make_result(id_, handle_list_db_tables(args or {}))
+        elif name == "get_table_data":
+            return make_result(id_, handle_get_table_data(args or {}))
+        elif name == "edit_table_field":
+            return make_result(id_, handle_edit_table_field(args or {}))
+        elif name == "get_career_overview":
+            return make_result(id_, handle_get_career_overview(args or {}))
+        elif name == "list_clubs":
             return make_result(id_, handle_list_clubs(args or {}))
         elif name == "search_players":
             return make_result(id_, handle_search_players(args or {}))
@@ -387,12 +540,16 @@ def main():
     parser = argparse.ArgumentParser(description="FC 26 Squad File MCP Server")
     parser.add_argument("--squad-file", help="Path to the Squads file")
     parser.add_argument("--meta-file", help="Path to fifa_ng_db-meta XML (defaults to bundled FC26 metadata)")
+    parser.add_argument("--settings-dir", help="Settings directory for career/squad discovery (defaults to LOCALAPPDATA\\EA SPORTS FC 26\\settings)")
     args = parser.parse_args()
 
     if args.squad_file:
         os.environ["FIFA_SQUAD_FILE"] = args.squad_file
     if args.meta_file:
         os.environ["FIFA_META_FILE"] = args.meta_file
+    if args.settings_dir:
+        global SETTINGS_DIR
+        SETTINGS_DIR = Path(args.settings_dir)
 
     try:
         get_squad()

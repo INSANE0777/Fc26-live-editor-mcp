@@ -22,7 +22,7 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 
-from fc26_mcp.fifa_squad import SquadFile
+from fc26_mcp.fifa_squad import SquadFile, detect_save_type, career_overview
 
 FREE_AGENT_TEAM = 111592  # NG - FA
 
@@ -57,7 +57,7 @@ class SquadEditorApp(tk.Tk):
         # Top bar
         top = ttk.Frame(self, padding=(8, 6))
         top.pack(fill="x")
-        ttk.Button(top, text="Open Squad File...", command=self.open_file).pack(side="left")
+        ttk.Button(top, text="Open Squad/Career...", command=self.open_file).pack(side="left")
         ttk.Button(top, text="Save", command=self.save_file).pack(side="left", padx=(6, 0))
         ttk.Button(top, text="Backup", command=self.make_backup).pack(side="left", padx=(6, 0))
         self.path_var = tk.StringVar(value="No file open")
@@ -205,11 +205,28 @@ class SquadEditorApp(tk.Tk):
         if self.sq is None:
             return
         self.log("Building caches...")
-        self._teams_cache = {t["teamid"]: t.get("teamname", "") for t in self.sq.get_table("teams")}
-        self._club_ids_cache = club_ids(self.sq)
-        self._dc_cache = {r["nameid"]: r["name"] for r in self.sq.get_table("dcplayernames")}
-        self._players_cache = self.sq.get_table("players")
-        self.log(f"Caches ready: {len(self._players_cache)} players, {len(self._teams_cache)} teams")
+        names = {m["name"] for m in self.sq.tables_meta if m["name"]}
+        self.is_career = "career_users" in names and "teamplayerlinks" not in names
+        try:
+            self._teams_cache = {t["teamid"]: t.get("teamname", "") for t in self.sq.get_table("teams")}
+        except KeyError:
+            self._teams_cache = {}
+        try:
+            self._dc_cache = {r["nameid"]: r["name"] for r in self.sq.get_table("dcplayernames")}
+        except KeyError:
+            self._dc_cache = {}
+        try:
+            self._players_cache = self.sq.get_table("players")
+        except KeyError:
+            self._players_cache = None
+        try:
+            self._club_ids_cache = club_ids(self.sq)
+        except KeyError:
+            self._club_ids_cache = set()
+        if self.is_career:
+            self.log("Career file: player/team/loan tabs need a squad file; use the Tables tab (33 career tables).")
+        else:
+            self.log(f"Caches ready: {len(self._players_cache or [])} players, {len(self._teams_cache)} teams")
 
     def player_name(self, p):
         dc = self._dc_cache or {}
@@ -299,12 +316,21 @@ class SquadEditorApp(tk.Tk):
                 print(msg, file=sys.stderr)
 
     def _open_done(self, path):
-        self.path_var.set(path)
         self.refresh_caches()
+        self.path_var.set(path + ("    (career save)" if getattr(self, "is_career", False) else ""))
         tables = sorted((m["name"] for m in self.sq.tables_meta if m["name"]), key=str.lower)
         self.tb_combo["values"] = tables
-        self.tb_combo.set("teamplayerlinks")
+        self.tb_combo.set("career_users" if "career_users" in tables else "teamplayerlinks" if "teamplayerlinks" in tables else (tables[0] if tables else ""))
         self.load_table()
+        try:
+            ov = career_overview(self.sq)
+            user = ov.get("user")
+            if user:
+                self.log(f"Career: {ov.get('user_display')} | usertype={user.get('usertype')} | clubteamid={user.get('clubteamid')} "
+                         f"nationalteamid={user.get('nationalteamid')} leagueid={user.get('leagueid')} wage={user.get('wage')} season={user.get('seasoncount')} "
+                         f"contracts={ov.get('contracts')}")
+        except Exception:
+            pass
         self.log(f"Opened: {path}")
 
     def save_file(self):
