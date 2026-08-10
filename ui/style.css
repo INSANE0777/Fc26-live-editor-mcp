@@ -57,11 +57,14 @@ thead th {
   user-select: none; white-space: nowrap; z-index: 2;
 }
 thead th:hover { color: var(--accent); }
-tbody td { padding: 5px 10px; border-bottom: 1px solid #23272f; white-space: nowrap; }
+tbody td { padding: 5px 10px; border-bottom: 1px solid #23272f; white-space: nowrap; vertical-align: middle; }
 tbody tr:hover { background: #252a34; }
 tbody tr.sel { background: #2a3d63 !important; }
 tbody tr:nth-child(even) { background: #191c22; }
 tbody tr:nth-child(even):hover { background: #252a34; }
+
+.pface { width: 44px; height: 44px; border-radius: 6px; vertical-align: middle; margin-right: 8px; object-fit: cover; background: #10131a; }
+.cbadge, .cicon { width: 20px; height: 20px; border-radius: 4px; vertical-align: middle; margin-right: 4px; object-fit: contain; background: #10131a; }
 
 .pager { display: flex; align-items: center; gap: 10px; }
 .pager span { color: var(--muted); }

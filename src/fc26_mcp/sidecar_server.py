@@ -18,6 +18,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 from fc26_mcp.fifa_squad import SquadFile, career_overview
+from fc26_mcp import game_assets
 
 DEFAULT_META = Path(__file__).parent / "data" / "fifa_ng_db-meta-fc26.xml"
 FREE_AGENT_TEAM = 111592
@@ -51,6 +52,7 @@ class App:
         self.players = None
         self.club_map = {}
         self.club_ids = set()
+        self.team_league = {}  # teamid -> leagueid (from leagueteamlinks)
         self.is_career = False
 
     # -- loaders ----------------------------------------------------------
@@ -94,10 +96,15 @@ class App:
                     club_map[l["playerid"]] = l["teamid"]
         players = sq.get_table("players") if "players" in meta_names else None
         full_names = self._full_names()
+        team_league = {}
+        if "leagueteamlinks" in meta_names:
+            for l in sq.get_table("leagueteamlinks"):
+                team_league[l["teamid"]] = l.get("leagueid")
         with LOOKUP_LOCK:
             self.sq, self.path = sq, str(path)
             self.teams, self.dc_names, self.full_names = teams, dc, full_names
             self.players, self.club_map, self.club_ids = players, club_map, club_ids
+            self.team_league = team_league
             self.is_career = is_career
         return {
             "ok": True, "path": str(path), "is_career": is_career,
@@ -128,6 +135,7 @@ class App:
         if not name or name == "?":
             name = f"Player {pid}"
         tid = self.club_map.get(pid)
+        league_id = self.team_league.get(tid) if tid else None
         return {
             "playerid": pid,
             "name": name,
@@ -136,6 +144,9 @@ class App:
             "pot": p.get("potential", ""),
             "pos": POSITION_NAMES.get(p.get("preferredposition1", -1), ""),
             "contract": p.get("contractvaliduntil", ""),
+            "face": f"/assets/face/{pid}",
+            "club_badge": f"/assets/club/{tid}" if tid else None,
+            "league_icon": f"/assets/league/{league_id}" if league_id else None,
         }
 
     def search_players(self, q, limit=400, offset=0):
@@ -226,6 +237,35 @@ class Handler(BaseHTTPRequestHandler):
     def log_message(self, *a):
         pass  # keep console clean
 
+    def _serve_asset(self, path):
+        """Serve /assets/{face|club|club_dark|league|nation}/{id}."""
+        parts = path.split("/")  # ['', 'assets', kind, id]
+        if len(parts) < 4:
+            self._err(400, "bad asset path")
+            return
+        kind, asset_id = parts[2], parts[3]
+        if not asset_id.isdigit():
+            self._err(400, "asset id must be numeric")
+            return
+        if kind not in game_assets.KINDS:
+            self._err(400, f"unknown asset kind {kind}")
+            return
+        lp = game_assets.asset_url(kind, int(asset_id))
+        try:
+            data = Path(lp).read_bytes() if lp else None
+        except OSError:
+            data = None
+        if not data:
+            self._err(404, "asset not available")
+            return
+        self.send_response(200)
+        self.send_header("Content-Type", "image/png")
+        self.send_header("Content-Length", str(len(data)))
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Cache-Control", "max-age=86400")
+        self.end_headers()
+        self.wfile.write(data)
+
     def _send(self, code, obj):
         body = json.dumps(obj).encode("utf-8")
         self.send_response(code)
@@ -246,7 +286,9 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         u = urlparse(self.path)
         try:
-            if u.path == "/api/status":
+            if u.path.startswith("/assets/"):
+                self._serve_asset(u.path)
+            elif u.path == "/api/status":
                 if app.sq is None:
                     self._send(200, {"ok": True, "open": False})
                 else:

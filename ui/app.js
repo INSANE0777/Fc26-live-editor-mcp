@@ -114,7 +114,39 @@ function renderPlayers() {
   tb.innerHTML = "";
   for (const r of state.pRows) {
     const tr = document.createElement("tr");
-    for (const c of ["playerid", "name", "team", "ovr", "pot", "pos", "contract"]) {
+    // face + name
+    const tdName = document.createElement("td");
+    const img = document.createElement("img");
+    img.className = "pface";
+    img.loading = "lazy";
+    img.src = API + r.face;
+    img.onerror = () => (img.style.visibility = "hidden");
+    const span = document.createElement("span");
+    span.textContent = r.name;
+    tdName.append(img, span);
+    tr.appendChild(tdName);
+    // club badge + team
+    const tdTeam = document.createElement("td");
+    if (r.club_badge) {
+      const b = document.createElement("img");
+      b.className = "cbadge";
+      b.loading = "lazy";
+      b.src = API + r.club_badge;
+      b.title = r.team;
+      b.onerror = () => (b.style.visibility = "hidden");
+      tdTeam.appendChild(b);
+    }
+    if (r.league_icon) {
+      const li = document.createElement("img");
+      li.className = "cicon";
+      li.loading = "lazy";
+      li.src = API + r.league_icon;
+      li.onerror = () => (li.style.visibility = "hidden");
+      tdTeam.appendChild(li);
+    }
+    tdTeam.appendChild(document.createTextNode(" " + r.team));
+    tr.appendChild(tdTeam);
+    for (const c of ["ovr", "pot", "pos", "contract"]) {
       const td = document.createElement("td");
       td.textContent = r[c] === null || r[c] === undefined ? "" : r[c];
       tr.appendChild(td);
@@ -140,6 +172,7 @@ $("p-next").addEventListener("click", () => { if (state.pOffset + PAGE < state.p
 // sortable columns (client-side over current page)
 document.querySelectorAll("#p-table th").forEach((th) => {
   th.addEventListener("click", () => {
+    if (th.classList.contains("no-sort")) return;
     const col = th.dataset.col;
     const dir = th.dataset.dir === "asc" ? "desc" : "asc";
     document.querySelectorAll("#p-table th").forEach((h) => { delete h.dataset.dir; h.textContent = h.textContent.replace(/ [▲▼]$/, ""); });
