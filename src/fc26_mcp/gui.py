@@ -448,53 +448,33 @@ class SquadEditorApp(tk.Tk):
         if self._selected_player is not None:
             self.btn_transfer.config(state="normal")
 
+    # Tables that, when edited raw, break the in-game career managers.
+    # Writes to these MUST go through Live Editor native calls.
+    NO_RAW_WRITE_TABLES = frozenset({
+        "teamplayerlinks",
+        "career_playercontract",
+        "career_presignedcontract",
+        "career_playerloans",
+        "playerloans",
+        "career_players",
+    })
+
     # ---- transfer / loan actions ----
     def do_transfer(self):
-        if not self.require_squad():
-            return
-        pid, tid = self._selected_player, self._selected_team
-        if pid is None or tid is None:
-            messagebox.showinfo("Select", "Pick a player and a team first.")
-            return
-        try:
-            records, _ = self.sq._parse_table("teamplayerlinks")
-            matching = [(i, r) for i, r in enumerate(records)
-                        if r["playerid"] == pid and r["teamid"] in self._club_ids_cache]
-            if not matching:
-                messagebox.showinfo("No club link", f"Player {pid} has no club link to transfer.")
-                return
-            for rec_idx, _r in matching:
-                self.sq.update_field("teamplayerlinks", rec_idx, "teamid", tid)
-            self._pending_save = True
-            self.dirty_var.set("UNSAVED CHANGES")
-            name = self._teams_cache.get(tid, "?")
-            self.log(f"Transfer OK: player {pid} -> {name} ({tid}) [{len(matching)} link(s) updated]")
-            self._refresh_player_info(pid)
-        except Exception as e:
-            self.log_err(f"Transfer failed: {e}\n{traceback.format_exc()}")
+        messagebox.showinfo(
+            "Native transfers only",
+            "Direct DB edits break the save (wage -1, contract -1, broken morale).\n"
+            "Use the MCP apply_transfers tool: it generates a Live Editor Lua script "
+            "that moves players with native cTransferPlayer, which updates the "
+            "in-memory career managers.",
+        )
 
     def do_terminate_loan(self):
-        if not self.require_squad():
-            return
-        pid = self._selected_player
-        if pid is None:
-            return
-        try:
-            loans = self.sq.get_table("playerloans")
-            idxs = [i for i, l in enumerate(loans) if l["playerid"] == pid]
-            if not idxs:
-                messagebox.showinfo("No loan", f"Player {pid} has no loan entries.")
-                return
-            if not messagebox.askyesno("Terminate loan", f"Remove {len(idxs)} loan row(s) for player {pid}?"):
-                return
-            for idx in sorted(idxs, reverse=True):
-                self.sq.delete_record("playerloans", idx)
-            self._pending_save = True
-            self.dirty_var.set("UNSAVED CHANGES")
-            self.log(f"Loan terminated for player {pid}")
-            self._refresh_player_info(pid)
-        except Exception as e:
-            self.log_err(f"Loan terminate failed: {e}\n{traceback.format_exc()}")
+        messagebox.showinfo(
+            "Native loans only",
+            "Direct DB edits break the save. Use the MCP apply_transfers tool "
+            "(native TerminateLoan / cLoanPlayer via Live Editor).",
+        )
 
     # ---- players tab ----
     def search_players_view(self):
@@ -605,6 +585,15 @@ class SquadEditorApp(tk.Tk):
             except ValueError:
                 messagebox.showerror("Bad value", "Integer required.", parent=dlg)
                 return
+            if table in self.NO_RAW_WRITE_TABLES:
+                messagebox.showerror(
+                    "Raw edit blocked",
+                    f"'{table}' is transfer-critical: the game reads wage/contract/squad "
+                    "state from in-memory managers, so direct edits corrupt the save.\n"
+                    "Use the MCP apply_transfers tool (native Lua) instead.",
+                    parent=dlg,
+                )
+                return
             try:
                 self.sq.update_field(table, idx, f, v)
                 rec[f] = v
@@ -628,6 +617,13 @@ class SquadEditorApp(tk.Tk):
             return
         idx = self.tb_tree.index(sel[0])
         table = self.tb_combo.get()
+        if table in self.NO_RAW_WRITE_TABLES:
+            messagebox.showinfo(
+                "Delete blocked",
+                f"'{table}' is transfer-critical: direct DB edits corrupt the save. "
+                "Use the MCP apply_transfers tool (native Lua) instead.",
+            )
+            return
         if not messagebox.askyesno("Delete row", f"Delete row {idx} from {table}?"):
             return
         try:

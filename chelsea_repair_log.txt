@@ -1,0 +1,58 @@
+2026-08-10 10:19:15 == CHELSEA REPAIR START ==
+2026-08-10 10:19:15 Marco Palestra pid=278339 from=115845 -> 5 wage=30000 months=36
+2026-08-10 10:19:21 cTransferPlayer -> true
+2026-08-10 10:19:21 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:19:21 Marco Palestra DONE
+2026-08-10 10:19:21 Morgan Rogers pid=260247 from=2 -> 5 wage=110000 months=48
+2026-08-10 10:19:21 cTransferPlayer -> true
+2026-08-10 10:19:21 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:19:21 Morgan Rogers DONE
+2026-08-10 10:19:21 Maxence Lacroix pid=244067 from=1799 -> 5 wage=68000 months=36
+2026-08-10 10:19:21 cTransferPlayer -> true
+2026-08-10 10:19:21 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:19:21 Maxence Lacroix DONE
+2026-08-10 10:19:21 Danny Welbeck pid=186146 from=1808 -> 5 wage=68000 months=36
+2026-08-10 10:19:21 cTransferPlayer -> true
+2026-08-10 10:19:21 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:19:21 Danny Welbeck DONE
+2026-08-10 10:19:21 Jordan Henderson pid=183711 from=111592 -> 5 wage=53000 months=36
+2026-08-10 10:19:21 cTransferPlayer -> true
+2026-08-10 10:19:21 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:19:21 Jordan Henderson DONE
+2026-08-10 10:19:21 Valentín Barco pid=263370 from=76 -> 5 wage=53000 months=48
+2026-08-10 10:19:21 cTransferPlayer -> true
+2026-08-10 10:19:21 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:19:21 Valentín Barco DONE
+2026-08-10 10:19:21 == CHELSEA REPAIR DONE ==
+2026-08-10 10:39:13 == CHELSEA REPAIR2 START ==
+2026-08-10 10:39:13 Marco Palestra pid=278339 -> 5 wage=30000 months=36
+2026-08-10 10:39:20 ReleasePlayerFromTeam -> true
+2026-08-10 10:39:20 cTransferPlayer -> true
+2026-08-10 10:39:20 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:39:20 Marco Palestra DONE
+2026-08-10 10:39:20 Morgan Rogers pid=260247 -> 5 wage=110000 months=48
+2026-08-10 10:39:20 ReleasePlayerFromTeam -> true
+2026-08-10 10:39:20 cTransferPlayer -> true
+2026-08-10 10:39:20 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:39:20 Morgan Rogers DONE
+2026-08-10 10:39:20 Maxence Lacroix pid=244067 -> 5 wage=68000 months=36
+2026-08-10 10:39:20 ReleasePlayerFromTeam -> true
+2026-08-10 10:39:20 cTransferPlayer -> true
+2026-08-10 10:39:20 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:39:20 Maxence Lacroix DONE
+2026-08-10 10:39:20 Danny Welbeck pid=186146 -> 5 wage=68000 months=36
+2026-08-10 10:39:20 ReleasePlayerFromTeam -> true
+2026-08-10 10:39:20 cTransferPlayer -> true
+2026-08-10 10:39:20 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:39:20 Danny Welbeck DONE
+2026-08-10 10:39:20 Jordan Henderson pid=183711 -> 5 wage=53000 months=36
+2026-08-10 10:39:20 ReleasePlayerFromTeam -> true
+2026-08-10 10:39:20 cTransferPlayer -> true
+2026-08-10 10:39:20 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:39:20 Jordan Henderson DONE
+2026-08-10 10:39:20 Valentín Barco pid=263370 -> 5 wage=53000 months=48
+2026-08-10 10:39:20 ReleasePlayerFromTeam -> true
+2026-08-10 10:39:20 cTransferPlayer -> true
+2026-08-10 10:39:20 status -> role=false morale=true sharp=true fit=true
+2026-08-10 10:39:20 Valentín Barco DONE
+2026-08-10 10:39:20 == CHELSEA REPAIR2 DONE ==

@@ -1,0 +1,1956 @@
+2026-07-14 [P] Walter Clar              497408    Free agent               -> Atlante free
+2026-07-14 [L] Jairón Charcopa          1504135   LDU de Quito             -> Atlante loan
+2026-07-14 [P] John Ontaneda            1345064   Aucas                    -> Aguilas Doradas 
+2026-07-14 [P] Nadav Aviv Nidam         1235037   Maccabi Tel Aviv         -> Maccabi Netanya €0M
+2026-07-14 [P] Dylan Mertens            562263    Telstar                  -> Shafa Baku free
+2026-07-14 [L] Juan Barbieri            1221041   Deportivo Armenio        -> Barracas Central loan
+2026-07-14 [P] Dan Nlundulu             789599    St. Mirren               -> Petrolul Ploiesti free
+2026-07-14 [P] Ethan Ingram             1188052   Dundee FC                -> Partick Thistle free
+2026-07-14 [L] Jusef Erabi              1228408   Genk                     -> Preston North End loan
+2026-07-14 [P] Diego Zivulic            251254    Otelul Galati            -> Rudes free
+2026-07-14 [P] Germán Garcia            1412138   Real Betis               -> Cacereno free
+2026-07-14 [P] Nikita Iosifov           1103823   NK Celje                 -> Sporting Gijon free
+2026-07-14 [L] Nikola Cavlina           1179497   Dinamo Zagreb            -> Wieczysta loan
+2026-07-14 [P] Gabriel Barbosa          938526    Górnik Zabrze            -> Farense free
+2026-07-14 [L] Jacopo Fazzini           1329487   Fiorentina               -> Cagliari loan
+2026-07-14 [L] Álex Jiménez             1526689   AFC Bournemouth          -> Fiorentina loan
+2026-07-14 [P] Yann Sommer              41618     Free agent               -> Club Brugge free
+2026-07-14 [P] Yorleys Mena Palacios    205957    Free agent               -> Llaneros FC free
+2026-07-14 [P] Jakub Trefil             1119075   Sigma Olomouc            -> Dukla Banska Bystrica free
+2026-07-14 [P] Bruno Burcul             1661179   Rijeka                   -> NK Radomlje free
+2026-07-14 [P] Rocco Shein              1177437   Fredrikstad              -> Portsmouth 
+2026-07-14 [P] Nikolaos Vafeas          742333    Kalamata                 -> NFC Volos free
+2026-07-14 [P] Christos Sielis          865217    Panetolikos              -> OFI Crete free
+2026-07-14 [P] Aitor Gismera            1411846   Real Betis               -> Hercules 
+2026-07-14 [P] Dominik Holan            1478088   Banik Ostrava            -> Sandecja Nowy Sacz free
+2026-07-14 [P] Vito Caic                1561067   Dinamo Zagreb            -> Osijek 
+2026-07-14 [L] Edoardo Sadotti          1837401   Fiorentina               -> Alcione loan
+2026-07-14 [L] Lorenzo Romani           1742992   Fiorentina               -> Carrarese loan
+2026-07-14 [L] Altti Hellemaa           1358346   Elfsborg                 -> FF Jaro loan
+2026-07-14 [P] Marius Lode              310765    Häcken                   -> Sarpsborg 08 
+2026-07-14 [L] Michal Kukucka           1100300   1. FC Nürnberg           -> Jablonec loan
+2026-07-14 [P] Amr Gomaa                1688874   Al Ittihad Alexandria    -> Ghazl Al Mahalla 
+2026-07-14 [P] Mame Alassane Niang      1689485   Lyn                      -> Hamarkameratene €0M
+2026-07-14 [P] Abdel Fattah Sheta       1797889   Kahraba Ismailia         -> Ghazl Al Mahalla 
+2026-07-14 [P] Erlend Jacobsen          745816    Brodd                    -> Viking free
+2026-07-14 [P] Abdelrahman Emad         1333446   ZED FC                   -> Ghazl Al Mahalla free
+2026-07-14 [P] Ismale Cajazzo           1821785   Casarano                 -> Mantova 
+2026-07-14 [L] Hatem Sukar              1475580   ZED FC                   -> Ghazl Al Mahalla loan
+2026-07-14 [P] Amin Cosic               1751162   KR Reykjavik             -> Viking €0M
+2026-07-14 [P] Brage Tobiassen          1478300   Stabæk                   -> KFUM €0M
+2026-07-14 [P] Gennaro Acampora         365448    Pescara                  -> Ascoli free
+2026-07-14 [P] Gustav Nordh             1196237   IK Brage                 -> Lillestrøm 
+2026-07-14 [L] Endika Mateos            1732701   Eibar                    -> Barakaldo loan
+2026-07-14 [P] Alan Forrest             470409    Hearts                   -> Dundee FC free
+2026-07-14 [L] Alex Paulsen             1272118   AFC Bournemouth          -> Motherwell loan
+2026-07-14 [L] Marko Ascic              1693532   Rijeka                   -> Mura loan
+2026-07-14 [L] Ben Krauhaus             1413887   Brentford                -> Falkirk loan
+2026-07-14 [P] Vincent Sasso            210443    Dunkerque                -> Le Havre free
+2026-07-14 [P] Nicolás López            362194    Nacional                 -> Club Atletico Platense free
+2026-07-14 [P] Iván Arboleda            496869    Aguilas Doradas          -> Sarmiento free
+2026-07-14 [P] Guillermo Balzi          1258603   Newell's Old Boys        -> Holstein Kiel €0M
+2026-07-14 [L] Maksym Dyachuk           1384117   Dynamo Kyiv              -> Banik Ostrava loan
+2026-07-14 [P] Yuri Kovalev             462844    Baltika                  -> Free agent free
+2026-07-14 [P] Dantaye Gilbert          1552459   Dukla Praha              -> Banik Ostrava 
+2026-07-14 [P] Georgy Gongadze          852381    Fakel                    -> Free agent free
+2026-07-14 [P] Youri Schoonderwaldt     1076956   Sparta Rotterdam         -> VVV-Venlo 
+2026-07-14 [L] Nikita Pershin           1172801   Krylya Sovetov Samara    -> Tekstilshchik loan
+2026-07-14 [P] Rasul Mitsaev            1823384   FC Veles Moscow          -> FK Akhmat €0M
+2026-07-14 [L] Artem Korneev            1762723   Lokomotiv Moscow         -> Tekstilshchik loan
+2026-07-14 [L] Egor Guziev              1662705   Spartak Moscow           -> Tekstilshchik loan
+2026-07-14 [P] Liam Aluk                2019417   Maccabi Petach Tikva     -> Hapoel Ramat Gan 
+2026-07-14 [L] Andrey Kasadzhikov       2076297   Zenit St. Petersburg     -> FC Orenburg loan
+2026-07-14 [L] Moshe Semel              1595542   Puskas FC Academy        -> Hapoel Ramat Gan loan
+2026-07-14 [P] Yaroslav Mikhailov       1274617   Zenit St. Petersburg     -> FC Rostov free
+2026-07-14 [P] Jocelin Behiratche       1235097   FC Oleksandriya          -> Slovacko free
+2026-07-14 [P] Josué Ovalle             1655070   Deportes Limache         -> Everton CD €0M
+2026-07-14 [L] Luca Podlech             1659418   Schalke 04               -> Aalesund loan
+2026-07-14 [P] Luka Vuskovic            1413996   Tottenham Hotspur        -> Brighton & Hove Albion €54M
+2026-07-14 [P] Fabio Gerli              574850    Modena                   -> Cremonese 
+2026-07-14 [P] Yasser Larouci           1068902   Free agent               -> Le Mans free
+2026-07-14 [L] Kaua Bastian             1837606   Al-Ain                   -> Hatta loan
+2026-07-14 [P] Ché Nunnely              749490    Kifisia FC               -> Radomiak Radom free
+2026-07-14 [P] Burak Ince               1093253   Al Akhdoud               -> Baniyas free
+2026-07-14 [L] Idrissa Coulibaly        297876    Shabab Al-Ahli Dubai FC  -> Hatta loan
+2026-07-14 [L] Saeed Suleiman           1198741   Shabab Al-Ahli Dubai FC  -> Hatta loan
+2026-07-14 [P] Jorge Fernandes          668727    Al Fateh FC              -> Shabab Al-Ahli Dubai FC free
+2026-07-14 [P] Nathan Ordaz             1328863   Los Angeles FC           -> DC United €2M
+2026-07-14 [P] Amir Saipi               1053716   Lugano                   -> Castellon 
+2026-07-14 [P] Lohann Doucet            1327518   Paris FC                 -> Vitoria de Guimaraes 
+2026-07-14 [P] Aitor Sanz               183166    Tenerife                 -> Free agent 
+2026-07-14 [P] Karl Darlow              163604    Leeds United             -> Manchester United free
+2026-07-14 [P] Sam Larsson              318809    Fatih Karagümrük         -> IFK Göteborg free
+2026-07-14 [P] Nikola Vasic             758042    Hammarby                 -> GAIS free
+2026-07-14 [P] Iván Rojas               764267    Once Caldas              -> Aguilas Doradas free
+2026-07-14 [P] Joel Romero              1709862   America de Cali          -> Torreense free
+2026-07-14 [P] Hjörtur Hermannsson      264913    NFC Volos                -> IFK Göteborg free
+2026-07-14 [P] Ahmed Adebayo            1524647   Start                    -> Academia F. Amadou Diallo 
+2026-07-14 [P] Salaheddine Errahouli    1622167   Olympic Club de Safi     -> FAR Rabat free
+2026-07-14 [P] Gape Mohutsiwa           938391    MC Oran                  -> Ittihad Tanger free
+2026-07-14 [P] Jakob Vestergaard Jessen 1437464   Fredericia               -> Kasımpaşa 
+2026-07-14 [P] Leandro Trossard         318615    Arsenal                  -> Beşiktaş €20M
+2026-07-14 [P] Robert Mejía             1202119   Once Caldas              -> FC Orenburg €0M
+2026-07-14 [L] Tomás Král               1515119   Mlada Boleslav           -> Slovacko loan
+2026-07-14 [P] Ander Herrera            164676    Boca Juniors             -> Real Zaragoza free
+2026-07-14 [P] Stênio                   1388163   Karpaty                  -> Modena 
+2026-07-14 [L] Jean Batoum              1807668   Cracovia                 -> Nyiregyhaza Spartacus FC loan
+2026-07-14 [L] Samuele Capolupo         1798745   Monza                    -> Spezia loan
+2026-07-14 [L] Nathan Lowe              1334830   Stoke City               -> Hibernian loan
+2026-07-14 [P] Victor Parada            1056071   Deportivo Alaves         -> Spartak Moscow €5M
+2026-07-14 [P] Danilho Doekhi           724196    Free agent               -> Lazio free
+2026-07-14 [P] Álvaro Rodriguez         1327406   Elche                    -> AFC Bournemouth €25M
+2026-07-14 [P] Norbert Barczak          1575218   Górnik Zabrze            -> Korona Kielce 
+2026-07-14 [L] Fellipe Jack             1677221   Como                     -> Cremonese loan
+2026-07-14 [P] Català                   1578120   Espanyol                 -> Sabadell free
+2026-07-14 [L] Jeremy Jorge             1641004   Tenerife                 -> Rayo Majadahonda loan
+2026-07-14 [L] Lorenzo Gori             1783113   Frosinone                -> Grosseto loan
+2026-07-14 [L] Maat Caprini             1639457   Fiorentina               -> Cesena loan
+2026-07-14 [P] Jonas Harder             1667018   Fiorentina               -> Basel €2M
+2026-07-14 [P] Murphy Cooper            1335694   Queens Park Rangers      -> Plymouth Argyle free
+2026-07-14 [P] Charlie Taylor           289137    Free agent               -> Derby County free
+2026-07-14 [P] Fernando Calero          839232    Free agent               -> Malaga free
+2026-07-14 [P] Adam Mayor               1314353   Millwall                 -> Hibernian free
+2026-07-14 [P] Da Mata                  1583233   Flamengo                 -> Konyaspor 
+2026-07-14 [P] Mason Greenwood          950473    Marseille                -> Fenerbahçe €40M
+2026-07-14 [L] Horatiu Moldovan         1017745   Atletico Madrid          -> Eyüpspor loan
+2026-07-14 [L] Adrián Pica              1557193   Deportivo Alaves         -> Penafiel loan
+2026-07-14 [P] Youri Tielemans          465960    Aston Villa              -> Manchester United €41M
+2026-07-15 [L] Gilberto Sepúlveda       988723    Chivas                   -> FC Juarez loan
+2026-07-15 [L] Jersson González         1187905   Santa Fe                 -> FC Orenburg loan
+2026-07-15 [L] Shin Yamada              1054789   Celtic                   -> OH Leuven loan
+2026-07-15 [L] Ángel Almada             1277215   Tristan Suarez           -> Deportivo Riestra loan
+2026-07-15 [P] Tomás Badaloni           923598    Necaxa                   -> Rosario Central 
+2026-07-15 [L] Jakub Pira               1724585   Banik Ostrava            -> Karvina loan
+2026-07-15 [P] Yevgeniy Skyba           1614715   Karvina                  -> Banik Ostrava €1M
+2026-07-15 [P] Lasse Wilhelm            1426063   Saarbrücken              -> ADO Den Haag free
+2026-07-15 [P] Jan Zamburek             1024959   Heracles                 -> ADO Den Haag 
+2026-07-15 [P] Mateo Scheffer Bracco    1668041   Carrarese                -> Pineto 
+2026-07-15 [L] Federico Accornero       1447049   Carrarese                -> Trento loan
+2026-07-15 [P] Lorenzo Ignacchiti       1485381   Empoli                   -> Mantova 
+2026-07-15 [P] Filippo Vesentini        1724744   Union Brescia            -> Mantova 
+2026-07-15 [P] Coleen Louis             1603751   Amiens                   -> Basel 
+2026-07-15 [P] Nicola Patanè            1529149   Hellas Verona            -> Juve Stabia 
+2026-07-15 [P] Nicolò Postiglione       1681817   Pineto                   -> Catanzaro 
+2026-07-15 [P] Matěj Slouk              1791338   FC Zlin                  -> FC Silon Taborsko 
+2026-07-15 [L] Andrea Vailati           1685517   Monza                    -> Academico 83 loan
+2026-07-15 [L] Giacomo Corona           1603723   Palermo                  -> Virtus Entella loan
+2026-07-15 [P] Elías Pereyra            957219    Defensa y Justicia       -> Barracas Central free
+2026-07-15 [P] Rui Mendes               953929    FC Groningen             -> Telstar free
+2026-07-15 [P] Tyrese Noslin            1439121   Telstar                  -> Barnsley 
+2026-07-15 [P] Francesco Belli          574849    Padova                   -> Casertana free
+2026-07-15 [P] Sebastian Mladen         351127    Panetolikos              -> Athens Kallithea FC free
+2026-07-15 [P] Hördur Magnusson         179759    Levadiakos               -> Atromitos free
+2026-07-15 [P] Paulo Díaz               447556    River Plate              -> Atlanta United free
+2026-07-15 [P] Mohammad Mahmoud         1659451   Elversberg               -> Austria Salzburg free
+2026-07-15 [P] Umut Meras               707668    Eyüpspor                 -> Amed Sportif free
+2026-07-15 [P] André Sousa              281205    Nacional                 -> Uniao Santarem free
+2026-07-15 [P] Husein Balic             658589    Free agent               -> WSG Tirol free
+2026-07-15 [L] Rashed Salem             1837012   Shabab Al-Ahli Dubai FC  -> United FC loan
+2026-07-15 [P] Khaled Al Senani         173075    Free agent               -> Shabab Al-Ahli Dubai FC free
+2026-07-15 [P] Gustavo Sánchez          1044929   Monterrey                -> Atlante 
+2026-07-15 [P] Cristóbal Alfaro         1832995   Pachuca                  -> Atlante 
+2026-07-15 [P] Martín Fernández         1053835   Newell's Old Boys        -> Atlante €0M
+2026-07-15 [L] Mardochée Miguel         1860032   Servette                 -> Stade Nyonnais loan
+2026-07-15 [L] Samuel Fankhauser        1666213   Servette                 -> Stade Nyonnais loan
+2026-07-15 [L] Marwan Aubert            1525439   Servette                 -> Stade Nyonnais loan
+2026-07-15 [P] Zouhair Marour           1215643   Union Yacoub El-Mansour  -> Dibba Al-Hisn 
+2026-07-15 [L] Rilwanu Sarki            1478702   Al-Ain                   -> Khorfakkan loan
+2026-07-15 [L] Dramane Koumare          1614849   Al-Ain                   -> Al-Dhafra loan
+2026-07-15 [L] Eisa Houti               1041838   Al Ittihad Kalba         -> Al-Dhafra loan
+2026-07-15 [P] Ariel Palacio            1433271   Damac FC                 -> Al-Dhafra 
+2026-07-15 [L] Sékou Gassama            1403545   Al-Ain                   -> Ajman loan
+2026-07-15 [P] Michal Skóras            954190    Gent                     -> Lens €6M
+2026-07-15 [P] Luca Di Maggio           1368381   Inter                    -> Padova €0M
+2026-07-15 [L] Domingo Blanco           723671    Tijuana                  -> Defensa y Justicia loan
+2026-07-15 [P] Jobson                   699684    Al-Dhafra                -> Ajman 
+2026-07-15 [P] Andrej Vasovic           1691828   Luzern                   -> Club Brugge €6M
+2026-07-15 [L] Kevin Balanta            675918    Santos Laguna            -> Santa Fe loan
+2026-07-15 [P] Juan Valencia            1524299   Internacional de Bogota  -> Necaxa 
+2026-07-15 [L] Francesco Tumiatti       1802550   Padova                   -> Mestre loan
+2026-07-15 [P] Gilberto Adame           1463168   Mazatlan FC              -> Atlante free
+2026-07-15 [L] Alan Franco              832165    Sao Paulo                -> Tigres loan
+2026-07-15 [P] Leonardo Sigali          113611    NK Lokomotiva            -> Aldosivi free
+2026-07-15 [P] Bandar Al Ahbabi         252167    Al-Ain                   -> United FC 
+2026-07-15 [P] Maxim Dal                1484933   Mainz 05                 -> Greuther Fürth 
+2026-07-15 [L] Niama Sissoko            1683521   Reims                    -> Ried loan
+2026-07-15 [P] Nir Bardea               710091    Hapoel Ramat Gan         -> Bnei Yehuda Tel Aviv 
+2026-07-15 [P] Lourency                 750077    Khorfakkan               -> Ajman 
+2026-07-15 [P] Yousif Ali Almheiri      995420    Al-Wasl                  -> Al Ittihad Kalba 
+2026-07-15 [P] Taha Abdi Ali            1135782   Malmö FF                 -> PAOK Thessaloniki €2M
+2026-07-15 [L] Ariel Uribe              1044632   Union Espanola           -> Audax Italiano loan
+2026-07-15 [P] Eseosa Sule              1469618   West Bromwich Albion     -> St. Mirren 
+2026-07-15 [P] Teo Quintero             1045822   Al-Taawoun               -> Al-Wahda 
+2026-07-15 [L] Nassim Chadli            1108026   Al-Ain                   -> Al-Nasr SC loan
+2026-07-15 [P] Tom Wisbereit            1975573   Union Berlin             -> Augsburg free
+2026-07-15 [P] Nahuel Estévez           815366    Free agent               -> Palermo free
+2026-07-15 [P] Fernandinho              813039    Ceara                    -> Mirassol free
+2026-07-15 [P] Leonel Wamba             1238142   Al-Wahda                 -> Al-Nasr SC free
+2026-07-15 [P] Juninho                  1094302   Al-Nasr SC               -> Al Ittihad Kalba 
+2026-07-15 [P] Rúben Canedo             1201280   Al-Wahda                 -> Al-Jazira 
+2026-07-15 [P] Luca Bacchin             1685576   Perugia                  -> Modena €0M
+2026-07-15 [P] Daniele Montevago        1338946   Perugia                  -> Modena €0M
+2026-07-15 [L] Shalom Ekong             1670054   GAIS                     -> GIF Sundsvall loan
+2026-07-15 [P] Jacopo Sassi             1359390   Atalanta                 -> Avellino €0M
+2026-07-15 [P] Álvaro Villete           430031    Comerciantes Unidos      -> Free agent 
+2026-07-15 [L] Szymon Kawala            1801963   Wisła Kraków             -> Sandecja Nowy Sacz loan
+2026-07-15 [P] Harry Winks              528453    Leicester City           -> Cagliari 
+2026-07-15 [L] Jin-Ho Jo                1514516   Konyaspor                -> Batman Petrolspor loan
+2026-07-15 [L] Ebrima Colley            996894    Young Boys               -> Konyaspor €0M
+2026-07-15 [L] Mihail Polendakov        1382688   Sheffield United         -> Ludogorets Razgrad loan
+2026-07-15 [P] Lewis Dobbin             1098752   Aston Villa              -> Southampton 
+2026-07-15 [P] Paulo Díaz               447556    Atlanta United           -> River Plate free
+2026-07-15 [P] Juan Requena             993748    Union La Calera          -> Universitario de Deportes 
+2026-07-15 [P] Filip Djukic             953756    Viborg                   -> Hvidovre 
+2026-07-15 [L] Roberto Malfitano        1916029   Cagliari                 -> Barletta loan
+2026-07-15 [L] Nikolai Skuseth          1526793   Sarpsborg 08             -> Degerfors loan
+2026-07-15 [P] Thomas Meunier           277771    Lille                    -> Sunderland free
+2026-07-15 [L] Martin Ens               1532853   Paderborn                -> MSV Duisburg loan
+2026-07-15 [P] Simon Joergensen         1918685   Skála                    -> GAIS €0M
+2026-07-15 [P] Jérémy Guillemenot       601785    Servette                 -> Wisła Kraków free
+2026-07-15 [P] Vasco Lopes              1241308   Radomiak Radom           -> Südtirol 
+2026-07-15 [P] Jawad El Yamiq           798736    Free agent               -> Eyüpspor free
+2026-07-15 [L] Tymoteusz Gmur           1662744   Lech Poznań              -> Stal Mielec loan
+2026-07-15 [P] Aleksander Tobolik       1643934   Górnik Zabrze            -> Sosnowiec free
+2026-07-15 [P] Florian Kleinhansl       1140910   Kaiserslautern           -> Darmstadt free
+2026-07-15 [P] Mattia Liberali          1593861   Catanzaro                -> Como €6M
+2026-07-15 [L] Josep Calavera           1036245   Tenerife                 -> UD Ibiza loan
+2026-07-15 [P] Vincent Burlet           1640211   Lille                    -> Cracovia 
+2026-07-15 [P] Mattia Motolese          1396052   Bologna                  -> Virtus Entella 
+2026-07-15 [P] Ibrahim Sehic            183584    Çorum FK                 -> Sariyer free
+2026-07-15 [L] Lesley Ugochukwu         1200631   Burnley                  -> Galatasaray €3M
+2026-07-15 [P] Nihad Mujakic            857436    Partizan Beograd         -> Erzurumspor FK 
+2026-07-15 [P] Elkan Baggott            1193997   Ipswich Town             -> Millwall 
+2026-07-15 [P] Kerim Çalhanoglu         1211252   Vukovar 91               -> Gaziantep FK free
+2026-07-15 [P] Ismael Konaté            1679963   Empoli                   -> Juventus Next Gen 
+2026-07-16 [L] Oliwier Zych             1117055   Aston Villa              -> Vitoria de Guimaraes loan
+2026-07-16 [P] Salieu Drammeh           1391768   Lillestrøm               -> Standard Liege €2M
+2026-07-16 [P] Áron Csongvai            1114366   AIK                      -> Saint-Etienne €1M
+2026-07-16 [P] Jake Girdwood-Reich      1409555   St. Louis City           -> Motherwell €0M
+2026-07-16 [P] Christ Makosso           1474555   Luton Town               -> Auxerre €2M
+2026-07-16 [P] Nicolás Benedetti        658135    Free agent               -> Deportivo Cali free
+2026-07-16 [P] Thiago Gigena            1727517   Newell's Old Boys        -> Cancun FC €0M
+2026-07-16 [P] Donat Barany             1179041   Debrecen                 -> ADO Den Haag 
+2026-07-16 [P] Adriel Ramos             1248662   Gremio                   -> Torreense 
+2026-07-16 [L] Diogo Nascimento         1210508   Olympiacos               -> Rio Ave loan
+2026-07-16 [L] Carlinhos                797332    Flamengo                 -> Athletic Club loan
+2026-07-16 [P] Iker Pozo                891065    HNK Gorica               -> Rodina €1M
+2026-07-16 [P] Mikel Rodriguez          1426189   Real Sociedad B          -> Deportivo Alaves €2M
+2026-07-16 [L] Edoardo Olivieri         1640789   Modena                   -> Monopoli loan
+2026-07-16 [L] Taha Zidouh              1683512   Modena                   -> Dolomiti loan
+2026-07-16 [P] Diego Coppola            1321562   Brighton & Hove Albion   -> Paris FC €18M
+2026-07-16 [P] Iron Gomis               1030945   Free agent               -> Troyes free
+2026-07-16 [L] Anton Kovalev            1076909   Fakel                    -> BATE Borisov loan
+2026-07-16 [L] Georgi Yudintsev         1190935   Rodina                   -> FC Rotor Volgograd loan
+2026-07-16 [L] Akhmed Davlitgereev      1908948   FK Akhmat                -> FC Ufa loan
+2026-07-16 [P] Aïssa Mandi              210683    Lille                    -> Levante free
+2026-07-16 [L] Andrés García            1430406   Aston Villa              -> Getafe loan
+2026-07-16 [P] Isaac Schmidt            1107423   Leeds United             -> Young Boys free
+2026-07-16 [P] Álvaro Tejero            671685    Aris Thessaloniki        -> Leganes 
+2026-07-16 [P] Harlen Castillo          1435218   Atletico Nacional        -> Gimnasia LP free
+2026-07-16 [P] Mauricio Andrés Copete   210738    Tecnico Universitario    -> Fortaleza FC free
+2026-07-16 [P] Miguel Silva             1082119   Fortaleza FC             -> Carabobo FC free
+2026-07-16 [L] Jeison Medina            922887    LDU de Quito             -> Independiente Medellin free
+2026-07-16 [P] José Moya                281530    The Strongest            -> Deportivo Cali free
+2026-07-16 [P] Alfonso Simarra          1350531   Universidad Central      -> Independiente Medellin 
+2026-07-16 [P] Alfonso Simarra          1350531   Independiente Medellin   -> Deportivo Pasto free
+2026-07-16 [L] Imam Jagne               1103937   IFK Göteborg             -> Kifisia FC loan
+2026-07-16 [L] Cody Baker               1255486   Seattle Sounders FC      -> New England Revolution free
+2026-07-16 [P] Robert Taylor            448543    MLS Pool                 -> LA Galaxy free
+2026-07-16 [P] Abdallah Haimoud         1362339   Al Ta'awon               -> KACM free
+2026-07-16 [P] Mohamed Ammar            1200929   Ismaily SC               -> Al Mokawloon Al Arab €0M
+2026-07-16 [P] Thiemoko Diarra          1540435   Reims                    -> Kasımpaşa 
+2026-07-16 [L] Vivaldo Semedo           1402324   Watford                  -> Alverca loan
+2026-07-16 [P] Mathias Sauer            214039    Górnik Zabrze            -> Sandefjord 
+2026-07-16 [L] Riccardo Stivanello      1327978   Bologna                  -> Südtirol loan
+2026-07-16 [L] Niklas Pyyhtiä           1100598   Bologna                  -> Südtirol loan
+2026-07-16 [L] Makenzie Kirk            1293092   Portsmouth               -> Barnsley loan
+2026-07-16 [P] Ermal Krasniqi           1315511   Legia Warszawa           -> Amed Sportif free
+2026-07-16 [P] Cornelius Allen          1340075   Hilleröd F               -> Lyngby 
+2026-07-16 [P] Wojciech Szafranek       1400220   Zagłębie Lubin           -> Olimpia Grudziadz free
+2026-07-16 [P] Alex Král                836797    Union Berlin             -> FC København free
+2026-07-16 [P] Zdravko Dimitrov         941526    Amed Sportif             -> Mardinspor free
+2026-07-16 [P] Omar Traoré              1080917   Udinese                  -> Watford 
+2026-07-16 [L] Sebastián Alvarado       1671046   Sport Boys               -> Bentín Tacna Heroica loan
+2026-07-16 [P] Jakes Gorosabel          1578422   Real Sociedad B          -> Girona free
+2026-07-16 [P] Ignacio Schor            1214017   AD Ceuta FC              -> Free agent 
+2026-07-16 [L] Hodei Arrillaga          1441822   Eibar                    -> CD Mirandes loan
+2026-07-16 [L] Mathias Ferrante         1784981   Napoli                   -> CPR Ospitaletto loan
+2026-07-16 [P] Cheick Conde             1132551   Venezia                  -> Free agent 
+2026-07-16 [P] Diego Mascardi           1577119   Spezia                   -> Torino €1M
+2026-07-16 [P] Zeki Çelik               867225    Roma                     -> Juventus free
+2026-07-16 [P] Warren Kamanzi           1145717   Toulouse                 -> Malmö FF free
+2026-07-16 [P] Conrado                  850350    Atletico GO              -> Radomiak Radom 
+2026-07-16 [L] Osman Bukari             949859    Widzew Łódź              -> FK Crvena Zvezda loan
+2026-07-16 [P] Jorge Sánchez            727586    PAOK Thessaloniki        -> Atlas €4M
+2026-07-16 [P] Dennis Praet             282012    Free agent               -> KV Mechelen free
+2026-07-16 [P] Pablo Ortiz              1281463   Cordoba                  -> UD Ibiza free
+2026-07-17 [L] Tomás Avilés             1437200   Inter Miami CF           -> O'Higgins loan
+2026-07-17 [P] Joaquín Montecinos       1206710   Deportes Limache         -> Deportes Concepcion 
+2026-07-17 [P] Lucas Riisgaard          1523758   Aarhus Fremad            -> Silkeborg 
+2026-07-17 [P] Michael Carcelén         1134930   Queretaro FC             -> Aucas 
+2026-07-17 [P] Niclas Thiede            1074000   Bochum                   -> ADO Den Haag 
+2026-07-17 [L] Julián Mavilla           1509418   Belgrano                 -> Sarmiento loan
+2026-07-17 [P] Daniel Porozo            497032    CDT Real Oruro           -> Sport Huancayo 
+2026-07-17 [P] Chris Bedia              581132    Union Berlin             -> Al-Nasr SC 
+2026-07-17 [P] Luka Jovanovic           1409118   Adelaide United          -> San Jose Earthquakes €0M
+2026-07-17 [L] Henry Gray               1325762   Ipswich Town             -> Wellington Phoenix loan
+2026-07-17 [P] Timothée Pembélé         1108603   Sunderland               -> Le Havre free
+2026-07-17 [P] Aurèle Amenda            1257648   Eintracht Frankfurt      -> Coventry City €18M
+2026-07-17 [L] Kayky Almeida            1483507   Fluminense               -> Sport Recife loan
+2026-07-17 [P] Rochinha                 554285    Famalicao                -> Casa Pia AC 
+2026-07-17 [P] Amadou Dante             1098066   Arouca                   -> FC Zbrojovka Brno 
+2026-07-17 [P] Benjamin Nyarko          1526519   Slovan Liberec           -> Admira Wacker 
+2026-07-17 [P] Timon Wellenreuther      408986    Feyenoord                -> Wolfsburg €1M
+2026-07-17 [L] Aldin Jakupovic          1480714   Holstein Kiel            -> NK Bravo loan
+2026-07-17 [L] Marvin Akahomen          1469989   Basel                    -> Kriens loan
+2026-07-17 [L] Adrian Luszkiewicz       198058    Modena                   -> Treviso loan
+2026-07-17 [P] Olaus Jair Skarsem       741429    CSKA Sofia               -> Sarpsborg 08 free
+2026-07-17 [L] Martin Hellan            1452369   Brann                    -> Sandefjord loan
+2026-07-17 [P] Ignacio Saavedra         905825    PFC Sochi                -> Rubin Kazan €0M
+2026-07-17 [L] Francesco Di Bartolo     1664258   Palermo                  -> Team Altamura loan
+2026-07-17 [L] Takuya Ogiwara           922834    Urawa Red Diamonds       -> OH Leuven loan
+2026-07-17 [P] Nelson Ishiwatari        1381856   Cerezo Osaka             -> St.Truiden 
+2026-07-17 [P] Leon King                1198690   Rangers                  -> Ayr United free
+2026-07-17 [P] Marius Müller            308237    Wolfsburg                -> Aberdeen 
+2026-07-17 [P] Florent Hanin            210423    Angers                   -> Nea Salamis free
+2026-07-17 [L] Goduine Koyalipou        864154    Lens                     -> Kortrijk loan
+2026-07-17 [P] Mehdi Zare Mohazabieh    1624536   FK Akhmat                -> Persepolis €0M
+2026-07-17 [P] Andrés Chávez            270322    Almagro                  -> Aldosivi free
+2026-07-17 [P] Leonardo Valencia        159558    Deportes Concepcion      -> Deportes Limache free
+2026-07-17 [P] Lovro Zvonarek           1259680   Bayern München           -> Estrela da Amadora €1M
+2026-07-17 [P] Franco Armani            206758    River Plate              -> Atletico Nacional free
+2026-07-17 [P] Allan Wlk                1458521   Olimpia                  -> Lanus €1M
+2026-07-17 [P] Giovanni Pavani          1028612   Remo                     -> Ceara free
+2026-07-17 [P] Nayel Mehssatou          1275688   Standard Liege           -> Kortrijk €0M
+2026-07-17 [P] Niklas Tauer             1175953   Mainz 05                 -> TSV Havelse free
+2026-07-17 [P] Ben Bobzien              1279694   Mainz 05                 -> Dynamo Dresden €1M
+2026-07-17 [P] Tjark Ernst              1336731   Hertha BSC               -> Feyenoord €5M
+2026-07-17 [L] Elias Saad               1285773   Augsburg                 -> Nashville SC loan
+2026-07-17 [P] Aleksei Sutormin         662171    Krylya Sovetov Samara    -> Fakel free
+2026-07-17 [P] Zan Celar                752558    Queens Park Rangers      -> Basel €1M
+2026-07-17 [P] Pau López                532942    Real Betis               -> Free agent free
+2026-07-17 [L] Samuel Kopásek           1287768   Pardubice                -> Lechia Gdańsk loan
+2026-07-17 [P] Enzo Pérez               40148     Argentinos Juniors       -> Deportivo Maipu free
+2026-07-17 [L] Tomás Guiacobini         1636488   Sarmiento                -> Ciudad de Bolivar loan
+2026-07-17 [P] Maxime Estève            1250443   Burnley                  -> RB Leipzig €25M
+2026-07-17 [P] Nicolai Vallys           785052    Brøndby IF               -> FC Tokyo 
+2026-07-17 [P] Manuel Roffo             847982    Instituto                -> Cerro Porteno €0M
+2026-07-17 [P] Álvaro Santos            1645962   Lommel                   -> Atlético Madrileño free
+2026-07-17 [P] Pablo Pagis              1331097   Lorient                  -> Paris FC €15M
+2026-07-17 [L] Sota Nakamura            1714197   Sanfrecce Hiroshima      -> Le Havre loan
+2026-07-17 [P] Gustavo Cazonatti        872394    Sporting Cristal         -> Mirassol 
+2026-07-17 [L] Lorenzo Menegazzo        1667662   Bologna                  -> Lumezzane loan
+2026-07-17 [P] Rayan Touzghar           1669437   Pau                      -> Standard Liege 
+2026-07-17 [P] Luca Gemello             1005792   Perugia                  -> Mantova 
+2026-07-17 [P] Francesco Bardi          181920    Palermo                  -> Mantova €0M
+2026-07-17 [L] Bodin Tomasevic          1659853   Bologna                  -> Mantova loan
+2026-07-17 [L] Gustavo Furtado          1077671   FC Krasnodar             -> NFC Volos loan
+2026-07-17 [P] Ismaïl Seydi             1622055   Rapid Wien               -> Sønderjyske 
+2026-07-17 [L] Harun Ibrahim            1245530   Sharjah Cultural Club    -> Häcken loan
+2026-07-17 [P] Aston Oxborough          789594    Motherwell               -> Dunfermline Athletic 
+2026-07-17 [L] Robin Gosens             518346    Fiorentina               -> Schalke 04 loan
+2026-07-17 [P] Tarik Muharemovic        1250485   Sassuolo                 -> Leeds United €40M
+2026-07-17 [P] Eric Bailly              574200    Free agent               -> Columbus Crew free
+2026-07-17 [P] Pau López                532942    Free agent               -> FC Andorra free
+2026-07-17 [P] Amir Abedzadeh           829109    Castellon                -> Free agent 
+2026-07-17 [P] Grant-Leon Ranos         1280025   Borussia Mönchengladbach -> Tenerife €0M
+2026-07-17 [P] Albert Tolosa            0         Sabadell                 -> CE Europa free
+2026-07-17 [L] Pirosch Fischer          1503301   FC Utrecht               -> Tenerife loan
+2026-07-17 [L] Bartosz Biedrzycki       1577958   Cracovia                 -> Odra loan
+2026-07-17 [L] Hamed Traorè             875672    Marseille                -> Genoa loan
+2026-07-17 [L] Dani Requena             1481503   Villarreal               -> Levante loan
+2026-07-17 [P] Haydar Karatas           1857520   Sakaryaspor              -> Kocaelispor free
+2026-07-17 [P] Kai Wagner               862284    Birmingham City          -> Philadelphia Union €3M
+2026-07-17 [L] Julien Yanda             1696012   Bayern München           -> Eldense loan
+2026-07-17 [L] Ian Hoffmann             1179879   Lech Poznań              -> Mjällby loan
+2026-07-17 [P] Johan Manzambi           1520063   Freiburg                 -> Aston Villa €60M
+2026-07-17 [P] Marcos Leonardo          1174663   Al Hilal                 -> Ajax €19M
+2026-07-17 [P] Pantelis Hatzidiakos     660132    FC København             -> PAOK Thessaloniki €1M
+2026-07-17 [P] Olakunle Olusegun        1109547   FC Krasnodar             -> FC Rostov €0M
+2026-07-17 [L] Francesco Fabri          2082718   Empoli                   -> Grosseto loan
+2026-07-17 [L] Bartosz Glogowski        1515018   Śląsk Wrocław            -> Sandecja Nowy Sacz loan
+2026-07-17 [P] Maximilian Dietz         1281103   Greuther Fürth           -> Górnik Zabrze 
+2026-07-17 [L] Luigi Caccavo            1198009   Bologna                  -> Juve Stabia loan
+2026-07-17 [L] Anthony Partipilo        364107    Parma                    -> Barletta loan
+2026-07-17 [L] Daouda Doumbia           1424882   Deportivo Alaves         -> NK Istra 1961 loan
+2026-07-17 [P] Ertugrul Taskiran        178899    Alanyaspor               -> Erzurumspor FK free
+2026-07-17 [L] James Beadle             1431281   Brighton & Hove Albion   -> Birmingham City loan
+2026-07-17 [P] Hasan Ali Kaldirim       193057    Amed Sportif             -> Free agent 
+2026-07-17 [P] Tarkan Serbest           488191    Amed Sportif             -> Free agent 
+2026-07-17 [P] André Poko               292772    Amed Sportif             -> Free agent 
+2026-07-17 [P] Dilhan Demir             1698687   Amed Sportif             -> Free agent 
+2026-07-17 [P] Peru Rodríguez           1287790   Real Sociedad B          -> CD Mirandes 
+2026-07-17 [P] Halimo                   1689077   Pharco FC                -> Wadi Degla FC free
+2026-07-17 [P] Mohamed Alaa             1689371   El Gouna FC              -> Ceramica Cleopatra free
+2026-07-18 [P] Pierre-Emerick Aubameyang 150565    Marseille                -> Deportivo A Coruña €1M
+2026-07-18 [P] Ilano Silva Timas        1665413   MVV Maastricht           -> Excelsior 
+2026-07-18 [L] Tucker Lepley            1083234   LA Galaxy                -> Oakland Roots loan
+2026-07-18 [P] Calvin Raatsie           1093306   Excelsior                -> FC Dordrecht free
+2026-07-18 [P] Celton Biai              1106567   FC Dordrecht             -> Excelsior free
+2026-07-18 [P] Francisco Calvo          272005    Al-Ettifaq               -> Nacional free
+2026-07-18 [P] Mohammed Al-Ibrahim      0         Al Qadasiya              -> Al Khaleej 
+2026-07-18 [P] Nawaf Al-Sadi            1247402   Al Shabab                -> Al Khaleej free
+2026-07-18 [P] Meshal Al-Mutairi        1527318   Abha                     -> Al Ahli free
+2026-07-18 [L] Suwailem Al-Menhali      1402078   Al Riyadh                -> Al-Zulfi loan
+2026-07-18 [P] Tobias Lauritsen         630278    Free agent               -> Sampdoria free
+2026-07-18 [P] Daryl Dike               1136396   Free agent               -> Orlando City free
+2026-07-18 [P] Mauro Pittón             647245    Union                    -> Tenerife free
+2026-07-18 [P] Terrence Douglas         1033343   FC Eindhoven             -> Juve Stabia free
+2026-07-18 [L] Mansour Sinyan           1047531   KFUM                     -> Klaksvik loan
+2026-07-18 [P] Rasmus Holten            1281389   Brann                    -> Sandefjord 
+2026-07-18 [L] Luca Schirone            1190051   Pineto                   -> Cesena loan
+2026-07-18 [P] Srdjan Hrstic            1290727   Häcken                   -> Altach 
+2026-07-18 [L] Simone Ardizzone         1958869   Catanzaro                -> Pineto loan
+2026-07-18 [L] Viktor Djukanovic        1211802   Hammarby                 -> Györi ETO loan
+2026-07-18 [L] Hlynur Karlsson          1169408   Brommapojkarna           -> Breidablik loan
+2026-07-18 [P] Beau Reus                957356    SK Beveren               -> Heart of Midlothian free
+2026-07-18 [L] Liam McFarlane           1324889   Heart of Midlothian      -> Partick Thistle loan
+2026-07-18 [P] Macaulay Tait            1344688   Heart of Midlothian      -> St. Johnstone 
+2026-07-18 [P] Kelechi Iheanacho        643709    Celtic                   -> Bursaspor free
+2026-07-18 [P] Maik Nawrocki            1053713   Celtic                   -> Lens €2M
+2026-07-18 [L] Radoslaw Majecki         724909    Monaco                   -> Pafos FC loan
+2026-07-18 [P] Joaquín Novillo          1000411   Aldosivi                 -> Quilmes free
+2026-07-18 [L] Mauro Luna Diale         1034344   FK Akhmat                -> Union loan
+2026-07-18 [P] Álvaro Montero           498457    Millonarios              -> Velez Sarsfield €1M
+2026-07-18 [P] Álvaro Montero           498457    Velez Sarsfield          -> Boca Juniors €3M
+2026-07-18 [P] Sebastián Villa          859319    Independiente Rivadavia  -> Boca Juniors €5M
+2026-07-18 [L] Julián Fernández         453412    Palestino                -> Atletico Tucuman loan
+2026-07-18 [P] Kevin Gutiérrez          905265    Necaxa                   -> Argentinos Juniors 
+2026-07-18 [P] Newton                   1578668   Botafogo RJ              -> Sao Paulo €3M
+2026-07-18 [L] Matheus Cunha            1320958   Cruzeiro                 -> Internacional loan
+2026-07-18 [L] Nelson Weiper            1367614   Mainz 05                 -> Sturm Graz loan
+2026-07-18 [P] Reigan Heskey            1665352   Manchester City          -> 1. FC Köln €2M
+2026-07-18 [L] Eiad El Askalny          1596113   FC Rostov                -> Pyramids FC loan
+2026-07-18 [P] Egor Ushakov             1353026   CSKA Moscow              -> Free agent free
+2026-07-18 [P] Daniel Ruiz              1266136   CSKA Moscow              -> Free agent free
+2026-07-18 [L] Kirill Stepanov          1524301   Baltika                  -> Volga Ulyanovsk loan
+2026-07-18 [P] Yannik Engelhardt        1269497   Como                     -> Freiburg €7M
+2026-07-18 [P] Yeimar Mosquera          1627205   Aston Villa              -> Vitoria de Guimaraes €0M
+2026-07-18 [P] Erce Kardesler           614313    Amed Sportif             -> Mardinspor free
+2026-07-18 [P] Joel Roca                1326043   Girona                   -> Olympiacos €7M
+2026-07-18 [P] Raúl Lizoain             477498    Free agent               -> Granada free
+2026-07-18 [P] Afonso Duarte            1530312   Braga                    -> Santa Clara 
+2026-07-18 [L] Erencan Yardimci         1081707   Hoffenheim               -> Kaiserslautern loan
+2026-07-18 [P] Joel Jorquera            1226791   Moreirense               -> Real Murcia 
+2026-07-18 [P] Jorge Meireles           1404942   Estrela da Amadora       -> AVS Futebol SAD 
+2026-07-18 [P] Emmanuel Yeboah          1381566   Brøndby IF               -> Corvinul free
+2026-07-18 [L] Kotaro Uchino            1423767   Brøndby IF               -> Mito Hollyhock loan
+2026-07-18 [P] Dmitri Vorobyov          777063    Lokomotiv Moscow         -> FC Krasnodar €7M
+2026-07-18 [P] Samy Jr. Merheg          1612706   Braga                    -> Alverca 
+2026-07-18 [P] Luca Ravanelli           844954    Monza                    -> Sampdoria 
+2026-07-18 [L] Dmytro Ivanisenya        802847    Krylya Sovetov Samara    -> Tekstilshchik loan
+2026-07-18 [P] Mërgim Vojvoda           560945    Como                     -> Udinese €1M
+2026-07-18 [P] Cenk Özkacar             1107951   Valencia                 -> Trabzonspor €1M
+2026-07-18 [L] Rodrigo Rêgo             1585687   Brighton & Hove Albion   -> Castellon loan
+2026-07-18 [L] Niklas Niehoff           1357426   Holstein Kiel            -> Altach loan
+2026-07-18 [P] Noël Aséko               1596359   Bayern München           -> Eintracht Frankfurt €12M
+2026-07-18 [L] Sebastiano Desplanches   1280112   Palermo                  -> Frosinone loan
+2026-07-18 [L] Mattia Fortin            1289946   Lens                     -> Palermo loan
+2026-07-18 [L] Filip Marchwinski        1003329   Lecce                    -> Cracovia loan
+2026-07-18 [L] Adama Bojang             1478147   Reims                    -> Sporting Charleroi loan
+2026-07-18 [L] Malcolm Fry              1403414   New England Revolution   -> Lexington free
+2026-07-18 [P] Orbelín Pineda           559986    AEK Athens               -> Monterrey €8M
+2026-07-18 [P] Trincão                  732282    Sporting CP              -> Al Ahli €39M
+2026-07-18 [P] Karim El Deeb            847501    Al Ittihad Alexandria    -> Petrojet free
+2026-07-18 [P] Khaled Awad              1689054   Tala'ea El Gaish         -> Pyramids FC free
+2026-07-18 [L] Agustín Urzi             989371    FC Juarez                -> Levadiakos loan
+2026-07-18 [L] Ali El Gabry             1510382   Ceramica Cleopatra       -> Al Ittihad Alexandria free
+2026-07-18 [L] Lucas Sibelius           1311389   Västerås SK              -> Varbergs BoIS FC loan
+2026-07-18 [P] Tanguy Nianzou           1070617   Sevilla                  -> Lille free
+2026-07-18 [P] Franciszek Franczak      1553462   St. Johnstone            -> Odra free
+2026-07-18 [L] Amir Richardson          1255860   Fiorentina               -> Le Havre loan
+2026-07-18 [P] Wesley Delgado           1816326   Al Fateh FC              -> Al-Nasr SC 
+2026-07-18 [L] Filip Baniowski          1736974   Wisła Kraków             -> NKP Podhale loan
+2026-07-18 [L] Jakub Kowalski           1756118   Korona Kielce            -> Arka Gdynia loan
+2026-07-18 [P] Dimitrios Kourbelis      260750    Al Khaleej               -> Asteras Tripolis free
+2026-07-18 [L] Kryspin Szczesniak       1138434   Górnik Zabrze            -> Radomiak Radom loan
+2026-07-18 [L] Mahir Emreli             464251    Kaiserslautern           -> Raków Częstochowa loan
+2026-07-18 [P] Koray Günter             331534    Al Akhdoud               -> Al Ittihad Kalba free
+2026-07-18 [P] Turki Al Jaadi           1549835   Al Arabi                 -> Al-Taawoun free
+2026-07-18 [P] Hattan Sultan Bahbri     289745    Al Kholood               -> Al-Diraiyah free
+2026-07-18 [P] Ousama Siddiki           1183467   Antequera                -> Al Ittihad Alexandria free
+2026-07-19 [P] Rakan Kaabi              1327115   Al-Fayha                 -> Al Ittihad free
+2026-07-19 [P] Saeed Al-Rubaie          816298    Al Akhdoud               -> Al-Diraiyah free
+2026-07-19 [P] Yoann Barbet             512722    Al Riyadh                -> Al-Ula free
+2026-07-19 [P] Abdullah Al Qahtani      1039533   Damac FC                 -> Al-Fayha free
+2026-07-19 [P] Abdulrahman Al-Obaid     1791595   Al Ittihad               -> Al Kholood 
+2026-07-19 [P] Abdulrahman Hindi        1920085   Al-Orobah FC             -> Al-Taawoun 
+2026-07-19 [P] Mohammed Al Owais        535669    Al-Ula                   -> Al Hilal 
+2026-07-19 [L] Jonathan Herrera         623898    Deportivo Riestra        -> Sarmiento loan
+2026-07-19 [L] Dylan Escobar            1355290   Coquimbo Unido           -> Deportes Limache loan
+2026-07-19 [P] Hugo Moura               1028036   Vasco da Gama            -> Al-Fayha 
+2026-07-19 [P] Pirosch Fischer          1503301   FC Zürich                -> Wil 
+2026-07-19 [P] Sidiki Camara            1336808   Servette                 -> Etoile Carouge 
+2026-07-19 [L] Hugo Andersson Mella     1612928   Sirius                   -> IFK Värnamo loan
+2026-07-19 [P] Vasili Cherov            765174    Fakel                    -> Free agent free
+2026-07-19 [P] Wesley Saïd              445856    Lens                     -> Al-Shamal free
+2026-07-19 [P] Nathan Fogaça            951629    Mirassol                 -> Fortaleza 
+2026-07-19 [P] Maksim Turishchev        1233647   FC Rostov                -> Fakel €0M
+2026-07-19 [P] Show                     859042    Maccabi Haifa            -> Kocaelispor free
+2026-07-19 [P] Nichita Motpan           1283042   Fakel                    -> Free agent free
+2026-07-19 [P] Elliot Watt              959435    Motherwell               -> Samsunspor 
+2026-07-19 [P] Oleg Reabciuk            824634    Spartak Moscow           -> Free agent free
+2026-07-19 [P] Théo Bongonda            466132    Spartak Moscow           -> Free agent free
+2026-07-19 [P] Anton Zabolotny          188548    Spartak Moscow           -> Free agent free
+2026-07-19 [P] Arshak Koryan            518294    Rodina                   -> Free agent free
+2026-07-19 [P] Patrick Beach            1335765   Melbourne City FC        -> Troyes 
+2026-07-19 [L] Tommaso Pittino          1589694   Genoa                    -> Livorno loan
+2026-07-19 [P] Yasin Eratilla           1794432   Kasımpaşa                -> Sakaryaspor 
+2026-07-19 [L] Mansour Samb             1912128   AC Horsens               -> Vendee La Roche sur Yon loan
+2026-07-19 [L] Juan Cruz                940608    Leganes                  -> Malaga loan
+2026-07-19 [L] Aleksandr Tarasov        1786182   FC Rostov                -> Spartak Kostroma loan
+2026-07-19 [P] Hidajet Hankic           351362    FC Rostov                -> Free agent free
+2026-07-19 [P] Khoren Bayramyan         270209    FC Rostov                -> Ural free
+2026-07-19 [P] Evgeny Chernov           259593    FC Rostov                -> Free agent free
+2026-07-19 [P] Christos Almyras         1697410   Asteras Tripolis         -> Djurgården €1M
+2026-07-19 [P] Karlan Grant             586467    West Bromwich Albion     -> Charlton Athletic free
+2026-07-19 [P] Tayyip Talha Sanuç       820537    Beşiktaş                 -> Rizespor 
+2026-07-19 [P] Adam Carlén              1076684   Excelsior                -> Artis Brno 
+2026-07-19 [P] Stepan Melnikov          1233586   FC Rostov                -> Free agent free
+2026-07-19 [P] Danila Vorobyev          1268247   Lokomotiv Moscow         -> FC Krasnodar €7M
+2026-07-19 [P] Mehdi Zare Mohazabieh    1624536   FK Akhmat                -> Persepolis €0M
+2026-07-19 [P] Rick van Drongelen       690302    Samsunspor               -> Panathinaikos €5M
+2026-07-19 [L] Ahmed Kutucu             887139    Galatasaray              -> Rizespor loan
+2026-07-19 [P] Aleksandr Lomovitski     639556    Rubin Kazan              -> Free agent free
+2026-07-19 [L] Dudu                     1641261   Aris Thessaloniki        -> FC Akron Tolyatti loan
+2026-07-19 [P] Alexander Zotov          159864    Rubin Kazan              -> Free agent free
+2026-07-19 [P] Soufiane Benjdida        1334889   MAS Fes                  -> Al Ahly SC €2M
+2026-07-19 [L] Nikita Vassiljev         1637544   Rubin Kazan              -> Neftekhimik loan
+2026-07-19 [P] Stian Kristiansen        843275    Sandefjord               -> Lillestrøm 
+2026-07-19 [L] Mirko Elia               2090665   Fiorentina               -> Bari loan
+2026-07-20 [P] Lukas Vorlicky           1420240   Slavia Prague            -> Slovacko €0M
+2026-07-20 [L] Xaver Kiefersauer        1975563   1. FC Nürnberg           -> Würzburger Kickers loan
+2026-07-20 [P] Xaver Kiefersauer        1975563   1860 München             -> 1. FC Nürnberg €0M
+2026-07-20 [P] Gary Oliver              469523    Falkirk                  -> Montrose free
+2026-07-20 [P] Tino Casali              521311    RW Essen                 -> Bochum free
+2026-07-20 [P] Karol Mets               462863    St. Pauli                -> Bochum free
+2026-07-20 [P] Agustín Almendra         935060    Necaxa                   -> Cerro Porteno free
+2026-07-20 [L] Emmanouil Faitakis       1667998   OFI Crete                -> Athens Kallithea FC loan
+2026-07-20 [P] Diamantis Chouchoumis    391042    Kifisia FC               -> Athens Kallithea FC free
+2026-07-20 [P] Yassin Sbai              1729838   Lugano                   -> Zeleznicar Pancevo free
+2026-07-20 [P] Emmanuel Iyoha           687306    Fortuna Düsseldorf       -> Magdeburg free
+2026-07-20 [P] Luan Campos              1458814   Otelul Galati            -> Hapoel Ramat Gan free
+2026-07-20 [P] Yanis Benchaouch         1815197   Monaco                   -> Red Star free
+2026-07-20 [P] Lorenzo Busato           1433021   Venezia                  -> Sandonà free
+2026-07-20 [P] Carlos Rodriguez         1721197   Real Madrid C            -> Iraklis free
+2026-07-20 [L] Kirill Isaev             1580702   Dinamo Moscow            -> FK Leningradets Leningradskaya Oblast loan
+2026-07-20 [P] Sebastián González       1273568   Shabab Al-Ahli Dubai FC  -> LDU de Quito 
+2026-07-20 [P] Vinicius Rangel          1477838   Al-Dhafra                -> Al-Fujairah SC 
+2026-07-20 [P] Andrin Hunziker          1233720   Basel                    -> St. Gallen 
+2026-07-20 [L] Martin Ryzek             1637664   Slovan Liberec           -> MFK Skalica loan
+2026-07-20 [L] Juri Kirchmayr           1663234   Grazer AK                -> FC Wacker Innsbruck loan
+2026-07-20 [P] Emanuel Aiwu             919916    Sturm Graz               -> Apollon Limassol 
+2026-07-20 [L] Nils Ramming             1579479   Brighton & Hove Albion   -> Rochdale loan
+2026-07-20 [P] Antonín Vanícek          840955    SK Dynamo Ceske Budejovi -> FC Zbrojovka Brno 
+2026-07-20 [L] Lukás Hruska             1797842   Hradec Kralove           -> FC Silon Taborsko loan
+2026-07-20 [P] Ge Nicaise               1994561   Super Nova               -> Artis Brno 
+2026-07-20 [L] Anas Tajaouart           1607323   Anderlecht               -> RAAL La Louviere loan
+2026-07-20 [P] Agustin Urrutia          2088361   Ilirija                  -> Hartberg 
+2026-07-20 [P] Tyler Dogan              1607481   Holstein Kiel            -> TSV Steinbach Haiger 
+2026-07-20 [P] Antoine Lejoly           688967    ADO Den Haag             -> Eupen free
+2026-07-20 [P] Leo Stulac               239589    NK Istra 1961            -> Koper free
+2026-07-20 [P] Andrés Colorado          1031648   Necaxa                   -> Once Caldas 
+2026-07-20 [P] Diego Alejandro Novoa    72994     Millonarios              -> Bucaramanga free
+2026-07-20 [P] Kerr Smith               1215944   Aston Villa              -> Inverness CT free
+2026-07-20 [P] Víctor Cantillo          496760    Free agent               -> Bucaramanga free
+2026-07-20 [P] Ryotaro Araki            1134524   Kashima Antlers          -> St.Truiden 
+2026-07-20 [P] Mathieu Cafaro           683476    Paris FC                 -> Nantes free
+2026-07-20 [P] Matheus Felipe           1317541   Free agent               -> Remo free
+2026-07-20 [P] Pawel Kosiba             169492    Reggiana                 -> Wisła Kraków free
+2026-07-20 [P] Christ Inao Oulaï        1666494   Trabzonspor              -> Fiorentina €26M
+2026-07-20 [P] Billy Mitchell           1045656   Millwall                 -> Sheffield Wednesday free
+2026-07-20 [P] Gabriel Risso            857527    Newell's Old Boys        -> Colon free
+2026-07-20 [L] Cristian Jaime           1826548   River Plate              -> Club Atletico Penarol loan
+2026-07-20 [P] Gustavo Torres           930222    Free agent               -> Cucuta free
+2026-07-20 [L] Bruno Cabrera            1112939   Lanus                    -> San Martin de Tucuman loan
+2026-07-20 [P] Hossam Abdelmaguid       1384425   Zamalek SC               -> Ludogorets Razgrad €1M
+2026-07-20 [P] Abdelrahman Rashdan      1689200   Pharco FC                -> Ghazl Al Mahalla free
+2026-07-20 [P] Carlos Quintana          113615    Rosario Central          -> Deportivo Riestra free
+2026-07-20 [P] Cardoso Varela           1646517   Dinamo Zagreb            -> FC Porto free
+2026-07-20 [P] Sean Mackie              662730    Falkirk                  -> Arbroath free
+2026-07-20 [P] Joris van Overeem        422121    SC Heerenveen            -> FC Utrecht €0M
+2026-07-20 [P] João Gomes               1174672   Wolverhampton Wanderers  -> Aston Villa €40M
+2026-07-20 [P] Hamdi Akujobi            1074809   Excelsior                -> Free agent free
+2026-07-20 [P] Mike van Duinen          259375    Excelsior                -> Free agent free
+2026-07-20 [P] David Garden             1406446   Quick Boys               -> Excelsior 
+2026-07-20 [L] Amine El Ouazzani        1123505   Braga                    -> Angers loan
+2026-07-20 [P] Talles                   1118189   Free agent               -> Hapoel Ironi Kiryat Shmona 
+2026-07-20 [P] Emre Mor                 683333    Free agent               -> NEC Nijmegen free
+2026-07-20 [P] Guilherme Fernandes      1532197   Free agent               -> Cordoba free
+2026-07-20 [L] Diego Conde              1022354   Villarreal               -> Real Betis loan
+2026-07-20 [P] Edwin Mosquera           1137458   Santa Fe                 -> Free agent free
+2026-07-20 [L] Jhon Meléndez            1333447   Santa Fe                 -> Aguilas Doradas free
+2026-07-20 [P] Jhomier Guerrero         1353655   Junior FC                -> Millonarios €0M
+2026-07-20 [L] Kevin Cataño             1886618   Atletico Nacional        -> Internacional de Bogota free
+2026-07-20 [P] Ramiz Zerrouki           1074967   Feyenoord                -> FC Twente €2M
+2026-07-20 [P] Przemyslaw Tyton         68813     FC Twente                -> Free agent free
+2026-07-20 [P] Carlo Sickinger          909433    Elversberg               -> Darmstadt free
+2026-07-20 [L] Gonzalo Requena          1453094   Instituto                -> Tigre loan
+2026-07-20 [P] Juan Álvarez             848153    Gimnasia Mendoza         -> San Lorenzo free
+2026-07-20 [L] Trivante Stewart         1420378   Maccabi Haifa            -> Gaziantep FK loan
+2026-07-20 [L] Christopher Ramos        891059    Botafogo RJ              -> Real Oviedo loan
+2026-07-20 [P] Rahim Alhassane          1333066   Real Oviedo              -> Bologna €3M
+2026-07-20 [P] Kasper Junker            437889    Buriram United           -> Randers FC 
+2026-07-20 [P] Shandre Campbell         1599319   Club Brugge              -> Kortrijk 
+2026-07-20 [P] Gabriel Batista          846023    Santa Clara              -> Botafogo RJ 
+2026-07-20 [P] In-Beom Hwang            623698    Feyenoord                -> FC Porto €4M
+2026-07-20 [P] André Gomes              1374467   Benfica B                -> Casa Pia AC 
+2026-07-20 [P] Eduar Arízalas           1622462   Cucuta                   -> Aguilas Doradas free
+2026-07-20 [P] Johan Caicedo            1433113   Deportivo Pasto          -> San Luis free
+2026-07-21 [P] Raul Balbarau            1286899   Petrolul Ploiesti        -> Bnei Sakhnin free
+2026-07-21 [P] Niv Livnat               1407569   Kiryat Yam               -> Bnei Sakhnin free
+2026-07-21 [P] Saná                     1120633   Hapoel Haifa             -> Bnei Sakhnin free
+2026-07-21 [P] Iyad Abu Abaid           624072    Maccabi Bnei Raina       -> Bnei Sakhnin free
+2026-07-21 [P] Modestas Vorobjovas      463746    Istanbulspor             -> Bnei Sakhnin free
+2026-07-21 [L] Samir Farhud             1212176   Hapoel Beer Sheva        -> Ironi Tiberias loan
+2026-07-21 [P] Qays Ghanem              879645    FC Sheriff               -> Ironi Tiberias free
+2026-07-21 [P] Cristian Martínez        727101    Hapoel Ironi Kiryat Shmo -> Slovan Bratislava €0M
+2026-07-21 [P] Franck Rivollier         1283033   Maccabi Petach Tikva     -> Hapoel Petah Tikva free
+2026-07-21 [P] Lucas Monzón             1295307   Racing                   -> Botafogo RJ €0M
+2026-07-21 [P] Warleson                 810487    Cercle Brugge            -> Botafogo RJ €0M
+2026-07-21 [L] Zé Ivaldo                769769    Santos FC                -> Remo loan
+2026-07-21 [L] Jhon Durán               1088066   Al Nassr FC              -> Benfica loan
+2026-07-21 [P] Lorent Tolaj             1113899   Plymouth Argyle          -> Bristol City €4M
+2026-07-21 [P] Matt Doherty             239920    Wolverhampton Wanderers  -> Sheffield United free
+2026-07-21 [L] Elio Rufener             1486533   Young Boys               -> Kriens loan
+2026-07-21 [P] Darío Benavides          1405574   RAAL La Louviere         -> Dinamo Bucuresti 
+2026-07-21 [L] Majid Surour             625159    Sharjah Cultural Club    -> United FC loan
+2026-07-21 [P] Gbemi Arubi              1344257   Dundalk                  -> Burton Albion 
+2026-07-21 [P] Dylan Williams           1211647   Burton Albion            -> Motherwell 
+2026-07-21 [L] Mateusz Kowalski         1367997   Parma                    -> Dolomiti loan
+2026-07-21 [P] Juan Salomoni            1386009   Free agent               -> Union La Calera free
+2026-07-21 [P] Alexei Rojas             1477870   Arsenal                  -> Penafiel free
+2026-07-21 [P] Agon Rexhaj              1692874   Basel                    -> Wil free
+2026-07-21 [P] Paul Bassène             1230607   RSB Berkane              -> Al Karma free
+2026-07-21 [P] Andrea Cistana           604579    Cesena                   -> Free agent 
+2026-07-21 [P] Jhon Córdoba             1390351   Millonarios              -> Instituto €0M
+2026-07-21 [P] Antonín Rusek            805256    Sigma Olomouc            -> Jablonec €0M
+2026-07-21 [L] Biro                     1353469   Sharjah Cultural Club    -> Al Ittihad Kalba loan
+2026-07-21 [P] Marwan Fahad Hamza       959026    Shabab Al-Ahli Dubai FC  -> Al Ittihad Kalba 
+2026-07-21 [P] Tomás Schánelec          1292781   Sparta Prague            -> Dukla Praha 
+2026-07-21 [P] Markus Gustav Jensen     1367941   OB                       -> Nacional 
+2026-07-21 [P] Valentino Coveri         1668234   Cesena                   -> Forlì 
+2026-07-21 [P] Felipe Vizeu             750057    Sporting Cristal         -> Free agent 
+2026-07-21 [P] Luca Sirch               1097361   Kaiserslautern           -> Elversberg free
+2026-07-21 [P] Diego González           1112709   AD Ceuta FC              -> Real Zaragoza free
+2026-07-21 [P] Eddie Beach              1421811   Kilmarnock               -> Shelbourne 
+2026-07-21 [L] Théo De Percin           1218841   Auxerre                  -> SC Bastia loan
+2026-07-21 [P] Ariel Gamarra            1613475   Argentinos Juniors       -> Cerro Porteno €0M
+2026-07-21 [L] Felipe Negrucci          1481530   Sao Paulo                -> Athletic Club loan
+2026-07-21 [P] Yarlen                   1622637   Botafogo RJ              -> Athletic Club free
+2026-07-21 [L] Shiloh Zand              1522438   Feyenoord                -> Fortuna Sittard loan
+2026-07-21 [P] Alen Halilovic           395154    Fortuna Sittard          -> Free agent free
+2026-07-21 [P] Daley Sinkgraven         514806    Fortuna Sittard          -> Free agent free
+2026-07-21 [P] Luka Tunjic              1665130   Fortuna Sittard          -> Free agent free
+2026-07-21 [P] Alejo Sarco              1617224   Bayer Leverkusen         -> Sporting Gijon 
+2026-07-21 [P] Hasip Korkmazyürek       1681826   Fortuna Sittard          -> Free agent free
+2026-07-21 [P] Siebe Wylin              1301657   Club NXT                 -> Fortuna Sittard free
+2026-07-21 [P] Nick de Groot            1285136   FC Den Bosch             -> Fortuna Sittard €0M
+2026-07-21 [P] David Ospina             50065     Atletico Nacional        -> Atlante free
+2026-07-21 [L] Yannick Eduardo          1554760   Hoffenheim               -> ADO Den Haag loan
+2026-07-21 [P] Lassine Sinayoko         923196    Auxerre                  -> Paris FC €8M
+2026-07-21 [P] Derensili Sanches Fernandes 1180295   Excelsior                -> Huddersfield Town €1M
+2026-07-21 [P] Tyrick Bodak             1240833   Telstar                  -> Free agent free
+2026-07-21 [L] Emirhan Demircan         1579433   FC Utrecht               -> Telstar loan
+2026-07-21 [P] Tariq Lamptey            955139    Fiorentina               -> Queens Park Rangers free
+2026-07-21 [P] Mateja Milovanovic       1389244   SC Heerenveen            -> Partizan Beograd free
+2026-07-21 [L] Diego Gómez              1544555   Deportivo A Coruña       -> SD Huesca loan
+2026-07-21 [P] Karoy Anderson           1422736   Charlton Athletic        -> Blackpool 
+2026-07-21 [P] Toni Jonker              1599257   Cambuur                  -> VV Noordbergum 
+2026-07-21 [P] Yaya Bojang              1604179   OB                       -> Alverca 
+2026-07-21 [P] Edgar Elizalde           883695    Millonarios              -> Defensor Sporting 
+2026-07-21 [L] Jeremy Agbonifo          1624587   Lens                     -> Jagiellonia Białystok loan
+2026-07-21 [P] Kayne van Oevelen        1348497   FC Volendam              -> Ipswich Town €4M
+2026-07-21 [P] Ginés Sorroche           1418083   Real Betis               -> Getafe free
+2026-07-21 [L] Hugo Sotelo              1254218   Celta Vigo               -> Levante loan
+2026-07-21 [P] Javi Galán               695062    Free agent               -> Celta Vigo free
+2026-07-21 [P] Mame Alassane Niang      1689485   Hamarkameratene          -> FC Porto B €1M
+2026-07-21 [P] Mahmoud Abou-Gouda       1689363   Al Mokawloon Al Arab     -> Abo Qir Fertilizers 
+2026-07-21 [P] Walid Mostafa            1360164   Pharco FC                -> Modern Sport FC free
+2026-07-21 [P] Angelo Gattermayer       1257631   Wolfsberger AC           -> Hartberg free
+2026-07-21 [L] Danilo Al Saed           1231588   Häcken                   -> Hamarkameratene loan
+2026-07-21 [P] Gustavo Silva            816000    Jubilo Iwata             -> Mirassol free
+2026-07-21 [P] Omri Glazer              766812    FK Crvena Zvezda         -> Maccabi Haifa €0M
+2026-07-21 [P] Alessandro Bianco        1228840   Fiorentina               -> Modena €1M
+2026-07-21 [P] Filippo Distefano        1315426   Fiorentina               -> Empoli €0M
+2026-07-21 [P] Virgil Misidjan          253120    NEC Nijmegen             -> Free agent free
+2026-07-21 [P] Simon Simoni             1374278   Eintracht Frankfurt      -> Luzern 
+2026-07-21 [L] Ludvig Richtnér          1611427   Elfsborg                 -> IFK Mariehamn loan
+2026-07-21 [P] Lewis O'Donnell          1323279   Dundee United            -> Stenhousemuir free
+2026-07-21 [P] Eric Ramírez             624411    Huracan                  -> Union free
+2026-07-21 [P] Ignacio Malcorra         362229    Independiente            -> Union free
+2026-07-21 [P] Kyogo Furuhashi          826089    Birmingham City          -> LA Galaxy €1M
+2026-07-21 [P] Nicolás Figueroa         1134100   FBC Melgar               -> Free agent 
+2026-07-21 [P] Guillermo Viscarra       493691    Alianza Lima             -> Free agent 
+2026-07-21 [P] Bless Aniekan            0         AD Ceuta FC              -> Real Avila free
+2026-07-21 [P] Alexander Buksa          1042842   Górnik Zabrze            -> Stal Rzeszow free
+2026-07-21 [L] Daniel Fila              1203212   Venezia                  -> Avellino loan
+2026-07-21 [L] Borna Knezovic           1668210   Sassuolo                 -> Casarano loan
+2026-07-21 [L] Marco Delle Monache      1436375   Lecce                    -> Pineto loan
+2026-07-21 [P] Guillermo Maripán        402830    Free agent               -> Internacional free
+2026-07-21 [P] Abdul Fatawu             1265626   Leicester City           -> Ipswich Town €23M
+2026-07-21 [L] Carlos Dotor             1209421   Celta Vigo               -> Malaga loan
+2026-07-21 [P] Óscar Zambrano           1356264   Maribor                  -> Hull City 
+2026-07-22 [L] Callum Perry             1692893   Coventry City            -> Cambridge United loan
+2026-07-22 [P] Benhur Keser             880220    Rizespor                 -> Free agent 
+2026-07-22 [L] Manuel Sánchez           1052330   Celta Vigo               -> Levante loan
+2026-07-22 [P] Rodrigo Pérez            1436129   Olimpia                  -> Union La Calera free
+2026-07-22 [L] Gustavo Charrupí         1515584   Bucaramanga              -> Everton CD loan
+2026-07-22 [L] Davíd Aronsson           1664205   Vikingur Reykjavik       -> Lyngby loan
+2026-07-22 [L] Leonardo Sequeira        795724    Huracan                  -> Central Cordoba de Santiago loan
+2026-07-22 [P] Alan Soñora              1074074   Cerro Porteno            -> Newell's Old Boys free
+2026-07-22 [P] Kaiky Naves              1320170   Palmeiras                -> Necaxa €2M
+2026-07-22 [P] Morgan Rogers            883080    Aston Villa              -> Chelsea €137M
+2026-07-22 [P] Toni Kolega              1379330   Lincoln Red Imps FC      -> Rudes free
+2026-07-22 [P] Stjepan Plazonja         1068926   Asia Talas               -> Rudes 
+2026-07-22 [P] Jorge Soto               1393528   America de Cali          -> Aguilas Doradas free
+2026-07-22 [P] Stjepan Loncar           763305    NK Istra 1961            -> Persija Jakarta €0M
+2026-07-22 [L] Scott Constable          1536462   Dundee United            -> Arbroath loan
+2026-07-22 [L] Jesús Barea              1735519   Real Salt Lake           -> Athletic Club Boise loan
+2026-07-22 [L] Santiago Silva           1409897   Huachipato               -> Nacional loan
+2026-07-22 [L] Gastão                   1722708   Estrela da Amadora       -> Farense loan
+2026-07-22 [P] Omar Jebali              1391325   Start                    -> Moss 
+2026-07-22 [P] Ahmad Faqa               1308893   AIK                      -> Degerfors 
+2026-07-22 [P] Per Kristian Bråtveit    360107    Aberdeen                 -> FK Haugesund free
+2026-07-22 [L] Giovanni Perini          1752249   Cesena                   -> Forlì loan
+2026-07-22 [P] Donovan Léon             279866    Auxerre                  -> Abha free
+2026-07-22 [P] Malang Sarr              782502    Lens                     -> Neom SC free
+2026-07-22 [L] Lautaro Díaz             1111937   Cruzeiro                 -> Racing Club loan
+2026-07-22 [L] Michal Surzyn            922792    Pardubice                -> SK Prostejov loan
+2026-07-22 [L] Marek Halda              1685486   Pardubice                -> SK Prostejov loan
+2026-07-22 [L] Nathan Fernandes         1482047   Botafogo RJ              -> Ludogorets Razgrad loan
+2026-07-22 [P] Patson Daka              644459    Free agent               -> Hamburger SV free
+2026-07-22 [L] Breno                    1664006   Vitoria                  -> Torreense loan
+2026-07-22 [L] Filippo Carbone          1729333   Genoa                    -> Ostiamare loan
+2026-07-22 [L] Samuel Pikolon           1484724   Slavia Prague            -> FC Vlasim loan
+2026-07-22 [L] Álex Sala                1280198   Lecce                    -> Mallorca loan
+2026-07-22 [P] Marek Naskos             1463310   Slavia Prague            -> FC Vlasim 
+2026-07-22 [P] Darlan Mendes            1050409   Santa Clara              -> Buriram United free
+2026-07-22 [P] Fabio Ferraro            1307394   FCV Dender EH            -> Westerlo €0M
+2026-07-22 [P] Nicolás Valencia         1818963   Chico FC                 -> Union Espanola free
+2026-07-22 [P] Ivan Ignatyev            863892    FC Orenburg              -> Free agent free
+2026-07-22 [P] Nichita Motpan           1283042   Fakel                    -> SKA-Khabarovsk free
+2026-07-22 [L] Eser Gürbüz              1708116   SC Heerenveen            -> Willem II loan
+2026-07-22 [L] Darwin Machís            289278    America de Cali          -> Carabobo FC loan
+2026-07-22 [L] Franco Ratotti           1757412   Union                    -> Union Espanola loan
+2026-07-22 [P] Odysseas Lymperakis      1085034   Kalamata                 -> Zakynthos APS free
+2026-07-22 [L] Nicolás Díaz             841170    Tijuana                  -> Alianza Lima loan
+2026-07-22 [P] Liam Hermesh             1612420   Maccabi Haifa            -> Grazer AK free
+2026-07-22 [P] Alek Álvarez             1178451   Toluca                   -> Cancun FC free
+2026-07-22 [P] Osman Hadzikic           488207    Slaven                   -> Budapest Honved free
+2026-07-22 [P] Benjamin Mbunga Kimpioka 961305    Sivasspor                -> Asteras Tripolis free
+2026-07-22 [P] Francesco Reita          1897331   Monza                    -> Catanzaro 
+2026-07-22 [P] Leandro Frroku           1363157   Asteras Tripolis         -> Vora free
+2026-07-22 [P] Christian Cirillo        1755422   Juve Stabia              -> ASD Sporting Ponte 2019 free
+2026-07-22 [P] Elian Demirovic          949732    Juve Stabia              -> Arka Gdynia free
+2026-07-22 [L] Tommaso Casalino         1844128   Sampdoria                -> Pianese loan
+2026-07-22 [L] Giulio Manetti           1668232   Cesena                   -> Lecco loan
+2026-07-22 [P] Filippo Guccione         1078871   Arezzo                   -> Pescara 
+2026-07-22 [P] Karol Linetty            361403    Kocaelispor              -> Free agent 
+2026-07-22 [P] Will Lankshear           1417094   Tottenham Hotspur        -> Middlesbrough €11M
+2026-07-22 [P] Antonín Barák            451966    Fiorentina               -> APOEL Nicosia 
+2026-07-22 [P] Santeri Väänänen         942032    Rosenborg                -> Karlsruher SC €0M
+2026-07-22 [P] Saad Agouzoul            938282    Auxerre                  -> Sochaux free
+2026-07-22 [L] Andrea Oliveri           1305760   Atalanta                 -> Ascoli loan
+2026-07-22 [L] Boston Billups           1786667   Eldense                  -> Cartagena loan
+2026-07-22 [P] Alban Lafont             698273    Nantes                   -> Amed Sportif €1M
+2026-07-22 [P] Tom Dele-Bashiru         872963    Gençlerbirliği           -> Aris Thessaloniki €1M
+2026-07-22 [P] Filip Bilbija            1073007   Paderborn                -> Derby County free
+2026-07-22 [P] Issa Diop                696443    Fulham                   -> Ipswich Town €10M
+2026-07-22 [P] Jorge Emanuel Broun      113696    Rosario Central          -> Universidad de Concepcion free
+2026-07-22 [L] Samuel Beltrán           1662132   Rosario Central          -> Luqueno loan
+2026-07-22 [P] Tomás Escalante          1128952   Defensa y Justicia       -> Plaza Colonia free
+2026-07-22 [P] Domingos Andrade         1312637   FC Porto B               -> Botafogo RJ 
+2026-07-22 [P] Marko Soldo              1508344   Dinamo Zagreb            -> Sigma Olomouc €2M
+2026-07-22 [P] Alejandro Mestanza       1477850   Getafe                   -> Académico Viseu FC 
+2026-07-22 [P] Gil Juanpe               1364363   Rayo Vallecano           -> CD Mostoles free
+2026-07-22 [P] Pol Tristán              1559812   Espanyol                 -> Free agent 
+2026-07-22 [P] Maximilian Wöber         701149    Leeds United             -> Schalke 04 free
+2026-07-22 [P] Alexandru Matan          748383    Panetolikos              -> St. Louis City free
+2026-07-22 [P] Casemiro                 208494    Manchester United        -> Inter Miami CF free
+2026-07-22 [P] Jesús Bernal             1209446   Sporting Gijon           -> Free agent 
+2026-07-22 [L] Unai Sabroso             1959288   Cordoba                  -> Ponferradina loan
+2026-07-22 [L] Kamil Soberka            1438182   Górnik Zabrze            -> Stal Stalowa Wola loan
+2026-07-22 [P] Akor Adams               958640    Sevilla                  -> Venezia €16M
+2026-07-22 [P] Paul Nardi               291643    Free agent               -> Auxerre free
+2026-07-22 [P] Elijah Just              1053736   Motherwell               -> Swansea City €5M
+2026-07-22 [L] Matteo Cocchi            1560751   Inter                    -> Padova loan
+2026-07-22 [P] Endika Bujan             1537230   Athletic Club            -> Racing de Ferrol free
+2026-07-22 [P] Rablo Rivera             1668167   Sevilla                  -> Alcorcon free
+2026-07-22 [P] Diego Morcillo           1418118   Deportivo Alaves         -> Real Jaen free
+2026-07-22 [P] Bema Sina                1748407   Elche                    -> Rayo Majadahonda free
+2026-07-22 [P] Joan Ruiz                1800613   Levante                  -> Free agent 
+2026-07-22 [P] Cayetano Romero          1800609   Levante                  -> Free agent 
+2026-07-23 [L] Edson Tortolero          726362    Carabobo FC              -> America de Cali loan
+2026-07-23 [L] Matías Borgogno          938344    San Martin San Juan      -> Defensa y Justicia loan
+2026-07-23 [P] Mats Seiler              1553428   Young Boys               -> Thun 
+2026-07-23 [P] Sven Köhler              973727    Grasshopper              -> Free agent 
+2026-07-23 [L] Norman Bassette          1292100   Coventry City            -> Westerlo loan
+2026-07-23 [P] Nassim Zoukit            1308521   Etoile Carouge           -> Thun 
+2026-07-23 [P] Kevin Spadanuda          1086018   Free agent               -> FC Zürich free
+2026-07-23 [P] Lucas França             750049    Free agent               -> Santa Clara free
+2026-07-23 [P] Ibrahima Ba              1609327   Famalicao                -> Sporting CP €21M
+2026-07-23 [L] Jordi Quintillà          358151    St. Gallen               -> Nea Salamis loan
+2026-07-23 [P] Loic Lüthi               1513301   Winterthur               -> Luzern free
+2026-07-23 [P] Ibrahim Cissoko          1282156   Toulouse                 -> PEC Zwolle 
+2026-07-23 [P] Elmin Rastoder           1347804   Thun                     -> Panathinaikos €3M
+2026-07-23 [P] Rayan Raveloson          591529    Young Boys               -> Amed Sportif €0M
+2026-07-23 [P] Calvin Stengs            800624    Feyenoord                -> Free agent free
+2026-07-23 [P] Pedro Naressi            1109550   Ludogorets Razgrad       -> Servette free
+2026-07-23 [P] Witi                     610273    Nacional                 -> Pyunik 
+2026-07-23 [L] Clement Bischoff         1436850   Salzburg                 -> NEC Nijmegen loan
+2026-07-23 [P] Wesley                   887683    Avai FC                  -> Nacional 
+2026-07-23 [P] Ibrahim Fofana           1387200   Amiens                   -> Westerlo 
+2026-07-23 [P] Matteo Lovato            1047570   Salernitana              -> Padova free
+2026-07-23 [P] Rasmus Forsell           1624607   Degerfors                -> Östersunds FK 
+2026-07-23 [L] Murray Johnson           1195302   Hibernian                -> Shelbourne loan
+2026-07-23 [P] Achraf Laâziri           1425698   Lyon                     -> Ittihad Tanger free
+2026-07-23 [L] Mikayil Faye             1518451   Rennes                   -> 1. FC Nürnberg loan
+2026-07-23 [P] Zoumana Keita            1579869   Anderlecht               -> RSCA Futures 
+2026-07-23 [P] Amin Boudri              1410095   Los Angeles FC           -> Hammarby €3M
+2026-07-23 [P] Erkan Kas                266100    Çorum FK                 -> Free agent 
+2026-07-23 [P] Matt Targett             538112    Free agent               -> Hull City free
+2026-07-23 [P] Álvaro Killane           1562698   Las Palmas               -> SD Huesca 
+2026-07-23 [P] Dan McNamara             1017196   Free agent               -> Charlton Athletic free
+2026-07-23 [P] Jefté Betancor           287255    Albacete                 -> Las Palmas 
+2026-07-23 [P] Glenn Bijl               557885    Royal Antwerp            -> Free agent free
+2026-07-23 [P] Martín Pedroarena        1566981   Osasuna                  -> Arenas Getxo free
+2026-07-23 [P] Carlos Lumbreras         1694588   Osasuna                  -> Eibar free
+2026-07-23 [P] Samuel Calera            1693571   Racing Santander         -> Barakaldo free
+2026-07-23 [L] Hatim Essaoubi           1434534   Gent                     -> NFC Volos loan
+2026-07-23 [P] Rafiu Durosinmi          1305763   Pisa                     -> Genk €10M
+2026-07-23 [P] István Átrok             1439356   MTK Budapest             -> Zulte Waregem €1M
+2026-07-23 [P] Karim Adeyemi            959594    Borussia Dortmund        -> Barcelona €22M
+2026-07-23 [P] Ulrik Yttergård Jenssen  429581    Rosenborg                -> OB 
+2026-07-23 [P] Williams Barlasina       1206589   Newell's Old Boys        -> Fortaleza FC free
+2026-07-23 [P] Carl Björk               940331    Brøndby IF               -> GIF Sundsvall free
+2026-07-23 [P] Cristian Castillo        1413661   Aguilas Doradas          -> Estudiantes Merida free
+2026-07-23 [L] Kenyel Michel            1455071   Minnesota United         -> LD Alajuelense free
+2026-07-23 [L] Adem Sipic               1496241   Nashville SC             -> Gefle free
+2026-07-23 [P] Sebastián Arce           1299606   Rodina                   -> Emelec 
+2026-07-23 [P] Karim Emad               1689202   Modern Sport FC          -> Pharco FC free
+2026-07-23 [P] Samuel Amadi             1109164   Ceramica Cleopatra       -> Al Karma free
+2026-07-23 [P] Mohamed Rabie Hrimat     1260147   FAR Rabat                -> Al-Shamal 
+2026-07-23 [L] Filippo Rinaldi          1197339   Parma                    -> Catania loan
+2026-07-23 [P] Moataz Mohamed           1688835   Harras El Hodoud         -> Al Ittihad Alexandria free
+2026-07-23 [P] Younes El Bahraoui       1810430   RSB Berkane              -> Al-Taawoun €1M
+2026-07-23 [P] Amine El Ouaad           1707916   Ittihad Tanger           -> KACM free
+2026-07-23 [P] Hamza Khabba             883475    FAR Rabat                -> Al Qadasiya free
+2026-07-23 [P] Christos Tzolis          1157237   Club Brugge              -> Arsenal €40M
+2026-07-23 [L] Ismaël Gharbi            1244924   Braga                    -> Leganes loan
+2026-07-23 [P] Hassane Bandé            862621    KV Mechelen              -> Free agent free
+2026-07-23 [P] Kerim Mrabti             528409    KV Mechelen              -> Free agent free
+2026-07-23 [P] Mory Konaté              869780    KV Mechelen              -> Free agent free
+2026-07-23 [L] Juan Pintado             799678    Gimnasia LP              -> Union loan
+2026-07-23 [P] Xaver Schlager           620027    Free agent               -> Nottingham Forest free
+2026-07-23 [P] Muhammed Mehmet Damar    1393387   Hoffenheim               -> Wolfsburg €5M
+2026-07-23 [L] Victor Okeke             1727684   Elfsborg                 -> IK Brage loan
+2026-07-23 [L] Alejandro Garnacho       1203665   Chelsea                  -> Aston Villa loan
+2026-07-23 [P] Abdoul Kader Bamba       913184    Free agent               -> Granada free
+2026-07-23 [P] Alexander Mitchell       1247997   Charlton Athletic        -> Plymouth Argyle 
+2026-07-23 [P] Gaizka Larrazabal        802329    Free agent               -> Bolton Wanderers free
+2026-07-23 [P] Jovane Cabral            785716    Free agent               -> Gremio free
+2026-07-23 [P] Franco Saravia           1354124   Los Chankas              -> Comerciantes FC free
+2026-07-23 [P] Joseph Opoku             1683874   Zulte Waregem            -> Swansea City €6M
+2026-07-24 [P] David Agudelo            1054277   Atletico FC              -> Chico FC 
+2026-07-24 [P] Awad Al Nashri           1174961   Al Ittihad               -> Al Shabab free
+2026-07-24 [P] Hugo Cuypers             737974    Chicago Fire FC          -> Monterrey €6M
+2026-07-24 [P] Valentín Fascendini      1606009   Union                    -> Talleres €0M
+2026-07-24 [P] Vanja Dragojevic         1761677   Partizan Beograd         -> Rangers €5M
+2026-07-24 [L] Timofey Martynov         1453185   FC Orenburg              -> Isloch Minsk loan
+2026-07-24 [L] Matías Ramírez           504322    Godoy Cruz               -> Aguilas Doradas loan
+2026-07-24 [P] Mohamed Reda             1725953   Ceramica Cleopatra       -> El Gouna FC 
+2026-07-24 [P] Ahmed Ghoneim            1310701   Petrojet                 -> El Gouna FC 
+2026-07-24 [L] Kevin Bruno              1366615   Sassuolo                 -> FC Vado loan
+2026-07-24 [L] Homer Martínez           1028441   FC Juarez                -> Tolima loan
+2026-07-24 [P] Tabata                   777038    Internacional            -> Qatar SC 
+2026-07-24 [P] Fabio Saiz               1173382   Yverdon                  -> Thun 
+2026-07-24 [L] Mateo Kritzer            1620629   Karlsruher SC            -> Eintracht Trier loan
+2026-07-24 [L] Ricardo Márquez          1021589   Union Magdalena          -> Aguilas Doradas loan
+2026-07-24 [L] Jakub Jezierski          1631259   Sigma Olomouc            -> Fredrikstad loan
+2026-07-24 [L] Aleksandr Guboglo        1724411   CF Montreal              -> Reims loan
+2026-07-24 [P] Guillem Terma            1384889   Castellon                -> Conquense 
+2026-07-24 [L] Stefan Jovanoski         1553483   Mlada Boleslav           -> Opava loan
+2026-07-24 [L] Filip Spatenka           1515606   Slovan Liberec           -> Mlada Boleslav loan
+2026-07-24 [L] André Leipold            1281531   Pardubice                -> SC Verl loan
+2026-07-24 [L] Romeo Sandrucci          2097157   Torino                   -> Juve Stabia loan
+2026-07-24 [L] Ármin Pécsi              1366340   Liverpool                -> Hartberg loan
+2026-07-24 [P] Jhonatan                 500475    Athletic Club            -> Alverca 
+2026-07-24 [L] Siegert Baartmans        1797865   Willem II                -> FC Eindhoven loan
+2026-07-24 [P] Mats Lemmens             1381282   RWDM Brussels            -> Willem II free
+2026-07-24 [L] Tadeás Stoppen           1218798   Sigma Olomouc            -> Artis Brno loan
+2026-07-24 [P] Aboubacar Traoré         1509432   Karvina                  -> Banik Ostrava free
+2026-07-24 [P] Mattia Valoti            244809    Spezia                   -> LR Vicenza free
+2026-07-24 [P] Dolev Haziza             614161    Maccabi Haifa            -> Maccabi Netanya free
+2026-07-24 [P] Yohan Roche              929777    Petrolul Ploiesti        -> Iraklis free
+2026-07-24 [P] Islam Abou Slima         613694    Harras El Hodoud         -> El Gouna FC free
+2026-07-24 [P] Stiven Barreiro          282254    Leon                     -> Millonarios free
+2026-07-24 [P] Lukas Grgic              557807    Rapid Wien               -> Bari free
+2026-07-24 [P] Santino Samuyiwa         2097560   Real Sociedad B          -> Start free
+2026-07-24 [L] Tobías Cervera           1378924   Rosario Central          -> 2 de Mayo loan
+2026-07-24 [L] Andrea Bozzolan          1425695   Reggiana                 -> Palermo loan
+2026-07-24 [P] Germán Guiffrey          955211    Tigre                    -> Gimnasia Mendoza free
+2026-07-24 [P] Bruno Tubarão            979414    Persija Jakarta          -> Chapecoense AF free
+2026-07-24 [P] Bastos                   303799    Botafogo RJ              -> Free agent free
+2026-07-24 [P] Paul Okon-Engstler       1527363   Sydney FC                -> 1. FC Köln €1M
+2026-07-24 [P] Nodar Lominadze          1270528   Estoril                  -> Torpedo Kutaisi 
+2026-07-24 [L] Kasper Boogaard          1609512   AZ Alkmaar               -> Willem II loan
+2026-07-24 [L] Gonzalo González         1373618   Gimnasia LP              -> Estudiantes de Rio Cuarto loan
+2026-07-24 [L] Cayetano Bolzán          1900249   Gimnasia LP              -> Deportivo Maldonado loan
+2026-07-24 [P] Bilal Nadir              1283407   Marseille                -> Hamburger SV free
+2026-07-24 [P] Martin James             1830671   Paris Saint-Germain      -> 1. FC Köln free
+2026-07-24 [P] Emad Fathy               917300    Smouha SC                -> Abo Qir Fertilizers free
+2026-07-24 [L] Albert Rosas             1091359   FC Andorra               -> Logrones loan
+2026-07-24 [P] Juan Cruz                243419    Free agent               -> Real Oviedo free
+2026-07-24 [P] Morgan Fassbender        1179340   Termalica Bruk-Bet Nieci -> Korona Kielce €0M
+2026-07-24 [L] Ricardo Mangas           824655    Sporting CP              -> Monza loan
+2026-07-24 [L] Emre Tezgel              1197547   Stoke City               -> Wycombe Wanderers loan
+2026-07-24 [P] Daniel Bielica           943056    NAC Breda                -> Portsmouth €0M
+2026-07-24 [P] Aladji Bamba             1695681   Monaco                   -> Newcastle United €35M
+2026-07-24 [P] Ivan Bober               1478017   Krylya Sovetov Samara    -> Nizhny Novgorod €1M
+2026-07-24 [L] Gábor Szalai             1289171   Ferencvaros              -> Maritimo loan
+2026-07-24 [P] Jelle Vossen             38782     Zulte Waregem            -> Beerschot free
+2026-07-24 [P] Nicolas Milanovic        1217265   Aberdeen                 -> Western Sydney Wanderers FC 
+2026-07-24 [P] Nigel Lonwijk            1189622   Wolverhampton Wanderers  -> Maccabi Haifa €0M
+2026-07-24 [P] Tin Plavotic             822495    Austria Wien             -> Motor Lublin free
+2026-07-24 [P] Ibrahim Diabate          1785966   Zulte Waregem            -> Egnatia free
+2026-07-24 [P] Siebe van Keymolen       1807888   Zulte Waregem            -> Sporting Hasselt 
+2026-07-24 [P] Thibaud Sergeant         1785968   Zulte Waregem            -> Roeselare free
+2026-07-24 [P] Bakary Haidara           1577887   Westerlo                 -> Free agent free
+2026-07-24 [P] Koen Van Langendonck     346114    Westerlo                 -> Patro Eisden free
+2026-07-24 [P] Roman Neustädter         145551    Westerlo                 -> Free agent free
+2026-07-24 [P] Keo Boets                1414500   Dessel                   -> Union St.Gilloise free
+2026-07-24 [P] Sergio López             952529    Darmstadt                -> Granada 
+2026-07-24 [L] Antoniu Roca             1323403   Espanyol                 -> Mallorca loan
+2026-07-24 [P] Alessandro Milani        1667740   Lazio                    -> Inter 
+2026-07-24 [P] Iker Bravo               1308892   Udinese                  -> Watford 
+2026-07-24 [P] Jakub Hromada            543278    FC Rapid                 -> Iraklis 
+2026-07-24 [L] Oluwaseun Adewumi        1355089   Burnley                  -> Hertha BSC loan
+2026-07-24 [L] Giuseppe Ambrosino       1316205   Napoli                   -> Modena loan
+2026-07-24 [P] Maxime Sivis             822680    Dinamo Bucuresti         -> FC Orenburg €0M
+2026-07-24 [L] Tomás Jelínek            1553489   Slavia Prague            -> Pardubice loan
+2026-07-24 [P] Boli Bolingoli-Mbombo    465730    Standard Liege           -> Free agent free
+2026-07-24 [P] Souleyman Doumbia        797603    Standard Liege           -> Free agent free
+2026-07-24 [P] Alexandro Calut          1253864   Standard Liege           -> Free agent free
+2026-07-24 [P] Matteo Godfroid          1640827   Standard Liege           -> Free agent free
+2026-07-24 [P] Jo Coppens               131403    St.Truiden               -> Free agent free
+2026-07-24 [P] Abdelghani Mohamed       1257553   Al Ittihad Alexandria    -> Smouha SC free
+2026-07-24 [P] Marwan Hamdi             1615074   Ismaily SC               -> Smouha SC free
+2026-07-24 [P] Ryotaro Ito              727838    St.Truiden               -> Free agent free
+2026-07-24 [P] Simen Kristiansen Juklerød 360570    St.Truiden               -> Dunajska Streda free
+2026-07-24 [P] Abdellah Khafifi         978400    Raja Casablanca          -> MAS Fes free
+2026-07-24 [L] Marcelo Pérez            1042570   Huracan                  -> Luqueno loan
+2026-07-24 [P] Yeison Moreno            1353567   Free agent               -> Estudiantes de Rio Cuarto free
+2026-07-24 [P] Hidemasa Morita          915102    Sporting CP              -> Hull City free
+2026-07-24 [L] Mika Wallentowitz        1838023   Schalke 04               -> Greuther Fürth loan
+2026-07-24 [P] Yeray Cabanzón           1324054   Racing Santander         -> Real Valladolid 
+2026-07-24 [P] Luca Kjerrumgaard        1381571   Udinese                  -> Watford 
+2026-07-24 [L] Edoardo Zaia             1689043   Torino                   -> US Pergolettese 1932 loan
+2026-07-24 [P] Alessio Zerbin           850295    Napoli                   -> Frosinone 
+2026-07-24 [P] Luis Hasa                1402924   Napoli                   -> Frosinone 
+2026-07-24 [L] Nicola Pintus            1735643   Cagliari                 -> Pianese loan
+2026-07-24 [P] Mete Kaan Demir          872726    Sakaryaspor              -> Eyüpspor free
+2026-07-24 [P] Muhammet Ali Özbaskici   1421279   Samsunspor               -> Sakaryaspor 
+2026-07-24 [P] Andrei Borza             1336714   Free agent               -> Çorum FK free
+2026-07-24 [P] Mert Altintas            1285318   Amed Sportif             -> Kahramanmaras Istiklal free
+2026-07-24 [P] Alejandro Marqués        929835    Free agent               -> Granada free
+2026-07-24 [P] Crysencio Summerville    941213    West Ham United          -> Al Hilal €65M
+2026-07-24 [L] Alexander Gurendal       1793869   Start                    -> Hønefoss loan
+2026-07-24 [P] Pipa                     791624    Ludogorets Razgrad       -> Sabadell free
+2026-07-24 [P] Pedrinho                 387439    Çorum FK                 -> Free agent 
+2026-07-25 [L] Vicente Cárcamo          1824974   Universidad Catolica     -> Deportes Limache loan
+2026-07-25 [P] Tiago Galletto           1136130   AVS Futebol SAD          -> Deportes Limache 
+2026-07-25 [P] César Pinares            177463    Free agent               -> Audax Italiano free
+2026-07-25 [P] Nicolás Giraldo          1137459   Millonarios              -> Jaguares de Cordoba free
+2026-07-25 [L] Samir Mayo               1451002   Internacional de Bogota  -> Cucuta loan
+2026-07-25 [P] Naif Masoud              1543650   Al Fateh FC              -> Al Ahli €3M
+2026-07-25 [P] Mohamed Al-Sarnukh       1879474   Al Fateh FC              -> Al Hilal €3M
+2026-07-25 [P] Nermin Mujkic            1659921   FK Sarajevo              -> Al-Jazira €1M
+2026-07-25 [P] Mustafa Malayekah        117516    Neom SC                  -> Abha free
+2026-07-25 [L] Abdulkarim Darisi        1559681   Al Hilal                 -> Abha loan
+2026-07-25 [P] Mirko Maric              447680    Venezia                  -> NK Lokomotiva free
+2026-07-25 [L] Dominik Thaqi            1701794   Rijeka                   -> NK Lokomotiva loan
+2026-07-25 [P] Mate Antunovic           1417096   NK Varazdin              -> NK Lokomotiva 
+2026-07-25 [P] Dardan Morina            1518959   Dukagjini                -> NK Lokomotiva free
+2026-07-25 [P] Yonatan Cohen            686786    Hapoel Petah Tikva       -> Bangkok United free
+2026-07-25 [P] Stefan Schimmer          767730    FC Heidenheim            -> Buriram United free
+2026-07-25 [P] José Bernal              1492696   Deportivo Pasto          -> CD Universitario free
+2026-07-25 [P] Nawaf Al Habashi         963730    Al Hazem                 -> Al Hilal free
+2026-07-25 [P] Ángel Correa             432950    Tigres                   -> River Plate €13M
+2026-07-25 [P] Juan Quintero            207617    River Plate              -> Free agent free
+2026-07-25 [L] Dominik Javorcek         1176587   Slavia Prague            -> Bohemians 1905 loan
+2026-07-25 [L] Neil Glossoa             1709475   Slavia Prague            -> Artis Brno loan
+2026-07-25 [L] Luciano Herrera          892643    Newell's Old Boys        -> Pumas loan
+2026-07-25 [P] Ossian Nordvall          2026561   Bologna                  -> Elfsborg 
+2026-07-25 [L] Lucas Rosier             1841201   Rennes                   -> Concarneau loan
+2026-07-25 [P] Davi Schuindt            1739950   Fluminense               -> AVS Futebol SAD free
+2026-07-25 [L] Diego Caito              1636443   Goias                    -> Gremio loan
+2026-07-25 [L] Thalisson                1350755   Coritiba                 -> Ceara loan
+2026-07-25 [P] Pedrão                   1377995   Cruzeiro                 -> Avai FC free
+2026-07-25 [P] Fernando                 1433363   Ceara                    -> Chapecoense AF 
+2026-07-25 [L] Vilmer Tyrén             1524627   Kalmar FF                -> Ljungskile loan
+2026-07-25 [P] Elias Achouri            1015128   FC København             -> San Diego FC €3M
+2026-07-25 [L] Agustin Quiroga          1457716   Independiente            -> Estudiantes de Rio Cuarto loan
+2026-07-25 [L] Jakub Vlcek              1752292   Mlada Boleslav           -> Zizkov loan
+2026-07-25 [P] Ibrahim Hesar            977824    Free agent               -> Estudiantes de Rio Cuarto free
+2026-07-25 [P] Kang-In Lee              940976    Paris Saint-Germain      -> Atletico Madrid €40M
+2026-07-25 [L] Claudio Turi             1682892   Napoli                   -> Pineto loan
+2026-07-25 [P] Daniel Polanco           1416603   Internacional de Bogota  -> Chico FC 
+2026-07-25 [P] Conor Townsend           295069    Free agent               -> West Bromwich Albion free
+2026-07-25 [P] Kaheim Dixon             1624340   Charlton Athletic        -> Novi Pazar 
+2026-07-25 [L] Matvey Bardachev         1606296   Zenit St. Petersburg     -> Fakel loan
+2026-07-25 [L] Alexander Smith          1611787   Rangers                  -> East Kilbride FC loan
+2026-07-25 [L] Aiden McCallion          1739909   Rangers                  -> Queens Park loan
+2026-07-25 [L] Lewis Stewart            1787017   Rangers                  -> Queens Park loan
+2026-07-25 [L] Arseniy Ageev            1781613   Lokomotiv Moscow         -> Torpedo Zhodino loan
+2026-07-25 [P] Mayka Okuka              1359640   Lausanne                 -> Yverdon 
+2026-07-25 [P] Ryan Strain              896992    Dundee United            -> Falkirk free
+2026-07-25 [P] Eliman Cham              1782020   Carrarese                -> Virtus Francavilla 
+2026-07-25 [L] Matthew Mudie            1988841   Dundee United            -> Spartans loan
+2026-07-25 [L] Giulio Scuderi           1897605   Fiorentina               -> Juve Stabia loan
+2026-07-25 [P] Takumu Kawamura          922811    Salzburg                 -> Sanfrecce Hiroshima 
+2026-07-25 [L] Papa Amady Gadio         1580231   FK Akhmat                -> Novi Pazar loan
+2026-07-25 [P] Carlos Fernández         516854    Real Sociedad            -> Real Oviedo 
+2026-07-25 [P] Mohammad Mohebi          1073012   FC Rostov                -> Free agent free
+2026-07-25 [L] Jonathan Otoa            1923116   Lyngby                   -> Skive loan
+2026-07-25 [P] Isaiah Ahmed             1668214   SC Heerenveen            -> Telstar 
+2026-07-25 [P] Nikolas Brandis          1645652   Trencin                  -> FC Groningen 
+2026-07-25 [P] Prince Aning             1381588   Dortmund II              -> Telstar free
+2026-07-25 [P] Fabiano Rust             0         Feyenoord                -> Telstar free
+2026-07-25 [L] Anthony Descotte         1116199   Sporting Charleroi       -> Fortuna Sittard loan
+2026-07-25 [L] Blerton Isufi            1643943   Molde                    -> Hamarkameratene loan
+2026-07-25 [P] Luca Erlein              1709032   Hoffenheim               -> Bayer Leverkusen €2M
+2026-07-25 [L] Alex Lowry               1284069   Wycombe Wanderers        -> Motherwell loan
+2026-07-25 [P] Daizen Maeda             728765    Celtic                   -> Ipswich Town €11M
+2026-07-25 [P] Andrei Coubis            1377221   Universitatea Cluj       -> Lincoln City €3M
+2026-07-25 [L] Oliver Lukic             1477571   Salzburg                 -> Hartberg loan
+2026-07-25 [P] Jonatan Braut Brunes     737073    Raków Częstochowa        -> Sparta Prague €6M
+2026-07-25 [P] Lasse Flø                1485380   Vejle Boldklub           -> Westerlo 
+2026-07-25 [P] Elvir Koljic             497796    FC Rapid                 -> Iraklis free
+2026-07-25 [P] Shamal George            760717    St. Mirren               -> Bromley free
+2026-07-25 [P] Zé Lucas                 1733226   Sport Recife             -> Cruzeiro €4M
+2026-07-25 [P] Youssef Maziz            814619    OH Leuven                -> Free agent free
+2026-07-25 [P] Mathieu Maertens         497572    OH Leuven                -> Free agent free
+2026-07-25 [P] Maxence Prévot           604675    OH Leuven                -> Dunkerque free
+2026-07-25 [P] Jamie Lawrence           1189794   WSG Tirol                -> OH Leuven free
+2026-07-25 [L] Arnau Tenas              942375    Villarreal               -> Mallorca loan
+2026-07-25 [P] Boubakar Dembaga         1840468   Monaco                   -> Sporting Charleroi 
+2026-07-25 [L] Owen Goodman             1415372   Crystal Palace           -> Dundee FC loan
+2026-07-25 [L] Matthew Cox              1184672   Brentford                -> Barnet loan
+2026-07-25 [P] Álex Balboa              1294668   Lugo                     -> Real Valladolid free
+2026-07-25 [P] Diego Pampín             881124    Free agent               -> Granada free
+2026-07-25 [P] Daniel Villahermosa      1162677   FC Andorra               -> Real Oviedo 
+2026-07-25 [L] José Gragera             970550    Espanyol                 -> Burgos CF loan
+2026-07-25 [P] Tomás Tavares            976003    Free agent               -> Maritimo free
+2026-07-25 [L] Richard Taylor           1082913   Bolton Wanderers         -> Bromley loan
+2026-07-25 [L] Calebe                   1174300   Fortaleza                -> Internacional loan
+2026-07-25 [L] Danilo                   931862    Rangers                  -> Botafogo RJ loan
+2026-07-25 [P] Wílder Viera             1255220   Cerro Porteno            -> Instituto free
+2026-07-26 [L] Ignacio Sáez             1355291   Universidad de Chile     -> La Serena loan
+2026-07-26 [P] Gonzalo Figueroa         1752385   Deportivo Armenio        -> La Serena 
+2026-07-26 [P] Ian Franco Rasso         1274382   Quilmes                  -> La Serena €0M
+2026-07-26 [P] Dagur Thórhallsson       937015    CF Montreal              -> San Diego FC €0M
+2026-07-26 [L] Jorge Ortiz              1467020   Universidad Catolica     -> Deportes Copiapo loan
+2026-07-26 [L] Bryan Gónzalez           1363430   Universidad Catolica     -> Union San Felipe loan
+2026-07-26 [L] Matías Cortés            1292642   La Serena                -> Rangers loan
+2026-07-26 [L] Bruno Gutiérrez          1208396   Colo Colo                -> La Serena loan
+2026-07-26 [P] Tin Jedvaj               427062    Panathinaikos            -> Al Shabab 
+2026-07-26 [P] Simone Pontisso          612526    Catanzaro                -> Cremonese €1M
+2026-07-26 [L] Francesco Gallea         1876050   Cagliari                 -> Juve Stabia loan
+2026-07-26 [P] Nicolò Francescotti      0         Benevento                -> Treviso 
+2026-07-26 [P] Samuele Regazzetti       1425684   Cremonese                -> Livorno 
+2026-07-26 [L] Martin Håheim Elveseter  1377183   Sarpsborg 08             -> Hødd loan
+2026-07-26 [P] Laurent Mendy            1578006   Forest Green Rovers      -> Heart of Midlothian €0M
+2026-07-26 [L] Aodhan Doherty           1512798   Blackburn Rovers         -> Falkirk loan
+2026-07-26 [P] Dudu                     802579    Athletico Paranaense     -> Guarani free
+2026-07-26 [L] Selvi Clua               1526558   Almeria                  -> Casa Pia AC loan
+2026-07-26 [P] Franck Tchaouna          1810277   Enna                     -> Catanzaro free
+2026-07-26 [L] Giacomo Gabbiani         1681400   Cremonese                -> Livorno loan
+2026-07-26 [P] Artur Dolznikov          1065982   Sigma Olomouc            -> Slovacko 
+2026-07-26 [P] Tihomir Kostadinov       768016    Sigma Olomouc            -> Slovacko 
+2026-07-26 [L] Antonio Candela          814400    Spezia                   -> Catanzaro loan
+2026-07-26 [L] Felipe Lima              1676007   Alverca                  -> Benfica B loan
+2026-07-26 [P] Jack Harrison            751649    Leeds United             -> New England Revolution 
+2026-07-26 [P] Xavello Druiventak       1694382   fratria                  -> Cesena free
+2026-07-26 [P] Ángelo Sagal             304555    AE Larissa               -> Kifisia FC free
+2026-07-26 [P] Marco Festa              665339    Mantova                  -> Cremonese free
+2026-07-26 [P] Cristian Blanco          1054271   Aguilas Doradas          -> Chico FC free
+2026-07-26 [L] Mirko Castagnini         1817836   Hellas Verona            -> Gravina loan
+2026-07-26 [P] Hernán Lópes             198569    Aguilas Doradas          -> Cucuta free
+2026-07-26 [P] Carlos Renteria          74120     Free agent               -> Cucuta free
+2026-07-26 [P] Lewis Smith              939407    Livingston               -> Aberdeen 
+2026-07-26 [P] Sivert Heltne Nilsen     200124    Aberdeen                 -> FK Haugesund 
+2026-07-26 [P] Giannis Papanikolaou     784847    Rizespor                 -> Widzew Łódź free
+2026-07-26 [P] Dani Queipo              1313343   Sporting Gijon           -> Free agent 
+2026-07-26 [L] Gilberto Flores          1354562   FC Cincinnati            -> Libertad free
+2026-07-26 [P] Brayan Ceballos          1289123   New England Revolution   -> CF Montreal €0M
+2026-07-26 [P] Millenic Alli            1119806   Luton Town               -> Charlton Athletic 
+2026-07-26 [P] Carlos Marín             1106821   Cordoba                  -> Albacete 
+2026-07-26 [L] Jusuf Gazibegovic        924519    1. FC Köln               -> Widzew Łódź loan
+2026-07-26 [P] Yann Karamoh             686102    FC Porto                 -> Free agent free
+2026-07-26 [P] Ester Sokler             813621    FK Radnicki 1923         -> Maccabi Tel Aviv €1M
+2026-07-26 [L] Alaa Bellaarouch         1327488   Braga                    -> Dinamo Bucuresti loan
+2026-07-26 [P] Adrian Barisic           1242261   Basel                    -> Braga €3M
+2026-07-26 [P] Kenneth Obinna Mamah     1396267   Belediye Vanspor         -> AD Ceuta FC free
+2026-07-26 [L] Erdem Canpolat           1186610   Rizespor                 -> Esenler Erokspor loan
+2026-07-26 [L] Gabriel Guri             1752354   Sassuolo                 -> Laci loan
+2026-07-26 [L] Marlon Mena              1806027   Parma                    -> Arezzo loan
+2026-07-26 [L] Gianluca Astaldi         1828683   Parma                    -> Pianese loan
+2026-07-26 [L] Elia Plicco              1701756   Parma                    -> Sambenedettese loan
+2026-07-26 [P] Bernardo Conde           1853664   Parma                    -> AVS Futebol SAD 
+2026-07-26 [L] Edoardo Tigani           1844135   Parma                    -> CPR Ospitaletto loan
+2026-07-26 [L] Pietro Leonardelli       1710266   Fiorentina               -> Treviso loan
+2026-07-26 [L] Alin Kumer               1693590   Genoa                    -> Rapid Bucuresti loan
+2026-07-26 [L] Lucas Núñez              1757894   Valencia                 -> Eibar loan
+2026-07-26 [P] Onuralp Cakiroglu        1690088   Trabzonspor              -> Pendikspor free
+2026-07-27 [L] Fernando Romero          787218    Sportivo Trinidense      -> Deportes Concepcion loan
+2026-07-27 [P] Diego Acosta             1341989   2 de Mayo                -> Deportes Concepcion free
+2026-07-27 [P] Adrián Alcaraz           1354553   Olimpia                  -> Pachuca free
+2026-07-27 [P] Sam De Grand             1562171   Lommel                   -> AZ Alkmaar 
+2026-07-27 [P] Jere Uronen              261654    AIK                      -> Atromitos free
+2026-07-27 [P] Mauro Laínez             643756    Mazatlan FC              -> Tigres free
+2026-07-27 [P] Dominic Thompson         961999    Kilmarnock               -> SK Beveren 
+2026-07-27 [L] Chico                    923766    Cruzeiro                 -> Sport Recife loan
+2026-07-27 [L] Murilo Rhikman           1738394   Cruzeiro                 -> Sport Recife loan
+2026-07-27 [P] Miguel Rodríguez         1184663   FC Utrecht               -> Deportivo Alaves €5M
+2026-07-27 [P] Simon Elisor             1178330   Famalicao                -> Universitatea Craiova 
+2026-07-27 [P] Georgios Koutsias        1169353   Lugano                   -> Famalicao 
+2026-07-27 [P] Zé Carlos                1132158   Gil Vicente              -> Free agent free
+2026-07-27 [P] Rodrigo Rodrigues        1759322   Gil Vicente              -> Sporting CP B 
+2026-07-27 [P] Alan                     892751    Moreirense               -> Free agent free
+2026-07-27 [P] Caio Secco               263925    Moreirense               -> Leixoes free
+2026-07-27 [P] Jonathan Dubasin         1242139   Sporting Gijon           -> Osasuna €4M
+2026-07-27 [L] Tommaso Vannucchi        1451095   Fiorentina               -> ArzignanoChiampo loan
+2026-07-27 [L] Arnau Solà               1389477   Arouca                   -> Atletico Madrileno loan
+2026-07-27 [P] Nélson Oliveira          156556    Vitoria de Guimaraes     -> Free agent free
+2026-07-27 [L] Luca Erlein              1709032   Bayer Leverkusen         -> Energie Cottbus loan
+2026-07-27 [P] Dusan Tadic              94267     Al-Wahda                 -> NEC Nijmegen free
+2026-07-27 [P] Emmanuel Addai           1453194   Qarabag FK               -> OH Leuven free
+2026-07-27 [P] Darko Churlinov          833697    Kocaelispor              -> Pogoń Szczecin 
+2026-07-27 [P] Güven Yalcin             950417    Alanyaspor               -> Free agent 
+2026-07-27 [P] Tiago Octavia            2080970   Leça FC                  -> Alverca 
+2026-07-27 [L] Lanroy Machine           1752228   Angers                   -> SC Heerenveen loan
+2026-07-27 [P] Ivi López                530460    Free agent               -> Iraklis free
+2026-07-27 [P] Gustavo Varela           1585676   Benfica                  -> Monza €2M
+2026-07-27 [L] Gift Orban               1368557   Hoffenheim               -> Amed Sportif loan
+2026-07-27 [P] Darío Cáceres            922919    Defensa y Justicia       -> Central Cordoba de Santiago free
+2026-07-27 [P] Ugur Yildiz              1210041   Göztepe                  -> Kocaelispor 
+2026-07-27 [L] Aljosa Vasic             1189492   Palermo                  -> Südtirol loan
+2026-07-27 [L] Dimitrios Nikolaou       723574    Palermo                  -> OFI Crete loan
+2026-07-27 [P] Mustapha Isah            1411367   Kristiansund             -> RAAL La Louviere €1M
+2026-07-27 [L] Franck Atoen             1806473   Samsunspor               -> Dunkerque loan
+2026-07-27 [P] Lorenzo Carissoni        776970    Juve Stabia              -> Padova €0M
+2026-07-27 [P] Emanuele Zuelli          1121796   Carrarese                -> Padova €1M
+2026-07-27 [P] Diego Borghini           0         Benevento                -> Guidonia 
+2026-07-28 [L] Khalil Ibrahim Al Hammadi 618635    Al-Dhafra                -> United FC loan
+2026-07-28 [P] Adeel Alchadli           959024    Al-Fujairah SC           -> United FC 
+2026-07-28 [P] Willy Semedo             873832    Omonia Nicosia           -> United FC free
+2026-07-28 [L] Kouame Autonne           1104103   Al-Ain                   -> United FC loan
+2026-07-28 [L] Shavy Babicka            1586939   FK Crvena Zvezda         -> United FC loan
+2026-07-28 [L] Dan Sinaté               1487966   Angers                   -> Amiens loan
+2026-07-28 [P] Ronaldo Lumungo          1206189   Pacos de Ferreira        -> Radomiak Radom 
+2026-07-28 [P] Ernis Qestaj             1678873   Slaven                   -> Karlovac 1919 free
+2026-07-28 [P] Célestin De Schrevel     1175201   RAAL La Louviere         -> Virton 
+2026-07-28 [L] Clay Holstad             1478367   Rhode Island             -> FC Dallas loan
+2026-07-28 [L] Gabriele Pessolani       1781646   Genoa                    -> Crema loan
+2026-07-28 [P] Famara Camara            1736094   Ranheim                  -> Nashville SC 
+2026-07-28 [P] Filip Krovinovic         443518    Hajduk Split             -> Gremio 
+2026-07-28 [L] Hamed Al-Shanqiti        1543642   Al Ittihad               -> Al Kholood loan
+2026-07-28 [L] Lorenzo Tosi             1666014   Pisa                     -> Grosseto loan
+2026-07-28 [P] Loai Halaf               1658184   Maccabi Netanya          -> Bnei Sakhnin free
+2026-07-28 [L] José Salinas             1187478   Espanyol                 -> Malaga loan
+2026-07-28 [P] Georgios Charalampoglou  1665411   Asteras Tripolis         -> NFC Volos free
+2026-07-28 [P] Aitor Cantalapiedra      675600    Vitoria                  -> OFI Crete free
+2026-07-28 [P] Ronaël Pierre-Gabriel    699362    Dinamo Zagreb            -> NFC Volos free
+2026-07-28 [P] David Kinsombi           553597    Paderborn                -> Würzburger Kickers free
+2026-07-28 [P] Thomas Ince              212714    Watford                  -> Tranmere Rovers free
+2026-07-28 [P] Chemseddine Knaidil      1428732   CODM Meknes              -> Raja Casablanca €0M
+2026-07-28 [P] Duje Korac               1637153   Rudes                    -> RFS €0M
+2026-07-28 [P] Ilir Kukleci             936441    Hamarkameratene          -> Teuta Durres €0M
+2026-07-28 [P] Abdallah Ziani           1652058   Difaa El Jadida          -> Al Masry SC €0M
+2026-07-28 [L] Esteban Calderón         1612688   O'Higgins                -> Ñublense loan
+2026-07-28 [L] El Shayat                1958959   Ceramica Cleopatra       -> El Gouna FC loan
+2026-07-28 [P] Majed Dawran             1612228   Al-Ettifaq               -> Abha free
+2026-07-28 [L] Adrian Sut               1025630   Al-Ain                   -> Levadiakos loan
+2026-07-28 [P] Fernando                 175646    Al-Jazira                -> Gulf United free
+2026-07-28 [P] João Moreira             1354543   Sao Paulo                -> Al-Nasr SC 
+2026-07-28 [P] Alexis Canelo            616400    Puebla                   -> Atletico Tucuman free
+2026-07-28 [P] Mohammed Mahzari         1527135   Al-Taawoun               -> Al Hilal 
+2026-07-28 [P] Nicolás Gaitán           164031    Free agent               -> Aldosivi free
+2026-07-28 [L] Julian Rijkhoff          1336012   Ajax                     -> FC Andorra loan
+2026-07-28 [L] Yu Tsukanome             1626995   Seattle Sounders FC      -> Pittsburgh Riverhounds loan
+2026-07-28 [P] Lucas Baños              1609409   Newell's Old Boys        -> Estudiantes de Rio Cuarto free
+2026-07-28 [L] Tomás Muro               1337212   Independiente Rivadavia  -> Luqueno loan
+2026-07-28 [P] Otávio                   1738366   Estrela da Amadora       -> Eintracht Frankfurt €4M
+2026-07-28 [P] Owen Bevan               1399970   AFC Bournemouth          -> Dundee FC 
+2026-07-28 [P] Mohamed Fathi            715318    National Bank            -> Wadi Degla FC free
+2026-07-28 [P] Kwaku Karikari           1209455   AC Horsens               -> Zeleznicar Pancevo €0M
+2026-07-28 [P] Andrea Natali            1646518   Bayer Leverkusen         -> AZ Alkmaar €2M
+2026-07-28 [P] Valentin Sulzbacher      1357944   Salzburg                 -> Excelsior 
+2026-07-28 [P] Calvin Stengs            800624    Free agent               -> AZ Alkmaar free
+2026-07-28 [L] Fynn Schenten            1829390   1. FC Köln               -> Roda JC Kerkrade loan
+2026-07-28 [P] Kenneth Semakula         1294324   Free agent               -> Al Ittihad Alexandria free
+2026-07-28 [L] Oskar Annell             1431106   Westerlo                 -> Houtvenne loan
+2026-07-28 [P] Dirk Proper              1097467   NEC Nijmegen             -> SC Heerenveen 
+2026-07-28 [P] Philipp Förster          620563    Karlsruher SC            -> Fortuna Düsseldorf free
+2026-07-28 [P] Ni                       1460082   Estrela da Amadora       -> Coimbra 
+2026-07-28 [P] Afonso Freitas           1355720   Maritimo                 -> Felgueiras free
+2026-07-28 [L] Andrés Ferrari           1386351   St.Truiden               -> Sporting Gijon loan
+2026-07-28 [P] Rafa Soares              289254    Free agent               -> Estrela da Amadora free
+2026-07-28 [P] Kjell Scherpen           796398    Union St.Gilloise        -> Ipswich Town €10M
+2026-07-28 [P] Monsef Bakrar            1229109   Dinamo Zagreb            -> Al Ahly SC €3M
+2026-07-28 [P] Luke Brooke-Smith        1693440   Wellington Phoenix       -> Portsmouth €0M
+2026-07-28 [L] Yigit Fidan              1660990   Fenerbahçe               -> Muglaspor loan
+2026-07-28 [P] Adrián Dalmau            594983    Piast Gliwice            -> PSIM Yogyakarta 
+2026-07-28 [P] Carlo Holse              862716    Samsunspor               -> St. Louis City €5M
+2026-07-28 [P] Nolan Galves             1473605   Rodez                    -> West Bromwich Albion €1M
+2026-07-28 [L] Joe Gauci                970296    Aston Villa              -> Lincoln City loan
+2026-07-28 [P] Luis Vázquez             1215735   Anderlecht               -> Birmingham City €3M
+2026-07-28 [P] Kasper Waarts Høgh       934960    Bodø/Glimt               -> Celtic €12M
+2026-07-28 [P] Ugo Raghouber            1335102   Lille                    -> Burnley €5M
+2026-07-28 [L] Óscar Perea              1433034   Strasbourg               -> CF America loan
+2026-07-28 [P] Almeida                  1489096   Maritimo                 -> Sabah FK free
+2026-07-28 [P] Alexandre Guedes         500943    Maritimo                 -> Free agent 
+2026-07-28 [P] Rodrigo Borges           1797843   Maritimo                 -> Farense free
+2026-07-28 [P] Preslav Borukov          1128441   Maritimo                 -> Botev Vratsa free
+2026-07-28 [P] Nathanael Ogbeta         950660    Plymouth Argyle          -> Maritimo free
+2026-07-28 [P] Kiki                     867818    Casa Pia AC              -> Trofense free
+2026-07-28 [P] Yahya Kalley             1183999   Estrela da Amadora       -> Free agent free
+2026-07-28 [L] Loïs Openda              747767    Juventus                 -> Lyon €3M
+2026-07-28 [P] Matthew Gbomadu          1518866   Estrela da Amadora       -> Dinamo Tbilisi 
+2026-07-28 [P] Bénito                   0         Benfica B                -> Estrela da Amadora 
+2026-07-28 [L] Léo Linck                1210064   Botafogo FR              -> Estrela da Amadora loan
+2026-07-28 [L] Lucas Janson             360797    Boca Juniors             -> Gimnasia LP loan
+2026-07-28 [P] Maksim Borisko           863717    Baltika                  -> CSKA Moscow €2M
+2026-07-28 [P] Rares Ilie               1190208   Nice                     -> Mantova 
+2026-07-28 [P] Giacomo Drago            950601    Südtirol                 -> Guidonia 
+2026-07-28 [L] Adi Kurti                1805110   Hellas Verona            -> Academico 83 loan
+2026-07-28 [P] Federico Valentini       1668231   Cesena                   -> Forlì 
+2026-07-28 [P] Piero Quispe             1251269   Pumas                    -> Universitario de Deportes free
+2026-07-28 [P] Hugo Guillamón           1120936   Hajduk Split             -> Sporting Gijon free
+2026-07-28 [P] Ander Zoilo              1287789   Tenerife                 -> Barakaldo free
+2026-07-28 [P] Anders Klynge            1161870   Bodø/Glimt               -> Jagiellonia Białystok €0M
+2026-07-28 [L] Ed McJannett             1287251   Lecce                    -> Cosenza loan
+2026-07-28 [P] Adrian Benedyczak        920861    Parma                    -> Kasımpaşa €4M
+2026-07-28 [P] Julio Díaz               1447089   Atletico Madrid          -> Sevilla €1M
+2026-07-28 [L] Berkay Aydogmus          1419996   Başakşehir               -> Gebzespor loan
+2026-07-28 [L] Andreas Skov Olsen       861932    Wolfsburg                -> Başakşehir loan
+2026-07-28 [P] Emre Kaplan              1117199   Başakşehir               -> Bodrum Belediyesi Bodrumspor 
+2026-07-28 [L] Sam Parker               1573605   Swansea City             -> Wycombe Wanderers loan
+2026-07-28 [P] Sebastian Berhalter      1136096   Vancouver Whitecaps      -> Middlesbrough €1M
+2026-07-28 [L] Harvey Cartwright        1184696   Hull City                -> Grimsby Town loan
+2026-07-28 [P] Andrés Vombergar         681608    Free agent               -> Aldosivi free
+2026-07-29 [L] Sagi Israeli             1786659   Beitar Jerusalem         -> Maccabi Kabilio Jaffa loan
+2026-07-29 [P] Saad Farid               1702026   Raja Casablanca          -> Hatta free
+2026-07-29 [L] Rhys Bartley             1473220   St. Patrick's Athletic   -> Wexford FC loan
+2026-07-29 [L] Antonio Verinac          1455593   St. Gallen               -> Austria Lustenau loan
+2026-07-29 [L] Luighi                   1580773   Palmeiras                -> New York City FC loan
+2026-07-29 [L] Artem Smolyakov          1317319   Los Angeles FC           -> Metalist Kharkiv loan
+2026-07-29 [L] Jack Shorrock            1473815   Port Vale                -> Sligo Rovers loan
+2026-07-29 [L] Alan Zborowski           1717409   Waterford FC             -> Cobh Ramblers loan
+2026-07-29 [P] Hidde ter Avest          574234    Free agent               -> Willem II free
+2026-07-29 [P] Stjepan Radeljic         653982    Rijeka                   -> Dinamo Zagreb free
+2026-07-29 [P] Andrés Carreño           1437368   Union Magdalena          -> Aguilas Doradas 
+2026-07-29 [P] Lucho Vásquez            0         Free agent               -> Aguilas Doradas free
+2026-07-29 [P] Henrique Araújo          1192386   Benfica                  -> Casa Pia AC 
+2026-07-29 [L] Ravid Ulitsky            1903975   Hapoel Tel Aviv          -> Hapoel Kfar Saba loan
+2026-07-29 [P] Patrik Mijic             1338941   Kifisia FC               -> HNK Gorica free
+2026-07-29 [P] Marcel Heister           384440    NK Istra 1961            -> Osijek free
+2026-07-29 [P] Tom Grivosti             972031    St. Patrick's Athletic   -> Dundalk 
+2026-07-29 [L] Santiago Mele            848027    Monterrey                -> Independiente loan
+2026-07-29 [P] Anthony Olusanya         942411    Kalmar FF                -> St. Patrick's Athletic 
+2026-07-29 [P] Patrick Ouotro           1435443   Nancy                    -> Vitoria de Guimaraes 
+2026-07-29 [L] Aaron Quirós             1244341   Velez Sarsfield          -> Atlante €0M
+2026-07-29 [P] Joseph Gardner           1319809   Nottingham Forest        -> Falkirk 
+2026-07-29 [P] Felix Higl               1030929   Greuther Fürth           -> Preussen Münster 
+2026-07-29 [P] Lorenzo Villa            1416117   Juventus Next Gen        -> Sion 
+2026-07-29 [P] Isak Helstad Amundsen    1136680   Molde                    -> Fredrikstad €0M
+2026-07-29 [P] Lukas Jonsson            205710    VfL Osnabrück            -> Djurgården free
+2026-07-29 [L] Rémy Lascary             1401248   Lens                     -> Auxerre loan
+2026-07-29 [P] Gustavo Del Prete        848182    Atlas                    -> San Lorenzo free
+2026-07-29 [P] João Graça               488540    Rio Ave                  -> Free agent free
+2026-07-29 [P] Roland Galcík            972080    Podbrezova               -> Rio Ave 
+2026-07-29 [P] Klismahn                 1299645   Santa Clara              -> FK Neftchi €0M
+2026-07-29 [P] Vozinha                  422149    Chaves                   -> Colo Colo free
+2026-07-29 [P] Bruno Almeida            1395951   Santa Clara              -> AEL Limassol 
+2026-07-29 [P] Vasconcelos              1507906   Braga  B                 -> Santa Clara 
+2026-07-29 [P] Fredy                    0         Braga                    -> Santa Clara 
+2026-07-29 [P] Paulinho Bóia            882631    Nacional                 -> Free agent free
+2026-07-29 [P] Niklas Dorsch            674499    FC Heidenheim            -> Toronto FC €3M
+2026-07-29 [L] Exon Arzú                1447391   Houston Dynamo FC        -> Carabobo FC free
+2026-07-29 [P] Lucas João               361747    Nacional                 -> Petro Atletico free
+2026-07-29 [P] Sankhoun Diawara         1669433   Troyes                   -> Milan €2M
+2026-07-29 [P] Jota                     316768    Nacional                 -> Machico free
+2026-07-29 [P] Jayden Fevrier           1195742   Stockport County         -> Blackburn Rovers €0M
+2026-07-29 [P] Maxime Busi              952259    Reims                    -> Royal Antwerp free
+2026-07-29 [P] Evgeni Latyshonok        1079807   Zenit St. Petersburg     -> Nizhny Novgorod €1M
+2026-07-29 [P] Federico Barba           365624    Persib Bandung           -> Palermo free
+2026-07-29 [P] Smail Prevljak           554930    NK Istra 1961            -> Dinamo Zagreb €0M
+2026-07-29 [P] Ante Rebic               265725    Hajduk Split             -> Free agent 
+2026-07-29 [P] Güven Yalcin             950417    Free agent               -> Kasımpaşa free
+2026-07-29 [P] Karim Onisiwo            176953    Salzburg                 -> Free agent free
+2026-07-29 [L] Luka Gugeshashvili       721329    PAOK Thessaloniki        -> Göztepe loan
+2026-07-29 [L] Tolu Arokodare           1072864   Wolverhampton Wanderers  -> Ajax loan
+2026-07-29 [P] Luca Koleosho            1368318   Burnley                  -> Paris FC €14M
+2026-07-29 [P] Leo Sauer                1425998   Feyenoord                -> VfB Stuttgart €12M
+2026-07-29 [P] Joel Ndala               1288332   Manchester City          -> Cercle Brugge €0M
+2026-07-29 [P] Alassana Jatta           1033167   Notts County             -> Casa Pia AC 
+2026-07-29 [L] Stredair Appuah          1406702   Palermo                  -> Lommel loan
+2026-07-29 [P] René Mitongo             1752161   Standard Liege           -> Trabzonspor €3M
+2026-07-29 [L] Amadou Coundoul          1331311   Sporting Gijon           -> Academica loan
+2026-07-29 [P] Xavi Moreno              1585850   Real Valladolid          -> Sabadell 
+2026-07-29 [P] Jordi Martín             1086527   SD Huesca                -> Eldense free
+2026-07-29 [P] Kacper Tobiasz           1194358   Free agent               -> Gaziantep FK free
+2026-07-29 [P] Luís Balbo               1584085   Fiorentina               -> Sturm Graz €1M
+2026-07-29 [L] Damián Pizarro           1335154   Udinese                  -> Audax Italiano loan
+2026-07-29 [L] Pietro Comuzzo           1529222   Fiorentina               -> Torino €1M
+2026-07-29 [P] Eray Cömert              705484    Free agent               -> Torino free
+2026-07-29 [P] Mikel Amondarain         1661207   Estudiantes              -> Bologna €9M
+2026-07-29 [P] Umut Bozok               791915    Eyüpspor                 -> Başakşehir free
+2026-07-29 [P] Ulrich Meleke            951084    Al Bataeh                -> Gaziantep FK 
+2026-07-29 [P] Florin Stefan            861520    Universitatea Craiova    -> Gaziantep FK free
+2026-07-29 [P] Kerim Çalhanoglu         1211252   Vukovar 91               -> Gaziantep FK free
+2026-07-29 [P] Chandrel Massanga        1120319   Hatayspor                -> Eyüpspor free
+2026-07-29 [P] Konrad de la Fuente      1054033   Lausanne                 -> Sporting Gijon 
+2026-07-29 [L] Oisín Gallagher          1299857   Lincoln City             -> Barnet loan
+2026-07-29 [P] Archie Baptiste          1621132   Middlesbrough            -> Harrogate Town free
+2026-07-29 [P] Jon McLaughlin           155926    Free agent               -> Middlesbrough free
+2026-07-29 [P] Sonny Finch              1292834   Middlesbrough            -> South Shields free
+2026-07-29 [P] Fer Niño                 1127224   Burgos CF                -> Elche €4M
+2026-07-29 [P] Javi Martínez            920741    Eibar                    -> Eldense free
+2026-07-29 [L] Mattia Compagnon         1169352   Venezia                  -> Hellas Verona loan
+2026-07-29 [P] Riccardo Pagano          1484827   Roma                     -> Cesena 
+2026-07-29 [L] Yassir Zabiri            1640985   Rennes                   -> Racing Santander loan
+2026-07-29 [P] Ali Sahin Yilmaz         1489018   Trabzonspor              -> Bodrum Belediyesi Bodrumspor 
+2026-07-29 [P] Boran Baskan             1690129   Trabzonspor              -> Bodrum Belediyesi Bodrumspor 
+2026-07-29 [P] Chidozie Awaziem         666954    Nantes                   -> Konyaspor 
+2026-07-29 [L] Jordan Williams          768697    Portsmouth               -> Blackpool loan
+2026-07-29 [P] Elijah Dixon-Bonner      1078844   Queens Park Rangers      -> Free agent 
+2026-07-29 [P] Daniel Imray             1132342   Crystal Palace           -> Wrexham €5M
+2026-07-29 [P] Reuben Swann             1558464   Portsmouth               -> Braintree Town 
+2026-07-29 [P] Marezi                   1284376   Free agent               -> Portsmouth free
+2026-07-29 [P] Josh Seary               1504799   Preston North End        -> Radcliffe free
+2026-07-29 [P] Rohan Vaughan            1916937   Queens Park Rangers      -> Harrogate Town free
+2026-07-29 [L] Luke Faxon               1675657   Sheffield United         -> Boston United loan
+2026-07-29 [P] Owen Hampson             1640210   Sheffield United         -> Hartlepool United free
+2026-07-29 [L] Sydney Agina             1578415   Stoke City               -> Forest Green Rovers loan
+2026-07-29 [P] Kevin Mfuamba            1529994   West Bromwich Albion     -> Free agent 
+2026-07-29 [P] Adama Traoré             493647    West Ham United          -> Free agent 
+2026-07-29 [P] Lukasz Fabianski         30973     West Ham United          -> Free agent 
+2026-07-30 [P] Alfie Pond               1284082   Wolverhampton Wanderers  -> Chesterfield free
+2026-07-30 [L] Diego Otoya              1364473   Sporting Cristal         -> Monterey Bay FC loan
+2026-07-30 [L] Franco Rossi             1456400   Toluca                   -> Chapecoense AF loan
+2026-07-30 [P] Jordan Henderson         156008    Brentford                -> Free agent free
+2026-07-30 [P] Stefan Ortega            276729    Free agent               -> Olympiacos free
+2026-07-30 [P] Oliver Antman            1021082   Rangers                  -> Anderlecht €5M
+2026-07-30 [P] Vincent Janssen          467022    Royal Antwerp            -> Portland Timbers free
+2026-07-30 [P] Pedro Amador             923481    Atlanta United           -> Hapoel Beer Sheva free
+2026-07-30 [P] Yassin El Mallah         1708841   Pharco FC                -> Al Masry SC 
+2026-07-30 [P] Mahmoud Ouka             1658198   Harras El Hodoud         -> ZED FC €0M
+2026-07-30 [P] Walid Farag              1347023   Modern Sport FC          -> ZED FC free
+2026-07-30 [P] Nadir Lougmani           1369183   KACM                     -> FAR Rabat €0M
+2026-07-30 [P] Ishak Zidani             1687477   Renaissance Club Zemamra -> Raja Casablanca €0M
+2026-07-30 [P] Merveil Ndockyt          650209    Rijeka                   -> FAR Rabat free
+2026-07-30 [P] Kelvin Ehibhatiomhan     1188049   Reading                  -> AC Horsens 
+2026-07-30 [P] Stefan Schwab            166934    Holstein Kiel            -> Ried free
+2026-07-30 [P] Erawan Garnier           1642840   Lens                     -> SC Bastia 
+2026-07-30 [P] Junior Mwanga            1362622   Strasbourg               -> Le Havre €1M
+2026-07-30 [P] Oliver Sorg              1587572   Augsburg                 -> Ried 
+2026-07-30 [P] Matthis Abline           1250492   Nantes                   -> Monaco €25M
+2026-07-30 [P] Mamadouba Diaby          848164    Degerfors                -> Free agent free
+2026-07-30 [L] Alessandro Dellavalle    1640961   Torino                   -> Padova loan
+2026-07-30 [P] Matías Morello           1317180   Aldosivi                 -> Atletico Rafaela free
+2026-07-30 [L] Evgeni Latyshonok        1079807   Nizhny Novgorod          -> Baltika loan
+2026-07-30 [P] Kasra Taheri             1580548   Rubin Kazan              -> Nassaji Mazandaran FC €0M
+2026-07-30 [P] Thorsten Schriebl        951278    Grazer AK                -> Wolfsberger AC free
+2026-07-30 [P] Tim Civeja               1214053   Saarbrücken              -> Karlsruher SC free
+2026-07-30 [P] Gabriel Índio            1936643   Athletic Club            -> Benfica €4M
+2026-07-30 [P] Brooklyn Ezeh            1190503   Hannover 96              -> Dynamo Dresden free
+2026-07-30 [P] Michael Frey             304860    Grasshopper              -> Royal Antwerp free
+2026-07-30 [L] Daniel Bennie            1565859   Queens Park Rangers      -> Dundee United loan
+2026-07-30 [P] Lukas Mondele            1217762   Francs Borains           -> Cercle Brugge €0M
+2026-07-30 [P] Isaac Cisse              541564    Lamontville Golden Arrow -> Sporting Charleroi 
+2026-07-30 [P] Nicolas Closset          1596356   Sporting Charleroi       -> Virton free
+2026-07-30 [L] Malcolm Jeng             1457824   Reims                    -> FC Groningen loan
+2026-07-30 [P] Robin van Cruijsen       1797591   FC Volendam              -> Sparta Rotterdam 
+2026-07-30 [L] Mike Kleijn              1346940   Sparta Rotterdam         -> FC Volendam loan
+2026-07-30 [P] Santiago Castro          1282008   Bologna                  -> Roma €35M
+2026-07-30 [L] Ibai Asenjo              1685599   Eibar                    -> Logrones loan
+2026-07-30 [L] Artem Dovbyk             655696    Roma                     -> Bologna loan
+2026-07-30 [P] Kristoffer Lund Hansen   1235086   Palermo                  -> Birmingham City 
+2026-07-30 [P] Hugo San Modesto         1727299   Real Valladolid          -> UD Ibiza 
+2026-07-30 [L] Arda Öztürk              1700755   Trabzonspor              -> Igdir FK loan
+2026-07-30 [P] Sander Svendsen          440647    Konyaspor                -> Kristiansund free
+2026-07-30 [P] Dieu-Merci Michel        1458013   Vitoria de Guimaraes     -> United FC 
+2026-07-30 [P] Teodor Berg Haltvik      1047036   KFUM                     -> Sønderjyske 
+2026-07-30 [P] Roman Kvet               802213    FCV Dender EH            -> Bohemians 1905 
+2026-07-30 [L] Rayan Bamba              1632788   Rennes                   -> Le Mans loan
+2026-07-30 [P] Olwethu Makhanya         1469826   Philadelphia Union       -> Rangers €3M
+2026-07-30 [L] Daiki Hashioka           878296    Slavia Prague            -> Borussia Mönchengladbach loan
+2026-07-30 [P] Emanuele Ndoj            777072    Ascoli                   -> U.S. Folgore Caratese A.S.D. free
+2026-07-30 [P] Gianluca Saro            1036214   Cremonese                -> Foggia free
+2026-07-30 [L] Filippo Scotti           1586397   Avellino                 -> Savoia loan
+2026-07-30 [P] Gianmarco Todisco        1080636   Avellino                 -> Foggia 
+2026-07-30 [L] Jonas Rouhi              1427017   Juventus                 -> Carrarese loan
+2026-07-30 [P] Ank Asmussen             1708305   Empoli                   -> Pineto 
+2026-07-30 [L] Benedikt Rottensteiner   1599670   Südtirol                 -> Trapani loan
+2026-07-30 [P] Andrea Cagnano           903079    Avellino                 -> Arezzo 
+2026-07-30 [P] Filippo Scotti           1586397   Milan                    -> Savoia free
+2026-07-30 [P] Mattia Della Rocca       1648616   Roma                     -> Avellino 
+2026-07-30 [L] Rares Burnete            1286272   Lecce                    -> Südtirol loan
+2026-07-30 [P] Gastón Valles            1464100   Tenerife                 -> Sabadell 
+2026-07-30 [P] Aritz Arambarri          999989    Eibar                    -> CD Mirandes free
+2026-07-30 [P] John Stones              263653    Free agent               -> Inter free
+2026-07-30 [P] Coli Saco                1419539   Napoli                   -> FK Riga 
+2026-07-30 [P] Gyrano Kerk              519134    Free agent               -> Erzurumspor FK free
+2026-07-30 [P] Carlos Espí              1610744   Levante                  -> Real Madrid €25M
+2026-07-30 [L] Younes El Hannach        1426808   Paris Saint-Germain      -> Montpellier loan
+2026-07-31 [P] Juan Rodríguez           940819    Talleres                 -> Atletico Tucuman free
+2026-07-31 [L] Mateo García             571451    Atlas                    -> Newell's Old Boys loan
+2026-07-31 [P] Bartol Kardum            1609037   NK Lokomotiva            -> HNK Gorica 
+2026-07-31 [P] Josip Pejic              1781846   Aluminij                 -> Rudes 
+2026-07-31 [P] Jakov Blagaic            1178883   FC Arges Pitesti         -> Rudes 
+2026-07-31 [P] Stefan Vukic             1179375   Anorthosis               -> Rudes free
+2026-07-31 [P] Felipe Mora              244571    Portland Timbers         -> San Luis 
+2026-07-31 [L] Elyh Harrison            1422743   Manchester United        -> Morton loan
+2026-07-31 [P] Vito Medić               1837934   Siroki Brijeg            -> Slaven 
+2026-07-31 [P] Phillip Verhounig        1481059   FC Liefering             -> Wolfsberger AC 
+2026-07-31 [L] Martín Ballesteros       1259180   Audax Italiano           -> Santiago City FC loan
+2026-07-31 [P] Abdulquddus Atiah        926483    Al-Taawoun               -> Al-Ula free
+2026-07-31 [L] Liam Shahar              1902194   Maccabi Petach Tikva     -> Maccabi Herzliya loan
+2026-07-31 [L] Adam Kadlec              1252019   Viktoria Plzen           -> Mlada Boleslav loan
+2026-07-31 [P] Loreintz Rosier          955808    Al Hazem                 -> Abha free
+2026-07-31 [P] Miguel Barbieri          742681    Deportivo Riestra        -> Universidad de Concepcion free
+2026-07-31 [L] GB                       1661212   Vasco da Gama            -> Chaves loan
+2026-07-31 [P] Mathys Tourraine         1438302   Paris FC                 -> Pau 
+2026-07-31 [L] Lucas Michal             1607371   Monaco                   -> Cercle Brugge loan
+2026-07-31 [P] Lovro Majer              762721    Wolfsburg                -> AEK Athens €6M
+2026-07-31 [P] Shay Elias               939043    Hapoel Beer Sheva        -> Hapoel Haifa free
+2026-07-31 [L] Matías Moreno            1605748   Fiorentina               -> Venezia loan
+2026-07-31 [P] Leroy Abanda             1133599   NFC Volos                -> Kifisia FC free
+2026-07-31 [P] Callum Marshall          1327325   West Ham United          -> Luton Town 
+2026-07-31 [P] William Fitzgerald       889125    Sligo Rovers             -> Shamrock Rovers €0M
+2026-07-31 [L] Ciaron Harkin            626243    Sligo Rovers             -> Finn Harps loan
+2026-07-31 [L] Noah Mawene              1388067   Fleetwood Town           -> Waterford FC loan
+2026-07-31 [P] Radim Breite             173904    Artis Brno               -> Karvina free
+2026-07-31 [L] Juan Purata              950069    Tigres                   -> Atlas loan
+2026-07-31 [L] Lukás Letenay            958404    Slovan Liberec           -> Mlada Boleslav loan
+2026-07-31 [P] Federico Viñas           1032811   Leon                     -> Toluca €11M
+2026-07-31 [P] Leonardo Sepúlveda       1132863   Chivas                   -> Leones Negros 
+2026-07-31 [L] Marin Soticek            1510950   Basel                    -> Hajduk Split loan
+2026-07-31 [P] Gustavo Sá               1395482   Famalicao                -> Nottingham Forest €20M
+2026-07-31 [L] Gustavo Sá               1395482   Nottingham Forest        -> Olympiacos loan
+2026-07-31 [P] Maxence Lacroix          950485    Crystal Palace           -> Chelsea €60M
+2026-07-31 [P] Tyler Fredricson         1403351   Manchester United        -> Lausanne 
+2026-07-31 [L] Robert Ljubicic          939430    AEK Athens               -> LASK loan
+2026-07-31 [P] Emiliano Amor            602349    Defensa y Justicia       -> San Lorenzo free
+2026-07-31 [P] Maximiliano Zelaya       1689231   San Lorenzo              -> Free agent free
+2026-07-31 [L] Ahmed Saeed              1698157   Djurgården               -> FC Stockholm loan
+2026-07-31 [L] Kalipha Jawla            1532138   Djurgården               -> Östers IF loan
+2026-07-31 [L] Adam Forrester           1578123   Heart of Midlothian      -> Ross County loan
+2026-07-31 [P] Alexander Schwolow       248437    Heart of Midlothian      -> Mainz 05 free
+2026-07-31 [L] Paul Nsio                1709059   Rangers                  -> St. Mirren loan
+2026-07-31 [L] Aaron Donnelly           1339627   Dundee FC                -> Dunfermline Athletic loan
+2026-07-31 [L] Davide Veroli            1401612   Cagliari                 -> Südtirol loan
+2026-07-31 [P] Joan Tincrès             1487962   Monaco                   -> Le Havre 
+2026-07-31 [L] Isaac Monnier            1816727   Lorient                  -> SC Bastia loan
+2026-07-31 [L] Raphael Kofler           1396084   Südtirol                 -> Cagliari loan
+2026-07-31 [L] Thiago Borbas            1132940   Red Bull Bragantino      -> Atletico MG loan
+2026-07-31 [L] Italo                    1669646   Chapecoense AF           -> Jeonbuk Hyundai Motors FC loan
+2026-07-31 [P] Egor Smelov              1407775   Dinamo Moscow            -> FC Dynamo Makhachkala €0M
+2026-07-31 [P] Kian Fitz-Jim            1218556   Ajax                     -> Torino €2M
+2026-07-31 [P] Federico Ravaglia        793041    Bologna                  -> Watford €7M
+2026-07-31 [L] David Cobnan             1280732   FC Krasnodar             -> Levadiakos loan
+2026-07-31 [P] Hideyoshi Arakaki        725303    Asociacion Deportiva Tar -> Comerciantes FC free
+2026-07-31 [P] Lukas Willen             1299888   Free agent               -> Pogoń Szczecin free
+2026-07-31 [P] Mateusz Wieteska         555646    Cagliari                 -> Wieczysta 
+2026-07-31 [P] Saba Sazonov             1179368   Free agent               -> Getafe free
+2026-07-31 [L] Emanuele Rao             1434429   Napoli                   -> Pisa €1M
+2026-07-31 [P] Pedro Felipe             1644302   Juventus                 -> Racing Santander free
+2026-07-31 [P] Liam Cullen              872996    Swansea City             -> Leicester City 
+2026-07-31 [L] Lautaro Morales          1074828   Lanus                    -> Tigre loan
+2026-07-31 [P] Matías Rocha             1231074   Arouca                   -> Union free
+2026-07-31 [P] Linus Carlstrand         1379198   Östers IF                -> AIK 
+2026-07-31 [L] Agustín Colazo           1220047   Union                    -> Gimnasia LP loan
+2026-07-31 [P] Federico Mancuello       161344    Independiente            -> Argentinos Juniors free
+2026-07-31 [L] Joaquín Mosqueira        1451319   Talleres                 -> Union loan
+2026-07-31 [L] Ignacio Pussetto         470847    Independiente            -> Huracan loan
+2026-07-31 [P] Danilo Arboleda          857776    Banfield                 -> San Lorenzo €0M
+2026-07-31 [P] Abdelhamid Sabiri        769644    Free agent               -> Eyüpspor free
+2026-07-31 [L] Simone Pafundi           1366034   Udinese                  -> Catanzaro loan
+2026-07-31 [P] Martín Payero            874621    Udinese                  -> Watford 
+2026-07-31 [P] Ousmane Diallo           1684415   Dortmund II              -> Parma 
+2026-07-31 [L] Kieron Bowie             982617    Hellas Verona            -> Sassuolo loan
+2026-07-31 [L] Samuele Mulattieri       923222    Sassuolo                 -> Hellas Verona loan
+2026-07-31 [P] Olti Hyseni              1575143   Sønderjyske              -> Brøndby IF €2M
+2026-07-31 [P] Valde                    1712399   Real Madrid              -> Fiorentina €8M
+2026-07-31 [L] Mario Mitaj              1184458   Al Ittihad               -> Genoa loan
+2026-07-31 [P] Mathew Ryan              185644    Free agent               -> Levante free
+2026-07-31 [P] Mark Mampassi            1339409   Lokomotiv Moscow         -> Free agent free
+2026-07-31 [P] Jesse Bisiwu             1656591   Club NXT                 -> Barcelona €8M
+2026-07-31 [L] Fran Árbol               1595910   Granada                  -> Zamora loan
+2026-07-31 [L] Devrim Sahin             1815901   Beşiktaş                 -> Bodrum Belediyesi Bodrumspor loan
+2026-07-31 [P] Josh Maja                791805    West Bromwich Albion     -> Le Havre free
+2026-07-31 [P] Nampalys Mendy           210128    Watford                  -> Metz free
+2026-07-31 [P] Stoichkov                552625    Granada                  -> Free agent 
+2026-07-31 [P] Mohamed Bouldini         955586    Deportivo A Coruña       -> Free agent 
+2026-07-31 [L] Lucas Gómez              1609797   Argentinos Juniors       -> Newell's Old Boys loan
+2026-07-31 [L] Tomás Pérez              1485764   Racing Club              -> Defensa y Justicia loan
+2026-07-31 [L] Martín Río               1323824   Talleres                 -> San Lorenzo loan
+2026-07-31 [L] Facundo Bruera           971264    San Lorenzo              -> Barracas Central loan
+2026-08-01 [P] Iam González             1609463   Deportes Iquique         -> Universidad de Concepcion 
+2026-08-01 [P] Carlos Bacca             166648    Junior FC                -> Deportivo Cali free
+2026-08-01 [L] Trey George              1845602   Cardiff City             -> Sligo Rovers loan
+2026-08-01 [L] Filip Gustafsson         1339271   GAIS                     -> Norrby loan
+2026-08-01 [P] Francesco Sena           0         Benevento                -> Academico 83 
+2026-08-01 [L] Aidan Stokes             1516024   Red Bull New York        -> Brentford loan
+2026-08-01 [L] Christian McFarlane      1339595   Manchester City          -> Leicester City loan
+2026-08-01 [L] Janne Berner             1711728   Hertha BSC               -> SC Verl loan
+2026-08-01 [L] Andrea Oliviero          1804826   Catanzaro                -> AZ Picerno loan
+2026-08-01 [L] Riccardo Bassanini       1697350   Pisa                     -> Piacenza loan
+2026-08-01 [P] Ank Asmussen             1708305   Empoli                   -> Pineto 
+2026-08-01 [P] Fernando Pacheco         241059    Al Fateh FC              -> Al-Faisaly free
+2026-08-01 [P] Lorenzo Andrenacci       488182    Mantova                  -> Lumezzane free
+2026-08-01 [P] Aaron Malouda            1526225   Sabah FK                 -> Basel €2M
+2026-08-01 [L] Yutaro Tsukada           1624044   Orlando City             -> Rhode Island free
+2026-08-01 [P] Siko Sonko               1812935   Petrojet                 -> Mardinspor 
+2026-08-01 [P] Mohamed Shokry           1309801   Al Ahly SC               -> Al Masry SC €0M
+2026-08-01 [P] Islam Hesham             1689151   Al Mokawloon Al Arab     -> El Gouna FC free
+2026-08-01 [L] Favour Fawunmi           1418089   Stoke City               -> Oldham Athletic loan
+2026-08-01 [L] Gilles Richard           1300119   Sion                     -> Yverdon loan
+2026-08-01 [P] Julian Kania             1515970   Arminia Bielefeld        -> De Graafschap 
+2026-08-01 [P] Peter Kiedl              1385273   Sturm Graz               -> Hansa Rostock 
+2026-08-01 [P] Meiko Wäschenbach        1571177   Karlsruher SC            -> Alemannia Aachen 
+2026-08-01 [P] Ismail Mihrab            1562178   KACM                     -> Erbil free
+2026-08-01 [P] Morato                   253422    Al-Faisaly               -> Al-Wehda free
+2026-08-01 [P] Samuel Bamba             1422964   Bochum                   -> Maritimo free
+2026-08-01 [L] Yellu Santiago           1358337   Hellas Verona            -> Maritimo loan
+2026-08-01 [P] Julian Brandt            516846    Borussia Dortmund        -> Ajax free
+2026-08-01 [L] Antonis Papakanellos     1561078   Olympiacos               -> Asteras Tripolis loan
+2026-08-01 [P] Franz Brorsson           614193    APOEL Nicosia            -> Asteras Tripolis free
+2026-08-01 [P] Sylvester Jasper         1098807   Zeleznicar Pancevo       -> Standard Liege €1M
+2026-08-01 [L] Argyrios Liatsikouras    1692887   Olympiacos               -> Kalamata loan
+2026-08-01 [P] Isaías Delpupo           1169091   St.Truiden               -> Patro Eisden 
+2026-08-01 [L] Leon Chiwome             1396741   Wolverhampton Wanderers  -> Colchester United loan
+2026-08-01 [P] Csanád Dénes             1460645   Kortrijk                 -> Debrecen 
+2026-08-01 [P] Théo Defourny            280044    Sporting Charleroi       -> Free agent free
+2026-08-01 [L] Jesse Dempsey            1441597   Waterford FC             -> Fleetwood Town loan
+2026-08-01 [L] Igor Fabian Gosik        1748169   Molde                    -> Strømsgodset loan
+2026-08-01 [P] Ashley Maynard-Brewer    866649    Dundee United            -> Sheffield Wednesday free
+2026-08-01 [P] Johnly Yfeko             1224877   Exeter City              -> Kilmarnock 
+2026-08-01 [P] Jonathan Meier           939399    Ulm                      -> Kilmarnock free
+2026-08-01 [P] Lewis Montsma            955979    Dundee FC                -> Port Vale free
+2026-08-01 [L] Jamie Knight-Lebel       1524014   Bristol City             -> Motherwell loan
+2026-08-01 [P] Chris Cadden             523758    Hibernian                -> Aberdeen 
+2026-08-01 [P] Mattia Viti              1116749   Nice                     -> Sampdoria €0M
+2026-08-01 [L] Jeremías Lucco           1523550   Belgrano                 -> Defensa y Justicia loan
+2026-08-01 [P] Imanol Machuca           1039686   Fortaleza                -> Independiente 
+2026-08-01 [P] Tobías Andrada           1761527   Velez Sarsfield          -> River Plate €9M
+2026-08-01 [L] Oscar Gadeberg Buur      1436888   FC København             -> IL Hødd loan
+2026-08-01 [P] Francisco Perruzzi       1318266   San Lorenzo              -> Aldosivi free
+2026-08-01 [P] Nicolás Orsini           485378    Boca Juniors             -> Barracas Central free
+2026-08-01 [P] Willian                  450868    Coritiba                 -> Sport Recife free
+2026-08-01 [P] Kerwin Vargas            1285541   Charlotte FC             -> Athletico Paranaense €5M
+2026-08-01 [P] Tobias Guddal            1250673   Tromsø                   -> Sparta Prague €4M
+2026-08-01 [P] Rony Jansson             1398841   Kalmar FF                -> St. Pauli 
+2026-08-01 [P] Diogo Tomas              688833    ADO Den Haag             -> AIK free
+2026-08-01 [P] Lucas Mincarelli Davin   1526773   Montpellier              -> Estrela da Amadora 
+2026-08-01 [P] Luís Gómez               1178830   Asociacion Deportiva Tar -> Emelec free
+2026-08-01 [L] Sammie Szmodics          491827    Ipswich Town             -> Derby County loan
+2026-08-01 [P] Kacper Sezonienko        1169327   Lechia Gdańsk            -> Hellas Verona 
+2026-08-01 [P] Youssef Maziz            814619    OH Leuven                -> Colorado Rapids free
+2026-08-01 [P] Vladyslav Nagrudnyi      1883397   Cremonese                -> Ternana 
+2026-08-01 [P] Simone Verdi             187360    Südtirol                 -> Benevento free
+2026-08-01 [P] Hossam Essadak           1649146   Union Touarga Sport      -> Lausanne 
+2026-08-01 [L] Karlson Nwanege          1667734   Hellas Verona            -> SJK Seinäjoki loan
+2026-08-01 [P] Gerard Mirashi           2117517   Benevento                -> Vibonese free
+2026-08-01 [P] Chris-Kévin Nadje        1520422   Feyenoord                -> Eupen €0M
+2026-08-01 [P] Dejan Radonjic           1412442   Austria Wien             -> Ried 
+2026-08-01 [L] Rafik El Arguioui        1344244   FC Utrecht               -> Cambuur loan
+2026-08-01 [L] Ebenezer Akinsanmiro     1481909   Inter                    -> Monza loan
+2026-08-01 [L] Dominic Vavassori        1668965   Atalanta                 -> Palermo loan
+2026-08-01 [P] Ilias Kostis             1407076   Atletico Madrid          -> Castellon 
+2026-08-01 [P] Luis Bilbao              1327732   Athletic Club            -> Salamanca CF UDS free
+2026-08-01 [L] Riki de Moraes           1697376   Real Valladolid          -> CD Mirandes loan
+2026-08-01 [L] Patrick Soko             864236    Almeria                  -> Leganes loan
+2026-08-01 [P] Anto Sekongo             1666481   Dunkerque                -> Samsunspor €2M
+2026-08-01 [P] António Silva            1292092   Benfica                  -> AFC Bournemouth €25M
+2026-08-01 [L] Damián Rodríguez         1367987   Celta Vigo               -> Cadiz loan
+2026-08-01 [L] Hervé Koffi              695405    Lens                     -> Union St.Gilloise loan
+2026-08-01 [P] Kevin Akpoguma           353519    Hoffenheim               -> Frosinone free
+2026-08-01 [P] Danny Welbeck            113836    Brighton & Hove Albion   -> Chelsea €5M
+2026-08-01 [P] Redouane Halhal          1298186   KV Mechelen              -> Venezia €5M
+2026-08-01 [P] Mamadou Sangaré          1185211   Lens                     -> Brentford €48M
+2026-08-01 [L] Lucas Sanseviero         1362672   Real Valladolid          -> Instituto loan
+2026-08-01 [P] Konstantinos Koulierakis 1337884   Wolfsburg                -> Roma €16M
+2026-08-01 [L] Kamarl Grant             1191046   Millwall                 -> Bromley loan
+2026-08-01 [P] Christian Nwachukwu      1624072   Sheffield United         -> Sabah FK 
+2026-08-01 [L] Gregorio Rodríguez       1366607   FBC Melgar               -> Levadiakos loan
+2026-08-02 [P] Gabriel Pirani           1202616   DC United                -> San Diego FC €0M
+2026-08-02 [P] Dimitri Cavaré           478345    Esenler Erokspor         -> Bnei Sakhnin free
+2026-08-02 [L] Amit Karadi              1785067   Maccabi Tel Aviv         -> Bnei Sakhnin loan
+2026-08-02 [P] Kings Kangwa             1061612   Hapoel Beer Sheva        -> Panathinaikos €3M
+2026-08-02 [P] Daniel Kasper            1393814   Eupen                    -> FC Vaduz free
+2026-08-02 [L] Sergio Córdova           656530    Young Boys               -> Batman Petrolspor loan
+2026-08-02 [P] Thomas Cordier           1830662   Paris Saint-Germain      -> Lausanne free
+2026-08-02 [P] Elvir Durakovic          1405535   HNK Gorica               -> NK Varazdin 
+2026-08-02 [P] Niklas Ødegård           1283254   Kristiansund             -> Molde €0M
+2026-08-02 [P] Miguel Pires             1421224   Santa Clara              -> Vizela 
+2026-08-02 [L] Marco Ruggero            1050190   Spezia                   -> Catanzaro loan
+2026-08-02 [L] Simone Zanon             953590    Carrarese                -> Pisa loan
+2026-08-02 [P] Loris Mouyokolo          1217044   Grenoble                 -> Baltika €1M
+2026-08-02 [P] Luke Thomas              698499    Bristol Rovers           -> St. Mirren free
+2026-08-02 [L] Nordan Mukiele           1804654   Rennes                   -> Montpellier loan
+2026-08-02 [L] Rodrigo Fernández        861785    Independiente            -> Huracan loan
+2026-08-02 [L] Mamadou Barry            1640990   Union St.Gilloise        -> Al Shabab loan
+2026-08-02 [L] Luciano Giménez          1226851   Estudiantes              -> Club Atletico Platense loan
+2026-08-02 [L] Demián Domínguez         1815995   Velez Sarsfield          -> Defensa y Justicia loan
+2026-08-02 [L] Maximiliano Porcel       1662970   Velez Sarsfield          -> Defensa y Justicia loan
+2026-08-02 [P] Wallisson                1388142   Coritiba                 -> Mirassol €0M
+2026-08-02 [P] Felix Bacher             951498    Estoril                  -> Lyon €4M
+2026-08-02 [L] Wessel Speel             1125079   Minnesota United         -> Almere City FC free
+2026-08-02 [L] Macielo Tschantret       1468886   Sporting Kansas City     -> Lexington free
+2026-08-02 [L] Nicolás Dubersarsky      1585863   Austin FC                -> Tigre free
+2026-08-02 [L] Jesús Camargo            1416691   Deportivo Tachira        -> Once Caldas loan
+2026-08-02 [L] Mason Burstow            1293027   Hull City                -> Sheffield Wednesday loan
+2026-08-02 [P] Samir Caetano            453324    Al Najma                 -> Al-Dhafra 
+2026-08-02 [L] Konrad Golonka           1641008   Cracovia                 -> Busko-Zdroj loan
+2026-08-02 [P] Benjamin Verbic          266992    Levadiakos               -> NK Celje free
+2026-08-02 [P] Esteban Matus            1335339   Audax Italiano           -> Olimpia €0M
+2026-08-02 [P] Matej Valenta            955194    Viktoria Plzen           -> Hradec Kralove €2M
+2026-08-02 [L] Tom Watson               1310131   Brighton & Hove Albion   -> Leicester City loan
+2026-08-02 [L] Daniel Svancara          1682704   Artis Brno               -> FC Petrzalka 1898 loan
+2026-08-02 [P] Mikel Vesga              616545    Athletic Club            -> Almeria free
+2026-08-02 [P] Max Svensson             1199722   Casa Pia AC              -> Penafiel 
+2026-08-02 [P] Roberto González         874482    Free agent               -> Albacete free
+2026-08-02 [L] Lorenzo Malanca          1777116   Sampdoria                -> FC Vado loan
+2026-08-02 [L] Adam Nhaili              1596365   St.Truiden               -> FCV Dender EH loan
+2026-08-02 [L] Jordan Zemura            982633    Udinese                  -> Watford loan
+2026-08-02 [P] Raphael Onyedika         1126768   Club Brugge              -> Eintracht Frankfurt €9M
+2026-08-02 [P] Willem Geubbels          883824    Paris FC                 -> Lecce €5M
+2026-08-02 [P] Ilias Chatzitheodoridis  796451    OFI Crete                -> Kalamata free
+2026-08-02 [P] Andrea Cogoni            1682352   Cagliari                 -> Cosenza free
+2026-08-02 [L] Velizar Iliya Iliev      1434461   Cagliari                 -> Cosenza loan
+2026-08-02 [P] Yanis Musuayi            1836083   Club Brugge              -> Levante €3M
+2026-08-02 [P] Kerim Alajbegovic        1684401   Bayer Leverkusen         -> Juventus €32M
+2026-08-02 [L] Simon Sohm               975242    Fiorentina               -> Venezia loan
+2026-08-02 [P] Roman Macek              769342    Mlada Boleslav           -> Sparta Prague €0M
+2026-08-02 [P] Randal Kolo Muani        823825    Paris Saint-Germain      -> Juventus €41M
+2026-08-02 [L] Emmanuel Latte Lath      783585    Atlanta United           -> Union Berlin loan
+2026-08-02 [L] Niv Eliasi               1284486   Hapoel Beer Sheva        -> Levadiakos loan
+2026-08-02 [P] Valentín Barco           1272440   Strasbourg               -> Chelsea €40M
+2026-08-02 [L] Ahmed Dahesh             1797031   Wadi Degla FC            -> Abo Qir Fertilizers free
+2026-08-02 [P] Brahim El Bahraoui       847331    Union Touarga Sport      -> Difaa El Jadida free
+2026-08-02 [P] Abdelkarim Baadi         852166    Raja Casablanca          -> KACM free
+2026-08-02 [P] Aymane El Hassouni       898053    RKC Waalwijk             -> Wydad Casablanca free
+2026-08-02 [P] Hamza Jananallah         1762894   Olympique Dcheira        -> Wydad Casablanca free
+2026-08-02 [P] Rachid Ghanimi           1499520   FUS Rabat                -> Wydad Casablanca free
+2026-08-03 [P] Frank Castañeda          922695    Cucuta                   -> Llaneros FC free
+2026-08-03 [P] Adam Daghim              1353000   Salzburg                 -> Hoffenheim €13M
+2026-08-03 [P] Mihai Lixandru           1272334   FCSB                     -> Al Fateh FC €0M
+2026-08-03 [P] Colin Rösler             962074    Malmö FF                 -> AGF 
+2026-08-03 [P] Bonheur Mugisha          1371510   Al Masry SC              -> Al Hazem 
+2026-08-03 [L] Souleymane Faye          1107257   Sporting CP              -> Lorient loan
+2026-08-03 [P] Yahya Jabrane            884182    Ajman                    -> Wydad Casablanca free
+2026-08-03 [P] Vozinha                  422149    Free agent               -> Colo Colo free
+2026-08-03 [P] Fran González            1484851   Real Madrid              -> Sevilla €3M
+2026-08-03 [P] Danny Batth              185008    Free agent               -> Millwall free
+2026-08-03 [L] Sebastián Figueredo      1350255   Leganes                  -> Iberia 1999 loan
+2026-08-03 [P] Mohamed Ezz              1649144   Pharco FC                -> ZED FC free
+2026-08-03 [L] Mohamed Seha             0         Al Ahly SC               -> Al Masry SC free
+2026-08-03 [P] Youssef Osama Nabih      1425599   ZED FC                   -> Mosul SC free
+2026-08-03 [L] Qobolwakhe Sibande       1680694   Petrojet                 -> Stellenbosch FC free
+2026-08-03 [P] Yahia Attiyat Allah      903233    PFC Sochi                -> Wydad Casablanca free
+2026-08-03 [L] Ulises Giménez           1609439   River Plate              -> Sarmiento loan
+2026-08-03 [P] Luis Díaz                1433139   Envigado                 -> Independiente Rivadavia 
+2026-08-03 [P] Gabriel Pires            394585    Mirassol                 -> Juventude free
+2026-08-03 [P] Lukás Hornícek           1186978   Braga                    -> Newcastle United €30M
+2026-08-03 [P] Han-Beom Lee             1232253   FC Midtjylland           -> Club Brugge €7M
+2026-08-03 [P] Manolis Saliakas         530197    St. Pauli                -> Olympiacos €1M
+2026-08-03 [P] Killian Corredor         1274470   Darmstadt                -> Nantes €2M
+2026-08-03 [P] Moritz-Broni Kwarteng    884276    Bochum                   -> Magdeburg €0M
+2026-08-03 [L] Isaiah Dada-Mascoll      1347714   Manchester City          -> Lommel loan
+2026-08-03 [P] Konstantinos Karetsas    1536436   Genk                     -> Borussia Dortmund €30M
+2026-08-03 [P] Suleiman Camara          1206542   Racing Santander         -> Slovan Bratislava 
+2026-08-03 [P] Dmitriy Vasiljev         1339790   Zenit St. Petersburg     -> FC Orenburg €0M
+2026-08-03 [L] Jakhongir Urozov         1477513   Dinamo Samarkand         -> Rubin Kazan loan
+2026-08-03 [L] Abdoulaye Faye           1555492   Bayer Leverkusen         -> Celta Vigo loan
+2026-08-03 [L] Israel Isaac Ayuma       1670286   NK Istra 1961            -> Maritimo loan
+2026-08-03 [P] Lefteris Lyratzis        914839    PAOK Thessaloniki        -> Atromitos free
+2026-08-03 [P] Santiago Serra           1797326   CD Marfa                 -> Estrela da Amadora 
+2026-08-03 [P] Jordan Henderson         156008    Free agent               -> Chelsea free
+2026-08-03 [L] Dilan Zárate             1661194   Inter                    -> Cadiz loan
+2026-08-03 [L] Natan Dziegielewski      1717571   Górnik Zabrze            -> Arka Gdynia loan
+2026-08-03 [P] Mattia Esposito          1735913   Sorrento                 -> Napoli €0M
+2026-08-03 [L] Vasilije Adzic           1382375   Juventus                 -> Sassuolo €0M
+2026-08-03 [P] Péter Gulácsi            151001    RB Leipzig               -> Villarreal €2M
+2026-08-03 [L] Adem Eren Kabak          1210027   Konyaspor                -> Mardinspor loan
+2026-08-03 [P] Cameron Congreve         1113700   Swansea City             -> Westerlo €1M
+2026-08-03 [L] Glen Kamara              604783    Rennes                   -> Queens Park Rangers loan
+2026-08-03 [P] Lautaro Spatz            1132864   Villarreal B             -> FC Andorra 
+2026-08-03 [P] Paulinho Bóia            882631    Free agent               -> Widzew Łódź free
+2026-08-03 [L] João Mário               958421    Juventus                 -> Fiorentina €1M
+2026-08-03 [P] Mario Climent            1589224   Cadiz                    -> Arouca 
+2026-08-03 [P] Yacine Titraoui          1288907   Sporting Charleroi       -> Lens €8M
+2026-08-03 [P] Shawn Adewoye            912071    Free agent               -> Lommel free
+2026-08-03 [P] Gonzalo García           1413847   Real Madrid              -> Fulham €40M
+2026-08-03 [P] Estanis Pedrola          1321603   Sampdoria                -> Real Oviedo €0M
+2026-08-03 [L] Alexandre Penetra        1186780   AZ Alkmaar               -> Çorum FK loan
+2026-08-03 [L] Tiago Parente            1636736   Estoril                  -> Swansea City loan
+2026-08-03 [L] Oliver Cooper            962706    Swansea City             -> Notts County loan
+2026-08-03 [P] César Palacios           1403691   Real Madrid              -> Fulham €10M
+2026-08-03 [L] Sam Inwood               1682653   Bolton Wanderers         -> Swindon Town loan
+2026-08-04 [L] Nariman Akhundzada       1392225   Columbus Crew            -> Erzurumspor FK loan
+2026-08-04 [P] Faris Abdi               1078013   Neom SC                  -> Al Ittihad 
+2026-08-04 [L] Nedim Bajrami            822794    Rangers                  -> Al-Taawoun loan
+2026-08-04 [P] Rodrigo Pinho            667962    Estrela da Amadora       -> AVS Futebol SAD 
+2026-08-04 [P] Abdulrahman Al-Khaibre   1806492   Al-Ula                   -> Al Fateh FC 
+2026-08-04 [L] Robert Slevin            1064855   Derry City               -> Coleraine loan
+2026-08-04 [L] Mert Durmush             1453340   Pisa                     -> Spezia loan
+2026-08-04 [L] Ian Subiabre             1582679   River Plate              -> Tigre loan
+2026-08-04 [L] Ran Meir                 1832022   Maccabi Petach Tikva     -> Kiryat Yam loan
+2026-08-04 [P] Esteban Rolón            683535    Aldosivi                 -> Barracas Central free
+2026-08-04 [P] Joseda Álvarez           1324095   Deportivo Alaves         -> Bergantinos CF free
+2026-08-04 [L] Genesis Antwi            1647186   Chelsea                  -> Strasbourg loan
+2026-08-04 [P] Marko Rakonjac           1067253   OFI Crete                -> Maccabi Petach Tikva free
+2026-08-04 [P] Josh Adam                1254176   SK Dynamo Ceske Budejovi -> Bohemian FC free
+2026-08-04 [L] Mahamadou Balde          1792870   PAOK Thessaloniki        -> Levadiakos loan
+2026-08-04 [P] Javi Navarro             1033172   FC Vaduz                 -> Enosis Paralimni free
+2026-08-04 [P] Sarará                   1259118   Santa Clara              -> Tondela free
+2026-08-04 [P] Afonso Taira             280510    Abha                     -> Al Najma free
+2026-08-04 [P] Hodifa El Mahssani       1433266   FUS Rabat                -> Fakel free
+2026-08-04 [P] Abdullah Al Jadani       619314    Abha                     -> Al-Taawoun free
+2026-08-04 [P] Edwin Cerrillo           1026051   LA Galaxy                -> CF America 
+2026-08-04 [P] Ayman Al-Hujaili         1085329   Al-Orobah FC             -> Al Hazem 
+2026-08-04 [P] Sofiane Bendebka         641052    Al Fateh FC              -> Al Hazem free
+2026-08-04 [P] Giorgio Puzzoli          1837404   Fiorentina               -> Alcione 
+2026-08-04 [P] Freddie Potts            1206287   West Ham United          -> Club Brugge €10M
+2026-08-04 [P] Matheusinho              749387    Santa Clara              -> Atletico GO 
+2026-08-04 [L] Joachim Prent-Eckbo      1404438   KFUM                     -> Ull/Kisa loan
+2026-08-04 [P] Thierno Baldé            1274059   Troyes                   -> Nancy free
+2026-08-04 [P] Tom Louchet              1463448   Nice                     -> PAOK Thessaloniki €2M
+2026-08-04 [L] Marc-André ter Stegen    184554    Barcelona                -> Ajax loan
+2026-08-04 [P] Ørjan Håskjold Nyland    73409     Free agent               -> RB Leipzig free
+2026-08-04 [L] Yoni Gomis               1515498   Strasbourg               -> SK Beveren loan
+2026-08-04 [P] Harrie Kuster            1662353   FC Twente                -> Telstar 
+2026-08-04 [L] Francisco Chissumba      1524671   Braga                    -> Alverca loan
+2026-08-04 [P] Ákos Markgráf            1591669   Ujpest                   -> FC København €1M
+2026-08-04 [P] Roko Jureskin            1072743   Spartak Trnava           -> Tenerife free
+2026-08-04 [P] Giovanni Reyna           1071179   Borussia Mönchengladbach -> Strasbourg €3M
+2026-08-04 [P] Seifeddine Jaziri        713207    Zamalek SC               -> Free agent free
+2026-08-04 [L] Charlie Cresswell        1186444   Toulouse                 -> Rennes €2M
+2026-08-04 [P] Tommaso Maggioni         1189214   Mantova                  -> Juve Stabia 
+2026-08-04 [P] Carl Rushworth           1187236   Brighton & Hove Albion   -> Coventry City €25M
+2026-08-04 [P] Cisse Sandra             1178444   Club Brugge              -> Westerlo €1M
+2026-08-04 [P] Joël Drommel             588337    PSV Eindhoven            -> FC Twente €0M
+2026-08-04 [P] Ahmed Abdullahi          1439393   Sunderland               -> Eyüpspor 
+2026-08-04 [P] Ghislain Konan           740997    Gil Vicente              -> Free agent free
+2026-08-04 [L] Mees Hoedemakers         873551    Viborg                   -> Almere City FC loan
+2026-08-04 [L] Vladimir Henrique Silva  0         Pacos de Ferreira        -> Celta Fortuna loan
+2026-08-04 [P] Ignasi Vilarrasa         1033116   Cordoba                  -> Burgos CF 
+2026-08-04 [P] Bubacarr Tambedou        1367264   FCI Levadia              -> Sønderjyske 
+2026-08-04 [L] Mattia Esposito          1735913   Napoli                   -> Bari loan
+2026-08-04 [P] Max Arfsten              1348329   Columbus Crew            -> Middlesbrough €6M
+2026-08-04 [P] Afimico Pululu           861736    Free agent               -> Al Hazem free
+2026-08-04 [L] Kamil Lukoszek           1169071   Górnik Zabrze            -> Motor Lublin loan
+2026-08-04 [L] Wiktor Staszak           1419693   Wisła Kraków             -> Chrobry Glogow loan
+2026-08-04 [L] Hugo Cuenca              1515132   Genoa                    -> Celta Fortuna loan
+2026-08-04 [L] Alessandro Debenedetti   1642587   Genoa                    -> Cesena loan
+2026-08-04 [P] Rafa Mir                 640492    Sevilla                  -> Aris Thessaloniki free
+2026-08-04 [P] Edgar Alcañiz            1457394   Levante                  -> Atletico Madrileno 
+2026-08-04 [P] Unai Elgezabal           693736    Levante                  -> Free agent 
+2026-08-04 [P] Gökdeniz Bayrakdar       1072828   Bodrum Belediyesi Bodrum -> Göztepe €0M
+2026-08-04 [P] Florentino               793255    Burnley                  -> Ipswich Town €18M
+2026-08-05 [P] Elias Manoel             1248672   Botafogo RJ              -> Tijuana 
+2026-08-05 [P] Marcos Vinícius          950456    Chapecoense AF           -> Goias 
+2026-08-05 [L] Tonio Teklic             849818    Widzew Łódź              -> Mardinspor loan
+2026-08-05 [L] Paulo Bernardo           1050831   Celtic                   -> Górnik Zabrze loan
+2026-08-05 [P] Alimami Gory             765158    Paris FC                 -> Abha 
+2026-08-05 [P] Dominic Ballard          1254208   Leyton Orient            -> Bristol City 
+2026-08-05 [L] Khalil Ayari             1715492   Paris Saint-Germain      -> Dunkerque loan
+2026-08-05 [L] Fred Onambele            1899708   Troyes                   -> Villefranche Beaujolais loan
+2026-08-05 [P] Tobías Reinhart          961206    Reggiana                 -> Universidad de Chile €0M
+2026-08-05 [P] Odilon Kouassi           1609551   AC Horsens               -> Umm Salal 
+2026-08-05 [P] Muhamed Buljubasic       1507603   Rizespor                 -> Esenler Erokspor 
+2026-08-05 [P] Alvin Nordin             1693295   Helsingborg              -> FC Groningen €1M
+2026-08-05 [P] Darlin Yongwa            1097497   Lorient                  -> Norwich City free
+2026-08-05 [P] Mariano Barreda          1459746   FBC Melgar               -> Free agent 
+2026-08-05 [L] Léo Chú                  1118169   Alverca                  -> Avai FC loan
+2026-08-05 [L] Angelo Viscardi          1906719   Benevento                -> Sorrento loan
+2026-08-05 [L] Ibrahim Salah            1387741   Basel                    -> Royal Antwerp loan
+2026-08-05 [L] Ethan Bruchez            1736949   Lausanne                 -> Yverdon loan
+2026-08-05 [L] Samuel Lavrincík         1233664   Jablonec                 -> Ruzomberok loan
+2026-08-05 [L] Alessio Tribuzzi         867791    Avellino                 -> Bari loan
+2026-08-05 [L] João Barros              1195872   Hamarkameratene          -> Raufoss loan
+2026-08-05 [P] Franco Leys              497597    Aldosivi                 -> Deportivo Pasto free
+2026-08-05 [L] Valdemar Lund            1260431   Molde                    -> Vejle Boldklub loan
+2026-08-05 [L] Kimmen Nennesson         1640484   Mjällby                  -> Kristianstad FC loan
+2026-08-05 [P] Gauthier Hein            763974    Metz                     -> Nice €1M
+2026-08-05 [P] Rubén Botta              168390    Defensa y Justicia       -> Nacional free
+2026-08-05 [P] Braian Cufré             684991    Remo                     -> Aldosivi free
+2026-08-05 [P] Ignacio Rossi            1718180   Instituto                -> S.S. Ischia Isolaverde free
+2026-08-05 [P] Theodoros Fanourakis     1667996   OFI Crete                -> Enosis Paralimni free
+2026-08-05 [P] João Pedro               522770    Remo                     -> Atletico GO free
+2026-08-05 [P] Hélder Lopes             361723    Hapoel Beer Sheva        -> Academica free
+2026-08-05 [L] Filip Manojlovic         643563    Djurgården               -> Start loan
+2026-08-05 [P] Gabi Caschili            1126874   Cambuur                  -> Telstar free
+2026-08-05 [P] Andrea Ceresoli          1578411   Atalanta                 -> 1. FC Nürnberg €0M
+2026-08-05 [P] Kyrell Wilson            1580120   Swansea City             -> Gent €0M
+2026-08-05 [P] Miguel Gutiérrez         942379    Napoli                   -> Bayer Leverkusen €26M
+2026-08-05 [P] Ángel Troncho            1287469   Eibar                    -> Free agent 
+2026-08-05 [L] Levi García              717557    Spartak Moscow           -> Panathinaikos loan
+2026-08-05 [L] Sheldon Kendall          1706130   Millwall                 -> Gillingham loan
+2026-08-05 [P] César Falletti           309631    Mantova                  -> Ternana free
+2026-08-05 [L] Antonio Fiori            1553106   Mantova                  -> Cesena loan
+2026-08-05 [P] Ernesto Starita          613772    Benevento                -> Sorrento 
+2026-08-05 [L] Royner Benítez           1435943   Aguilas Doradas          -> Orsomarso Sportivo Clube free
+2026-08-05 [P] Giuseppe Panico          575016    Avellino                 -> Foggia 
+2026-08-05 [P] Konstantinos Tzolakis    1072068   Olympiacos               -> Hull City €23M
+2026-08-05 [P] Pasquale Pane            190577    Avellino                 -> Turris free
+2026-08-05 [P] Snayder Porozo           1337038   Aucas                    -> Royal Antwerp 
+2026-08-05 [P] Felix Horn Myhre         632885    Brann                    -> West Bromwich Albion €3M
+2026-08-05 [L] Jesper Daland            633094    Cardiff City             -> Viking loan
+2026-08-05 [P] Philippe Bibout          2124033   Gambinos Stars           -> Westerlo 
+2026-08-05 [L] Leon Hien                1351077   Djurgården               -> Tromsø loan
+2026-08-05 [P] Bruce Anderson           769935    Kilmarnock               -> Livingston free
+2026-08-05 [P] Daisuke Yokota           1244356   Hannover 96              -> Rangers €3M
+2026-08-05 [P] Mikaël Mandron           438258    St. Mirren               -> Stockport County free
+2026-08-05 [P] Joseph Boende            1427018   Kocaelispor              -> Brest free
+2026-08-05 [L] Alan Rodríguez           1035611   Internacional            -> Rosario Central loan
+2026-08-05 [L] Kevin Leoni              913139    Sassuolo                 -> Arezzo loan
+2026-08-05 [L] Lapo Deli                1837406   Fiorentina               -> Empoli loan
+2026-08-05 [P] Raphael Odogwu           661929    Südtirol                 -> Treviso 
+2026-08-05 [P] Rok Vadjunec             2124830   Treviso                  -> Südtirol 
+2026-08-05 [P] Christian Früchtl        820133    Lecce                    -> Salzburg €1M
+2026-08-05 [P] Unai Elgezabal           693736    Free agent               -> Eibar free
+2026-08-05 [P] Pablo Ramón              982734    Espanyol                 -> Racing Santander 
+2026-08-05 [L] Angeliño                 603537    Roma                     -> Deportivo A Coruña loan
+2026-08-05 [P] Bilal Boutobba           605858    Al Najma                 -> Eyüpspor 
+2026-08-05 [P] Mehmet Büyüksayar        1393997   Konyaspor                -> Adanaspor free
+2026-08-05 [P] Ibane Bowat              1130805   Portsmouth               -> Huddersfield Town 
+2026-08-05 [P] Liam Thompson            1123933   Derby County             -> Mansfield Town 
+2026-08-05 [P] Jack Moylan              1196750   Lincoln City             -> Cardiff City 
+2026-08-05 [P] Ben Amos                 155936    Port Vale                -> Burnley free
+2026-08-05 [L] Mason Melia              1463084   Tottenham Hotspur        -> Lincoln City loan
+2026-08-05 [P] Ben Whiteman             600812    Preston North End        -> Wrexham €3M
+2026-08-05 [P] Marko Perovic            1382377   Almeria                  -> Raków Częstochowa €1M
+2026-08-05 [P] Alexis Olmedo            1554761   Barcelona                -> Celta Fortuna 
+2026-08-05 [P] Christos Albanis         628200    FC Andorra               -> AE Larissa 
+2026-08-05 [L] Edgar González           915987    Almeria                  -> Sabadell loan
+2026-08-05 [P] Dion Lopy                1053685   Almeria                  -> Al Ittihad €13M
+2026-08-05 [P] Pau Cabanes              1646375   Villarreal               -> Eldense free
+2026-08-05 [P] Mohamed Salah            292462    Free agent               -> Trabzonspor free
+2026-08-06 [L] Enrico Oviszach          1166564   Ascoli                   -> Foggia loan
+2026-08-06 [P] Edoardo Duca             1112941   Juve Stabia              -> Ravenna 
+2026-08-06 [L] Noah Shamoun             1231776   Randers FC               -> Kalmar FF loan
+2026-08-06 [P] Simon Wæver              1180285   Sønderjyske              -> B.93 
+2026-08-06 [P] Yan Diomande             1735453   RB Leipzig               -> Real Madrid €125M
+2026-08-06 [L] Jonathan Moalem          1654019   FC København             -> Strømsgodset loan
+2026-08-06 [P] Juanlu Sánchez           1158512   Sevilla                  -> AFC Bournemouth €11M
+2026-08-06 [P] Joël Veltman             304455    Free agent               -> West Ham United free
+2026-08-06 [P] Igor Drapinski           1277126   Piast Gliwice            -> Samsunspor 
+2026-08-07 [P] Javi Morcillo            1732412   Atletico Madrid          -> Elche €1M
+2026-08-07 [L] Yan Couto                1109171   Borussia Dortmund        -> Como loan
+2026-08-07 [L] Unai Núñez               805352    Celta Vigo               -> Espanyol loan
+2026-08-07 [P] Awer Mabil               421328    Castellon                -> Melbourne City FC 
+2026-08-07 [P] Christian Nørgaard       266520    Arsenal                  -> Everton €8M
+2026-08-07 [P] Igor Vekic               1240398   Vejle Boldklub           -> Rijeka 
+2026-08-07 [P] Bruno Unusic             1657809   Dukla Praha              -> Rudes 
+2026-08-07 [L] Oscar Forsmo Kapskarmo   843274    Egersund                 -> Sandefjord loan
+2026-08-07 [P] Francisco Ortega         902969    Olympiacos               -> River Plate 
+2026-08-07 [P] James Trafford           1187213   Manchester City          -> Leeds United 
+2026-08-07 [P] Lyndon Dykes             768635    Charlton Athletic        -> Millwall 
+2026-08-07 [P] Cristian Orozco          1888589   Fortaleza FC             -> Manchester United 
+2026-08-07 [P] Wes Burns                421768    Ipswich Town             -> Leicester City 
+2026-08-07 [P] Maghnes Akliouche        1305618   Monaco                   -> Paris Saint-Germain 
+2026-08-07 [P] Filip Kostic             281012    Free agent               -> PSV Eindhoven free
+2026-08-07 [L] Wesley                   1372179   Al Nassr FC              -> Cruzeiro loan
+2026-08-07 [L] Luciano Rodríguez        1285291   Neom SC                  -> Cruzeiro loan
+2026-08-07 [L] João Costa               1560063   Al-Ettifaq               -> Cruzeiro loan
+2026-08-07 [P] Domingos Duarte          566425    Free agent               -> Sao Paulo free
+2026-08-07 [L] Iago                     845984    Bahia                    -> Sao Paulo loan
+2026-08-07 [P] Djibril Sow              707970    Sevilla                  -> Genoa €4M
+2026-08-07 [P] Junior Dina Ebimbe       1040889   Eintracht Frankfurt      -> Schalke 04 €0M
+2026-08-07 [L] Dajaune Brown            1332788   Derby County             -> Rochdale loan
+2026-08-07 [P] Ross Stewart             776159    Free agent               -> Swansea City free
+2026-08-07 [P] Stefano Holmquist Vecchia 493159    Malmö FF                 -> Free agent free
+2026-08-07 [P] Bersant Celina           525431    Free agent               -> Al-Ettifaq free
+2026-08-07 [P] Ricardo Friedrich        1116364   Malmö FF                 -> Free agent free
+2026-08-07 [L] Altay Bayindir           866967    Manchester United        -> Celta Vigo loan
+2026-08-07 [L] Albert Rrahmani          1677752   Sønderjyske              -> Nykoping loan
+2026-08-07 [L] Alexis Manyoma           1332390   Colorado Rapids          -> Deportivo Cali free
+2026-08-07 [L] Gísli Thórdarson         1383059   Lech Poznań              -> St. Pauli loan
+2026-08-07 [P] Nathaniel Chalobah       215658    Sheffield Wednesday      -> Charlton Athletic free
+2026-08-07 [P] Metehan Altunbas         975117    Eyüpspor                 -> Kocaelispor €0M
+2026-08-07 [P] Josep Cerdà              1442443   FC Andorra               -> Mallorca 
+2026-08-07 [P] Nicolás Valentini        1249665   Fiorentina               -> Deportivo Alaves 
+2026-08-07 [P] Altin Zeqiri             1056370   Rizespor                 -> Esenler Erokspor 
+2026-08-07 [P] Nicholas Opoku           850934    Kasımpaşa                -> Las Palmas free
+2026-08-07 [L] Lewis Temple             1375413   Bolton Wanderers         -> Oldham Athletic loan
+2026-08-07 [P] Jens Hjertø-Dahl         1377949   Tromsø                   -> Hull City €10M
+2026-08-07 [L] Finley Barbrook          1599317   Ipswich Town             -> Falkirk loan
+2026-08-07 [P] Luca Zidane              770880    Granada                  -> Free agent 
+2026-08-07 [L] Delano Burgzorg          904710    Middlesbrough            -> Preston North End loan
+2026-08-07 [L] Jay Robinson             1453338   Southampton              -> Monza loan
+2026-08-07 [L] Franco Mastantuono       1607566   Real Madrid              -> Fiorentina loan
+2026-08-07 [P] Marko Jevtovic           463591    Free agent               -> Konyaspor 
+2026-08-07 [P] Takehiro Tomiyasu        664444    Free agent               -> Crystal Palace free
+2026-08-07 [P] Bjarki Steinn Bjarkason  942203    Venezia                  -> Südtirol 
+2026-08-07 [P] Marco Pompetti           820736    Catanzaro                -> Padova 
+2026-08-07 [P] Ichem Ferrah             1428560   Le LOSC                  -> Pisa 
+2026-08-07 [P] Gabriel Strefezza        836436    Olympiacos               -> Palermo 
+2026-08-07 [P] Stefano Girelli          962441    Sampdoria                -> Casertana 
+2026-08-07 [P] Alessandro Vogliacco     958401    Genoa                    -> Cremonese 
+2026-08-07 [P] Manuel Gasparini         899993    Empoli                   -> Mantova 
+2026-08-07 [P] Damiano Cancellieri      1300431   Avellino                 -> Spezia 
+2026-08-07 [L] Filip Stojilkovic        1079080   Pisa                     -> FC Rapid loan
+2026-08-07 [L] Facundo Buonanotte       1336566   Brighton & Hove Albion   -> Elche loan
+2026-08-07 [L] Marash Kumbulla          872362    Roma                     -> Rayo Vallecano loan
+2026-08-07 [P] Alex Forés               1304120   Villarreal               -> Burgos CF 
+2026-08-07 [P] Luca Zidane              770880    Free agent               -> Leganes free
+2026-08-07 [P] Iddrisu Baba             823681    Almeria                  -> Partizan Beograd 
+2026-08-07 [L] Tanto Olaofe             1135408   Charlton Athletic        -> Lincoln City loan
+2026-08-07 [P] Festy Ebosele            1060654   Başakşehir               -> Erzurumspor FK 
+2026-08-07 [L] Oscar Thorn              1186523   Lincoln City             -> Colchester United loan
+2026-08-07 [P] Samed Bazdar             1284492   Real Zaragoza            -> St.Truiden 
+2026-08-07 [P] Joaquín Correa           319631    Botafogo RJ              -> Estudiantes free
+2026-08-08 [L] Noa Skoko                1639186   Hajduk Split             -> Rudes loan
+2026-08-08 [P] Tim Hottiger             1714491   Lausanne                 -> Luzern free
+2026-08-08 [L] Daniel Mikolajewski      1485180   Parma                    -> Luzern loan
+2026-08-08 [L] Gastón Togni             832164    Defensa y Justicia       -> Club Atletico Platense loan
+2026-08-08 [L] Keenan Gough             1805495   Charlton Athletic        -> Bristol Rovers loan
+2026-08-08 [P] Caleb Yirenkyi           1615927   Nordsjælland             -> Coventry City 
+2026-08-08 [L] Maximiliano Salas        730647    River Plate              -> Independiente Rivadavia loan
+2026-08-08 [P] Sion Oppong              1717493   Brommapojkarna           -> Toulouse 
+2026-08-08 [L] Orel Mangala             765693    Lyon                     -> Getafe loan
+2026-08-08 [L] Saïdou Sow               1180730   Strasbourg               -> Nantes loan
+2026-08-08 [P] Otso Liimatta            1247088   Famalicao                -> Sirius 
+2026-08-08 [P] Bruno Guimarães          850354    Newcastle United         -> Arsenal €87M
+2026-08-08 [P] Sasa Lukic               556972    Fulham                   -> Ipswich Town €10M
+2026-08-08 [P] Noah Nsoki               1830685   Paris Saint-Germain      -> Dinamo Zagreb 
+2026-08-08 [P] Gustav Friberg           1316353   Halmstads BK             -> Kolding IF 
+2026-08-08 [P] Kodai Sano               1337282   NEC Nijmegen             -> PSV Eindhoven 
+2026-08-09 [L] Jirí Hamza               1713357   Pardubice                -> Karvina loan
+2026-08-09 [L] Stepán Mísek             1515121   Pardubice                -> Karvina loan
+2026-08-09 [L] Vladimír Neuman          1100027   Karvina                  -> Pardubice loan
+2026-08-09 [L] Thimothée Lo-Tutala      1409928   Hull City                -> Colchester United loan
+2026-08-09 [L] Stélios Andreou          1110862   Widzew Łódź              -> Estoril loan
+2026-08-09 [L] Daouda Traoré            1388072   Southampton              -> Le Mans loan
+2026-08-09 [L] Mauro Lenaerts           1821521   KV Mechelen              -> Helmond Sport loan
+2026-08-09 [P] Juan Bauza               798149    Universitatea Craiova    -> Levadiakos free
+2026-08-09 [P] Aleksander Andresen      1268414   Fredrikstad              -> Hamarkameratene €0M
+2026-08-09 [P] Anton Ekeroth            1231591   Hamarkameratene          -> Sigma Olomouc €0M
+2026-08-09 [P] Gard Simenstad           739798    Hamarkameratene          -> Odds Ballklubb free
+2026-08-09 [P] Dimitrios Giannoulis     670009    Augsburg                 -> PAOK Thessaloniki €4M
+2026-08-09 [P] Mirlind Daku             1059398   Rubin Kazan              -> Spartak Moscow €11M
+2026-08-09 [L] Abdi Sabriye             1264930   Kalmar FF                -> FF Jaro loan
+2026-08-09 [L] Tunahan Tasci            1180743   Konyaspor                -> Ümraniyespor loan
+2026-08-09 [P] Ian Poveda               962075    Free agent               -> Atletico Nacional free
+2026-08-09 [P] Jesús Ramírez            1075457   Nacional                 -> Çorum FK 
+2026-08-09 [P] Markus Seehusen Karlsbakk 842682    Lillestrøm               -> Çorum FK €2M
+2026-08-09 [P] Andrés Reyes             1053717   San Diego FC             -> Atletico Nacional free
+2026-08-09 [P] Francisco González       1042571   O'Higgins                -> Tijuana €1M
+2026-08-09 [L] Felipe Salomoni          1292636   Guarani                  -> Audax Italiano loan
+2026-08-09 [P] Brynjar Ingi Bjarnason   852424    Greuther Fürth           -> Sønderjyske free
+2026-08-09 [P] Jan Virgili              1690093   Mallorca                 -> Club Brugge €12M
+2026-08-09 [L] Steeven Assengue         1698721   Standard Liege           -> Virton loan

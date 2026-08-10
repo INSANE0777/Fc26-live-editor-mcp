@@ -1,0 +1,259 @@
+{
+  "already_done": [
+    [
+      "Andrey Santos",
+      "Man United",
+      "Manchester United"
+    ],
+    [
+      "Rodrigo Zalazar",
+      "Sporting CP",
+      "Sporting CP"
+    ],
+    [
+      "Mario Gila",
+      "Milan",
+      "Milano FC"
+    ],
+    [
+      "Illan Meslier",
+      "Arsenal",
+      "Arsenal"
+    ],
+    [
+      "Sean Steur",
+      "Newcastle",
+      "Newcastle United"
+    ],
+    [
+      "Fran Garc\u00eda",
+      "Real Betis",
+      "Real Betis Balompi\u00e9"
+    ],
+    [
+      "Jaidon Anthony",
+      "Brentford",
+      "Brentford"
+    ],
+    [
+      "Sandro Tonali",
+      "Tottenham",
+      "Tottenham Hotspur"
+    ],
+    [
+      "Geovany Quenda",
+      "Chelsea",
+      "Chelsea"
+    ],
+    [
+      "Bazoumana Tour\u00e9",
+      "Newcastle",
+      "Newcastle United"
+    ],
+    [
+      "Denzel Dumfries",
+      "Real Madrid",
+      "Real Madrid"
+    ],
+    [
+      "Romain Faivre",
+      "Auxerre",
+      "AJ Auxerre"
+    ],
+    [
+      "Nathan Ak\u00e9",
+      "Fenerbah\u00e7e",
+      "Fenerbah\u00e7e"
+    ],
+    [
+      "Andr\u00e9 Onana",
+      "Trabzonspor",
+      "Trabzonspor"
+    ],
+    [
+      "Nathaniel Brown",
+      "Bayern M\u00fcnchen",
+      "Bayern M\u00fcnchen"
+    ],
+    [
+      "Elliot Anderson",
+      "Man City",
+      "Manchester City"
+    ],
+    [
+      "Mateus Fernandes",
+      "Tottenham",
+      "Tottenham Hotspur"
+    ],
+    [
+      "Ismael Saibari",
+      "Bayern M\u00fcnchen",
+      "Bayern M\u00fcnchen"
+    ],
+    [
+      "Merlin R\u00f6hl",
+      "Everton",
+      "Everton"
+    ],
+    [
+      "Emanuel Emegha",
+      "Chelsea",
+      "Chelsea"
+    ],
+    [
+      "Pascal Struijk",
+      "Brighton",
+      "Brighton & Hove Albion"
+    ],
+    [
+      "Cl\u00e9ment Lenglet",
+      "Benfica",
+      "Benfica"
+    ],
+    [
+      "Ansu Fati",
+      "Monaco",
+      "AS Monaco"
+    ],
+    [
+      "Caio Henrique",
+      "Ajax",
+      "Ajax"
+    ]
+  ],
+  "needs_move": [
+    [
+      "Arthur Atta",
+      272783,
+      "Fiorentina",
+      "Udinese"
+    ],
+    [
+      "Loum Tchaouna",
+      264880,
+      "Coventry",
+      "Burnley"
+    ],
+    [
+      "Morten Hjulmand",
+      244669,
+      "Atletico Madrid",
+      "Atl\u00e9tico de Madrid"
+    ],
+    [
+      "Lorenzo Insigne",
+      198219,
+      "Sampdoria",
+      "Pescara"
+    ],
+    [
+      "Emersonn",
+      76803,
+      "Ipswich",
+      "Toulouse FC"
+    ],
+    [
+      "Mohamed Salah",
+      209331,
+      "Free agent",
+      "NG - FA"
+    ],
+    [
+      "Yves Bissouma",
+      236480,
+      "Free agent",
+      "NG - FA"
+    ],
+    [
+      "Illan Meslier",
+      242656,
+      "Free agent",
+      "Arsenal"
+    ],
+    [
+      "S\u00e9bastien Haller",
+      205693,
+      "Sanfrecce",
+      "FC Utrecht"
+    ],
+    [
+      "Eliezer Mayenda",
+      271248,
+      "Rennes",
+      "Stade Rennais"
+    ],
+    [
+      "Brais M\u00e9ndez",
+      235944,
+      "Columbus",
+      "Real Sociedad"
+    ],
+    [
+      "Hayden Hackney",
+      253054,
+      "Everton",
+      "Middlesbrough"
+    ],
+    [
+      "Marco Palestra",
+      278339,
+      "Chelsea",
+      "Italy"
+    ],
+    [
+      "Alexis S\u00e1nchez",
+      184941,
+      "Free agent",
+      "NG - FA"
+    ],
+    [
+      "Andrea Belotti",
+      208596,
+      "Free agent",
+      "Cagliari"
+    ],
+    [
+      "Eljif Elmas",
+      241390,
+      "Free agent",
+      "Napoli"
+    ],
+    [
+      "Gon\u00e7alo Ramos",
+      256903,
+      "Milan",
+      "Portugal"
+    ],
+    [
+      "Dusan Vlahovic",
+      246430,
+      "Free agent",
+      "NG - FA"
+    ],
+    [
+      "Nico Paz",
+      277846,
+      "Como",
+      "Argentina"
+    ],
+    [
+      "Perr Schuurs",
+      241854,
+      "NEC Nijmegen",
+      "NG - FA"
+    ],
+    [
+      "Mathys Detourbet",
+      76616,
+      "Man City",
+      "AS Monaco"
+    ]
+  ],
+  "not_in_db": [
+    "Sverre Halseth Nypan",
+    "Eduard Spertsyan",
+    "Radu Dragusin",
+    "Sergi Altimira",
+    "Alejandro Grimaldo"
+  ]
+}

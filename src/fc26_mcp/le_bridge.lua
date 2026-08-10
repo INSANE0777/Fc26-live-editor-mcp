@@ -384,7 +384,21 @@ function handlers.loan_player(cmd)
     if not playerid then return { success = false, error = "Player not found" } end
     local to_teamid = normalize_team_arg(cmd.new_club or cmd.new_teamid)
     if not to_teamid then return { success = false, error = "Target club not found" } end
-    LoanPlayer(playerid, to_teamid, cmd.length or 12, cmd.loantobuy or -1)
+    -- Untangle first, as transfer_player does (fc_apply.lua precedent): pre-signed
+    -- contracts and existing loans block the move otherwise.
+    if type(IsPlayerPresigned) == "function" and IsPlayerPresigned(playerid)
+        and type(DeletePresignedContract) == "function" then DeletePresignedContract(playerid) end
+    if type(IsPlayerLoanedOut) == "function" and IsPlayerLoanedOut(playerid)
+        and type(TerminateLoan) == "function" then TerminateLoan(playerid) end
+    if type(LoanPlayer) == "function" then
+        LoanPlayer(playerid, to_teamid, cmd.length or 12, cmd.loantobuy or -1)
+    elseif type(TransferPlayer) == "function" then
+        -- Older LE builds without LoanPlayer: free move with zero fee.
+        TransferPlayer(playerid, to_teamid, 0, 0, cmd.length or 12)
+        return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), new_teamid = to_teamid, new_club_name = safe_name(GetTeamName(to_teamid)), fallback = "transfer" }
+    else
+        return { success = false, error = "No loan/transfer API available" }
+    end
     return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), new_teamid = to_teamid, new_club_name = safe_name(GetTeamName(to_teamid)) }
 end
 
@@ -468,12 +482,57 @@ function handlers.set_player_fitness(cmd)
 end
 
 function handlers.get_transfer_budget(cmd)
-    return { success = true, budget = GetTransferBudget() }
+    -- v26.3+: GetTransferBudget/SetTransferBudget are deprecated no-ops; the Career
+    -- Mode "User" variants are the live API. Prefer them, fall back to legacy.
+    if type(GetUserTransferBudget) == "function" then
+        local ok, v = pcall(GetUserTransferBudget)
+        if ok and v ~= nil then return { success = true, budget = v, api = "user" } end
+    end
+    if type(GetTransferBudget) ~= "function" then
+        return { success = false, error = "No transfer-budget getter available" }
+    end
+    return { success = true, budget = GetTransferBudget(), api = "legacy" }
 end
 
 function handlers.set_transfer_budget(cmd)
-    SetTransferBudget(cmd.value)
-    return { success = true, budget = GetTransferBudget() }
+    if cmd.value == nil then return { success = false, error = "value required" } end
+    if type(SetUserTransferBudget) == "function" then
+        pcall(SetUserTransferBudget, cmd.value)
+    elseif type(SetTransferBudget) == "function" then
+        pcall(SetTransferBudget, cmd.value)
+    else
+        return { success = false, error = "No transfer-budget setter available" }
+    end
+    local r = handlers.get_transfer_budget(cmd)
+    if not r.success then return r end
+    return { success = true, budget = r.budget, api = r.api }
+end
+
+function handlers.get_wage_budget(cmd)
+    if type(GetUserWageBudget) == "function" then
+        local ok, v = pcall(GetUserWageBudget)
+        if ok and v ~= nil then return { success = true, budget = v } end
+    end
+    -- DB fallback: career_managerpref.wagebudget (same row fc_control.lua writes)
+    local ok, rows = pcall(GetDBTableRows, "career_managerpref")
+    if ok and rows and rows[1] and rows[1].wagebudget then
+        return { success = true, budget = tonumber(rows[1].wagebudget.value) or 0, api = "db" }
+    end
+    return { success = false, error = "No wage-budget getter available" }
+end
+
+function handlers.set_wage_budget(cmd)
+    if cmd.value == nil then return { success = false, error = "value required" } end
+    if type(SetUserWageBudget) == "function" then pcall(SetUserWageBudget, cmd.value) end
+    -- Mirror onto the career pref row so the value persists, as fc_control.lua does.
+    local ok, rows = pcall(GetDBTableRows, "career_managerpref")
+    if ok and rows and rows[1] and rows[1].wagebudget then
+        rows[1].wagebudget.value = tostring(cmd.value)
+        pcall(EditDBTableField, rows[1].wagebudget)
+    end
+    local r = handlers.get_wage_budget(cmd)
+    if not r.success then return r end
+    return { success = true, budget = r.budget }
 end
 
 function handlers.get_db_tables(cmd)

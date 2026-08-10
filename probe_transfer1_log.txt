@@ -1,0 +1,7 @@
+2026-08-10 11:36:57 == PROBE+TRANSFER1 START ==
+2026-08-10 11:36:57 before: slots=52.0 real=33
+2026-08-10 11:36:57 transferring pid=278339 from=111592 to=5 wage=30000 months=36
+2026-08-10 11:36:57 pcall=true
+2026-08-10 11:36:57 after:  slots=52.0 real=33
+2026-08-10 11:36:57 Palestra team now=111592
+2026-08-10 11:36:57 == PROBE+TRANSFER1 DONE ==

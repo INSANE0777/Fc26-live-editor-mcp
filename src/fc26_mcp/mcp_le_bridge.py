@@ -244,6 +244,16 @@ def tool_list():
                 "inputSchema": {"type": "object", "properties": {"value": {"type": "integer"}}, "required": ["value"]}
             },
             {
+                "name": "le_get_wage_budget",
+                "description": "Get wage budget (Career Mode).",
+                "inputSchema": {"type": "object", "properties": {}}
+            },
+            {
+                "name": "le_set_wage_budget",
+                "description": "Set wage budget (Career Mode).",
+                "inputSchema": {"type": "object", "properties": {"value": {"type": "integer"}}, "required": ["value"]}
+            },
+            {
                 "name": "le_get_db_tables",
                 "description": "List database tables.",
                 "inputSchema": {"type": "object", "properties": {}}

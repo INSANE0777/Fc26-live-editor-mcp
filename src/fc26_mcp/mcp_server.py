@@ -138,7 +138,7 @@ def tool_list():
             },
             {
                 "name": "edit_table_field",
-                "description": "Set an integer field on a row of the active file's DB table. Career: e.g. career_users.clubteamid / wage.",
+                "description": "Set an integer field on a row of the active file's DB table. REFUSES raw writes to transfer-critical tables (teamplayerlinks, career_playercontract, etc.) — those must go through native Live Editor calls, since the game reads wage/contract/squad state from in-memory managers and raw DB edits corrupt the save. Career: e.g. career_users.clubteamid / wage.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -181,7 +181,7 @@ def tool_list():
             },
             {
                 "name": "apply_transfers",
-                "description": "Apply transfers to the squad file and save it.",
+                "description": "Generate a Live Editor Lua script that applies transfers with NATIVE calls (cTransferPlayer / cLoanPlayer) — the only path that updates the game's in-memory career managers. Direct DB edits break the save (wage -1, contract -1, broken morale/sharpness). Returns the script path; run it in LE Lua Engine then save the career. Idempotent (skips already-moved players), safe to rerun after a crash.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -193,11 +193,15 @@ def tool_list():
                                     "playerid": {"type": "integer"},
                                     "player": {"type": "string"},
                                     "new_teamid": {"type": "integer"},
-                                    "new_club": {"type": "string"}
+                                    "new_club": {"type": "string"},
+                                    "wage": {"type": "integer", "description": "Optional weekly wage override. Defaults to FC band by OVR."},
+                                    "months": {"type": "integer", "description": "Optional contract length override in months."}
                                 }
-                            }
+                            },
+                            "description": "List of transfers. Provide either playerid or player name, and either new_teamid or new_club name."
                         },
-                        "output_file": {"type": "string", "description": "Optional output file path. Defaults to original file with .new suffix."}
+                        "contract_months": {"type": "integer", "description": "Default contract length in months (default 36)."},
+                        "output_file": {"type": "string", "description": "Optional output path for the generated Lua script. Defaults to C:/fc26-mcp/apply_transfers_native.lua."}
                     },
                     "required": ["transfers"]
                 }
@@ -393,8 +397,48 @@ def _normalize_transfers(sq, transfers):
         if tid is None:
             raise ValueError(f"Club not found: {new_club or new_teamid}")
 
-        normalized.append({"playerid": pid, "player_name": pname, "new_teamid": tid, "new_club_name": tname})
+        normalized.append({"playerid": pid, "player_name": pname, "new_teamid": tid, "new_club_name": tname,
+                          "wage": tr.get("wage"), "months": tr.get("months")})
     return normalized
+
+
+def _fc_wage(ov):
+    """FC-style weekly wage by OVR (career currency). Matches the game's
+    rating-based wage bands."""
+    if ov >= 90: return 240000
+    if ov >= 88: return 185000
+    if ov >= 86: return 145000
+    if ov >= 84: return 110000
+    if ov >= 82: return 88000
+    if ov >= 80: return 68000
+    if ov >= 78: return 53000
+    if ov >= 76: return 40000
+    if ov >= 74: return 30000
+    if ov >= 72: return 22000
+    if ov >= 70: return 16000
+    if ov >= 68: return 12000
+    if ov >= 66: return 9000
+    if ov >= 64: return 7000
+    if ov >= 62: return 5500
+    if ov >= 60: return 4500
+    return 3000
+
+
+def _lua_str(s):
+    return json.dumps(str(s), ensure_ascii=False)  # valid Lua string literal
+
+
+# Tables that, when edited raw, break the in-game career managers
+# (wage/contract/squad-role/morale state lives in memory, not the DB).
+# Writes to these MUST go through Live Editor native calls instead.
+NO_RAW_WRITE_TABLES = frozenset({
+    "teamplayerlinks",
+    "career_playercontract",
+    "career_presignedcontract",
+    "career_playerloans",
+    "playerloans",
+    "career_players",
+})
 
 
 def handle_plan_transfers(args):
@@ -404,37 +448,87 @@ def handle_plan_transfers(args):
 
 
 def handle_apply_transfers(args):
+    """Generate a Live Editor Lua script that applies transfers with NATIVE
+    calls (cTransferPlayer / cLoanPlayer), the only path that updates the
+    game's in-memory career managers. Direct DB edits leave the managers
+    stale (wage -1, contract -1, broken morale/sharpness) and can corrupt
+    the save.
+
+    Returns the Lua script path + instructions: run it in Live Editor
+    -> Lua Engine, then save the career. Script is idempotent (skips
+    players already at the target team), so a crashed run is safe to rerun.
+    """
     sq = get_squad()
     transfers = _normalize_transfers(sq, args.get("transfers", []))
 
-    club_team_ids = _club_ids(sq)
+    # OVR -> wage per player
+    players = sq.get_table("players")
+    ovr = {p.get("playerid"): int(p.get("overallrating") or 60) for p in players}
+    months_default = args.get("contract_months", 36)
 
-    records, _ = sq._parse_table("teamplayerlinks")
-    applied = []
+    L = []
+    A = L.append
+    A('-- fc26_mcp apply_transfers.lua -- NATIVE transfers (cTransferPlayer/cLoanPlayer)')
+    A('-- Generated by fc26-mcp. Run: Live Editor -> Lua Engine -> Run.')
+    A('local LOG_PATH = "C:/fc26-mcp/mcp_transfer_log.txt"')
+    A('local NL = string.char(10)')
+    A('local function log(msg)')
+    A('    local f = io.open(LOG_PATH, "a")')
+    A('    if f then f:write(os.date("%Y-%m-%d %H:%M:%S") .. " " .. msg .. NL) f:close() end')
+    A('end')
+    A('')
+    A('local T = {')
     for tr in transfers:
         pid = tr["playerid"]
         tid = tr["new_teamid"]
-        # Update ALL club links (loan + parent) to the target team; leave national-team links untouched
-        matching = [
-            (i, r) for i, r in enumerate(records)
-            if r["playerid"] == pid and r["teamid"] in club_team_ids
-        ]
-        if not matching:
-            raise ValueError(f"Player {tr['player_name']} has no club link")
+        name = tr["player_name"]
+        wage = tr.get("wage") or _fc_wage(ovr.get(pid, 60))
+        months = tr.get("months") or months_default
+        A("    { n = %s, pid = %d, tid = %d, wage = %d, months = %d }," %
+          (_lua_str(name), pid, tid, int(wage), int(months)))
+    A('}')
+    A('')
+    A('function main()')
+    A('    log("== NATIVE TRANSFERS START (%d) ==")' % len(transfers))
+    A('    for _, e in ipairs(T) do')
+    A('        local pid, tid = e.pid, e.tid')
+    A('        local ok0, cur = pcall(GetTeamIdFromPlayerId, pid)')
+    A('        if ok0 and cur == tid then')
+    A('            log(e.n .. " pid=" .. pid .. " already at " .. tid .. ", skip")')
+    A('        else')
+    A('            local okp, p2 = pcall(IsPlayerPresigned, pid)')
+    A('            if okp and p2 then pcall(DeletePresignedContract, pid) end')
+    A('            local okl, l2 = pcall(IsPlayerLoanedOut, pid)')
+    A('            if okl and l2 then pcall(TerminateLoan, pid) end')
+    A('            local from = (ok0 and cur and cur > 0) and cur or 0')
+    A('            local ok = pcall(cTransferPlayer, pid, from, tid, 0, -1, e.wage, e.months)')
+    A('            local ok2, cur2 = pcall(GetTeamIdFromPlayerId, pid)')
+    A('            local tn = ""')
+    A('            if ok2 and cur2 and cur2 > 0 then local o3, n3 = pcall(GetTeamName, cur2) tn = tostring(n3 or "") end')
+    A('            local res = (ok2 and cur2 == tid) and "OK" or "FAIL"')
+    A('            log(e.n .. " pid=" .. pid .. " -> " .. tid .. " [" .. res .. "] after=" .. tostring(cur2) .. " " .. tn .. " pcall=" .. tostring(ok))')
+    A('        end')
+    A('    end')
+    A('    log("== NATIVE TRANSFERS DONE ==")')
+    A('end')
+    A('')
+    A('main()')
 
-        for rec_idx, _rec in matching:
-            sq.update_field("teamplayerlinks", rec_idx, "teamid", tid)
-        applied.append(tr)
+    script = "\n".join(L) + "\n"
 
-    output = args.get("output_file")
-    if output:
-        sq.save(output)
-        saved_path = output
-    else:
-        original = Path(sq.path)
-        saved_path = original.with_suffix(original.suffix + ".new")
-        sq.save(str(saved_path))
-    return {"applied": applied, "saved_to": str(saved_path), "count": len(applied)}
+    out = args.get("output_file")
+    if not out:
+        out = str(Path(__file__).resolve().parent.parent.parent / "apply_transfers_native.lua")
+    Path(out).write_text(script, encoding="utf-8")
+
+    return {
+        "applied_plan": transfers,
+        "lua_script": str(out),
+        "count": len(transfers),
+        "instruction": "Open the Lua script in Live Editor -> Lua Engine -> Run, then SAVE THE CAREER. "
+                        "Native cTransferPlayer is the only path that updates contract/wage managers; "
+                        "direct DB edits break the save. The script is idempotent (safe to rerun after a crash)."
+    }
 
 
 def handle_list_career_saves(args):
@@ -493,6 +587,15 @@ def handle_edit_table_field(args):
     value = args.get("value")
     if not table or row is None or not field or value is None:
         raise ValueError("table, row, field, value required")
+
+    if table in NO_RAW_WRITE_TABLES:
+        raise ValueError(
+            f"Refusing raw edit of '{table}': the game reads contract/wage/squad state "
+            "from in-memory managers, not the DB. Direct edits here corrupt the save "
+            "(wage -1, contract -1, broken morale). Use plan_transfers/apply_transfers "
+            "(native Lua) or LE native calls instead."
+        )
+
     sq.update_field(table, int(row), field, int(value))
     save_path = args.get("save_path")
     if save_path:

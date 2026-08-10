@@ -1,0 +1,5871 @@
+{
+ "source": "fotmob popular",
+ "window_from": "2026-07-14",
+ "transfers": [
+  {
+   "name": "Nabil Fekir",
+   "playerId": 469852,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-08-09T10:25:58Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Al-Jazira",
+   "fromClubFullName": "Al-Jazira",
+   "fromClubId": 102101,
+   "toClub": "Abha",
+   "toClubFullName": "Abha",
+   "toClubId": 150414,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-05T00:00:00Z",
+   "toDate": null,
+   "marketValue": 1810394
+  },
+  {
+   "name": "Bruno Guimarães",
+   "playerId": 850354,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-08-08T13:47:09Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Newcastle",
+   "fromClubFullName": "Newcastle United",
+   "fromClubId": 10261,
+   "toClub": "Arsenal",
+   "toClubFullName": "Arsenal",
+   "toClubId": 9825,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 87500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-08T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 56752301
+  },
+  {
+   "name": "Facundo Buonanotte",
+   "playerId": 1336566,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-08-07T23:13:04Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Brighton",
+   "fromClubFullName": "Brighton & Hove Albion",
+   "fromClubId": 10204,
+   "toClub": "Elche",
+   "toClubFullName": "Elche",
+   "toClubId": 10268,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-08-08T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 18142029
+  },
+  {
+   "name": "Takehiro Tomiyasu",
+   "playerId": 664444,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-08-07T19:25:32Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Crystal Palace",
+   "toClubFullName": "Crystal Palace",
+   "toClubId": 9826,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-07T00:00:00Z",
+   "toDate": null,
+   "marketValue": 3564906
+  },
+  {
+   "name": "Franco Mastantuono",
+   "playerId": 1607566,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-08-07T16:57:52Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Madrid",
+   "fromClubFullName": "Real Madrid",
+   "fromClubId": 8633,
+   "toClub": "Fiorentina",
+   "toClubFullName": "Fiorentina",
+   "toClubId": 8535,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-08-07T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 44484989
+  },
+  {
+   "name": "Djibril Sow",
+   "playerId": 707970,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-08-07T10:00:29Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Sevilla",
+   "fromClubFullName": "Sevilla",
+   "fromClubId": 8302,
+   "toClub": "Genoa",
+   "toClubFullName": "Genoa",
+   "toClubId": 10233,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 4000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-07T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 5220451
+  },
+  {
+   "name": "Maghnes Akliouche",
+   "playerId": 1305618,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-08-07T09:44:31Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Monaco",
+   "fromClubFullName": "Monaco",
+   "fromClubId": 9829,
+   "toClub": "PSG",
+   "toClubFullName": "Paris Saint-Germain",
+   "toClubId": 9847,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-07T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 44071866
+  },
+  {
+   "name": "James Trafford",
+   "playerId": 1187213,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-08-07T09:40:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man City",
+   "fromClubFullName": "Manchester City",
+   "fromClubId": 8456,
+   "toClub": "Leeds",
+   "toClubFullName": "Leeds United",
+   "toClubId": 8463,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-07T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 26522322
+  },
+  {
+   "name": "Yan Diomande",
+   "playerId": 1735453,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-08-06T16:09:55Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "RB Leipzig",
+   "fromClubFullName": "RB Leipzig",
+   "fromClubId": 178475,
+   "toClub": "Real Madrid",
+   "toClubFullName": "Real Madrid",
+   "toClubId": 8633,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 125000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-06T00:00:00Z",
+   "toDate": "2032-06-30T00:00:00Z",
+   "marketValue": 51835903
+  },
+  {
+   "name": "Mohamed Salah",
+   "playerId": 292462,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-08-05T21:37:58Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Trabzonspor",
+   "toClubFullName": "Trabzonspor",
+   "toClubId": 9752,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-05T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 31593014
+  },
+  {
+   "name": "Angeliño",
+   "playerId": 603537,
+   "position": {
+    "label": "LWB",
+    "key": "left_wing_back_short"
+   },
+   "transferDate": "2026-08-05T21:10:31Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Roma",
+   "fromClubFullName": "Roma",
+   "fromClubId": 8686,
+   "toClub": "Deportivo A Coruña",
+   "toClubFullName": "Deportivo A Coruña",
+   "toClubId": 9783,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-08-05T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 10268241
+  },
+  {
+   "name": "Konstantinos Tzolakis",
+   "playerId": 1072068,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-08-05T12:14:06Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Olympiacos",
+   "fromClubFullName": "Olympiacos",
+   "fromClubId": 8638,
+   "toClub": "Hull",
+   "toClubFullName": "Hull City",
+   "toClubId": 8667,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 23300000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-05T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 13034200
+  },
+  {
+   "name": "Miguel Gutiérrez",
+   "playerId": 942379,
+   "position": {
+    "label": "LWB",
+    "key": "left_wing_back_short"
+   },
+   "transferDate": "2026-08-05T11:02:04Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Napoli",
+   "fromClubFullName": "Napoli",
+   "fromClubId": 9875,
+   "toClub": "Leverkusen",
+   "toClubFullName": "Bayer Leverkusen",
+   "toClubId": 8178,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 26000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-05T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 14947677
+  },
+  {
+   "name": "Florentino",
+   "playerId": 793255,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-08-04T21:42:44Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Burnley",
+   "fromClubFullName": "Burnley",
+   "fromClubId": 8191,
+   "toClub": "Ipswich",
+   "toClubFullName": "Ipswich Town",
+   "toClubId": 9902,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 18700000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-04T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 17026031
+  },
+  {
+   "name": "Carl Rushworth",
+   "playerId": 1187236,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-08-04T13:50:39Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Brighton",
+   "fromClubFullName": "Brighton & Hove Albion",
+   "fromClubId": 10204,
+   "toClub": "Coventry",
+   "toClubFullName": "Coventry City",
+   "toClubId": 8669,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25700000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-04T00:00:00Z",
+   "toDate": null,
+   "marketValue": 7201916
+  },
+  {
+   "name": "Giovanni Reyna",
+   "playerId": 1071179,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-08-04T12:29:47Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "M'gladbach",
+   "fromClubFullName": "Borussia Mönchengladbach",
+   "fromClubId": 9788,
+   "toClub": "Strasbourg",
+   "toClubFullName": "Strasbourg",
+   "toClubId": 9848,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 3000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-04T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 5747252
+  },
+  {
+   "name": "Marc-André ter Stegen",
+   "playerId": 184554,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-08-04T10:04:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Barcelona",
+   "fromClubFullName": "Barcelona",
+   "fromClubId": 8634,
+   "toClub": "Ajax",
+   "toClubFullName": "Ajax",
+   "toClubId": 8593,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-08-04T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 2201504
+  },
+  {
+   "name": "Gonzalo García",
+   "playerId": 1413847,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-08-03T22:12:05Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Madrid",
+   "fromClubFullName": "Real Madrid",
+   "fromClubId": 8633,
+   "toClub": "Fulham",
+   "toClubFullName": "Fulham",
+   "toClubId": 9879,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-03T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 21876076
+  },
+  {
+   "name": "Konstantinos Karetsas",
+   "playerId": 1536436,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-08-03T13:33:29Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Genk",
+   "fromClubFullName": "Genk",
+   "fromClubId": 9987,
+   "toClub": "Dortmund",
+   "toClubFullName": "Borussia Dortmund",
+   "toClubId": 9789,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 30000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-03T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 28744921
+  },
+  {
+   "name": "Lukás Hornícek",
+   "playerId": 1186978,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-08-03T10:52:29Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Braga",
+   "fromClubFullName": "Braga",
+   "fromClubId": 10264,
+   "toClub": "Newcastle",
+   "toClubFullName": "Newcastle United",
+   "toClubId": 10261,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 30000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-03T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 12172469
+  },
+  {
+   "name": "Valentín Barco",
+   "playerId": 1272440,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-08-02T19:22:19Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Strasbourg",
+   "fromClubFullName": "Strasbourg",
+   "fromClubId": 9848,
+   "toClub": "Chelsea",
+   "toClubFullName": "Chelsea",
+   "toClubId": 8455,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-02T00:00:00Z",
+   "toDate": "2033-06-30T00:00:00Z",
+   "marketValue": 24991145
+  },
+  {
+   "name": "Randal Kolo Muani",
+   "playerId": 823825,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-08-02T18:40:10Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "PSG",
+   "fromClubFullName": "Paris Saint-Germain",
+   "fromClubId": 9847,
+   "toClub": "Juventus",
+   "toClubFullName": "Juventus",
+   "toClubId": 9885,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 41200000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-02T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 24160750
+  },
+  {
+   "name": "Kerim Alajbegovic",
+   "playerId": 1684401,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-08-02T17:04:29Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leverkusen",
+   "fromClubFullName": "Bayer Leverkusen",
+   "fromClubId": 8178,
+   "toClub": "Juventus",
+   "toClubFullName": "Juventus",
+   "toClubId": 9885,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 32000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-02T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 12412965
+  },
+  {
+   "name": "Konstantinos Koulierakis",
+   "playerId": 1337884,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-08-01T22:49:04Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Wolfsburg",
+   "fromClubFullName": "Wolfsburg",
+   "fromClubId": 8721,
+   "toClub": "Roma",
+   "toClubFullName": "Roma",
+   "toClubId": 8686,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 16500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-01T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 21553593
+  },
+  {
+   "name": "Mamadou Sangaré",
+   "playerId": 1185211,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-08-01T18:39:58Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Lens",
+   "fromClubFullName": "Lens",
+   "fromClubId": 8588,
+   "toClub": "Brentford",
+   "toClubFullName": "Brentford",
+   "toClubId": 9937,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 48000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-01T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 12223086
+  },
+  {
+   "name": "António Silva",
+   "playerId": 1292092,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-08-01T15:37:00Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Benfica",
+   "fromClubFullName": "Benfica",
+   "fromClubId": 9772,
+   "toClub": "Bournemouth",
+   "toClubFullName": "AFC Bournemouth",
+   "toClubId": 8678,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-08-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": null
+  },
+  {
+   "name": "Julian Brandt",
+   "playerId": 516846,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-08-01T09:10:53Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Dortmund",
+   "fromClubFullName": "Borussia Dortmund",
+   "fromClubId": 9789,
+   "toClub": "Ajax",
+   "toClubFullName": "Ajax",
+   "toClubId": 8593,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-31T00:00:00Z",
+   "toDate": "2029-06-30T00:00:00Z",
+   "marketValue": 11423015
+  },
+  {
+   "name": "Maxence Lacroix",
+   "playerId": 950485,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-31T08:57:37Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Crystal Palace",
+   "fromClubFullName": "Crystal Palace",
+   "fromClubId": 9826,
+   "toClub": "Chelsea",
+   "toClubFullName": "Chelsea",
+   "toClubId": 8455,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 60700000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-30T00:00:00Z",
+   "toDate": "2032-06-30T00:00:00Z",
+   "marketValue": 41791575
+  },
+  {
+   "name": "Gustavo Sá",
+   "playerId": 1395482,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-31T08:54:36Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Famalicao",
+   "fromClubFullName": "Famalicao",
+   "fromClubId": 1634,
+   "toClub": "Nottm Forest",
+   "toClubFullName": "Nottingham Forest",
+   "toClubId": 10203,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 20000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-30T00:00:00Z",
+   "toDate": null,
+   "marketValue": 16658892
+  },
+  {
+   "name": "Carlos Espí",
+   "playerId": 1610744,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-30T22:55:25Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Levante",
+   "fromClubFullName": "Levante",
+   "fromClubId": 8581,
+   "toClub": "Real Madrid",
+   "toClubFullName": "Real Madrid",
+   "toClubId": 8633,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-30T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 2260432
+  },
+  {
+   "name": "John Stones",
+   "playerId": 263653,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-30T22:03:23Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Inter",
+   "toClubFullName": "Inter",
+   "toClubId": 8636,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-30T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 10624097
+  },
+  {
+   "name": "Artem Dovbyk",
+   "playerId": 655696,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-30T13:00:41Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Roma",
+   "fromClubFullName": "Roma",
+   "fromClubId": 8686,
+   "toClub": "Bologna",
+   "toClubFullName": "Bologna",
+   "toClubId": 9857,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-30T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 21285695
+  },
+  {
+   "name": "Santiago Castro",
+   "playerId": 1282008,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-30T12:44:23Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Bologna",
+   "fromClubFullName": "Bologna",
+   "fromClubId": 9857,
+   "toClub": "Roma",
+   "toClubFullName": "Roma",
+   "toClubId": 8686,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 35000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-30T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 34661675
+  },
+  {
+   "name": "Matthis Abline",
+   "playerId": 1250492,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-07-30T10:10:14Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Nantes",
+   "fromClubFullName": "Nantes",
+   "fromClubId": 9830,
+   "toClub": "Monaco",
+   "toClubFullName": "Monaco",
+   "toClubId": 9829,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-30T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 19458445
+  },
+  {
+   "name": "Tolu Arokodare",
+   "playerId": 1072864,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-29T15:03:27Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Wolves",
+   "fromClubFullName": "Wolverhampton Wanderers",
+   "fromClubId": 8602,
+   "toClub": "Ajax",
+   "toClubFullName": "Ajax",
+   "toClubId": 8593,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-29T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 24794374
+  },
+  {
+   "name": "Loïs Openda",
+   "playerId": 747767,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-28T18:48:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Juventus",
+   "fromClubFullName": "Juventus",
+   "fromClubId": 9885,
+   "toClub": "Lyon",
+   "toClubFullName": "Lyon",
+   "toClubId": 9748,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 3500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-28T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 33024086
+  },
+  {
+   "name": "Jack Harrison",
+   "playerId": 751649,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-26T10:22:09Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leeds",
+   "fromClubFullName": "Leeds United",
+   "fromClubId": 8463,
+   "toClub": "New England",
+   "toClubFullName": "New England Revolution",
+   "toClubId": 6580,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-25T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 11693247
+  },
+  {
+   "name": "Kang-In Lee",
+   "playerId": 940976,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-07-25T10:20:35Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "PSG",
+   "fromClubFullName": "Paris Saint-Germain",
+   "fromClubId": 9847,
+   "toClub": "Atletico Madrid",
+   "toClubFullName": "Atletico Madrid",
+   "toClubId": 9906,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-25T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 27653364
+  },
+  {
+   "name": "Ángel Correa",
+   "playerId": 432950,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-25T08:35:35Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Tigres",
+   "fromClubFullName": "Tigres",
+   "fromClubId": 8561,
+   "toClub": "River Plate",
+   "toClubFullName": "River Plate",
+   "toClubId": 10076,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 13200000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-25T00:00:00Z",
+   "toDate": "2029-12-31T00:00:00Z",
+   "marketValue": 5394225
+  },
+  {
+   "name": "Crysencio Summerville",
+   "playerId": 941213,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-07-24T21:23:58Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "West Ham",
+   "fromClubFullName": "West Ham United",
+   "fromClubId": 8654,
+   "toClub": "Al Hilal",
+   "toClubFullName": "Al Hilal",
+   "toClubId": 2529,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 65000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-24T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 32170648
+  },
+  {
+   "name": "Aladji Bamba",
+   "playerId": 1695681,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-24T12:18:02Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Monaco",
+   "fromClubFullName": "Monaco",
+   "fromClubId": 9829,
+   "toClub": "Newcastle",
+   "toClubFullName": "Newcastle United",
+   "toClubId": 10261,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 35500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-24T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 9511636
+  },
+  {
+   "name": "Alejandro Garnacho",
+   "playerId": 1203665,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-07-23T17:46:26Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Chelsea",
+   "fromClubFullName": "Chelsea",
+   "fromClubId": 8455,
+   "toClub": "Aston Villa",
+   "toClubFullName": "Aston Villa",
+   "toClubId": 10252,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-23T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 49588442
+  },
+  {
+   "name": "Xaver Schlager",
+   "playerId": 620027,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-07-23T17:21:40Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Nottm Forest",
+   "toClubFullName": "Nottingham Forest",
+   "toClubId": 10203,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-23T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 6336970
+  },
+  {
+   "name": "Christos Tzolis",
+   "playerId": 1157237,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-07-23T16:00:57Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Club Brugge",
+   "fromClubFullName": "Club Brugge",
+   "fromClubId": 8342,
+   "toClub": "Arsenal",
+   "toClubFullName": "Arsenal",
+   "toClubId": 9825,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-23T00:00:00Z",
+   "toDate": null,
+   "marketValue": 29470983
+  },
+  {
+   "name": "Karim Adeyemi",
+   "playerId": 959594,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-23T12:44:57Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Dortmund",
+   "fromClubFullName": "Borussia Dortmund",
+   "fromClubId": 9789,
+   "toClub": "Barcelona",
+   "toClubFullName": "Barcelona",
+   "toClubId": 8634,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 22000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-23T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 44856323
+  },
+  {
+   "name": "Matt Targett",
+   "playerId": 538112,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-07-23T11:12:27Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Hull",
+   "toClubFullName": "Hull City",
+   "toClubId": 8667,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-23T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 2396786
+  },
+  {
+   "name": "Ibrahima Ba",
+   "playerId": 1609327,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-23T09:49:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Famalicao",
+   "fromClubFullName": "Famalicao",
+   "fromClubId": 1634,
+   "toClub": "Sporting CP",
+   "toClubFullName": "Sporting CP",
+   "toClubId": 9768,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 21250000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-22T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 2425322
+  },
+  {
+   "name": "Casemiro",
+   "playerId": 208494,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-22T22:34:16Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man United",
+   "fromClubFullName": "Manchester United",
+   "fromClubId": 10260,
+   "toClub": "Inter Miami CF",
+   "toClubFullName": "Inter Miami CF",
+   "toClubId": 960720,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-22T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 5739627
+  },
+  {
+   "name": "Morgan Rogers",
+   "playerId": 883080,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-22T08:39:50Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Aston Villa",
+   "fromClubFullName": "Aston Villa",
+   "fromClubId": 10252,
+   "toClub": "Chelsea",
+   "toClubFullName": "Chelsea",
+   "toClubId": 8455,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 137300000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-22T00:00:00Z",
+   "toDate": "2033-06-30T00:00:00Z",
+   "marketValue": 65148225
+  },
+  {
+   "name": "Abdul Fatawu",
+   "playerId": 1265626,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-21T23:51:56Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leicester",
+   "fromClubFullName": "Leicester City",
+   "fromClubId": 8197,
+   "toClub": "Ipswich",
+   "toClubFullName": "Ipswich Town",
+   "toClubId": 9902,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 23500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-22T00:00:00Z",
+   "toDate": null,
+   "marketValue": 21775131
+  },
+  {
+   "name": "Jhon Durán",
+   "playerId": 1088066,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-21T06:26:35Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Al Nassr FC",
+   "fromClubFullName": "Al Nassr FC",
+   "fromClubId": 101918,
+   "toClub": "Benfica",
+   "toClubFullName": "Benfica",
+   "toClubId": 9772,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-20T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 24510888
+  },
+  {
+   "name": "João Gomes",
+   "playerId": 1174672,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-07-20T12:15:54Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Wolves",
+   "fromClubFullName": "Wolverhampton Wanderers",
+   "fromClubId": 8602,
+   "toClub": "Aston Villa",
+   "toClubFullName": "Aston Villa",
+   "toClubId": 10252,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-20T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 44799784
+  },
+  {
+   "name": "Christ Inao Oulaï",
+   "playerId": 1666494,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-20T10:56:51Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Trabzonspor",
+   "fromClubFullName": "Trabzonspor",
+   "fromClubId": 9752,
+   "toClub": "Fiorentina",
+   "toClubFullName": "Fiorentina",
+   "toClubId": 8535,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 26000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-20T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 3169606
+  },
+  {
+   "name": "Trincão",
+   "playerId": 732282,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-18T21:13:27Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Sporting CP",
+   "fromClubFullName": "Sporting CP",
+   "fromClubId": 9768,
+   "toClub": "Al Ahli",
+   "toClubFullName": "Al Ahli",
+   "toClubId": 2530,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 39350000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-18T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 36075508
+  },
+  {
+   "name": "Johan Manzambi",
+   "playerId": 1520063,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-17T20:04:37Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Freiburg",
+   "fromClubFullName": "Freiburg",
+   "fromClubId": 8358,
+   "toClub": "Aston Villa",
+   "toClubFullName": "Aston Villa",
+   "toClubId": 10252,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 60000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-17T00:00:00Z",
+   "toDate": null,
+   "marketValue": 31466201
+  },
+  {
+   "name": "Tarik Muharemovic",
+   "playerId": 1250485,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-17T19:03:24Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Sassuolo",
+   "fromClubFullName": "Sassuolo",
+   "fromClubId": 7943,
+   "toClub": "Leeds",
+   "toClubFullName": "Leeds United",
+   "toClubId": 8463,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-17T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 17870981
+  },
+  {
+   "name": "Robin Gosens",
+   "playerId": 518346,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-07-17T17:41:26Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Fiorentina",
+   "fromClubFullName": "Fiorentina",
+   "fromClubId": 8535,
+   "toClub": "Schalke 04",
+   "toClubFullName": "Schalke 04",
+   "toClubId": 10189,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-17T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 3625631
+  },
+  {
+   "name": "Maxime Estève",
+   "playerId": 1250443,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-17T11:22:18Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Burnley",
+   "fromClubFullName": "Burnley",
+   "fromClubId": 8191,
+   "toClub": "RB Leipzig",
+   "toClubFullName": "RB Leipzig",
+   "toClubId": 178475,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-17T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 29351468
+  },
+  {
+   "name": "Zeki Çelik",
+   "playerId": 867225,
+   "position": {
+    "label": "RWB",
+    "key": "right_wing_back_short"
+   },
+   "transferDate": "2026-07-16T21:38:42Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Roma",
+   "fromClubFullName": "Roma",
+   "fromClubId": 8686,
+   "toClub": "Juventus",
+   "toClubFullName": "Juventus",
+   "toClubId": 9885,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-16T00:00:00Z",
+   "toDate": "2029-06-30T00:00:00Z",
+   "marketValue": 8748384
+  },
+  {
+   "name": "Lesley Ugochukwu",
+   "playerId": 1200631,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-15T22:01:43Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Burnley",
+   "fromClubFullName": "Burnley",
+   "fromClubId": 8191,
+   "toClub": "Galatasaray",
+   "toClubFullName": "Galatasaray",
+   "toClubId": 8637,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 3500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-15T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 28172522
+  },
+  {
+   "name": "Youri Tielemans",
+   "playerId": 465960,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-14T22:40:11Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Aston Villa",
+   "fromClubFullName": "Aston Villa",
+   "fromClubId": 10252,
+   "toClub": "Man United",
+   "toClubFullName": "Manchester United",
+   "toClubId": 10260,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 41000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-14T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 35191527
+  },
+  {
+   "name": "Mason Greenwood",
+   "playerId": 950473,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-14T22:13:24Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Marseille",
+   "fromClubFullName": "Marseille",
+   "fromClubId": 8592,
+   "toClub": "Fenerbahçe",
+   "toClubFullName": "Fenerbahçe",
+   "toClubId": 8695,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-14T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 49389345
+  },
+  {
+   "name": "Álvaro Rodriguez",
+   "playerId": 1327406,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-14T17:39:50Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Elche",
+   "fromClubFullName": "Elche",
+   "fromClubId": 10268,
+   "toClub": "Bournemouth",
+   "toClubFullName": "AFC Bournemouth",
+   "toClubId": 8678,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-14T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 8976501
+  },
+  {
+   "name": "Leandro Trossard",
+   "playerId": 318615,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-07-14T15:02:04Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Arsenal",
+   "fromClubFullName": "Arsenal",
+   "fromClubId": 9825,
+   "toClub": "Beşiktaş",
+   "toClubFullName": "Beşiktaş",
+   "toClubId": 10188,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 20000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-14T00:00:00Z",
+   "toDate": "2029-06-29T00:00:00Z",
+   "marketValue": 15301964
+  },
+  {
+   "name": "Luka Vuskovic",
+   "playerId": 1413996,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-14T11:22:52Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Tottenham",
+   "fromClubFullName": "Tottenham Hotspur",
+   "fromClubId": 8586,
+   "toClub": "Brighton",
+   "toClubFullName": "Brighton & Hove Albion",
+   "toClubId": 10204,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 54000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-14T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 35441761
+  },
+  {
+   "name": "Álex Jiménez",
+   "playerId": 1526689,
+   "position": {
+    "label": "RB",
+    "key": "rightback_short"
+   },
+   "transferDate": "2026-07-14T08:26:41Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Bournemouth",
+   "fromClubFullName": "AFC Bournemouth",
+   "fromClubId": 8678,
+   "toClub": "Fiorentina",
+   "toClubFullName": "Fiorentina",
+   "toClubId": 8535,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-14T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 25923121
+  },
+  {
+   "name": "Andrey Santos",
+   "playerId": 1372921,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-13T15:17:21Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Chelsea",
+   "fromClubFullName": "Chelsea",
+   "fromClubId": 8455,
+   "toClub": "Man United",
+   "toClubFullName": "Manchester United",
+   "toClubId": 10260,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 56300000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-13T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 49322147
+  },
+  {
+   "name": "Rodrigo Zalazar",
+   "playerId": 1070776,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-13T08:17:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Braga",
+   "fromClubFullName": "Braga",
+   "fromClubId": 10264,
+   "toClub": "Sporting CP",
+   "toClubFullName": "Sporting CP",
+   "toClubId": 9768,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 30000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 20435681
+  },
+  {
+   "name": "Arthur Atta",
+   "playerId": 1428426,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-07-11T19:20:52Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Udinese",
+   "fromClubFullName": "Udinese",
+   "fromClubId": 8600,
+   "toClub": "Fiorentina",
+   "toClubFullName": "Fiorentina",
+   "toClubId": 8535,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-11T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 16419824
+  },
+  {
+   "name": "Loum Tchaouna",
+   "playerId": 1283034,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-11T18:40:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Burnley",
+   "fromClubFullName": "Burnley",
+   "fromClubId": 8191,
+   "toClub": "Coventry",
+   "toClubFullName": "Coventry City",
+   "toClubId": 8669,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 23000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-11T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 19665168
+  },
+  {
+   "name": "Morten Hjulmand",
+   "playerId": 950199,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-11T11:12:15Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Sporting CP",
+   "fromClubFullName": "Sporting CP",
+   "fromClubId": 9768,
+   "toClub": "Atletico Madrid",
+   "toClubFullName": "Atletico Madrid",
+   "toClubId": 9906,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-11T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 39760116
+  },
+  {
+   "name": "Sverre Halseth Nypan",
+   "playerId": 1355509,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-11T09:45:22Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man City",
+   "fromClubFullName": "Manchester City",
+   "fromClubId": 8456,
+   "toClub": "Lommel",
+   "toClubFullName": "Lommel",
+   "toClubId": 6702,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-11T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 22736560
+  },
+  {
+   "name": "Mario Gila",
+   "playerId": 1106074,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-10T19:38:05Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Lazio",
+   "fromClubFullName": "Lazio",
+   "fromClubId": 8543,
+   "toClub": "Milan",
+   "toClubFullName": "Milan",
+   "toClubId": 8564,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 30000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-10T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 25988071
+  },
+  {
+   "name": "Illan Meslier",
+   "playerId": 952029,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-07-10T08:21:47Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Arsenal",
+   "toClubFullName": "Arsenal",
+   "toClubId": 9825,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-09T00:00:00Z",
+   "toDate": null,
+   "marketValue": 9829223
+  },
+  {
+   "name": "Sean Steur",
+   "playerId": 1643770,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-07-09T19:12:02Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Ajax",
+   "fromClubFullName": "Ajax",
+   "fromClubId": 8593,
+   "toClub": "Newcastle",
+   "toClubFullName": "Newcastle United",
+   "toClubId": 10261,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 23000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-09T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 3800000
+  },
+  {
+   "name": "Fran García",
+   "playerId": 750028,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-07-08T21:42:09Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Madrid",
+   "fromClubFullName": "Real Madrid",
+   "fromClubId": 8633,
+   "toClub": "Real Betis",
+   "toClubFullName": "Real Betis",
+   "toClubId": 8603,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 4000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-08T00:00:00Z",
+   "toDate": null,
+   "marketValue": 10466301
+  },
+  {
+   "name": "Lorenzo Insigne",
+   "playerId": 193441,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-08T20:38:24Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Sampdoria",
+   "toClubFullName": "Sampdoria",
+   "toClubId": 9882,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-08T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 838424
+  },
+  {
+   "name": "Emersonn",
+   "playerId": 1320949,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-08T17:44:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Toulouse",
+   "fromClubFullName": "Toulouse",
+   "fromClubId": 9941,
+   "toClub": "Ipswich",
+   "toClubFullName": "Ipswich Town",
+   "toClubId": 9902,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 28000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-08T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 5517066
+  },
+  {
+   "name": "Jaidon Anthony",
+   "playerId": 1171140,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-07-07T17:53:23Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Burnley",
+   "fromClubFullName": "Burnley",
+   "fromClubId": 8191,
+   "toClub": "Brentford",
+   "toClubFullName": "Brentford",
+   "toClubId": 9937,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 17500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-07T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 22251639
+  },
+  {
+   "name": "Eduard Spertsyan",
+   "playerId": 938297,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-07T13:25:58Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Krasnodar",
+   "fromClubFullName": "FC Krasnodar",
+   "fromClubId": 168719,
+   "toClub": "Al Ahli",
+   "toClubFullName": "Al Ahli",
+   "toClubId": 2530,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 21900000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-22T00:00:00Z",
+   "toDate": null,
+   "marketValue": 22831056
+  },
+  {
+   "name": "Radu Dragusin",
+   "playerId": 1203661,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-07T11:25:09Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Tottenham",
+   "fromClubFullName": "Tottenham Hotspur",
+   "fromClubId": 8586,
+   "toClub": "Fiorentina",
+   "toClubFullName": "Fiorentina",
+   "toClubId": 8535,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 1500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-07T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 23015746
+  },
+  {
+   "name": "Sandro Tonali",
+   "playerId": 867414,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-07-06T12:26:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Newcastle",
+   "fromClubFullName": "Newcastle United",
+   "fromClubId": 10261,
+   "toClub": "Tottenham",
+   "toClubFullName": "Tottenham Hotspur",
+   "toClubId": 8586,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 108000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-06T00:00:00Z",
+   "toDate": "2032-06-30T00:00:00Z",
+   "marketValue": 66563217
+  },
+  {
+   "name": "Geovany Quenda",
+   "playerId": 1530314,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-06T11:15:36Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Sporting CP",
+   "fromClubFullName": "Sporting CP",
+   "fromClubId": 9768,
+   "toClub": "Chelsea",
+   "toClubFullName": "Chelsea",
+   "toClubId": 8455,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 50000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2032-06-30T00:00:00Z",
+   "marketValue": 40111886
+  },
+  {
+   "name": "Mohamed Salah",
+   "playerId": 292462,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-06T11:04:38Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Liverpool",
+   "fromClubFullName": "Liverpool",
+   "fromClubId": 8650,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 35103349
+  },
+  {
+   "name": "Yves Bissouma",
+   "playerId": 724306,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-06T10:38:57Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Tottenham",
+   "fromClubFullName": "Tottenham Hotspur",
+   "fromClubId": 8586,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 13392053
+  },
+  {
+   "name": "Illan Meslier",
+   "playerId": 952029,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-07-06T10:34:38Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leeds",
+   "fromClubFullName": "Leeds United",
+   "fromClubId": 8463,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 9829223
+  },
+  {
+   "name": "Sébastien Haller",
+   "playerId": 352968,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-06T09:09:25Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "FC Utrecht",
+   "fromClubFullName": "FC Utrecht",
+   "fromClubId": 9908,
+   "toClub": "Sanfrecce",
+   "toClubFullName": "Sanfrecce Hiroshima",
+   "toClubId": 6224,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-06T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 933716
+  },
+  {
+   "name": "Eliezer Mayenda",
+   "playerId": 1391052,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-05T22:59:23Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Sunderland",
+   "fromClubFullName": "Sunderland",
+   "fromClubId": 8472,
+   "toClub": "Rennes",
+   "toClubFullName": "Rennes",
+   "toClubId": 9851,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 22000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-05T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 24895108
+  },
+  {
+   "name": "Bazoumana Touré",
+   "playerId": 1624586,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-07-05T18:53:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Hoffenheim",
+   "fromClubFullName": "Hoffenheim",
+   "fromClubId": 8226,
+   "toClub": "Newcastle",
+   "toClubFullName": "Newcastle United",
+   "toClubId": 10261,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 50000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-05T00:00:00Z",
+   "toDate": null,
+   "marketValue": 28924204
+  },
+  {
+   "name": "Denzel Dumfries",
+   "playerId": 593118,
+   "position": {
+    "label": "RM",
+    "key": "rightmidfielder_short"
+   },
+   "transferDate": "2026-07-05T12:17:06Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Inter",
+   "fromClubFullName": "Inter",
+   "fromClubId": 8636,
+   "toClub": "Real Madrid",
+   "toClubFullName": "Real Madrid",
+   "toClubId": 8633,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 20000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-05T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 19913221
+  },
+  {
+   "name": "Romain Faivre",
+   "playerId": 904021,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-03T17:10:32Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Bournemouth",
+   "fromClubFullName": "AFC Bournemouth",
+   "fromClubId": 8678,
+   "toClub": "Auxerre",
+   "toClubFullName": "Auxerre",
+   "toClubId": 8583,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-03T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 3763716
+  },
+  {
+   "name": "Nathan Aké",
+   "playerId": 417068,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-03T17:07:13Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man City",
+   "fromClubFullName": "Manchester City",
+   "fromClubId": 8456,
+   "toClub": "Fenerbahçe",
+   "toClubFullName": "Fenerbahçe",
+   "toClubId": 8695,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-03T00:00:00Z",
+   "toDate": null,
+   "marketValue": 13408370
+  },
+  {
+   "name": "André Onana",
+   "playerId": 611491,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-07-03T17:01:56Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man United",
+   "fromClubFullName": "Manchester United",
+   "fromClubId": 10260,
+   "toClub": "Trabzonspor",
+   "toClubFullName": "Trabzonspor",
+   "toClubId": 9752,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-07-03T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 11251069
+  },
+  {
+   "name": "Nathaniel Brown",
+   "playerId": 1395447,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-07-03T14:14:47Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Frankfurt",
+   "fromClubFullName": "Eintracht Frankfurt",
+   "fromClubId": 9810,
+   "toClub": "Bayern München",
+   "toClubFullName": "Bayern München",
+   "toClubId": 9823,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 50000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-03T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 41595822
+  },
+  {
+   "name": "Brais Méndez",
+   "playerId": 640122,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-02T19:25:21Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Sociedad",
+   "fromClubFullName": "Real Sociedad",
+   "fromClubId": 8560,
+   "toClub": "Columbus",
+   "toClubFullName": "Columbus Crew",
+   "toClubId": 6001,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 6000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-02T00:00:00Z",
+   "toDate": "2029-06-30T00:00:00Z",
+   "marketValue": 11405439
+  },
+  {
+   "name": "Elliot Anderson",
+   "playerId": 1089691,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-02T15:14:56Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Nottm Forest",
+   "fromClubFullName": "Nottingham Forest",
+   "fromClubId": 10203,
+   "toClub": "Man City",
+   "toClubFullName": "Manchester City",
+   "toClubId": 8456,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 135000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-02T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 57084237
+  },
+  {
+   "name": "Mateus Fernandes",
+   "playerId": 1356312,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-07-02T11:58:38Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "West Ham",
+   "fromClubFullName": "West Ham United",
+   "fromClubId": 8654,
+   "toClub": "Tottenham",
+   "toClubFullName": "Tottenham Hotspur",
+   "toClubId": 8586,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 100000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-02T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 31843647
+  },
+  {
+   "name": "Hayden Hackney",
+   "playerId": 982394,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-07-02T11:52:39Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Middlesbrough",
+   "fromClubFullName": "Middlesbrough",
+   "fromClubId": 8549,
+   "toClub": "Everton",
+   "toClubFullName": "Everton",
+   "toClubId": 8668,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 19300000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-02T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 25588637
+  },
+  {
+   "name": "Ismael Saibari",
+   "playerId": 1180288,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-07-01T19:09:06Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "PSV Eindhoven",
+   "fromClubFullName": "PSV Eindhoven",
+   "fromClubId": 8640,
+   "toClub": "Bayern München",
+   "toClubFullName": "Bayern München",
+   "toClubId": 9823,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 50000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 27357037
+  },
+  {
+   "name": "Merlin Röhl",
+   "playerId": 1210384,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-07-01T16:50:40Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Freiburg",
+   "fromClubFullName": "Freiburg",
+   "fromClubId": 8358,
+   "toClub": "Everton",
+   "toClubFullName": "Everton",
+   "toClubId": 8668,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 16900184
+  },
+  {
+   "name": "Marco Palestra",
+   "playerId": 1473806,
+   "position": {
+    "label": "RM",
+    "key": "rightmidfielder_short"
+   },
+   "transferDate": "2026-07-01T15:12:21Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Atalanta",
+   "fromClubFullName": "Atalanta",
+   "fromClubId": 8524,
+   "toClub": "Chelsea",
+   "toClubFullName": "Chelsea",
+   "toClubId": 8455,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 55000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2032-06-30T00:00:00Z",
+   "marketValue": 13813268
+  },
+  {
+   "name": "Emanuel Emegha",
+   "playerId": 1183148,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-07-01T11:07:06Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Strasbourg",
+   "fromClubFullName": "Strasbourg",
+   "fromClubId": 9848,
+   "toClub": "Chelsea",
+   "toClubFullName": "Chelsea",
+   "toClubId": 8455,
+   "fee": {
+    "feeText": "undisclosed",
+    "localizedFeeText": "undisclosed"
+   },
+   "amountEuroEstimated": 25000000,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2033-06-30T00:00:00Z",
+   "marketValue": 28632140
+  },
+  {
+   "name": "Pascal Struijk",
+   "playerId": 796974,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-07-01T00:54:05Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leeds",
+   "fromClubFullName": "Leeds United",
+   "fromClubId": 8463,
+   "toClub": "Brighton",
+   "toClubFullName": "Brighton & Hove Albion",
+   "toClubId": 10204,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 23200000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 20014275
+  },
+  {
+   "name": "Alexis Sánchez",
+   "playerId": 50047,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-30T23:37:15Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Sevilla",
+   "fromClubFullName": "Sevilla",
+   "fromClubId": 8302,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 1107093
+  },
+  {
+   "name": "Andrea Belotti",
+   "playerId": 309726,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-30T21:26:05Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Cagliari",
+   "fromClubFullName": "Cagliari",
+   "fromClubId": 8529,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": null,
+   "marketValue": 952494
+  },
+  {
+   "name": "Clément Lenglet",
+   "playerId": 488412,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-30T21:05:55Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Atletico Madrid",
+   "fromClubFullName": "Atletico Madrid",
+   "fromClubId": 9906,
+   "toClub": "Benfica",
+   "toClubFullName": "Benfica",
+   "toClubId": 9772,
+   "fee": {
+    "feeText": "on loan",
+    "localizedFeeText": "on_loan"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": "2027-06-30T00:00:00Z",
+   "marketValue": 3115316
+  },
+  {
+   "name": "Sergi Altimira",
+   "playerId": 1310480,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-06-30T21:03:51Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Betis",
+   "fromClubFullName": "Real Betis",
+   "fromClubId": 8603,
+   "toClub": "Sporting CP",
+   "toClubFullName": "Sporting CP",
+   "toClubId": 9768,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 18500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 20071939
+  },
+  {
+   "name": "Eljif Elmas",
+   "playerId": 741049,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-06-30T18:37:33Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Napoli",
+   "fromClubFullName": "Napoli",
+   "fromClubId": 9875,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": null,
+   "marketValue": 14000398
+  },
+  {
+   "name": "Ansu Fati",
+   "playerId": 1086012,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-06-30T17:27:05Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Barcelona",
+   "fromClubFullName": "Barcelona",
+   "fromClubId": 8634,
+   "toClub": "Monaco",
+   "toClubFullName": "Monaco",
+   "toClubId": 9829,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 11000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 15807582
+  },
+  {
+   "name": "Alejandro Grimaldo",
+   "playerId": 288406,
+   "position": {
+    "label": "LWB",
+    "key": "left_wing_back_short"
+   },
+   "transferDate": "2026-06-30T16:14:45Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leverkusen",
+   "fromClubFullName": "Bayer Leverkusen",
+   "fromClubId": 8178,
+   "toClub": "Atletico Madrid",
+   "toClubFullName": "Atletico Madrid",
+   "toClubId": 9906,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 22000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 23578989
+  },
+  {
+   "name": "Gonçalo Ramos",
+   "playerId": 940087,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-30T16:12:18Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "PSG",
+   "fromClubFullName": "Paris Saint-Germain",
+   "fromClubId": 9847,
+   "toClub": "Milan",
+   "toClubFullName": "Milan",
+   "toClubId": 8564,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 74000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 35358103
+  },
+  {
+   "name": "Caio Henrique",
+   "playerId": 769525,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-06-30T11:30:57Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Monaco",
+   "fromClubFullName": "Monaco",
+   "fromClubId": 9829,
+   "toClub": "Ajax",
+   "toClubFullName": "Ajax",
+   "toClubId": 8593,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 10500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2030-06-30T00:00:00Z",
+   "marketValue": 12731579
+  },
+  {
+   "name": "Dusan Vlahovic",
+   "playerId": 737857,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-30T10:02:31Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Juventus",
+   "fromClubFullName": "Juventus",
+   "fromClubId": 9885,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 22024430
+  },
+  {
+   "name": "Nico Paz",
+   "playerId": 1347574,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-06-30T08:44:35Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Madrid",
+   "fromClubFullName": "Real Madrid",
+   "fromClubId": 8633,
+   "toClub": "Como",
+   "toClubFullName": "Como",
+   "toClubId": 10171,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 60000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 58121663
+  },
+  {
+   "name": "Perr Schuurs",
+   "playerId": 726127,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-30T07:05:17Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "NEC Nijmegen",
+   "toClubFullName": "NEC Nijmegen",
+   "toClubId": 8464,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2029-06-30T00:00:00Z",
+   "marketValue": 1097780
+  },
+  {
+   "name": "Mathys Detourbet",
+   "playerId": 1709473,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-06-27T17:35:14Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Troyes",
+   "fromClubFullName": "Troyes",
+   "fromClubId": 10242,
+   "toClub": "Man City",
+   "toClubFullName": "Manchester City",
+   "toClubId": 8456,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 4414989
+  },
+  {
+   "name": "Wout Weghorst",
+   "playerId": 351999,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-27T11:38:08Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Ajax",
+   "fromClubFullName": "Ajax",
+   "fromClubId": 8593,
+   "toClub": "FC Twente",
+   "toClubFullName": "FC Twente",
+   "toClubId": 8611,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 1624222
+  },
+  {
+   "name": "Lorenzo Insigne",
+   "playerId": 193441,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-06-26T12:58:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Pescara",
+   "fromClubFullName": "Pescara",
+   "fromClubId": 9878,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 838424
+  },
+  {
+   "name": "Stefan de Vrij",
+   "playerId": 188555,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-26T10:35:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Inter",
+   "fromClubFullName": "Inter",
+   "fromClubId": 8636,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T00:00:00Z",
+   "toDate": null,
+   "marketValue": 2094119
+  },
+  {
+   "name": "Piero Hincapié",
+   "playerId": 1137667,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-06-25T17:11:50Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leverkusen",
+   "fromClubFullName": "Bayer Leverkusen",
+   "fromClubId": 8178,
+   "toClub": "Arsenal",
+   "toClubFullName": "Arsenal",
+   "toClubId": 9825,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2031-06-30T00:00:00Z",
+   "marketValue": 63074996
+  },
+  {
+   "name": "Sébastien Haller",
+   "playerId": 352968,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-25T17:03:59Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "FC Utrecht",
+   "fromClubFullName": "FC Utrecht",
+   "fromClubId": 9908,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 933716
+  },
+  {
+   "name": "Mauro Icardi",
+   "playerId": 282770,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-23T18:06:36Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Galatasaray",
+   "fromClubFullName": "Galatasaray",
+   "fromClubId": 8637,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-15T00:00:00Z",
+   "toDate": null,
+   "marketValue": 2089745
+  },
+  {
+   "name": "Remo Freuler",
+   "playerId": 201704,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-06-23T17:34:20Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Bologna",
+   "fromClubFullName": "Bologna",
+   "fromClubId": 9857,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 2679419
+  },
+  {
+   "name": "Jan Paul van Hecke",
+   "playerId": 974618,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-18T19:20:38Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Brighton",
+   "fromClubFullName": "Brighton & Hove Albion",
+   "fromClubId": 10204,
+   "toClub": "Tottenham",
+   "toClubFullName": "Tottenham Hotspur",
+   "toClubId": 8586,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 60000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 44255689
+  },
+  {
+   "name": "Víctor Muñoz",
+   "playerId": 1553105,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-06-18T18:33:52Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Osasuna",
+   "fromClubFullName": "Osasuna",
+   "fromClubId": 8371,
+   "toClub": "Liverpool",
+   "toClubFullName": "Liverpool",
+   "toClubId": 8650,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 40000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2032-06-29T22:00:00Z",
+   "marketValue": null
+  },
+  {
+   "name": "Afonso Moreira",
+   "playerId": 1367047,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-06-18T18:17:25Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Lyon",
+   "fromClubFullName": "Lyon",
+   "fromClubId": 9748,
+   "toClub": "Leverkusen",
+   "toClubFullName": "Bayer Leverkusen",
+   "toClubId": 8178,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 29500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2031-06-29T22:00:00Z",
+   "marketValue": 2133771
+  },
+  {
+   "name": "Oleksandr Zinchenko",
+   "playerId": 623621,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-06-18T10:27:34Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Ajax",
+   "fromClubFullName": "Ajax",
+   "fromClubId": 8593,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 7193857
+  },
+  {
+   "name": "Ibrahima Konaté",
+   "playerId": 820140,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-18T09:10:43Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Liverpool",
+   "fromClubFullName": "Liverpool",
+   "fromClubId": 8650,
+   "toClub": "Real Madrid",
+   "toClubFullName": "Real Madrid",
+   "toClubId": 8633,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 32037741
+  },
+  {
+   "name": "Álvaro Morata",
+   "playerId": 213501,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-16T12:19:50Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Milan",
+   "fromClubFullName": "Milan",
+   "fromClubId": 8564,
+   "toClub": "Como",
+   "toClubFullName": "Como",
+   "toClubId": 10171,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 12000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2028-06-29T22:00:00Z",
+   "marketValue": 6521927
+  },
+  {
+   "name": "Takehiro Tomiyasu",
+   "playerId": 664444,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-15T20:34:51Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Ajax",
+   "fromClubFullName": "Ajax",
+   "fromClubId": 8593,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": null,
+   "marketValue": 4456133
+  },
+  {
+   "name": "Marc Cucurella",
+   "playerId": 873289,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-06-15T09:22:32Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Chelsea",
+   "fromClubFullName": "Chelsea",
+   "fromClubId": 8455,
+   "toClub": "Real Madrid",
+   "toClubFullName": "Real Madrid",
+   "toClubId": 8633,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 55000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2032-06-29T22:00:00Z",
+   "marketValue": 45916601
+  },
+  {
+   "name": "Ewen Jaouen",
+   "playerId": 1438570,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-06-13T11:39:55Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Reims",
+   "fromClubFullName": "Reims",
+   "fromClubId": 9837,
+   "toClub": "Newcastle",
+   "toClubFullName": "Newcastle United",
+   "toClubId": 10261,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 21500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 2479604
+  },
+  {
+   "name": "Wout Weghorst",
+   "playerId": 351999,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-13T07:38:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Ajax",
+   "fromClubFullName": "Ajax",
+   "fromClubId": 8593,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 1624222
+  },
+  {
+   "name": "André Silva",
+   "playerId": 388523,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-12T12:28:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Elche",
+   "fromClubFullName": "Elche",
+   "fromClubId": 10268,
+   "toClub": "FC Porto",
+   "toClubFullName": "FC Porto",
+   "toClubId": 9773,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-11T22:00:00Z",
+   "toDate": "2027-06-29T22:00:00Z",
+   "marketValue": 2187465
+  },
+  {
+   "name": "Florentino",
+   "playerId": 793255,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-06-12T11:17:47Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Benfica",
+   "fromClubFullName": "Benfica",
+   "fromClubId": 9772,
+   "toClub": "Burnley",
+   "toClubFullName": "Burnley",
+   "toClubId": 8191,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 24000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 20602340
+  },
+  {
+   "name": "Raheem Sterling",
+   "playerId": 246575,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-06-11T08:39:30Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Feyenoord",
+   "fromClubFullName": "Feyenoord",
+   "fromClubId": 10235,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 2779551
+  },
+  {
+   "name": "Jadon Sancho",
+   "playerId": 846381,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-06-11T07:34:13Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man United",
+   "fromClubFullName": "Manchester United",
+   "fromClubId": 10260,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 17901715
+  },
+  {
+   "name": "Casemiro",
+   "playerId": 208494,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-06-11T07:30:04Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man United",
+   "fromClubFullName": "Manchester United",
+   "fromClubId": 10260,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 6388185
+  },
+  {
+   "name": "John Stones",
+   "playerId": 263653,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-11T07:27:02Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man City",
+   "fromClubFullName": "Manchester City",
+   "fromClubId": 8456,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 10731412
+  },
+  {
+   "name": "Bernardo Silva",
+   "playerId": 488139,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-06-11T07:26:09Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man City",
+   "fromClubFullName": "Manchester City",
+   "fromClubId": 8456,
+   "toClub": "Real Madrid",
+   "toClubFullName": "Real Madrid",
+   "toClubId": 8633,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2028-06-29T22:00:00Z",
+   "marketValue": 21958596
+  },
+  {
+   "name": "Patrick Zabi",
+   "playerId": 1709839,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-06-09T06:50:13Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Reims",
+   "fromClubFullName": "Reims",
+   "fromClubId": 9837,
+   "toClub": "Paris FC",
+   "toClubFullName": "Paris FC",
+   "toClubId": 6379,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 25000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": null
+  },
+  {
+   "name": "Orkun Kökcü",
+   "playerId": 935409,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-06-06T20:58:53Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Benfica",
+   "fromClubFullName": "Benfica",
+   "fromClubId": 9772,
+   "toClub": "Beşiktaş",
+   "toClubFullName": "Beşiktaş",
+   "toClubId": 10188,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 30000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-05T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 26519374
+  },
+  {
+   "name": "Zadok Yohanna",
+   "playerId": 1782648,
+   "position": {
+    "label": "RW",
+    "key": "rightwinger_short"
+   },
+   "transferDate": "2026-06-06T17:19:16Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "AIK",
+   "fromClubFullName": "AIK",
+   "fromClubId": 8349,
+   "toClub": "Brighton",
+   "toClubFullName": "Brighton & Hove Albion",
+   "toClubId": 10204,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 28000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2031-06-29T22:00:00Z",
+   "marketValue": 1147306
+  },
+  {
+   "name": "Ladislav Krejcí",
+   "playerId": 798029,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-06-05T21:54:43Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Girona",
+   "fromClubFullName": "Girona",
+   "fromClubId": 7732,
+   "toClub": "Wolves",
+   "toClubFullName": "Wolverhampton Wanderers",
+   "toClubId": 8602,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 7500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-05T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 24068639
+  },
+  {
+   "name": "Thomas Partey",
+   "playerId": 434325,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-06-05T21:39:41Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Villarreal",
+   "fromClubFullName": "Villarreal",
+   "fromClubId": 10205,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-05T22:00:00Z",
+   "toDate": null,
+   "marketValue": 2645372
+  },
+  {
+   "name": "André Silva",
+   "playerId": 388523,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-05T21:25:04Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Elche",
+   "fromClubFullName": "Elche",
+   "fromClubId": 10268,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-05T22:00:00Z",
+   "toDate": null,
+   "marketValue": 2187465
+  },
+  {
+   "name": "Timothy Weah",
+   "playerId": 889536,
+   "position": {
+    "label": "RB",
+    "key": "rightback_short"
+   },
+   "transferDate": "2026-06-05T18:08:49Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Juventus",
+   "fromClubFullName": "Juventus",
+   "fromClubId": 9885,
+   "toClub": "Marseille",
+   "toClubFullName": "Marseille",
+   "toClubId": 8592,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 14500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-04T22:00:00Z",
+   "toDate": "2029-06-29T22:00:00Z",
+   "marketValue": 22648889
+  },
+  {
+   "name": "Vanja Milinkovic-Savic",
+   "playerId": 543021,
+   "position": {
+    "label": "GK",
+    "key": "keeper"
+   },
+   "transferDate": "2026-06-05T17:58:54Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Torino",
+   "fromClubFullName": "Torino",
+   "fromClubId": 9804,
+   "toClub": "Napoli",
+   "toClubFullName": "Napoli",
+   "toClubId": 9875,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 6000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-04T22:00:00Z",
+   "toDate": "2029-06-29T22:00:00Z",
+   "marketValue": 22024426
+  },
+  {
+   "name": "Loïs Openda",
+   "playerId": 747767,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-06-05T17:45:48Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "RB Leipzig",
+   "fromClubFullName": "RB Leipzig",
+   "fromClubId": 178475,
+   "toClub": "Juventus",
+   "toClubFullName": "Juventus",
+   "toClubId": 9885,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 42750000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-04T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 36693429
+  },
+  {
+   "name": "Andrew Robertson",
+   "playerId": 357880,
+   "position": {
+    "label": "LB",
+    "key": "leftback_short"
+   },
+   "transferDate": "2026-06-05T12:14:33Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Liverpool",
+   "fromClubFullName": "Liverpool",
+   "fromClubId": 8650,
+   "toClub": "Tottenham",
+   "toClubFullName": "Tottenham Hotspur",
+   "toClubId": 8586,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 10260689
+  },
+  {
+   "name": "Aleksandar Stankovic",
+   "playerId": 1410437,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-06-05T11:14:01Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Club Brugge",
+   "fromClubFullName": "Club Brugge",
+   "fromClubId": 8342,
+   "toClub": "Inter",
+   "toClubFullName": "Inter",
+   "toClubId": 8636,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 23000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2031-06-29T22:00:00Z",
+   "marketValue": 22509098
+  },
+  {
+   "name": "Issa Doumbia",
+   "playerId": 1339345,
+   "position": {
+    "label": "CM",
+    "key": "centermidfielder_short"
+   },
+   "transferDate": "2026-06-02T04:59:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Venezia",
+   "fromClubFullName": "Venezia",
+   "fromClubId": 7881,
+   "toClub": "Sporting CP",
+   "toClubFullName": "Sporting CP",
+   "toClubId": 9768,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 20530000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2031-06-29T22:00:00Z",
+   "marketValue": 8476917
+  },
+  {
+   "name": "Ibrahima Konaté",
+   "playerId": 820140,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-05-31T16:08:42Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Liverpool",
+   "fromClubFullName": "Liverpool",
+   "fromClubId": 8650,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 32037741
+  },
+  {
+   "name": "Nicolás Otamendi",
+   "playerId": 174321,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-05-30T05:43:47Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Benfica",
+   "fromClubFullName": "Benfica",
+   "fromClubId": 9772,
+   "toClub": "River Plate",
+   "toClubFullName": "River Plate",
+   "toClubId": 10076,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2027-12-30T23:00:00Z",
+   "marketValue": 979023
+  },
+  {
+   "name": "Anthony Gordon",
+   "playerId": 906937,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-05-29T19:32:29Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Newcastle",
+   "fromClubFullName": "Newcastle United",
+   "fromClubId": 10261,
+   "toClub": "Barcelona",
+   "toClubFullName": "Barcelona",
+   "toClubId": 8634,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 80000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2031-06-29T22:00:00Z",
+   "marketValue": 62762307
+  },
+  {
+   "name": "Bilal El Khannouss",
+   "playerId": 1340895,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-05-25T17:36:49Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Leicester",
+   "fromClubFullName": "Leicester City",
+   "fromClubId": 8197,
+   "toClub": "VfB Stuttgart",
+   "toClubFullName": "VfB Stuttgart",
+   "toClubId": 10269,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 15000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 40016500
+  },
+  {
+   "name": "David Alaba",
+   "playerId": 121633,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-05-22T15:43:16Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Madrid",
+   "fromClubFullName": "Real Madrid",
+   "fromClubId": 8633,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 1722108
+  },
+  {
+   "name": "Daniel Carvajal",
+   "playerId": 282674,
+   "position": {
+    "label": "RB",
+    "key": "rightback_short"
+   },
+   "transferDate": "2026-05-18T11:36:04Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Real Madrid",
+   "fromClubFullName": "Real Madrid",
+   "fromClubId": 8633,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": null,
+   "marketValue": 1983986
+  },
+  {
+   "name": "Rasmus Højlund",
+   "playerId": 1199272,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-05-17T12:56:51Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man United",
+   "fromClubFullName": "Manchester United",
+   "fromClubId": 10260,
+   "toClub": "Napoli",
+   "toClubFullName": "Napoli",
+   "toClubId": 9875,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 44000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 61318598
+  },
+  {
+   "name": "Robert Lewandowski",
+   "playerId": 93447,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-05-16T13:48:24Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Barcelona",
+   "fromClubFullName": "Barcelona",
+   "fromClubId": 8634,
+   "toClub": "Chicago",
+   "toClubFullName": "Chicago Fire FC",
+   "toClubId": 6397,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-07-01T00:00:00Z",
+   "toDate": "2028-06-30T00:00:00Z",
+   "marketValue": 6700666
+  },
+  {
+   "name": "Donyell Malen",
+   "playerId": 660301,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-05-14T09:40:54Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Aston Villa",
+   "fromClubFullName": "Aston Villa",
+   "fromClubId": 10252,
+   "toClub": "Roma",
+   "toClubFullName": "Roma",
+   "toClubId": 8686,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 20000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 19072243
+  },
+  {
+   "name": "Jakub Kiwior",
+   "playerId": 1021834,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-05-05T18:33:46Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Arsenal",
+   "fromClubFullName": "Arsenal",
+   "fromClubId": 9825,
+   "toClub": "FC Porto",
+   "toClubFullName": "FC Porto",
+   "toClubId": 9773,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2030-06-29T22:00:00Z",
+   "marketValue": 25390071
+  },
+  {
+   "name": "Manuel Akanji",
+   "playerId": 521318,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-05-04T11:43:57Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Man City",
+   "fromClubFullName": "Manchester City",
+   "fromClubId": 8456,
+   "toClub": "Inter",
+   "toClubFullName": "Inter",
+   "toClubId": 8636,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 15000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2028-06-29T22:00:00Z",
+   "marketValue": 18112861
+  },
+  {
+   "name": "Antoine Griezmann",
+   "playerId": 184138,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-03-24T14:12:52Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Atletico Madrid",
+   "fromClubFullName": "Atletico Madrid",
+   "fromClubId": 9906,
+   "toClub": "Orlando",
+   "toClubFullName": "Orlando City",
+   "toClubId": 267810,
+   "fee": null,
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2028-12-30T23:00:00Z",
+   "marketValue": 8851218
+  },
+  {
+   "name": "Rocco Reitz",
+   "playerId": 1174726,
+   "position": {
+    "label": "DM",
+    "key": "centerdefensivemidfielder_short"
+   },
+   "transferDate": "2026-03-16T14:03:13Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "M'gladbach",
+   "fromClubFullName": "Borussia Mönchengladbach",
+   "fromClubId": 9788,
+   "toClub": "RB Leipzig",
+   "toClubFullName": "RB Leipzig",
+   "toClubId": 178475,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 20000000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-06-30T22:00:00Z",
+   "toDate": "2031-06-29T22:00:00Z",
+   "marketValue": 22250767
+  },
+  {
+   "name": "Kurt Zouma",
+   "playerId": 281207,
+   "position": {
+    "label": "CB",
+    "key": "centerback_short"
+   },
+   "transferDate": "2026-03-02T19:23:15Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "CFR Cluj",
+   "fromClubFullName": "CFR Cluj",
+   "fromClubId": 9731,
+   "toClub": "Al-Wasl",
+   "toClubFullName": "Al-Wasl",
+   "toClubId": 102111,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-02-28T23:00:00Z",
+   "toDate": null,
+   "marketValue": 1570345
+  },
+  {
+   "name": "Philippe Coutinho",
+   "playerId": 184536,
+   "position": {
+    "label": "AM",
+    "key": "centerattackingmidfielder_short"
+   },
+   "transferDate": "2026-02-21T08:29:44Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Vasco da Gama",
+   "fromClubFullName": "Vasco da Gama",
+   "fromClubId": 10276,
+   "toClub": "Free agent",
+   "toClubFullName": "Free agent",
+   "toClubId": 2,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-02-20T23:00:00Z",
+   "toDate": null,
+   "marketValue": 1630318
+  },
+  {
+   "name": "Raheem Sterling",
+   "playerId": 246575,
+   "position": {
+    "label": "LW",
+    "key": "leftwinger_short"
+   },
+   "transferDate": "2026-02-13T14:11:32Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Feyenoord",
+   "toClubFullName": "Feyenoord",
+   "toClubId": 10235,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-02-12T23:00:00Z",
+   "toDate": "2026-06-29T22:00:00Z",
+   "marketValue": 2779551
+  },
+  {
+   "name": "Juan Bernat",
+   "playerId": 282691,
+   "position": {
+    "label": "RB",
+    "key": "rightback_short"
+   },
+   "transferDate": "2026-02-12T18:02:50Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Free agent",
+   "fromClubFullName": "Free agent",
+   "fromClubId": 2,
+   "toClub": "Eibar",
+   "toClubFullName": "Eibar",
+   "toClubId": 8372,
+   "fee": {
+    "feeText": "free transfer",
+    "localizedFeeText": "transfer_type_free_transfer"
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-02-11T23:00:00Z",
+   "toDate": "2026-06-29T22:00:00Z",
+   "marketValue": 684825
+  },
+  {
+   "name": "Álex Jiménez",
+   "playerId": 1526689,
+   "position": {
+    "label": "RB",
+    "key": "rightback_short"
+   },
+   "transferDate": "2026-02-12T10:21:51Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Milan",
+   "fromClubFullName": "Milan",
+   "fromClubId": 8564,
+   "toClub": "Bournemouth",
+   "toClubFullName": "AFC Bournemouth",
+   "toClubId": 8678,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 18500000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "contract",
+    "localizationKey": "contract"
+   },
+   "contractExtension": false,
+   "onLoan": false,
+   "fromDate": "2026-02-11T23:00:00Z",
+   "toDate": "2031-06-29T22:00:00Z",
+   "marketValue": 28803468
+  },
+  {
+   "name": "Jhon Durán",
+   "playerId": 1088066,
+   "position": {
+    "label": "ST",
+    "key": "striker_short"
+   },
+   "transferDate": "2026-02-10T06:31:13Z",
+   "transferText": [
+    null,
+    null,
+    null
+   ],
+   "fromClub": "Al Nassr FC",
+   "fromClubFullName": "Al Nassr FC",
+   "fromClubId": 101918,
+   "toClub": "Zenit",
+   "toClubFullName": "Zenit St. Petersburg",
+   "toClubId": 8698,
+   "fee": {
+    "feeText": "fee",
+    "localizedFeeText": "transfer_fee",
+    "value": 2750000
+   },
+   "amountEuroEstimated": null,
+   "transferType": {
+    "text": "on loan",
+    "localizationKey": "on_loan"
+   },
+   "contractExtension": false,
+   "onLoan": true,
+   "fromDate": "2026-02-08T23:00:00Z",
+   "toDate": "2026-06-29T22:00:00Z",
+   "marketValue": 27234320
+  }
+ ]
+}

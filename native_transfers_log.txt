@@ -1,0 +1,700 @@
+2026-08-10 12:42:46 == PART 1 START (68 entries) ==
+2026-08-10 12:42:59 Dan Nlundulu pid=236321 -> 110078 [FAIL] after=100805 St. Mirren pcall=true
+2026-08-10 12:42:59 Jusef Erabi pid=268597 -> 1801 [OK-loan] after=673 KRC Genk pcall=true
+2026-08-10 12:42:59 Jacopo Fazzini pid=266596 -> 1842 [OK-loan] after=110374 Fiorentina pcall=true
+2026-08-10 12:42:59 Yann Sommer pid=177683 -> 231 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:42:59 Marius Lode pid=242160 -> 112199 [FAIL] after=711 BK Häcken pcall=true
+2026-08-10 12:42:59 Alan Forrest pid=256421 -> 180 [FAIL] after=80 Heart of Midlothian pcall=true
+2026-08-10 12:42:59 Alex Paulsen pid=263851 -> 83 [OK-loan] after=1943 AFC Bournemouth pcall=true
+2026-08-10 12:42:59 Ben Krauhaus pid=72456 -> 79 [OK-loan] after=1925 Brentford pcall=true
+2026-08-10 12:42:59 Vincent Sasso pid=188538 -> 1738 [FAIL] after=111276 USL Dunkerque pcall=true
+2026-08-10 12:42:59 Nicolás López pid=207715 -> 112689 [FAIL] after=111325 Club Nacional de Football pcall=true
+2026-08-10 12:42:59 Luka Vuskovic pid=275192 -> 1808 [FAIL] after=18 Tottenham Hotspur pcall=true
+2026-08-10 12:42:59 Fabio Gerli pid=225428 -> 111434 [FAIL] after=1744 Modena pcall=true
+2026-08-10 12:42:59 Jorge Fernandes pid=242359 -> 112387 [FAIL] after=112390 Al Fateh pcall=true
+2026-08-10 12:42:59 Nathan Ordaz pid=275974 -> 688 [FAIL] after=112996 LAFC pcall=true
+2026-08-10 12:42:59 Amir Saipi pid=247077 -> 100852 [FAIL] after=10032 FC Lugano pcall=true
+2026-08-10 12:42:59 Lohann Doucet pid=270355 -> 1887 [FAIL] after=111817 Paris FC pcall=true
+2026-08-10 12:43:00 Sam Larsson pid=209782 -> 319 [FAIL] after=111117 Fatih Karagümrük SK pcall=true
+2026-08-10 12:43:00 Nikola Vasic pid=272916 -> 111594 [FAIL] after=708 Hammarby IF pcall=true
+2026-08-10 12:43:00 Jakob Vestergaard Jessen pid=78613 -> 111339 [FAIL] after=15006 FC Fredericia pcall=true
+2026-08-10 12:43:00 Ander Herrera pid=191740 -> 244 [FAIL] after=1877 Boca Juniors pcall=true
+2026-08-10 12:43:00 Jean Batoum pid=83925 -> 1906 [OK-loan] after=110747 Cracovia pcall=true
+2026-08-10 12:43:00 Samuele Capolupo pid=80835 -> 113974 [OK-loan] after=111811 Monza pcall=true
+2026-08-10 12:43:00 Nathan Lowe pid=274472 -> 81 [OK-loan] after=1806 Stoke City pcall=true
+2026-08-10 12:43:00 Danilho Doekhi pid=232658 -> 1906 [FAIL] after=1831 1. FC Union Berlin pcall=true
+2026-08-10 12:43:00 Álvaro Rodriguez pid=237206 -> 1943 [FAIL] after=467 SD Eibar pcall=true
+2026-08-10 12:43:00 Fellipe Jack pid=75225 -> 111434 [OK-loan] after=1745 Como 1907 pcall=true
+2026-08-10 12:43:00 Jonas Harder pid=76171 -> 896 [FAIL] after=110374 Fiorentina pcall=true
+2026-08-10 12:43:00 Murphy Cooper pid=268544 -> 1929 [FAIL] after=15 Queens Park Rangers pcall=true
+2026-08-10 12:43:00 Charlie Taylor pid=204760 -> 91 [FAIL] after=17 Southampton pcall=true
+2026-08-10 12:43:00 Adam Mayor pid=271675 -> 81 [FAIL] after=97 Millwall pcall=true
+2026-08-10 12:43:00 Horatiu Moldovan pid=251136 -> 131174 [OK-loan] after=240 Atlético de Madrid pcall=true
+2026-08-10 12:43:00 Shin Yamada pid=269842 -> 100087 [OK-loan] after=78 Celtic pcall=true
+2026-08-10 12:43:00 Lorenzo Ignacchiti pid=74150 -> 111433 [FAIL] after=1746 Empoli pcall=true
+2026-08-10 12:43:00 Coleen Louis pid=70018 -> 896 [FAIL] after=1816 Amiens SC pcall=true
+2026-08-10 12:43:00 Giacomo Corona pid=276754 -> 113147 [OK-loan] after=1843 Palermo pcall=true
+2026-08-10 12:43:00 Elías Pereyra pid=241929 -> 113044 [FAIL] after=111710 Defensa y Justicia pcall=true
+2026-08-10 12:43:00 Rui Mendes pid=269744 -> 100638 [FAIL] after=1915 FC Groningen pcall=true
+2026-08-10 12:43:00 Tyrese Noslin pid=79032 -> 1932 [FAIL] after=100638 Telstar pcall=true
+2026-08-10 12:43:00 Paulo Díaz pid=214436 -> 112885 [FAIL] after=1876 River Plate pcall=true
+2026-08-10 12:43:00 Michal Skóras pid=251633 -> 64 [FAIL] after=674 KAA Gent pcall=true
+2026-08-10 12:43:00 Andrej Vasovic pid=75573 -> 231 [FAIL] after=897 FC Luzern pcall=true
+2026-08-10 12:43:00 Alan Franco pid=246058 -> 111715 [OK-loan] after=111592 Free Agents pcall=true
+2026-08-10 12:43:01 Maxim Dal pid=276863 -> 165 [FAIL] after=169 1. FSV Mainz 05 pcall=true
+2026-08-10 12:43:01 Eseosa Sule pid=79681 -> 100805 [FAIL] after=109 West Bromwich Albion pcall=true
+2026-08-10 12:43:01 Tom Wisbereit pid=85547 -> 100409 [FAIL] after=1831 1. FC Union Berlin pcall=true
+2026-08-10 12:43:01 Nahuel Estévez pid=240992 -> 1843 [FAIL] after=50 Parma pcall=true
+2026-08-10 12:43:01 Harry Winks pid=222400 -> 1842 [FAIL] after=95 Leicester City pcall=true
+2026-08-10 12:43:01 Ebrima Colley pid=254692 -> 101033 [OK-loan] after=900 BSC Young Boys pcall=true
+2026-08-10 12:43:01 Mihail Polendakov pid=79950 -> 1906 [OK-loan] after=1794 Sheffield United pcall=true
+2026-08-10 12:43:01 Lewis Dobbin pid=264039 -> 17 [FAIL] after=2 Aston Villa pcall=true
+2026-08-10 12:43:01 Nikolai Skuseth pid=74740 -> 113892 [OK-loan] after=113459 Kristiansund BK pcall=true
+2026-08-10 12:43:01 Thomas Meunier pid=202371 -> 106 [FAIL] after=65 LOSC Lille pcall=true
+2026-08-10 12:43:01 Martin Ens pid=279530 -> 1825 [OK-loan] after=110501 Sportclub Verl pcall=true
+2026-08-10 12:43:01 Vasco Lopes pid=72658 -> 112494 [FAIL] after=111088 RKS Radomiak Radom pcall=true
+2026-08-10 12:43:01 Jawad El Yamiq pid=241775 -> 131174 [FAIL] after=244 Real Zaragoza pcall=true
+2026-08-10 12:43:01 Florian Kleinhansl pid=263089 -> 110502 [FAIL] after=29 1. FC Kaiserslautern pcall=true
+2026-08-10 12:43:01 Vincent Burlet pid=72080 -> 110747 [FAIL] after=65 LOSC Lille pcall=true
+2026-08-10 12:43:01 Elkan Baggott pid=260798 -> 97 [FAIL] after=94 Ipswich Town pcall=true
+2026-08-10 12:43:01 Oliwier Zych pid=271411 -> 1887 [OK-loan] after=2 Aston Villa pcall=true
+2026-08-10 12:43:01 Áron Csongvai pid=272566 -> 1819 [FAIL] after=433 AIK pcall=true
+2026-08-10 12:43:01 Jake Girdwood-Reich pid=272324 -> 83 [FAIL] after=113018 St. Louis CITY SC pcall=true
+2026-08-10 12:43:01 Christ Makosso pid=275337 -> 57 [FAIL] after=1923 Luton Town pcall=true
+2026-08-10 12:43:01 Diogo Nascimento pid=276998 -> 744 [OK-loan] after=280 Olympiacos FC pcall=true
+2026-08-10 12:43:01 Mikel Rodriguez pid=79186 -> 463 [FAIL] after=110711 Real Sociedad B pcall=true
+2026-08-10 12:43:02 Aïssa Mandi pid=201143 -> 1853 [FAIL] after=65 LOSC Lille pcall=true
+2026-08-10 12:43:02 Andrés García pid=275468 -> 1860 [OK-loan] after=2 Aston Villa pcall=true
+2026-08-10 12:43:02 Isaac Schmidt pid=256776 -> 900 [FAIL] after=8 Leeds United pcall=true
+2026-08-10 12:43:02 Miguel Silva pid=83568 -> 110991 [FAIL] after=1900 Moreirense FC pcall=true
+2026-08-10 12:43:02 == PART 1 DONE ==
+2026-08-10 12:44:02 == PART 2 START (68 entries) ==
+2026-08-10 12:44:02 Jeison Medina pid=242492 -> 101103 [OK-loan] after=110986 Liga Deportiva Universitaria pcall=true
+2026-08-10 12:44:02 Alfonso Simarra pid=265186 -> 101103 [FAIL] after=115693 Universidad Central de Venezuela pcall=true
+2026-08-10 12:44:02 Thiemoko Diarra pid=80238 -> 111339 [FAIL] after=379 Stade de Reims pcall=true
+2026-08-10 12:44:02 Vivaldo Semedo pid=273918 -> 717 [OK-loan] after=1795 Watford pcall=true
+2026-08-10 12:44:02 Mathias Sauer pid=274710 -> 1757 [FAIL] after=420 Górnik Zabrze pcall=true
+2026-08-10 12:44:02 Niklas Pyyhtiä pid=274089 -> 112494 [OK-loan] after=189 Bologna pcall=true
+2026-08-10 12:44:02 Makenzie Kirk pid=278602 -> 1932 [OK-loan] after=1790 Portsmouth pcall=true
+2026-08-10 12:44:02 Alex Král pid=247028 -> 819 [FAIL] after=1831 1. FC Union Berlin pcall=true
+2026-08-10 12:44:02 Omar Traoré pid=257136 -> 1795 [FAIL] after=111235 1. FC Heidenheim 1846 pcall=true
+2026-08-10 12:44:02 Jakes Gorosabel pid=80113 -> 110062 [FAIL] after=110711 Real Sociedad B pcall=true
+2026-08-10 12:44:02 Diego Mascardi pid=279891 -> 54 [FAIL] after=113974 Spezia pcall=true
+2026-08-10 12:44:02 Warren Kamanzi pid=257970 -> 320 [FAIL] after=1809 Toulouse FC pcall=true
+2026-08-10 12:44:02 Conrado pid=238895 -> 111088 [FAIL] after=110072 SC Oțelul Galați pcall=true
+2026-08-10 12:44:02 Dennis Praet pid=199652 -> 110724 [FAIL] after=230 Royal Antwerp FC pcall=true
+2026-08-10 12:44:02 Tomás Avilés pid=274569 -> 112116 [OK-loan] after=111139 CF Montréal pcall=true
+2026-08-10 12:44:02 Julián Mavilla pid=76999 -> 112713 [OK-loan] after=111022 Belgrano de Córdoba pcall=true
+2026-08-10 12:44:02 Luka Jovanovic pid=272571 -> 111928 [FAIL] after=111393 Adelaide United pcall=true
+2026-08-10 12:44:03 Henry Gray pid=266151 -> 111766 [OK-loan] after=94 Ipswich Town pcall=true
+2026-08-10 12:44:03 Aurèle Amenda pid=270846 -> 1800 [FAIL] after=1824 Eintracht Frankfurt pcall=true
+2026-08-10 12:44:03 Rochinha pid=222461 -> 114510 [FAIL] after=112809 FC Famalicão pcall=true
+2026-08-10 12:44:03 Timon Wellenreuther pid=223686 -> 175 [FAIL] after=246 Feyenoord pcall=true
+2026-08-10 12:44:03 Martin Hellan pid=71321 -> 1757 [OK-loan] after=919 SK Brann pcall=true
+2026-08-10 12:44:03 Marius Müller pid=208375 -> 77 [FAIL] after=175 VfL Wolfsburg pcall=true
+2026-08-10 12:44:03 Lovro Zvonarek pid=269497 -> 718 [FAIL] after=21 FC Bayern München pcall=true
+2026-08-10 12:44:03 Franco Armani pid=214584 -> 101100 [FAIL] after=1876 River Plate pcall=true
+2026-08-10 12:44:03 Allan Wlk pid=274858 -> 110395 [FAIL] after=131826 Recoleta FC pcall=true
+2026-08-10 12:44:03 Niklas Tauer pid=253474 -> 110678 [FAIL] after=169 1. FSV Mainz 05 pcall=true
+2026-08-10 12:44:03 Tjark Ernst pid=262931 -> 246 [FAIL] after=166 Hertha BSC pcall=true
+2026-08-10 12:44:03 Elias Saad pid=274000 -> 114162 [OK-loan] after=100409 FC Augsburg pcall=true
+2026-08-10 12:44:03 Zan Celar pid=240317 -> 896 [FAIL] after=15 Queens Park Rangers pcall=true
+2026-08-10 12:44:03 Tomás Guiacobini pid=71944 -> 110968 [OK-loan] after=112713 Club Atlético Sarmiento pcall=true
+2026-08-10 12:44:03 Manuel Roffo pid=240796 -> 112716 [FAIL] after=110953 Instituto de Córdoba pcall=true
+2026-08-10 12:44:03 Pablo Pagis pid=266099 -> 111817 [FAIL] after=217 FC Lorient pcall=true
+2026-08-10 12:44:03 Gustavo Cazonatti pid=69988 -> 111975 [FAIL] after=111013 Sporting Cristal pcall=true
+2026-08-10 12:44:03 Rayan Touzghar pid=74445 -> 232 [FAIL] after=110321 Pau FC pcall=true
+2026-08-10 12:44:03 Tarik Muharemovic pid=262027 -> 8 [FAIL] after=111974 Sassuolo pcall=true
+2026-08-10 12:44:03 Eric Bailly pid=225508 -> 687 [FAIL] after=110827 Real Oviedo pcall=true
+2026-08-10 12:44:03 Pau López pid=221087 -> 114554 [FAIL] after=449 Real Betis Balompié pcall=true
+2026-08-10 12:44:03 Grant-Leon Ranos pid=276358 -> 116332 [FAIL] after=23 Borussia Mönchengladbach pcall=true
+2026-08-10 12:44:04 Pirosch Fischer pid=83946 -> 116332 [OK-loan] after=894 FC Zürich pcall=true
+2026-08-10 12:44:04 Hamed Traorè pid=240787 -> 110556 [OK-loan] after=1943 AFC Bournemouth pcall=true
+2026-08-10 12:44:04 Dani Requena pid=277684 -> 1853 [OK-loan] after=483 Villarreal CF pcall=true
+2026-08-10 12:44:04 Kai Wagner pid=239704 -> 112134 [FAIL] after=88 Birmingham City pcall=true
+2026-08-10 12:44:04 Ian Hoffmann pid=261762 -> 112072 [OK-loan] after=873 Lech Poznań pcall=true
+2026-08-10 12:44:04 Marcos Leonardo pid=277797 -> 245 [FAIL] after=605 Al Hilal pcall=true
+2026-08-10 12:44:04 Pantelis Hatzidiakos pid=229150 -> 393 [FAIL] after=819 F.C. København pcall=true
+2026-08-10 12:44:04 Maximilian Dietz pid=262917 -> 420 [FAIL] after=165 SpVgg Greuther Fürth pcall=true
+2026-08-10 12:44:04 Peru Rodríguez pid=265521 -> 110069 [FAIL] after=15012 Cultural Leonesa pcall=true
+2026-08-10 12:44:04 Francisco Calvo pid=213064 -> 111325 [FAIL] after=112096 Al Ettifaq pcall=true
+2026-08-10 12:44:04 Tobias Lauritsen pid=230737 -> 1837 [FAIL] after=100646 Sparta Rotterdam pcall=true
+2026-08-10 12:44:04 Mauro Pittón pid=228961 -> 116332 [FAIL] after=111716 Unión de Santa Fe pcall=true
+2026-08-10 12:44:04 Rasmus Holten pid=275492 -> 1757 [FAIL] after=919 SK Brann pcall=true
+2026-08-10 12:44:04 Maik Nawrocki pid=255838 -> 64 [FAIL] after=78 Celtic pcall=true
+2026-08-10 12:44:04 Álvaro Montero pid=229541 -> 101088 [FAIL] after=1877 Boca Juniors pcall=true
+2026-08-10 12:44:04 Sebastián Villa pid=233959 -> 1877 [FAIL] after=111020 CS Independiente Rivadavia pcall=true
+2026-08-10 12:44:04 Julián Fernández pid=219452 -> 111708 [OK-loan] after=111328 Palestino pcall=true
+2026-08-10 12:44:04 Kevin Gutiérrez pid=74836 -> 111019 [FAIL] after=110580 Rosario Central pcall=true
+2026-08-10 12:44:04 Matheus Cunha pid=240243 -> 111325 [OK-loan] after=11 Manchester United pcall=true
+2026-08-10 12:44:04 Nelson Weiper pid=268259 -> 209 [OK-loan] after=169 1. FSV Mainz 05 pcall=true
+2026-08-10 12:44:04 Yannik Engelhardt pid=262906 -> 25 [FAIL] after=1745 Como 1907 pcall=true
+2026-08-10 12:44:04 Joel Roca pid=272718 -> 280 [FAIL] after=110062 Girona FC pcall=true
+2026-08-10 12:44:04 Raúl Lizoain pid=199101 -> 110832 [FAIL] after=1854 Albacete Balompié pcall=true
+2026-08-10 12:44:05 Jorge Meireles pid=79293 -> 131463 [FAIL] after=718 Estrela Amadora pcall=true
+2026-08-10 12:44:05 Luca Ravanelli pid=245091 -> 1837 [FAIL] after=111811 Monza pcall=true
+2026-08-10 12:44:05 Mërgim Vojvoda pid=228349 -> 55 [FAIL] after=1745 Como 1907 pcall=true
+2026-08-10 12:44:05 Cenk Özkacar pid=258396 -> 436 [FAIL] after=461 Valencia CF pcall=true
+2026-08-10 12:44:05 Rodrigo Rêgo pid=82432 -> 100852 [OK-loan] after=234 SL Benfica pcall=true
+2026-08-10 12:44:05 Niklas Niehoff pid=276165 -> 15009 [OK-loan] after=576 Holstein Kiel pcall=true
+2026-08-10 12:44:05 == PART 2 DONE ==
+2026-08-10 12:44:13 == PART 3 START (68 entries) ==
+2026-08-10 12:44:13 Noël Aséko pid=279622 -> 1824 [FAIL] after=21 FC Bayern München pcall=true
+2026-08-10 12:44:13 Sebastiano Desplanches pid=276839 -> 111657 [OK-loan] after=1843 Palermo pcall=true
+2026-08-10 12:44:13 Mattia Fortin pid=78934 -> 1843 [OK-loan] after=64 RC Lens pcall=true
+2026-08-10 12:44:13 Filip Marchwinski pid=246649 -> 110747 [OK-loan] after=347 Lecce pcall=true
+2026-08-10 12:44:13 Adama Bojang pid=277578 -> 670 [OK-loan] after=379 Stade de Reims pcall=true
+2026-08-10 12:44:13 Tanguy Nianzou pid=252961 -> 65 [FAIL] after=481 Sevilla FC pcall=true
+2026-08-10 12:44:13 Amir Richardson pid=262236 -> 1738 [OK-loan] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:13 Kryspin Szczesniak pid=263262 -> 111088 [OK-loan] after=420 Górnik Zabrze pcall=true
+2026-08-10 12:44:13 Mahir Emreli pid=262800 -> 114326 [OK-loan] after=29 1. FC Kaiserslautern pcall=true
+2026-08-10 12:44:13 Koray Günter pid=204451 -> 607 [FAIL] after=113060 Al Okhdood pcall=true
+2026-08-10 12:44:13 Rakan Kaabi pid=278132 -> 607 [FAIL] after=113057 Al Fayha pcall=true
+2026-08-10 12:44:13 Abdullah Al Qahtani pid=253207 -> 113057 [FAIL] after=113217 Damac pcall=true
+2026-08-10 12:44:13 Abdulrahman Al-Obaid pid=228627 -> 131735 [FAIL] after=113217 Damac pcall=true
+2026-08-10 12:44:13 Mohammed Al Owais pid=210923 -> 605 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:13 Jonathan Herrera pid=243977 -> 112713 [OK-loan] after=115472 Deportivo Riestra pcall=true
+2026-08-10 12:44:13 Hugo Andersson Mella pid=71724 -> 112126 [OK-loan] after=113458 IK Sirius pcall=true
+2026-08-10 12:44:13 Elliot Watt pid=241982 -> 748 [FAIL] after=83 Motherwell pcall=true
+2026-08-10 12:44:13 Patrick Beach pid=267599 -> 294 [FAIL] after=112224 Melbourne City pcall=true
+2026-08-10 12:44:13 Juan Cruz pid=206219 -> 110827 [FAIL] after=479 CA Osasuna pcall=true
+2026-08-10 12:44:13 Karlan Grant pid=225668 -> 89 [FAIL] after=109 West Bromwich Albion pcall=true
+2026-08-10 12:44:14 Tayyip Talha Sanuç pid=242919 -> 101037 [FAIL] after=327 Beşiktaş JK pcall=true
+2026-08-10 12:44:14 Rick van Drongelen pid=233097 -> 1884 [FAIL] after=748 Samsunspor A.Ş pcall=true
+2026-08-10 12:44:14 Ahmed Kutucu pid=245762 -> 101037 [OK-loan] after=325 Galatasaray SK pcall=true
+2026-08-10 12:44:14 Xaver Kiefersauer pid=85508 -> 171 [FAIL] after=33 TSV 1860 München pcall=true
+2026-08-10 12:44:14 Tino Casali pid=222024 -> 160 [FAIL] after=526 Rot-Weiss Essen pcall=true
+2026-08-10 12:44:14 Karol Mets pid=226506 -> 160 [FAIL] after=110329 FC St. Pauli pcall=true
+2026-08-10 12:44:14 Emmanuel Iyoha pid=231353 -> 110588 [FAIL] after=110636 Fortuna Düsseldorf pcall=true
+2026-08-10 12:44:14 Andrin Hunziker pid=267486 -> 898 [FAIL] after=896 FC Basel 1893 pcall=true
+2026-08-10 12:44:14 Anas Tajaouart pid=75197 -> 132231 [OK-loan] after=229 RSC Anderlecht pcall=true
+2026-08-10 12:44:14 Diego Alejandro Novoa pid=214351 -> 112992 [FAIL] after=101105 Millonarios FC pcall=true
+2026-08-10 12:44:14 Mathieu Cafaro pid=231236 -> 71 [FAIL] after=111817 Paris FC pcall=true
+2026-08-10 12:44:14 Cristian Jaime pid=81813 -> 101110 [OK-loan] after=1876 River Plate pcall=true
+2026-08-10 12:44:14 Hossam Abdelmaguid pid=81960 -> 1906 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:14 Carlos Quintana pid=234458 -> 115472 [FAIL] after=110580 Rosario Central pcall=true
+2026-08-10 12:44:14 Cardoso Varela pid=80384 -> 236 [FAIL] after=211 GNK Dinamo Zagreb pcall=true
+2026-08-10 12:44:14 Joris van Overeem pid=210010 -> 1903 [FAIL] after=1913 sc Heerenveen pcall=true
+2026-08-10 12:44:14 Emre Mor pid=231240 -> 1910 [FAIL] after=326 Fenerbahçe SK pcall=true
+2026-08-10 12:44:14 Diego Conde pid=258534 -> 449 [OK-loan] after=483 Villarreal CF pcall=true
+2026-08-10 12:44:14 Jhomier Guerrero pid=84319 -> 101105 [FAIL] after=101101 Junior FC pcall=true
+2026-08-10 12:44:14 Kevin Cataño pid=83086 -> 111325 [??] after=-1  pcall=true
+2026-08-10 12:44:14 Carlo Sickinger pid=242525 -> 110502 [FAIL] after=580 SV Elversberg pcall=true
+2026-08-10 12:44:14 Rahim Alhassane pid=73502 -> 189 [FAIL] after=110827 Real Oviedo pcall=true
+2026-08-10 12:44:14 Kasper Junker pid=213871 -> 1786 [FAIL] after=112638 Buriram United pcall=true
+2026-08-10 12:44:14 Gabriel Batista pid=271571 -> 517 [FAIL] after=1438 Santa Clara pcall=true
+2026-08-10 12:44:14 André Gomes pid=211575 -> 114510 [FAIL] after=687 Columbus Crew pcall=true
+2026-08-10 12:44:15 Lucas Monzón pid=79424 -> 517 [FAIL] after=131826 Recoleta FC pcall=true
+2026-08-10 12:44:15 Warleson pid=255754 -> 517 [FAIL] after=1750 Cercle Brugge KSV pcall=true
+2026-08-10 12:44:15 Lorent Tolaj pid=266886 -> 1919 [FAIL] after=1929 Plymouth Argyle pcall=true
+2026-08-10 12:44:15 Darío Benavides pid=279506 -> 100757 [FAIL] after=132231 RAAL La Louvière pcall=true
+2026-08-10 12:44:15 Dylan Williams pid=264115 -> 83 [FAIL] after=15015 Burton Albion pcall=true
+2026-08-10 12:44:15 Jhon Córdoba pid=210287 -> 110953 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:15 Markus Gustav Jensen pid=277635 -> 111325 [FAIL] after=272 Odense BK pcall=true
+2026-08-10 12:44:15 Luca Sirch pid=73135 -> 580 [FAIL] after=29 1. FC Kaiserslautern pcall=true
+2026-08-10 12:44:15 Diego González pid=76415 -> 244 [FAIL] after=10846 Burgos CF pcall=true
+2026-08-10 12:44:15 Eddie Beach pid=277904 -> 834 [FAIL] after=82 Kilmarnock pcall=true
+2026-08-10 12:44:15 Théo De Percin pid=263402 -> 58 [OK-loan] after=57 AJ Auxerre pcall=true
+2026-08-10 12:44:15 Lassine Sinayoko pid=251170 -> 111817 [FAIL] after=57 AJ Auxerre pcall=true
+2026-08-10 12:44:15 Derensili Sanches Fernandes pid=271511 -> 1939 [FAIL] after=1971 Excelsior Rotterdam pcall=true
+2026-08-10 12:44:15 Emirhan Demircan pid=79113 -> 100638 [OK-loan] after=1903 FC Utrecht pcall=true
+2026-08-10 12:44:15 Diego Gómez pid=269278 -> 110839 [OK-loan] after=1808 Brighton & Hove Albion pcall=true
+2026-08-10 12:44:15 Yaya Bojang pid=70125 -> 717 [FAIL] after=272 Odense BK pcall=true
+2026-08-10 12:44:15 Jeremy Agbonifo pid=71343 -> 110745 [OK-loan] after=64 RC Lens pcall=true
+2026-08-10 12:44:15 Kayne van Oevelen pid=271150 -> 94 [FAIL] after=645 FC Volendam pcall=true
+2026-08-10 12:44:15 Hugo Sotelo pid=264095 -> 1853 [OK-loan] after=450 Real Club Celta de Vigo pcall=true
+2026-08-10 12:44:15 Mame Alassane Niang pid=85108 -> 236 [FAIL] after=1756 HamKam Fotball pcall=true
+2026-08-10 12:44:15 Angelo Gattermayer pid=264867 -> 2017 [FAIL] after=111822 RZ Pellets Wolfsberger AC pcall=true
+2026-08-10 12:44:15 Danilo Al Saed pid=272967 -> 1756 [OK-loan] after=711 BK Häcken pcall=true
+2026-08-10 12:44:15 Gustavo Silva pid=74649 -> 111975 [FAIL] after=1887 Vitória SC pcall=true
+2026-08-10 12:44:15 == PART 3 DONE ==
+2026-08-10 12:44:23 == PART 4 START (68 entries) ==
+2026-08-10 12:44:23 Alessandro Bianco pid=271477 -> 1744 [FAIL] after=393 PAOK FC pcall=true
+2026-08-10 12:44:23 Filippo Distefano pid=277599 -> 1746 [FAIL] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:23 Simon Simoni pid=272787 -> 897 [FAIL] after=1824 Eintracht Frankfurt pcall=true
+2026-08-10 12:44:23 Daniel Fila pid=267593 -> 2038 [OK-loan] after=205 Venezia pcall=true
+2026-08-10 12:44:23 Guillermo Maripán pid=219145 -> 111325 [FAIL] after=54 Torino pcall=true
+2026-08-10 12:44:23 Gustavo Charrupí pid=82500 -> 7 [OK-loan] after=112992 Atlético Bucaramanga pcall=true
+2026-08-10 12:44:23 Leonardo Sequeira pid=240743 -> 112965 [OK-loan] after=111711 Club Atlético Huracán pcall=true
+2026-08-10 12:44:23 Alan Soñora pid=252240 -> 110396 [FAIL] after=112716 Cerro Porteño pcall=true
+2026-08-10 12:44:23 Ahmad Faqa pid=268345 -> 113892 [FAIL] after=433 AIK pcall=true
+2026-08-10 12:44:23 Per Kristian Bråtveit pid=211021 -> 1463 [FAIL] after=77 Aberdeen pcall=true
+2026-08-10 12:44:23 Malang Sarr pid=235454 -> 131798 [FAIL] after=64 RC Lens pcall=true
+2026-08-10 12:44:23 Patson Daka pid=241202 -> 28 [FAIL] after=95 Leicester City pcall=true
+2026-08-10 12:44:23 Álex Sala pid=265732 -> 453 [OK-loan] after=347 Lecce pcall=true
+2026-08-10 12:44:23 Fabio Ferraro pid=264711 -> 681 [FAIL] after=537 FCV Dender EH pcall=true
+2026-08-10 12:44:23 Darwin Machís pid=210463 -> 110991 [OK-loan] after=101099 América de Cali pcall=true
+2026-08-10 12:44:23 Will Lankshear pid=75272 -> 12 [FAIL] after=18 Tottenham Hotspur pcall=true
+2026-08-10 12:44:23 Antonín Barák pid=236791 -> 100135 [FAIL] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:23 Santeri Väänänen pid=246757 -> 1832 [FAIL] after=298 Rosenborg BK pcall=true
+2026-08-10 12:44:23 Filip Bilbija pid=252073 -> 91 [FAIL] after=10030 SC Paderborn 07 pcall=true
+2026-08-10 12:44:24 Issa Diop pid=231633 -> 94 [FAIL] after=144 Fulham pcall=true
+2026-08-10 12:44:24 Samuel Beltrán pid=74838 -> 111006 [OK-loan] after=110580 Rosario Central pcall=true
+2026-08-10 12:44:24 Tomás Escalante pid=255386 -> 1906 [FAIL] after=111710 Defensa y Justicia pcall=true
+2026-08-10 12:44:24 Maximilian Wöber pid=231838 -> 34 [FAIL] after=8 Leeds United pcall=true
+2026-08-10 12:44:24 Casemiro pid=200145 -> 112893 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:24 Paul Nardi pid=206218 -> 57 [FAIL] after=15 Queens Park Rangers pcall=true
+2026-08-10 12:44:24 Elijah Just pid=254136 -> 1960 [FAIL] after=83 Motherwell pcall=true
+2026-08-10 12:44:24 Matteo Cocchi pid=77615 -> 110912 [OK-loan] after=131682 Inter Milan pcall=true
+2026-08-10 12:44:24 Edson Tortolero pid=253579 -> 101099 [OK-loan] after=110991 Carabobo Fútbol Club pcall=true
+2026-08-10 12:44:24 Matías Borgogno pid=243476 -> 111710 [OK-loan] after=112689 Club Atlético Platense pcall=true
+2026-08-10 12:44:24 Mats Seiler pid=70279 -> 1715 [FAIL] after=900 BSC Young Boys pcall=true
+2026-08-10 12:44:24 Norman Bassette pid=264621 -> 681 [OK-loan] after=1800 Coventry City pcall=true
+2026-08-10 12:44:24 Kevin Spadanuda pid=269947 -> 894 [FAIL] after=897 FC Luzern pcall=true
+2026-08-10 12:44:24 Lucas França pid=235574 -> 1438 [FAIL] after=1891 CD Nacional pcall=true
+2026-08-10 12:44:24 Loic Lüthi pid=276172 -> 897 [FAIL] after=1713 FC Winterthur pcall=true
+2026-08-10 12:44:24 Ibrahim Cissoko pid=268927 -> 1914 [FAIL] after=1809 Toulouse FC pcall=true
+2026-08-10 12:44:24 Elmin Rastoder pid=276645 -> 1884 [FAIL] after=1715 FC Thun pcall=true
+2026-08-10 12:44:24 Clement Bischoff pid=278359 -> 1910 [OK-loan] after=191 FC Red Bull Salzburg pcall=true
+2026-08-10 12:44:24 Wesley pid=74913 -> 111325 [FAIL] after=112139 Al Nassr pcall=true
+2026-08-10 12:44:24 Ibrahim Fofana pid=274440 -> 681 [FAIL] after=1816 Amiens SC pcall=true
+2026-08-10 12:44:24 Matteo Lovato pid=258946 -> 110912 [FAIL] after=1746 Empoli pcall=true
+2026-08-10 12:44:24 Mikayil Faye pid=277118 -> 171 [OK-loan] after=74 Stade Rennais FC pcall=true
+2026-08-10 12:44:24 Amin Boudri pid=70331 -> 708 [FAIL] after=112996 LAFC pcall=true
+2026-08-10 12:44:24 Matt Targett pid=218659 -> 1952 [FAIL] after=13 Newcastle United pcall=true
+2026-08-10 12:44:24 Rafiu Durosinmi pid=273128 -> 673 [FAIL] after=110738 Pisa pcall=true
+2026-08-10 12:44:25 Ismaël Gharbi pid=263194 -> 100888 [OK-loan] after=1896 SC Braga pcall=true
+2026-08-10 12:44:25 Abdoul Kader Bamba pid=246790 -> 110832 [FAIL] after=1815 Clermont Foot 63 pcall=true
+2026-08-10 12:44:25 Jovane Cabral pid=244193 -> 1629 [FAIL] after=718 Estrela Amadora pcall=true
+2026-08-10 12:44:25 Joseph Opoku pid=78426 -> 1960 [FAIL] after=15005 SV Zulte Waregem pcall=true
+2026-08-10 12:44:25 Awad Al Nashri pid=259358 -> 111674 [FAIL] after=607 Al Ittihad pcall=true
+2026-08-10 12:44:25 Valentín Fascendini pid=279845 -> 112670 [FAIL] after=111716 Unión de Santa Fe pcall=true
+2026-08-10 12:44:25 Aleksandr Guboglo pid=77609 -> 379 [OK-loan] after=111139 CF Montréal pcall=true
+2026-08-10 12:44:25 Ármin Pécsi pid=79922 -> 2017 [OK-loan] after=9 Liverpool pcall=true
+2026-08-10 12:44:25 Lukas Grgic pid=239091 -> 1848 [FAIL] after=254 SK Rapid pcall=true
+2026-08-10 12:44:25 Andrea Bozzolan pid=80172 -> 1843 [OK-loan] after=110740 Reggiana pcall=true
+2026-08-10 12:44:25 Bilal Nadir pid=263602 -> 28 [FAIL] after=219 Olympique de Marseille pcall=true
+2026-08-10 12:44:25 Juan Cruz pid=206219 -> 110827 [FAIL] after=479 CA Osasuna pcall=true
+2026-08-10 12:44:25 Ricardo Mangas pid=240020 -> 111811 [OK-loan] after=237 Sporting CP pcall=true
+2026-08-10 12:44:25 Emre Tezgel pid=271626 -> 1933 [OK-loan] after=1806 Stoke City pcall=true
+2026-08-10 12:44:25 Daniel Bielica pid=244256 -> 1790 [FAIL] after=1904 NAC Breda pcall=true
+2026-08-10 12:44:25 Nicolas Milanovic pid=257326 -> 112427 [FAIL] after=77 Aberdeen pcall=true
+2026-08-10 12:44:25 Tin Plavotic pid=237570 -> 111097 [FAIL] after=256 FK Austria Wien pcall=true
+2026-08-10 12:44:25 Sergio López pid=245287 -> 110832 [FAIL] after=110502 SV Darmstadt 98 pcall=true
+2026-08-10 12:44:25 Antoniu Roca pid=263133 -> 453 [OK-loan] after=452 RCD Espanyol de Barcelona pcall=true
+2026-08-10 12:44:25 Alessandro Milani pid=76178 -> 131682 [FAIL] after=115841 Lazio pcall=true
+2026-08-10 12:44:25 Iker Bravo pid=265194 -> 1795 [FAIL] after=55 Udinese pcall=true
+2026-08-10 12:44:25 Oluwaseun Adewumi pid=74864 -> 166 [OK-loan] after=1796 Burnley pcall=true
+2026-08-10 12:44:25 Marcelo Pérez pid=259514 -> 111006 [OK-loan] after=112112 Juventud de las Piedras pcall=true
+2026-08-10 12:44:25 Hidemasa Morita pid=242087 -> 1952 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:25 == PART 4 DONE ==
+2026-08-10 12:44:31 == PART 5 START (68 entries) ==
+2026-08-10 12:44:31 Mika Wallentowitz pid=81991 -> 165 [OK-loan] after=34 FC Schalke 04 pcall=true
+2026-08-10 12:44:31 Alessio Zerbin pid=237669 -> 111657 [FAIL] after=48 SSC Napoli pcall=true
+2026-08-10 12:44:31 Luis Hasa pid=70163 -> 111657 [FAIL] after=48 SSC Napoli pcall=true
+2026-08-10 12:44:31 Alejandro Marqués pid=243047 -> 110832 [FAIL] after=10020 Estoril Praia pcall=true
+2026-08-10 12:44:31 Naif Masoud pid=70584 -> 112387 [FAIL] after=112390 Al Fateh pcall=true
+2026-08-10 12:44:31 Stefan Schimmer pid=239078 -> 112638 [FAIL] after=111235 1. FC Heidenheim 1846 pcall=true
+2026-08-10 12:44:31 Nawaf Al Habashi pid=246381 -> 605 [FAIL] after=113222 Al Hazem pcall=true
+2026-08-10 12:44:31 Dominik Javorcek pid=74877 -> 305 [OK-loan] after=266 SK Slavia Praha pcall=true
+2026-08-10 12:44:31 Elias Achouri pid=263672 -> 131439 [FAIL] after=819 F.C. København pcall=true
+2026-08-10 12:44:31 Conor Townsend pid=203751 -> 109 [FAIL] after=94 Ipswich Town pcall=true
+2026-08-10 12:44:31 Kaheim Dixon pid=74922 -> 1906 [FAIL] after=89 Charlton Athletic pcall=true
+2026-08-10 12:44:31 Ryan Strain pid=241244 -> 79 [FAIL] after=181 Dundee United pcall=true
+2026-08-10 12:44:32 Carlos Fernández pid=221014 -> 110827 [FAIL] after=457 Real Sociedad pcall=true
+2026-08-10 12:44:32 Isaiah Ahmed pid=74337 -> 100638 [FAIL] after=1913 sc Heerenveen pcall=true
+2026-08-10 12:44:32 Anthony Descotte pid=254503 -> 634 [OK-loan] after=670 Sporting Charleroi pcall=true
+2026-08-10 12:44:32 Blerton Isufi pid=80263 -> 1756 [OK-loan] after=417 Molde FK pcall=true
+2026-08-10 12:44:32 Luca Erlein pid=76923 -> 32 [FAIL] after=10029 TSG Hoffenheim pcall=true
+2026-08-10 12:44:32 Alex Lowry pid=266756 -> 83 [OK-loan] after=1933 Wycombe Wanderers pcall=true
+2026-08-10 12:44:32 Daizen Maeda pid=246321 -> 94 [FAIL] after=78 Celtic pcall=true
+2026-08-10 12:44:32 Andrei Coubis pid=81262 -> 149 [FAIL] after=1837 Sampdoria pcall=true
+2026-08-10 12:44:32 Oliver Lukic pid=82763 -> 2017 [OK-loan] after=191 FC Red Bull Salzburg pcall=true
+2026-08-10 12:44:32 Lasse Flø pid=278362 -> 681 [FAIL] after=822 Vejle Boldklub pcall=true
+2026-08-10 12:44:32 Shamal George pid=240346 -> 112764 [FAIL] after=1933 Wycombe Wanderers pcall=true
+2026-08-10 12:44:32 Maxence Prévot pid=231841 -> 111276 [FAIL] after=100087 Oud-Heverlee Leuven pcall=true
+2026-08-10 12:44:32 Jamie Lawrence pid=259082 -> 100087 [FAIL] after=15040 WSG Tirol pcall=true
+2026-08-10 12:44:32 Arnau Tenas pid=259065 -> 453 [OK-loan] after=483 Villarreal CF pcall=true
+2026-08-10 12:44:32 Owen Goodman pid=276806 -> 180 [OK-loan] after=1799 Crystal Palace pcall=true
+2026-08-10 12:44:32 Matthew Cox pid=256488 -> 135 [OK-loan] after=1925 Brentford pcall=true
+2026-08-10 12:44:32 Diego Pampín pid=241055 -> 110832 [FAIL] after=1853 Levante UD pcall=true
+2026-08-10 12:44:32 Daniel Villahermosa pid=266100 -> 110827 [FAIL] after=114554 FC Andorra pcall=true
+2026-08-10 12:44:32 José Gragera pid=250997 -> 10846 [OK-loan] after=452 RCD Espanyol de Barcelona pcall=true
+2026-08-10 12:44:32 Richard Taylor pid=252878 -> 112764 [OK-loan] after=4 Bolton Wanderers pcall=true
+2026-08-10 12:44:32 Calebe pid=264842 -> 111325 [OK-loan] after=463 Deportivo Alavés pcall=true
+2026-08-10 12:44:32 Danilo pid=199304 -> 517 [OK-loan] after=111592 Free Agents pcall=true
+2026-08-10 12:44:32 Wílder Viera pid=260135 -> 110953 [FAIL] after=112716 Cerro Porteño pcall=true
+2026-08-10 12:44:32 Tin Jedvaj pid=215930 -> 111674 [FAIL] after=1884 Panathinaikos FC pcall=true
+2026-08-10 12:44:32 Simone Pontisso pid=228882 -> 111434 [FAIL] after=110908 Catanzaro pcall=true
+2026-08-10 12:44:32 Aodhan Doherty pid=82914 -> 79 [OK-loan] after=3 Blackburn Rovers pcall=true
+2026-08-10 12:44:32 Dudu pid=258085 -> 111329 [FAIL] after=718 Estrela Amadora pcall=true
+2026-08-10 12:44:33 Antonio Candela pid=252315 -> 110908 [OK-loan] after=113974 Spezia pcall=true
+2026-08-10 12:44:33 Felipe Lima pid=79911 -> 234 [OK-loan] after=717 FC Alverca pcall=true
+2026-08-10 12:44:33 Marco Festa pid=230631 -> 111434 [FAIL] after=111433 Mantova pcall=true
+2026-08-10 12:44:33 Lewis Smith pid=252571 -> 77 [FAIL] after=621 Livingston pcall=true
+2026-08-10 12:44:33 Giannis Papanikolaou pid=258040 -> 301 [FAIL] after=101037 Çaykur Rizespor pcall=true
+2026-08-10 12:44:33 Gilberto Flores pid=268610 -> 111008 [OK-loan] after=113149 FC Cincinnati pcall=true
+2026-08-10 12:44:33 Brayan Ceballos pid=276960 -> 111139 [FAIL] after=691 New England Revolution pcall=true
+2026-08-10 12:44:33 Millenic Alli pid=71215 -> 89 [FAIL] after=1923 Luton Town pcall=true
+2026-08-10 12:44:33 Carlos Marín pid=254099 -> 1854 [FAIL] after=1867 Córdoba CF pcall=true
+2026-08-10 12:44:33 Jusuf Gazibegovic pid=259101 -> 301 [OK-loan] after=31 1. FC Köln pcall=true
+2026-08-10 12:44:33 Alaa Bellaarouch pid=276988 -> 100757 [OK-loan] after=1896 SC Braga pcall=true
+2026-08-10 12:44:33 Lucas Núñez pid=78669 -> 467 [OK-loan] after=461 Valencia CF pcall=true
+2026-08-10 12:44:33 Miguel Rodríguez pid=258730 -> 463 [FAIL] after=1903 FC Utrecht pcall=true
+2026-08-10 12:44:33 Simon Elisor pid=258526 -> 308 [FAIL] after=112809 FC Famalicão pcall=true
+2026-08-10 12:44:33 Georgios Koutsias pid=258834 -> 112809 [FAIL] after=10032 FC Lugano pcall=true
+2026-08-10 12:44:33 Rodrigo Rodrigues pid=78722 -> 237 [FAIL] after=1888 Gil Vicente FC pcall=true
+2026-08-10 12:44:33 Jonathan Dubasin pid=263883 -> 479 [FAIL] after=459 Real Sporting pcall=true
+2026-08-10 12:44:33 Luca Erlein pid=76923 -> 32 [FAIL] after=10029 TSG Hoffenheim pcall=true
+2026-08-10 12:44:33 Emmanuel Addai pid=276093 -> 100087 [FAIL] after=113888 Qarabağ FK pcall=true
+2026-08-10 12:44:33 Darko Churlinov pid=251545 -> 110746 [FAIL] after=101032 Kocaelispor pcall=true
+2026-08-10 12:44:33 Lanroy Machine pid=78377 -> 1913 [OK-loan] after=1530 Angers SCO pcall=true
+2026-08-10 12:44:33 Gustavo Varela pid=72337 -> 111811 [FAIL] after=234 SL Benfica pcall=true
+2026-08-10 12:44:33 Darío Cáceres pid=242691 -> 112965 [FAIL] after=111710 Defensa y Justicia pcall=true
+2026-08-10 12:44:33 Aljosa Vasic pid=276451 -> 112494 [OK-loan] after=1843 Palermo pcall=true
+2026-08-10 12:44:33 Mustapha Isah pid=272529 -> 132231 [FAIL] after=113459 Kristiansund BK pcall=true
+2026-08-10 12:44:33 Franck Atoen pid=81568 -> 111276 [OK-loan] after=748 Samsunspor A.Ş pcall=true
+2026-08-10 12:44:33 Lorenzo Carissoni pid=235292 -> 110912 [FAIL] after=112124 S.S. Juve Stabia 1907 pcall=true
+2026-08-10 12:44:33 Emanuele Zuelli pid=256119 -> 110912 [FAIL] after=112493 Carrarese Calcio 1908 pcall=true
+2026-08-10 12:44:34 Dan Sinaté pid=79493 -> 1816 [OK-loan] after=1530 Angers SCO pcall=true
+2026-08-10 12:44:34 == PART 5 DONE ==
+2026-08-10 12:44:40 == PART 6 START (68 entries) ==
+2026-08-10 12:44:40 Filip Krovinovic pid=230988 -> 1629 [FAIL] after=263 HNK Hajduk Split pcall=true
+2026-08-10 12:44:40 José Salinas pid=258684 -> 573 [OK-loan] after=452 RCD Espanyol de Barcelona pcall=true
+2026-08-10 12:44:40 Thomas Ince pid=200521 -> 15048 [FAIL] after=1795 Watford pcall=true
+2026-08-10 12:44:40 Mohammed Mahzari pid=277233 -> 605 [FAIL] after=112393 Al Taawoun pcall=true
+2026-08-10 12:44:40 Tomás Muro pid=269832 -> 111006 [OK-loan] after=111020 CS Independiente Rivadavia pcall=true
+2026-08-10 12:44:40 Otávio pid=78088 -> 1824 [FAIL] after=718 Estrela Amadora pcall=true
+2026-08-10 12:44:40 Owen Bevan pid=271235 -> 180 [FAIL] after=1943 AFC Bournemouth pcall=true
+2026-08-10 12:44:40 Valentin Sulzbacher pid=78099 -> 1971 [FAIL] after=191 FC Red Bull Salzburg pcall=true
+2026-08-10 12:44:40 Calvin Stengs pid=236593 -> 1906 [FAIL] after=246 Feyenoord pcall=true
+2026-08-10 12:44:40 Dirk Proper pid=262334 -> 1913 [FAIL] after=1910 N.E.C. Nijmegen pcall=true
+2026-08-10 12:44:40 Philipp Förster pid=237540 -> 110636 [FAIL] after=1832 Karlsruher SC pcall=true
+2026-08-10 12:44:40 Rafa Soares pid=218936 -> 718 [FAIL] after=112809 FC Famalicão pcall=true
+2026-08-10 12:44:40 Kjell Scherpen pid=243675 -> 94 [FAIL] after=2014 Royale Union Saint-Gilloise pcall=true
+2026-08-10 12:44:40 Luke Brooke-Smith pid=76117 -> 1790 [FAIL] after=111766 Wellington Phoenix pcall=true
+2026-08-10 12:44:40 Carlo Holse pid=240040 -> 113018 [FAIL] after=748 Samsunspor A.Ş pcall=true
+2026-08-10 12:44:41 Nolan Galves pid=275296 -> 109 [FAIL] after=111659 Rodez Aveyron Football pcall=true
+2026-08-10 12:44:41 Joe Gauci pid=243917 -> 149 [OK-loan] after=2 Aston Villa pcall=true
+2026-08-10 12:44:41 Luis Vázquez pid=251651 -> 88 [FAIL] after=229 RSC Anderlecht pcall=true
+2026-08-10 12:44:41 Ugo Raghouber pid=74774 -> 1796 [FAIL] after=65 LOSC Lille pcall=true
+2026-08-10 12:44:41 Óscar Perea pid=274231 -> 101099 [OK-loan] after=76 RC Strasbourg Alsace pcall=true
+2026-08-10 12:44:41 Rares Ilie pid=262480 -> 111433 [FAIL] after=72 OGC Nice pcall=true
+2026-08-10 12:44:41 Piero Quispe pid=267794 -> 111014 [FAIL] after=111400 Sydney FC pcall=true
+2026-08-10 12:44:41 Anders Klynge pid=257259 -> 110745 [FAIL] after=918 FK Bodø/Glimt pcall=true
+2026-08-10 12:44:41 Julio Díaz pid=82936 -> 481 [FAIL] after=240 Atlético de Madrid pcall=true
+2026-08-10 12:44:41 Andreas Skov Olsen pid=240017 -> 101014 [OK-loan] after=175 VfL Wolfsburg pcall=true
+2026-08-10 12:44:41 Sam Parker pid=278958 -> 1933 [OK-loan] after=1960 Swansea City pcall=true
+2026-08-10 12:44:41 Sebastian Berhalter pid=255205 -> 12 [FAIL] after=101112 Vancouver Whitecaps FC pcall=true
+2026-08-10 12:44:41 Andrés Vombergar pid=247143 -> 111707 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:41 Jack Shorrock pid=277412 -> 563 [OK-loan] after=1928 Port Vale pcall=true
+2026-08-10 12:44:41 Stjepan Radeljic pid=84037 -> 211 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:41 Henrique Araújo pid=266905 -> 114510 [FAIL] after=234 SL Benfica pcall=true
+2026-08-10 12:44:41 Santiago Mele pid=259259 -> 110093 [OK-loan] after=111592 Free Agents pcall=true
+2026-08-10 12:44:41 Patrick Ouotro pid=72306 -> 1887 [FAIL] after=1823 AS Nancy Lorraine pcall=true
+2026-08-10 12:44:41 Isak Helstad Amundsen pid=256384 -> 2041 [FAIL] after=417 Molde FK pcall=true
+2026-08-10 12:44:41 Lukas Jonsson pid=237359 -> 710 [FAIL] after=487 VfL Osnabrück pcall=true
+2026-08-10 12:44:41 Vozinha pid=217141 -> 110980 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:41 Niklas Dorsch pid=231227 -> 111651 [FAIL] after=111235 1. FC Heidenheim 1846 pcall=true
+2026-08-10 12:44:41 Sankhoun Diawara pid=74510 -> 131681 [FAIL] after=294 ESTAC Troyes pcall=true
+2026-08-10 12:44:41 Jayden Fevrier pid=264581 -> 3 [FAIL] after=1931 Stockport County pcall=true
+2026-08-10 12:44:41 Maxime Busi pid=245084 -> 230 [FAIL] after=379 Stade de Reims pcall=true
+2026-08-10 12:44:41 Leo Sauer pid=277482 -> 36 [FAIL] after=246 Feyenoord pcall=true
+2026-08-10 12:44:41 Joel Ndala pid=74956 -> 1750 [FAIL] after=10 Manchester City pcall=true
+2026-08-10 12:44:41 Alassana Jatta pid=256738 -> 114510 [FAIL] after=1937 Notts County pcall=true
+2026-08-10 12:44:42 René Mitongo pid=80182 -> 436 [FAIL] after=232 Standard de Liège pcall=true
+2026-08-10 12:44:42 Kacper Tobiasz pid=262251 -> 110776 [FAIL] after=1871 Legia Warszawa pcall=true
+2026-08-10 12:44:42 Luís Balbo pid=83223 -> 209 [FAIL] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:42 Damián Pizarro pid=268396 -> 101097 [OK-loan] after=101085 Racing Club pcall=true
+2026-08-10 12:44:42 Pietro Comuzzo pid=278340 -> 54 [OK-loan] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:42 Eray Cömert pid=233885 -> 54 [FAIL] after=461 Valencia CF pcall=true
+2026-08-10 12:44:42 Mikel Amondarain pid=74813 -> 189 [FAIL] after=101083 Estudiantes de La Plata pcall=true
+2026-08-10 12:44:42 Umut Bozok pid=239043 -> 101014 [FAIL] after=131174 İKAS Eyüpspor pcall=true
+2026-08-10 12:44:42 Florin Stefan pid=248041 -> 110776 [FAIL] after=308 U Craiova 1948 Club Sportiv pcall=true
+2026-08-10 12:44:42 Fer Niño pid=252590 -> 468 [FAIL] after=10846 Burgos CF pcall=true
+2026-08-10 12:44:42 Mattia Compagnon pid=276804 -> 206 [OK-loan] after=45 Juventus pcall=true
+2026-08-10 12:44:42 Riccardo Pagano pid=276951 -> 110915 [FAIL] after=52 AS Roma pcall=true
+2026-08-10 12:44:42 Chidozie Awaziem pid=232693 -> 101033 [FAIL] after=71 FC Nantes pcall=true
+2026-08-10 12:44:42 Jordan Williams pid=237415 -> 1926 [OK-loan] after=1790 Portsmouth pcall=true
+2026-08-10 12:44:42 Alfie Pond pid=264622 -> 1924 [FAIL] after=110 Wolverhampton Wanderers pcall=true
+2026-08-10 12:44:42 Diego Otoya pid=276045 -> 131477 [OK-loan] after=111013 Sporting Cristal pcall=true
+2026-08-10 12:44:42 Stefan Ortega pid=200159 -> 280 [FAIL] after=14 Nottingham Forest pcall=true
+2026-08-10 12:44:42 Oliver Antman pid=247447 -> 229 [FAIL] after=86 Rangers pcall=true
+2026-08-10 12:44:42 Stefan Schwab pid=204688 -> 780 [FAIL] after=576 Holstein Kiel pcall=true
+2026-08-10 12:44:42 Erawan Garnier pid=83218 -> 58 [FAIL] after=64 RC Lens pcall=true
+2026-08-10 12:44:42 Junior Mwanga pid=269184 -> 1738 [FAIL] after=76 RC Strasbourg Alsace pcall=true
+2026-08-10 12:44:42 Oliver Sorg pid=74112 -> 780 [FAIL] after=100409 FC Augsburg pcall=true
+2026-08-10 12:44:42 Alessandro Dellavalle pid=72097 -> 110912 [OK-loan] after=54 Torino pcall=true
+2026-08-10 12:44:42 Thorsten Schriebl pid=72541 -> 111822 [FAIL] after=113616 Grazer AK 1902 pcall=true
+2026-08-10 12:44:43 Brooklyn Ezeh pid=262117 -> 503 [FAIL] after=485 Hannover 96 pcall=true
+2026-08-10 12:44:43 == PART 6 DONE ==
+2026-08-10 12:44:48 == PART 7 START (68 entries) ==
+2026-08-10 12:44:48 Michael Frey pid=208159 -> 230 [FAIL] after=322 Grasshopper Club Zürich pcall=true
+2026-08-10 12:44:48 Daniel Bennie pid=276561 -> 181 [OK-loan] after=15 Queens Park Rangers pcall=true
+2026-08-10 12:44:48 Malcolm Jeng pid=275153 -> 1915 [OK-loan] after=379 Stade de Reims pcall=true
+2026-08-10 12:44:48 Robin van Cruijsen pid=80489 -> 100646 [FAIL] after=645 FC Volendam pcall=true
+2026-08-10 12:44:48 Mike Kleijn pid=271120 -> 645 [OK-loan] after=100646 Sparta Rotterdam pcall=true
+2026-08-10 12:44:48 Sander Svendsen pid=215195 -> 113459 [FAIL] after=101033 Konyaspor pcall=true
+2026-08-10 12:44:48 Teodor Berg Haltvik pid=248392 -> 1447 [FAIL] after=131491 KFUM-Kameratene Oslo pcall=true
+2026-08-10 12:44:48 Roman Kvet pid=272872 -> 305 [FAIL] after=537 FCV Dender EH pcall=true
+2026-08-10 12:44:48 Rayan Bamba pid=71778 -> 1739 [OK-loan] after=74 Stade Rennais FC pcall=true
+2026-08-10 12:44:48 Olwethu Makhanya pid=278688 -> 86 [FAIL] after=112134 Philadelphia Union pcall=true
+2026-08-10 12:44:48 Daiki Hashioka pid=242006 -> 23 [OK-loan] after=266 SK Slavia Praha pcall=true
+2026-08-10 12:44:48 Rares Burnete pid=277636 -> 112494 [OK-loan] after=347 Lecce pcall=true
+2026-08-10 12:44:48 Aritz Arambarri pid=254003 -> 110069 [FAIL] after=467 SD Eibar pcall=true
+2026-08-10 12:44:48 John Stones pid=203574 -> 131682 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:48 Juan Rodríguez pid=75896 -> 111708 [FAIL] after=112516 CD Tondela pcall=true
+2026-08-10 12:44:48 Mateo García pid=245908 -> 110396 [OK-loan] after=101105 Millonarios FC pcall=true
+2026-08-10 12:44:48 Lucas Michal pid=70458 -> 1750 [OK-loan] after=69 AS Monaco pcall=true
+2026-08-10 12:44:48 Lovro Majer pid=244261 -> 278 [FAIL] after=175 VfL Wolfsburg pcall=true
+2026-08-10 12:44:48 Matías Moreno pid=276820 -> 205 [OK-loan] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:48 Callum Marshall pid=278101 -> 1923 [FAIL] after=19 West Ham United pcall=true
+2026-08-10 12:44:48 William Fitzgerald pid=241582 -> 306 [FAIL] after=563 Sligo Rovers pcall=true
+2026-08-10 12:44:48 Marin Soticek pid=73582 -> 263 [OK-loan] after=896 FC Basel 1893 pcall=true
+2026-08-10 12:44:48 Gustavo Sá pid=271057 -> 280 [OK-loan] after=19 West Ham United pcall=true
+2026-08-10 12:44:48 Maxence Lacroix pid=244067 -> 5 [FAIL] after=1799 Crystal Palace pcall=true
+2026-08-10 12:44:49 Tyler Fredricson pid=269233 -> 1862 [FAIL] after=11 Manchester United pcall=true
+2026-08-10 12:44:49 Robert Ljubicic pid=243525 -> 252 [OK-loan] after=278 AEK Athens pcall=true
+2026-08-10 12:44:49 Emiliano Amor pid=226170 -> 1013 [FAIL] after=111710 Defensa y Justicia pcall=true
+2026-08-10 12:44:49 Alexander Schwolow pid=202789 -> 169 [FAIL] after=80 Heart of Midlothian pcall=true
+2026-08-10 12:44:49 Davide Veroli pid=276443 -> 112494 [OK-loan] after=1842 Cagliari pcall=true
+2026-08-10 12:44:49 Raphael Kofler pid=277872 -> 1842 [OK-loan] after=112494 Südtirol pcall=true
+2026-08-10 12:44:49 Italo pid=70419 -> 1477 [OK-loan] after=1478 Jeju SK FC pcall=true
+2026-08-10 12:44:49 Kian Fitz-Jim pid=262218 -> 54 [FAIL] after=245 Ajax pcall=true
+2026-08-10 12:44:49 Federico Ravaglia pid=240657 -> 1795 [FAIL] after=189 Bologna pcall=true
+2026-08-10 12:44:49 Lukas Willen pid=268498 -> 110746 [FAIL] after=15005 SV Zulte Waregem pcall=true
+2026-08-10 12:44:49 Saba Sazonov pid=278013 -> 1860 [FAIL] after=54 Torino pcall=true
+2026-08-10 12:44:49 Emanuele Rao pid=80630 -> 110738 [OK-loan] after=48 SSC Napoli pcall=true
+2026-08-10 12:44:49 Liam Cullen pid=233941 -> 95 [FAIL] after=1960 Swansea City pcall=true
+2026-08-10 12:44:49 Lautaro Morales pid=253012 -> 111715 [OK-loan] after=115693 Universidad Central de Venezuela pcall=true
+2026-08-10 12:44:49 Federico Mancuello pid=214968 -> 111019 [FAIL] after=110093 Club Atlético Independiente pcall=true
+2026-08-10 12:44:49 Ignacio Pussetto pid=219536 -> 111711 [OK-loan] after=110093 Club Atlético Independiente pcall=true
+2026-08-10 12:44:49 Danilo Arboleda pid=227740 -> 1013 [FAIL] after=110404 Club Atlético Banfield pcall=true
+2026-08-10 12:44:49 Abdelhamid Sabiri pid=237499 -> 131174 [FAIL] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:49 Simone Pafundi pid=271575 -> 110908 [OK-loan] after=55 Udinese pcall=true
+2026-08-10 12:44:49 Martín Payero pid=240970 -> 1795 [FAIL] after=55 Udinese pcall=true
+2026-08-10 12:44:49 Kieron Bowie pid=257104 -> 111974 [OK-loan] after=206 Hellas Verona pcall=true
+2026-08-10 12:44:49 Samuele Mulattieri pid=243200 -> 206 [OK-loan] after=111974 Sassuolo pcall=true
+2026-08-10 12:44:49 Olti Hyseni pid=73504 -> 269 [FAIL] after=1447 Sønderjyske Fodbold pcall=true
+2026-08-10 12:44:49 Mario Mitaj pid=258147 -> 110556 [OK-loan] after=607 Al Ittihad pcall=true
+2026-08-10 12:44:49 Mathew Ryan pid=199005 already at 1853, skip
+2026-08-10 12:44:50 Jesse Bisiwu pid=55133 -> 241 [FAIL] after=231 Club Brugge pcall=true
+2026-08-10 12:44:50 Josh Maja pid=235161 -> 1738 [FAIL] after=109 West Bromwich Albion pcall=true
+2026-08-10 12:44:50 Nampalys Mendy pid=198861 -> 68 [FAIL] after=1795 Watford pcall=true
+2026-08-10 12:44:50 Lucas Gómez pid=70680 -> 110396 [OK-loan] after=111019 Argentinos Juniors pcall=true
+2026-08-10 12:44:50 Tomás Pérez pid=276605 -> 111710 [OK-loan] after=101085 Racing Club pcall=true
+2026-08-10 12:44:50 Martín Río pid=76469 -> 1013 [OK-loan] after=112670 Club Atlético Talleres pcall=true
+2026-08-10 12:44:50 Aidan Stokes pid=73858 -> 1925 [OK-loan] after=689 New York Red Bulls pcall=true
+2026-08-10 12:44:50 Janne Berner pid=78130 -> 110501 [OK-loan] after=166 Hertha BSC pcall=true
+2026-08-10 12:44:50 Favour Fawunmi pid=77599 -> 1920 [OK-loan] after=1806 Stoke City pcall=true
+2026-08-10 12:44:50 Peter Kiedl pid=79942 -> 27 [FAIL] after=780 SV Oberbank Ried pcall=true
+2026-08-10 12:44:50 Meiko Wäschenbach pid=74004 -> 1826 [FAIL] after=1832 Karlsruher SC pcall=true
+2026-08-10 12:44:50 Julian Brandt pid=212194 -> 245 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:44:50 Jesse Dempsey pid=274451 -> 112260 [OK-loan] after=753 Waterford FC pcall=true
+2026-08-10 12:44:50 Johnly Yfeko pid=277272 -> 82 [FAIL] after=143 Exeter City pcall=true
+2026-08-10 12:44:50 Jonathan Meier pid=243514 -> 82 [FAIL] after=110176 SSV Ulm 1846 pcall=true
+2026-08-10 12:44:50 Lewis Montsma pid=257303 -> 1928 [FAIL] after=180 Dundee FC pcall=true
+2026-08-10 12:44:50 Jamie Knight-Lebel pid=277747 -> 83 [OK-loan] after=1919 Bristol City pcall=true
+2026-08-10 12:44:50 Chris Cadden pid=222109 -> 77 [FAIL] after=81 Hibernian pcall=true
+2026-08-10 12:44:50 Jeremías Lucco pid=70688 -> 111710 [OK-loan] after=111022 Belgrano de Córdoba pcall=true
+2026-08-10 12:44:50 == PART 7 DONE ==
+2026-08-10 12:44:54 == PART 8 START (68 entries) ==
+2026-08-10 12:44:54 Imanol Machuca pid=259790 -> 110093 [FAIL] after=101088 Vélez Sarsfield pcall=true
+2026-08-10 12:44:54 Tobías Andrada pid=79246 -> 1876 [FAIL] after=101088 Vélez Sarsfield pcall=true
+2026-08-10 12:44:54 Francisco Perruzzi pid=269501 -> 111707 [FAIL] after=1013 San Lorenzo de Almagro pcall=true
+2026-08-10 12:44:54 Nicolás Orsini pid=220148 -> 113044 [FAIL] after=1877 Boca Juniors pcall=true
+2026-08-10 12:44:54 Kacper Sezonienko pid=263778 -> 206 [FAIL] after=111091 Lechia Gdańsk pcall=true
+2026-08-10 12:44:54 Youssef Maziz pid=237138 -> 694 [FAIL] after=100087 Oud-Heverlee Leuven pcall=true
+2026-08-10 12:44:54 Dejan Radonjic pid=73666 -> 780 [FAIL] after=256 FK Austria Wien pcall=true
+2026-08-10 12:44:55 Ebenezer Akinsanmiro pid=70471 -> 111811 [OK-loan] after=131682 Inter Milan pcall=true
+2026-08-10 12:44:55 Dominic Vavassori pid=74573 -> 1843 [OK-loan] after=115845 Atalanta pcall=true
+2026-08-10 12:44:55 Ilias Kostis pid=274208 -> 100852 [FAIL] after=240 Atlético de Madrid pcall=true
+2026-08-10 12:44:55 Patrick Soko pid=240047 -> 100888 [OK-loan] after=1861 UD Almería pcall=true
+2026-08-10 12:44:55 Anto Sekongo pid=73511 -> 748 [FAIL] after=111276 USL Dunkerque pcall=true
+2026-08-10 12:44:55 Damián Rodríguez pid=279112 -> 1968 [OK-loan] after=450 Real Club Celta de Vigo pcall=true
+2026-08-10 12:44:55 Kevin Akpoguma pid=211856 -> 111657 [FAIL] after=10029 TSG Hoffenheim pcall=true
+2026-08-10 12:44:55 Danny Welbeck pid=186146 -> 5 [FAIL] after=1808 Brighton & Hove Albion pcall=true
+2026-08-10 12:44:55 Redouane Halhal pid=264657 -> 205 [FAIL] after=110724 KV Mechelen pcall=true
+2026-08-10 12:44:55 Lucas Sanseviero pid=256159 -> 110953 [OK-loan] after=462 Real Valladolid CF pcall=true
+2026-08-10 12:44:55 Kamarl Grant pid=278987 -> 112764 [OK-loan] after=97 Millwall pcall=true
+2026-08-10 12:44:55 Gabriel Pirani pid=277301 -> 131439 [FAIL] after=688 D.C. United pcall=true
+2026-08-10 12:44:55 Niklas Ødegård pid=264295 -> 417 [FAIL] after=113459 Kristiansund BK pcall=true
+2026-08-10 12:44:55 Marco Ruggero pid=73989 -> 110908 [OK-loan] after=113974 Spezia pcall=true
+2026-08-10 12:44:55 Simone Zanon pid=72916 -> 110738 [OK-loan] after=112493 Carrarese Calcio 1908 pcall=true
+2026-08-10 12:44:55 Luke Thomas pid=235059 -> 100805 [FAIL] after=1962 Bristol Rovers pcall=true
+2026-08-10 12:44:55 Nordan Mukiele pid=80804 -> 70 [OK-loan] after=74 Stade Rennais FC pcall=true
+2026-08-10 12:44:55 Rodrigo Fernández pid=253246 -> 111711 [OK-loan] after=110093 Club Atlético Independiente pcall=true
+2026-08-10 12:44:55 Luciano Giménez pid=73887 -> 112689 [OK-loan] after=101083 Estudiantes de La Plata pcall=true
+2026-08-10 12:44:55 Maximiliano Porcel pid=74856 -> 111710 [OK-loan] after=101088 Vélez Sarsfield pcall=true
+2026-08-10 12:44:55 Felix Bacher pid=262404 -> 66 [FAIL] after=10020 Estoril Praia pcall=true
+2026-08-10 12:44:56 Nicolás Dubersarsky pid=70676 -> 111715 [OK-loan] after=114161 Austin FC pcall=true
+2026-08-10 12:44:56 Jesús Camargo pid=265675 -> 101106 [OK-loan] after=110990 Deportivo Táchira pcall=true
+2026-08-10 12:44:56 Esteban Matus pid=267588 -> 101108 [FAIL] after=101097 Audax Italiano pcall=true
+2026-08-10 12:44:56 Tom Watson pid=275246 -> 95 [OK-loan] after=1808 Brighton & Hove Albion pcall=true
+2026-08-10 12:44:56 Adam Nhaili pid=279807 -> 537 [OK-loan] after=680 Sint-Truidense VV pcall=true
+2026-08-10 12:44:56 Jordan Zemura pid=259634 -> 1795 [OK-loan] after=55 Udinese pcall=true
+2026-08-10 12:44:56 Raphael Onyedika pid=262880 -> 1824 [FAIL] after=231 Club Brugge pcall=true
+2026-08-10 12:44:56 Willem Geubbels pid=241266 -> 347 [FAIL] after=111817 Paris FC pcall=true
+2026-08-10 12:44:56 Simon Sohm pid=244634 -> 205 [OK-loan] after=110374 Fiorentina pcall=true
+2026-08-10 12:44:56 Randal Kolo Muani pid=237679 -> 45 [FAIL] after=73 Paris Saint-Germain pcall=true
+2026-08-10 12:44:56 Emmanuel Latte Lath pid=237295 -> 1831 [OK-loan] after=112885 Atlanta United pcall=true
+2026-08-10 12:44:56 Mihai Lixandru pid=253758 -> 112390 [FAIL] after=100761 FC FCSB pcall=true
+2026-08-10 12:44:56 Colin Rösler pid=243833 -> 271 [FAIL] after=320 Malmö FF pcall=true
+2026-08-10 12:44:56 Souleymane Faye pid=79547 -> 217 [OK-loan] after=237 Sporting CP pcall=true
+2026-08-10 12:44:56 Fran González pid=278394 -> 481 [FAIL] after=243 Real Madrid pcall=true
+2026-08-10 12:44:56 Danny Batth pid=195037 -> 97 [FAIL] after=91 Derby County pcall=true
+2026-08-10 12:44:56 Ulises Giménez pid=279166 -> 112713 [OK-loan] after=1876 River Plate pcall=true
+2026-08-10 12:44:56 Luis Díaz pid=241084 -> 111020 [FAIL] after=21 FC Bayern München pcall=true
+2026-08-10 12:44:56 Manolis Saliakas pid=222542 -> 280 [FAIL] after=110329 FC St. Pauli pcall=true
+2026-08-10 12:44:56 Killian Corredor pid=262604 -> 71 [FAIL] after=110502 SV Darmstadt 98 pcall=true
+2026-08-10 12:44:56 Moritz-Broni Kwarteng pid=243970 -> 110588 [FAIL] after=160 VfL Bochum 1848 pcall=true
+2026-08-10 12:44:56 Jordan Henderson pid=183711 -> 5 [FAIL] after=1925 Brentford pcall=true
+2026-08-10 12:44:56 Vasilije Adzic pid=75085 -> 111974 [OK-loan] after=45 Juventus pcall=true
+2026-08-10 12:44:57 Péter Gulácsi pid=185122 -> 483 [FAIL] after=112172 RB Leipzig pcall=true
+2026-08-10 12:44:57 Cameron Congreve pid=268306 -> 681 [FAIL] after=1960 Swansea City pcall=true
+2026-08-10 12:44:57 Paulinho Bóia pid=245790 -> 301 [FAIL] after=1891 CD Nacional pcall=true
+2026-08-10 12:44:57 João Mário pid=212814 -> 110374 [??] after=278 AEK Athens pcall=true
+2026-08-10 12:44:57 Yacine Titraoui pid=73348 -> 64 [FAIL] after=670 Sporting Charleroi pcall=true
+2026-08-10 12:44:57 Estanis Pedrola pid=266158 -> 110827 [FAIL] after=1837 Sampdoria pcall=true
+2026-08-10 12:44:57 César Palacios pid=83235 -> 144 [FAIL] after=243 Real Madrid pcall=true
+2026-08-10 12:44:57 Faris Abdi pid=256130 -> 607 [FAIL] after=131798 Neom pcall=true
+2026-08-10 12:44:57 Nedim Bajrami pid=237640 -> 112393 [OK-loan] after=86 Rangers pcall=true
+2026-08-10 12:44:57 Rodrigo Pinho pid=229683 -> 131463 [FAIL] after=718 Estrela Amadora pcall=true
+2026-08-10 12:44:57 Ian Subiabre pid=279934 -> 111715 [OK-loan] after=1876 River Plate pcall=true
+2026-08-10 12:44:57 Esteban Rolón pid=231212 -> 113044 [FAIL] after=111707 Club Atlético Aldosivi pcall=true
+2026-08-10 12:44:57 Edwin Cerrillo pid=247509 -> 101099 [FAIL] after=697 LA Galaxy pcall=true
+2026-08-10 12:44:57 Sofiane Bendebka pid=255487 -> 113222 [FAIL] after=112390 Al Fateh pcall=true
+2026-08-10 12:44:57 Freddie Potts pid=264579 -> 231 [FAIL] after=19 West Ham United pcall=true
+2026-08-10 12:44:57 Thierno Baldé pid=263250 -> 1823 [FAIL] after=294 ESTAC Troyes pcall=true
+2026-08-10 12:44:57 Tom Louchet pid=278187 -> 393 [FAIL] after=72 OGC Nice pcall=true
+2026-08-10 12:44:57 == PART 8 DONE ==
+2026-08-10 12:45:02 == PART 9 START (68 entries) ==
+2026-08-10 12:45:02 Giovanni Reyna pid=245541 -> 76 [FAIL] after=23 Borussia Mönchengladbach pcall=true
+2026-08-10 12:45:02 Tommaso Maggioni pid=72857 -> 112124 [FAIL] after=111433 Mantova pcall=true
+2026-08-10 12:45:02 Cisse Sandra pid=260577 -> 681 [FAIL] after=231 Club Brugge pcall=true
+2026-08-10 12:45:02 Joël Drommel pid=228279 -> 1908 [FAIL] after=247 PSV pcall=true
+2026-08-10 12:45:02 Ahmed Abdullahi pid=274219 -> 131174 [FAIL] after=106 Sunderland pcall=true
+2026-08-10 12:45:02 Max Arfsten pid=274535 -> 12 [FAIL] after=687 Columbus Crew pcall=true
+2026-08-10 12:45:02 Afimico Pululu pid=239267 -> 113222 [FAIL] after=110745 Jagiellonia Białystok pcall=true
+2026-08-10 12:45:02 Kamil Lukoszek pid=276877 -> 111097 [OK-loan] after=420 Górnik Zabrze pcall=true
+2026-08-10 12:45:02 Alessandro Debenedetti pid=73928 -> 110915 [OK-loan] after=110556 Genoa pcall=true
+2026-08-10 12:45:03 Paulo Bernardo pid=263439 -> 420 [OK-loan] after=78 Celtic pcall=true
+2026-08-10 12:45:03 Khalil Ayari pid=84604 -> 111276 [OK-loan] after=111592 Free Agents pcall=true
+2026-08-10 12:45:03 Tobías Reinhart pid=254804 -> 15029 [FAIL] after=110740 Reggiana pcall=true
+2026-08-10 12:45:03 Darlin Yongwa pid=253490 -> 1792 [FAIL] after=217 FC Lorient pcall=true
+2026-08-10 12:45:03 Ibrahim Salah pid=270828 -> 230 [OK-loan] after=896 FC Basel 1893 pcall=true
+2026-08-10 12:45:03 Gauthier Hein pid=234239 -> 72 [FAIL] after=68 FC Metz pcall=true
+2026-08-10 12:45:03 Rubén Botta pid=215199 -> 111325 [FAIL] after=111710 Defensa y Justicia pcall=true
+2026-08-10 12:45:03 Kyrell Wilson pid=272617 -> 674 [FAIL] after=1960 Swansea City pcall=true
+2026-08-10 12:45:03 Antonio Fiori pid=72861 -> 110915 [OK-loan] after=111433 Mantova pcall=true
+2026-08-10 12:45:03 Felix Horn Myhre pid=237937 -> 109 [FAIL] after=919 SK Brann pcall=true
+2026-08-10 12:45:03 Jesper Daland pid=256459 -> 300 [OK-loan] after=1961 Cardiff City pcall=true
+2026-08-10 12:45:03 Leon Hien pid=256429 -> 418 [OK-loan] after=710 Djurgårdens IF pcall=true
+2026-08-10 12:45:03 Bruce Anderson pid=245174 -> 621 [FAIL] after=82 Kilmarnock pcall=true
+2026-08-10 12:45:03 Daisuke Yokota pid=274191 -> 86 [FAIL] after=674 KAA Gent pcall=true
+2026-08-10 12:45:03 Mikaël Mandron pid=204785 -> 1931 [FAIL] after=100805 St. Mirren pcall=true
+2026-08-10 12:45:03 Alan Rodríguez pid=253233 -> 110580 [OK-loan] after=101108 Club Olimpia pcall=true
+2026-08-10 12:45:03 Christian Früchtl pid=235266 -> 191 [FAIL] after=347 Lecce pcall=true
+2026-08-10 12:45:03 Bilal Boutobba pid=226295 -> 131174 [FAIL] after=115892 Al Najmah pcall=true
+2026-08-10 12:45:03 Ibane Bowat pid=276677 -> 1939 [FAIL] after=1790 Portsmouth pcall=true
+2026-08-10 12:45:03 Liam Thompson pid=263918 -> 1940 [FAIL] after=91 Derby County pcall=true
+2026-08-10 12:45:03 Jack Moylan pid=261861 -> 1961 [FAIL] after=149 Lincoln City pcall=true
+2026-08-10 12:45:03 Ben Amos pid=173531 -> 1796 [FAIL] after=1928 Port Vale pcall=true
+2026-08-10 12:45:03 Mason Melia pid=276346 -> 149 [OK-loan] after=18 Tottenham Hotspur pcall=true
+2026-08-10 12:45:03 Ben Whiteman pid=225071 -> 1947 [FAIL] after=1801 Preston North End pcall=true
+2026-08-10 12:45:04 Dion Lopy pid=259190 -> 607 [FAIL] after=1861 UD Almería pcall=true
+2026-08-10 12:45:04 Mohamed Salah pid=209331 -> 436 [FAIL] after=111592 Free Agents pcall=true
+2026-08-10 12:45:04 Yan Diomande pid=78012 -> 243 [FAIL] after=112172 RB Leipzig pcall=true
+2026-08-10 12:45:04 Jonathan Moalem pid=79034 -> 922 [OK-loan] after=819 F.C. København pcall=true
+2026-08-10 12:45:04 Juanlu Sánchez pid=264174 -> 1943 [FAIL] after=481 Sevilla FC pcall=true
+2026-08-10 12:45:04 Joël Veltman pid=208004 -> 19 [FAIL] after=1808 Brighton & Hove Albion pcall=true
+2026-08-10 12:45:04 Igor Drapinski pid=263036 -> 748 [FAIL] after=111086 Piast Gliwice pcall=true
+2026-08-10 12:45:04 Javi Morcillo pid=85082 -> 468 [FAIL] after=240 Atlético de Madrid pcall=true
+2026-08-10 12:45:04 Unai Núñez pid=240900 -> 452 [OK-loan] after=450 Real Club Celta de Vigo pcall=true
+2026-08-10 12:45:04 Awer Mabil pid=212830 -> 112224 [FAIL] after=100852 CD Castellón pcall=true
+2026-08-10 12:45:04 Christian Nørgaard pid=210697 -> 7 [FAIL] after=1 Arsenal pcall=true
+2026-08-10 12:45:04 Francisco Ortega pid=242287 -> 1876 [FAIL] after=280 Olympiacos FC pcall=true
+2026-08-10 12:45:04 Lyndon Dykes pid=247279 -> 97 [FAIL] after=89 Charlton Athletic pcall=true
+2026-08-10 12:45:04 Wes Burns pid=212484 -> 95 [FAIL] after=94 Ipswich Town pcall=true
+2026-08-10 12:45:04 Filip Kostic pid=208574 -> 247 [FAIL] after=45 Juventus pcall=true
+2026-08-10 12:45:04 Wesley pid=74913 -> 111325 [FAIL] after=112139 Al Nassr pcall=true
+2026-08-10 12:45:04 Luciano Rodríguez pid=273604 -> 568 [OK-loan] after=131798 Neom pcall=true
+2026-08-10 12:45:04 João Costa pid=73629 -> 568 [OK-loan] after=1438 Santa Clara pcall=true
+2026-08-10 12:45:04 Domingos Duarte pid=234835 -> 598 [FAIL] after=1860 Getafe CF pcall=true
+2026-08-10 12:45:04 Junior Dina Ebimbe pid=248573 -> 34 [FAIL] after=1824 Eintracht Frankfurt pcall=true
+2026-08-10 12:45:04 Ross Stewart pid=244319 -> 1960 [FAIL] after=17 Southampton pcall=true
+2026-08-10 12:45:04 Bersant Celina pid=220198 -> 112096 [FAIL] after=433 AIK pcall=true
+2026-08-10 12:45:04 Nathaniel Chalobah pid=205897 -> 89 [FAIL] after=1807 Sheffield Wednesday pcall=true
+2026-08-10 12:45:04 Metehan Altunbas pid=260459 -> 101032 [FAIL] after=131174 İKAS Eyüpspor pcall=true
+2026-08-10 12:45:04 Josep Cerdà pid=79751 -> 453 [FAIL] after=114554 FC Andorra pcall=true
+2026-08-10 12:45:04 Nicolás Valentini pid=267681 -> 463 [FAIL] after=110374 Fiorentina pcall=true
+2026-08-10 12:45:04 Nicholas Opoku pid=245022 -> 472 [FAIL] after=111339 Kasımpaşa SK pcall=true
+2026-08-10 12:45:05 Lewis Temple pid=270118 -> 1920 [OK-loan] after=4 Bolton Wanderers pcall=true
+2026-08-10 12:45:05 Jens Hjertø-Dahl pid=274979 -> 1952 [FAIL] after=418 Tromsø IL pcall=true
+2026-08-10 12:45:05 Finley Barbrook pid=80501 -> 79 [OK-loan] after=94 Ipswich Town pcall=true
+2026-08-10 12:45:05 Delano Burgzorg pid=243619 -> 1801 [OK-loan] after=12 Middlesbrough pcall=true
+2026-08-10 12:45:05 Jay Robinson pid=78184 -> 111811 [OK-loan] after=17 Southampton pcall=true
+2026-08-10 12:45:05 Takehiro Tomiyasu pid=232938 -> 1799 [FAIL] after=245 Ajax pcall=true
+2026-08-10 12:45:05 Bjarki Steinn Bjarkason pid=258533 -> 112494 [FAIL] after=205 Venezia pcall=true
+2026-08-10 12:45:05 Marco Pompetti pid=237613 -> 110912 [FAIL] after=110908 Catanzaro pcall=true
+2026-08-10 12:45:05 == PART 9 DONE ==
+2026-08-10 12:45:10 == PART 10 START (68 entries) ==
+2026-08-10 12:45:10 Gabriel Strefezza pid=235949 -> 1843 [FAIL] after=280 Olympiacos FC pcall=true
+2026-08-10 12:45:10 Alessandro Vogliacco pid=245566 -> 111434 [FAIL] after=393 PAOK FC pcall=true
+2026-08-10 12:45:10 Manuel Gasparini pid=244483 -> 111433 [FAIL] after=1746 Empoli pcall=true
+2026-08-10 12:45:10 Filip Stojilkovic pid=255562 -> 310 [OK-loan] after=110738 Pisa pcall=true
+2026-08-10 12:45:10 Facundo Buonanotte pid=269495 -> 468 [OK-loan] after=1808 Brighton & Hove Albion pcall=true
+2026-08-10 12:45:11 Marash Kumbulla pid=245426 -> 480 [OK-loan] after=52 AS Roma pcall=true
+2026-08-10 12:45:11 Alex Forés pid=269643 -> 10846 [FAIL] after=483 Villarreal CF pcall=true
+2026-08-10 12:45:11 Luca Zidane pid=240311 -> 100888 [FAIL] after=110832 Granada CF pcall=true
+2026-08-10 12:45:11 Oscar Thorn pid=274742 -> 1935 [OK-loan] after=149 Lincoln City pcall=true
+2026-08-10 12:45:11 Gastón Togni pid=237512 -> 112689 [OK-loan] after=101110 Club Atlético Peñarol pcall=true
+2026-08-10 12:45:11 Keenan Gough pid=80567 -> 1962 [OK-loan] after=89 Charlton Athletic pcall=true
+2026-08-10 12:45:11 Caleb Yirenkyi pid=73638 -> 1800 [FAIL] after=1788 FC Nordsjælland pcall=true
+2026-08-10 12:45:11 Maximiliano Salas pid=244205 -> 111020 [OK-loan] after=1876 River Plate pcall=true
+2026-08-10 12:45:11 Sion Oppong pid=76522 -> 1809 [FAIL] after=111705 IF Brommapojkarna pcall=true
+2026-08-10 12:45:11 Orel Mangala pid=234078 -> 1860 [OK-loan] after=66 Olympique Lyonnais pcall=true
+2026-08-10 12:45:11 Saïdou Sow pid=259119 -> 71 [OK-loan] after=76 RC Strasbourg Alsace pcall=true
+2026-08-10 12:45:11 Otso Liimatta pid=277310 -> 113458 [FAIL] after=321 Halmstads BK pcall=true
+2026-08-10 12:45:11 Sasa Lukic pid=236699 -> 94 [FAIL] after=144 Fulham pcall=true
+2026-08-10 12:45:11 Noah Nsoki pid=82991 -> 211 [FAIL] after=73 Paris Saint-Germain pcall=true
+2026-08-10 12:45:11 Kodai Sano pid=277809 -> 247 [FAIL] after=1910 N.E.C. Nijmegen pcall=true
+2026-08-10 12:45:11 Thimothée Lo-Tutala pid=271333 -> 1935 [OK-loan] after=1952 Hull City pcall=true
+2026-08-10 12:45:11 Stélios Andreou pid=262938 -> 10020 [OK-loan] after=301 RTS Widzew Łódź pcall=true
+2026-08-10 12:45:11 Daouda Traoré pid=279701 -> 1739 [OK-loan] after=17 Southampton pcall=true
+2026-08-10 12:45:11 Aleksander Andresen pid=273575 -> 1756 [FAIL] after=2041 Fredrikstad FK pcall=true
+2026-08-10 12:45:11 Andrés Reyes pid=246048 -> 101100 [FAIL] after=131439 San Diego FC pcall=true
+2026-08-10 12:45:11 Felipe Salomoni pid=264431 -> 101097 [OK-loan] after=15029 Universidad de Chile pcall=true
+2026-08-10 12:45:11 Brynjar Ingi Bjarnason pid=263658 -> 1447 [FAIL] after=165 SpVgg Greuther Fürth pcall=true
+2026-08-10 12:45:11 Jan Virgili pid=80915 -> 231 [FAIL] after=453 RCD Mallorca pcall=true
+2026-08-10 12:45:11 Bruno Guimarães pid=247851 -> 1 [FAIL] after=13 Newcastle United pcall=true
+2026-08-10 12:45:11 Franco Mastantuono pid=279173 -> 110374 [??] after=243 Real Madrid pcall=true
+2026-08-10 12:45:12 Djibril Sow pid=229752 -> 110556 [FAIL] after=481 Sevilla FC pcall=true
+2026-08-10 12:45:12 Maghnes Akliouche pid=264862 -> 73 [FAIL] after=69 AS Monaco pcall=true
+2026-08-10 12:45:12 James Trafford pid=263063 -> 8 [FAIL] after=10 Manchester City pcall=true
+2026-08-10 12:45:12 Konstantinos Tzolakis pid=252552 -> 1952 [FAIL] after=280 Olympiacos FC pcall=true
+2026-08-10 12:45:12 Miguel Gutiérrez pid=261865 -> 32 [FAIL] after=48 SSC Napoli pcall=true
+2026-08-10 12:45:12 Florentino pid=234569 -> 94 [FAIL] after=234 SL Benfica pcall=true
+2026-08-10 12:45:12 Gonzalo García pid=278399 -> 144 [FAIL] after=243 Real Madrid pcall=true
+2026-08-10 12:45:12 Konstantinos Karetsas pid=70497 -> 22 [FAIL] after=673 KRC Genk pcall=true
+2026-08-10 12:45:12 Valentín Barco pid=263370 -> 5 [FAIL] after=76 RC Strasbourg Alsace pcall=true
+2026-08-10 12:45:12 Kerim Alajbegovic pid=75533 -> 45 [FAIL] after=32 Bayer 04 Leverkusen pcall=true
+2026-08-10 12:45:12 Konstantinos Koulierakis pid=270077 -> 52 [FAIL] after=175 VfL Wolfsburg pcall=true
+2026-08-10 12:45:12 Mamadou Sangaré pid=258601 -> 1925 [FAIL] after=64 RC Lens pcall=true
+2026-08-10 12:45:12 António Silva pid=270086 -> 1943 [FAIL] after=234 SL Benfica pcall=true
+2026-08-10 12:45:12 Carlos Espí pid=70967 -> 243 [FAIL] after=1853 Levante UD pcall=true
+2026-08-10 12:45:12 Artem Dovbyk pid=242458 -> 189 [OK-loan] after=52 AS Roma pcall=true
+2026-08-10 12:45:12 Santiago Castro pid=267861 -> 52 [FAIL] after=189 Bologna pcall=true
+2026-08-10 12:45:12 Matthis Abline pid=264422 -> 69 [FAIL] after=71 FC Nantes pcall=true
+2026-08-10 12:45:12 Tolu Arokodare pid=258911 -> 245 [OK-loan] after=110 Wolverhampton Wanderers pcall=true
+2026-08-10 12:45:12 Loïs Openda pid=243580 -> 66 [OK-loan] after=112172 RB Leipzig pcall=true
+2026-08-10 12:45:12 Crysencio Summerville pid=251954 -> 605 [FAIL] after=19 West Ham United pcall=true
+2026-08-10 12:45:12 Aladji Bamba pid=75734 -> 13 [FAIL] after=69 AS Monaco pcall=true
+2026-08-10 12:45:13 Alejandro Garnacho pid=268438 -> 2 [OK-loan] after=5 Chelsea pcall=true
+2026-08-10 12:45:13 Christos Tzolis pid=256948 -> 1 [FAIL] after=231 Club Brugge pcall=true
+2026-08-10 12:45:13 Karim Adeyemi pid=251852 -> 241 [FAIL] after=22 Borussia Dortmund pcall=true
+2026-08-10 12:45:13 Ibrahima Ba pid=71781 -> 237 [FAIL] after=112809 FC Famalicão pcall=true
+2026-08-10 12:45:13 Morgan Rogers pid=260247 -> 5 [FAIL] after=2 Aston Villa pcall=true
+2026-08-10 12:45:13 Abdul Fatawu pid=267680 -> 94 [FAIL] after=95 Leicester City pcall=true
+2026-08-10 12:45:13 João Gomes pid=273463 -> 2 [FAIL] after=110 Wolverhampton Wanderers pcall=true
+2026-08-10 12:45:13 Christ Inao Oulaï pid=74735 -> 110374 [FAIL] after=436 Trabzonspor pcall=true
+2026-08-10 12:45:13 Trincão pid=244778 -> 112387 [FAIL] after=237 Sporting CP pcall=true
+2026-08-10 12:45:13 Johan Manzambi pid=276694 -> 2 [FAIL] after=25 Sport-Club Freiburg pcall=true
+2026-08-10 12:45:13 Robin Gosens pid=223697 -> 34 [OK-loan] after=110374 Fiorentina pcall=true
+2026-08-10 12:45:13 Maxime Estève pid=262042 -> 112172 [FAIL] after=1796 Burnley pcall=true
+2026-08-10 12:45:13 Zeki Çelik pid=224490 -> 45 [FAIL] after=52 AS Roma pcall=true
+2026-08-10 12:45:13 Lesley Ugochukwu pid=257084 -> 325 [OK-loan] after=1796 Burnley pcall=true
+2026-08-10 12:45:13 Youri Tielemans pid=216393 -> 11 [FAIL] after=2 Aston Villa pcall=true
+2026-08-10 12:45:13 Leandro Trossard pid=207421 -> 327 [FAIL] after=1 Arsenal pcall=true
+2026-08-10 12:45:13 Álex Jiménez pid=278928 -> 110374 [??] after=1943 AFC Bournemouth pcall=true
+2026-08-10 12:45:13 == PART 10 DONE ==

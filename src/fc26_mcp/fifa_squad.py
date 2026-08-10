@@ -234,8 +234,74 @@ class SquadFile:
         self._records.pop(table_name, None)
         self._table_fields.pop(table_name, None)
         self._dirty.add(table_name)
+        # All later tables' data shifted down -> invalidate every cached table
+        self._invalidate_all()
         # Re-read table index since offsets changed
         self.tables_meta = self._read_table_index()
+
+    def _invalidate_all(self):
+        self._records.clear()
+        self._table_fields.clear()
+
+    def insert_record(self, table_name, values=None):
+        """Append a new zeroed record to a table. Shifts later tables' offsets
+        since data is contiguous (inverse of delete_record).
+        Returns the record index; use update_field to set fields."""
+        records, fields = self._parse_table(table_name)
+        entry = next((m for m in self.tables_meta if m["name"] == table_name), None)
+        if entry is None:
+            raise KeyError(f"Table {table_name} not found")
+
+        pos = self._tables_start + entry["offset"]
+        record_size = struct.unpack_from("<I", self.db_data, pos + 4)[0]
+        valid_pos = pos + 4 + 4 + 10
+        valid = struct.unpack_from("<H", self.db_data, valid_pos)[0]
+
+        # append region: right after the last valid record
+        data_start = records[0]["__rec_pos"] if records else self._field_start(table_name)
+        insert_pos = data_start + valid * record_size
+
+        # grow by record_size (zero-filled)
+        new_slot = bytearray(record_size)
+        self.db_data[insert_pos:insert_pos] = new_slot
+        struct.pack_into("<H", self.db_data, valid_pos, valid + 1)
+
+        # shift all later table offsets up
+        index_start = 24
+        tc = struct.unpack_from("<I", self.db_data, 16)[0]
+        for i in range(tc):
+            off_pos = index_start + i * 8 + 4
+            t_off = struct.unpack_from("<I", self.db_data, off_pos)[0]
+            if t_off > entry["offset"]:
+                struct.pack_into("<I", self.db_data, off_pos, t_off + record_size)
+
+        self._records.pop(table_name, None)
+        self._table_fields.pop(table_name, None)
+        self._dirty.add(table_name)
+        # all later tables' offsets shifted -> drop every cached table
+        self._invalidate_all()
+        self.tables_meta = self._read_table_index()
+        return valid  # index of the newly inserted record
+
+    def _n_fields_start(self, table_name):
+        """Position where the record data region begins for a table."""
+        entry = next((m for m in self.tables_meta if m["name"] == table_name), None)
+        pos = self._tables_start + entry["offset"]
+        pos += 4
+        record_size = struct.unpack_from("<I", self.db_data, pos)[0]
+        pos += 4
+        pos += 10
+        pos += 2
+        pos += 4
+        fields_count = self.db_data[pos]
+        pos += 1
+        pos += 11
+        for _ in range(fields_count):
+            pos += 16
+        return pos
+
+    def _field_start(self, table_name):
+        return self._n_fields_start(table_name)
 
     def save(self, output_path=None):
         """Write modified db_data back into FBCHUNKS wrapper. CRC is zeroed.

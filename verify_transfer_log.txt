@@ -1,0 +1,104 @@
+2026-08-10 10:57:21 == VERIFY/TRANSFER START ==
+2026-08-10 10:57:27 Marco Palestra pid=278339 BEFORE team=111592 (ok=true)
+2026-08-10 10:57:27   cTransferPlayer(from=111592) pcall=true
+2026-08-10 10:57:27 Marco Palestra AFTER team=111592 [Free Agents]
+2026-08-10 10:57:27   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 10:57:27 Morgan Rogers pid=260247 BEFORE team=111592 (ok=true)
+2026-08-10 10:57:27   cTransferPlayer(from=111592) pcall=true
+2026-08-10 10:57:27 Morgan Rogers AFTER team=111592 [Free Agents]
+2026-08-10 10:57:27   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 10:57:27 Maxence Lacroix pid=244067 BEFORE team=111592 (ok=true)
+2026-08-10 10:57:27   cTransferPlayer(from=111592) pcall=true
+2026-08-10 10:57:27 Maxence Lacroix AFTER team=111592 [Free Agents]
+2026-08-10 10:57:27   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 10:57:27 Danny Welbeck pid=186146 BEFORE team=111592 (ok=true)
+2026-08-10 10:57:27   cTransferPlayer(from=111592) pcall=true
+2026-08-10 10:57:27 Danny Welbeck AFTER team=111592 [Free Agents]
+2026-08-10 10:57:27   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 10:57:27 Jordan Henderson pid=183711 BEFORE team=111592 (ok=true)
+2026-08-10 10:57:27   cTransferPlayer(from=111592) pcall=true
+2026-08-10 10:57:27 Jordan Henderson AFTER team=111592 [Free Agents]
+2026-08-10 10:57:27   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 10:57:27 Valentín Barco pid=263370 BEFORE team=111592 (ok=true)
+2026-08-10 10:57:27   cTransferPlayer(from=111592) pcall=true
+2026-08-10 10:57:27 Valentín Barco AFTER team=111592 [Free Agents]
+2026-08-10 10:57:27   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 10:57:27 == VERIFY/TRANSFER DONE ==
+2026-08-10 11:13:42 == VERIFY/TRANSFER START ==
+2026-08-10 11:13:42 Marco Palestra pid=278339 BEFORE team=111592 (ok=true)
+2026-08-10 11:13:42   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:13:42 Marco Palestra AFTER team=111592 [Free Agents]
+2026-08-10 11:13:42   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:13:42 Morgan Rogers pid=260247 BEFORE team=111592 (ok=true)
+2026-08-10 11:13:42   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:13:42 Morgan Rogers AFTER team=111592 [Free Agents]
+2026-08-10 11:13:42   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:13:42 Maxence Lacroix pid=244067 BEFORE team=111592 (ok=true)
+2026-08-10 11:13:42   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:13:42 Maxence Lacroix AFTER team=111592 [Free Agents]
+2026-08-10 11:13:42   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:13:42 Danny Welbeck pid=186146 BEFORE team=111592 (ok=true)
+2026-08-10 11:13:42   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:13:42 Danny Welbeck AFTER team=111592 [Free Agents]
+2026-08-10 11:13:42   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:13:42 Jordan Henderson pid=183711 BEFORE team=111592 (ok=true)
+2026-08-10 11:13:42   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:13:42 Jordan Henderson AFTER team=111592 [Free Agents]
+2026-08-10 11:13:42   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:13:42 Valentín Barco pid=263370 BEFORE team=111592 (ok=true)
+2026-08-10 11:13:42   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:13:42 Valentín Barco AFTER team=111592 [Free Agents]
+2026-08-10 11:13:42   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:13:42 == VERIFY/TRANSFER DONE ==
+2026-08-10 11:14:06 == VERIFY/TRANSFER START ==
+2026-08-10 11:14:11 Marco Palestra pid=278339 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Marco Palestra AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Morgan Rogers pid=260247 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Morgan Rogers AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Maxence Lacroix pid=244067 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Maxence Lacroix AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Danny Welbeck pid=186146 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Danny Welbeck AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Jordan Henderson pid=183711 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Jordan Henderson AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Valentín Barco pid=263370 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Valentín Barco AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 == VERIFY/TRANSFER DONE ==
+2026-08-10 11:14:11 == VERIFY/TRANSFER START ==
+2026-08-10 11:14:11 Marco Palestra pid=278339 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Marco Palestra AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Morgan Rogers pid=260247 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Morgan Rogers AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Maxence Lacroix pid=244067 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Maxence Lacroix AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Danny Welbeck pid=186146 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Danny Welbeck AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Jordan Henderson pid=183711 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Jordan Henderson AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 Valentín Barco pid=263370 BEFORE team=111592 (ok=true)
+2026-08-10 11:14:11   cTransferPlayer(from=111592) pcall=true
+2026-08-10 11:14:11 Valentín Barco AFTER team=111592 [Free Agents]
+2026-08-10 11:14:11   RESULT: NOT at Chelsea (cur=111592)
+2026-08-10 11:14:11 == VERIFY/TRANSFER DONE ==

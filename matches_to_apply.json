@@ -1,0 +1,15 @@
+[
+  {
+    "playerid": 232938,
+    "player": "Takehiro Tomiyasu",
+    "current_tid": 245,
+    "current_club": "Ajax",
+    "target_tid": null,
+    "target_club": "Free agent",
+    "date": "2026-06-15",
+    "fee": {
+      "feeText": "free transfer",
+      "localizedFeeText": "transfer_type_free_transfer"
+    }
+  }
+]

@@ -1,0 +1,854 @@
+2026-07-14 Walter Clar              Free agent             -> Atlante 
+2026-07-14 Jairón Charcopa          LDU de Quito           -> Atlante 
+2026-07-14 John Ontaneda            Aucas                  -> Aguilas Doradas 
+2026-07-14 Nadav Aviv Nidam         Maccabi Tel Aviv       -> Maccabi Netanya €0M
+2026-07-14 Dylan Mertens            Telstar                -> Shafa Baku 
+2026-07-14 Juan Barbieri            Deportivo Armenio      -> Barracas Central 
+2026-07-14 Dan Nlundulu             St. Mirren             -> Petrolul Ploiesti 
+2026-07-14 Ethan Ingram             Dundee FC              -> Partick Thistle 
+2026-07-14 Jusef Erabi              Genk                   -> Preston North End 
+2026-07-14 Diego Zivulic            Otelul Galati          -> Rudes 
+2026-07-14 Germán Garcia            Real Betis             -> Cacereno 
+2026-07-14 Nikita Iosifov           NK Celje               -> Sporting Gijon 
+2026-07-14 Nikola Cavlina           Dinamo Zagreb          -> Wieczysta 
+2026-07-14 Gabriel Barbosa          Górnik Zabrze          -> Farense 
+2026-07-14 Jacopo Fazzini           Fiorentina             -> Cagliari 
+2026-07-14 Álex Jiménez             AFC Bournemouth        -> Fiorentina 
+2026-07-14 Yann Sommer              Free agent             -> Club Brugge 
+2026-07-14 Yorleys Mena Palacios    Free agent             -> Llaneros FC 
+2026-07-14 Jakub Trefil             Sigma Olomouc          -> Dukla Banska Bystrica 
+2026-07-14 Bruno Burcul             Rijeka                 -> NK Radomlje 
+2026-07-14 Rocco Shein              Fredrikstad            -> Portsmouth 
+2026-07-14 Nikolaos Vafeas          Kalamata               -> NFC Volos 
+2026-07-14 Christos Sielis          Panetolikos            -> OFI Crete 
+2026-07-14 Aitor Gismera            Real Betis             -> Hercules 
+2026-07-14 Dominik Holan            Banik Ostrava          -> Sandecja Nowy Sacz 
+2026-07-14 Vito Caic                Dinamo Zagreb          -> Osijek 
+2026-07-14 Edoardo Sadotti          Fiorentina             -> Alcione 
+2026-07-14 Lorenzo Romani           Fiorentina             -> Carrarese 
+2026-07-14 Altti Hellemaa           Elfsborg               -> FF Jaro 
+2026-07-14 Marius Lode              Häcken                 -> Sarpsborg 08 
+2026-07-14 Michal Kukucka           1. FC Nürnberg         -> Jablonec 
+2026-07-14 Amr Gomaa                Al Ittihad Alexandria  -> Ghazl Al Mahalla 
+2026-07-14 Mame Alassane Niang      Lyn                    -> Hamarkameratene €0M
+2026-07-14 Abdel Fattah Sheta       Kahraba Ismailia       -> Ghazl Al Mahalla 
+2026-07-14 Erlend Jacobsen          Brodd                  -> Viking 
+2026-07-14 Abdelrahman Emad         ZED FC                 -> Ghazl Al Mahalla 
+2026-07-14 Ismale Cajazzo           Casarano               -> Mantova 
+2026-07-14 Hatem Sukar              ZED FC                 -> Ghazl Al Mahalla 
+2026-07-14 Amin Cosic               KR Reykjavik           -> Viking €0M
+2026-07-14 Brage Tobiassen          Stabæk                 -> KFUM €0M
+2026-07-14 Gennaro Acampora         Pescara                -> Ascoli 
+2026-07-14 Gustav Nordh             IK Brage               -> Lillestrøm 
+2026-07-14 Endika Mateos            Eibar                  -> Barakaldo 
+2026-07-14 Alan Forrest             Hearts                 -> Dundee FC 
+2026-07-14 Alex Paulsen             AFC Bournemouth        -> Motherwell 
+2026-07-14 Marko Ascic              Rijeka                 -> Mura 
+2026-07-14 Ben Krauhaus             Brentford              -> Falkirk 
+2026-07-14 Vincent Sasso            Dunkerque              -> Le Havre 
+2026-07-14 Nicolás López            Nacional               -> Club Atletico Platense 
+2026-07-14 Iván Arboleda            Aguilas Doradas        -> Sarmiento 
+2026-07-14 Guillermo Balzi          Newell's Old Boys      -> Holstein Kiel €0M
+2026-07-14 Maksym Dyachuk           Dynamo Kyiv            -> Banik Ostrava 
+2026-07-14 Yuri Kovalev             Baltika                -> Free agent 
+2026-07-14 Dantaye Gilbert          Dukla Praha            -> Banik Ostrava 
+2026-07-14 Georgy Gongadze          Fakel                  -> Free agent 
+2026-07-14 Youri Schoonderwaldt     Sparta Rotterdam       -> VVV-Venlo 
+2026-07-14 Nikita Pershin           Krylya Sovetov Samara  -> Tekstilshchik 
+2026-07-14 Rasul Mitsaev            FC Veles Moscow        -> FK Akhmat €0M
+2026-07-14 Artem Korneev            Lokomotiv Moscow       -> Tekstilshchik 
+2026-07-14 Egor Guziev              Spartak Moscow         -> Tekstilshchik 
+2026-07-14 Liam Aluk                Maccabi Petach Tikva   -> Hapoel Ramat Gan 
+2026-07-14 Andrey Kasadzhikov       Zenit St. Petersburg   -> FC Orenburg 
+2026-07-14 Moshe Semel              Puskas FC Academy      -> Hapoel Ramat Gan 
+2026-07-14 Yaroslav Mikhailov       Zenit St. Petersburg   -> FC Rostov 
+2026-07-14 Jocelin Behiratche       FC Oleksandriya        -> Slovacko 
+2026-07-14 Josué Ovalle             Deportes Limache       -> Everton CD €0M
+2026-07-14 Luca Podlech             Schalke 04             -> Aalesund 
+2026-07-14 Luka Vuskovic            Tottenham Hotspur      -> Brighton & Hove Albion €54M
+2026-07-14 Fabio Gerli              Modena                 -> Cremonese 
+2026-07-14 Yasser Larouci           Free agent             -> Le Mans 
+2026-07-14 Kaua Bastian             Al-Ain                 -> Hatta 
+2026-07-14 Ché Nunnely              Kifisia FC             -> Radomiak Radom 
+2026-07-14 Burak Ince               Al Akhdoud             -> Baniyas 
+2026-07-14 Idrissa Coulibaly        Shabab Al-Ahli Dubai F -> Hatta 
+2026-07-14 Saeed Suleiman           Shabab Al-Ahli Dubai F -> Hatta 
+2026-07-14 Jorge Fernandes          Al Fateh FC            -> Shabab Al-Ahli Dubai FC 
+2026-07-14 Nathan Ordaz             Los Angeles FC         -> DC United €2M
+2026-07-14 Amir Saipi               Lugano                 -> Castellon 
+2026-07-14 Lohann Doucet            Paris FC               -> Vitoria de Guimaraes 
+2026-07-14 Aitor Sanz               Tenerife               -> Free agent 
+2026-07-14 Karl Darlow              Leeds United           -> Manchester United 
+2026-07-14 Sam Larsson              Fatih Karagümrük       -> IFK Göteborg 
+2026-07-14 Nikola Vasic             Hammarby               -> GAIS 
+2026-07-14 Iván Rojas               Once Caldas            -> Aguilas Doradas 
+2026-07-14 Joel Romero              America de Cali        -> Torreense 
+2026-07-14 Hjörtur Hermannsson      NFC Volos              -> IFK Göteborg 
+2026-07-14 Ahmed Adebayo            Start                  -> Academia F. Amadou Diallo 
+2026-07-14 Salaheddine Errahouli    Olympic Club de Safi   -> FAR Rabat 
+2026-07-14 Gape Mohutsiwa           MC Oran                -> Ittihad Tanger 
+2026-07-14 Jakob Vestergaard Jessen Fredericia             -> Kasımpaşa 
+2026-07-14 Leandro Trossard         Arsenal                -> Beşiktaş €20M
+2026-07-14 Robert Mejía             Once Caldas            -> FC Orenburg €0M
+2026-07-14 Tomás Král               Mlada Boleslav         -> Slovacko 
+2026-07-14 Ander Herrera            Boca Juniors           -> Real Zaragoza 
+2026-07-14 Stênio                   Karpaty                -> Modena 
+2026-07-14 Jean Batoum              Cracovia               -> Nyiregyhaza Spartacus FC 
+2026-07-14 Samuele Capolupo         Monza                  -> Spezia 
+2026-07-14 Nathan Lowe              Stoke City             -> Hibernian 
+2026-07-14 Victor Parada            Deportivo Alaves       -> Spartak Moscow €5M
+2026-07-14 Danilho Doekhi           Free agent             -> Lazio 
+2026-07-14 Álvaro Rodriguez         Elche                  -> AFC Bournemouth €25M
+2026-07-14 Norbert Barczak          Górnik Zabrze          -> Korona Kielce 
+2026-07-14 Fellipe Jack             Como                   -> Cremonese 
+2026-07-14 Català                   Espanyol               -> Sabadell 
+2026-07-14 Jeremy Jorge             Tenerife               -> Rayo Majadahonda 
+2026-07-14 Lorenzo Gori             Frosinone              -> Grosseto 
+2026-07-14 Maat Caprini             Fiorentina             -> Cesena 
+2026-07-14 Jonas Harder             Fiorentina             -> Basel €2M
+2026-07-14 Murphy Cooper            Queens Park Rangers    -> Plymouth Argyle 
+2026-07-14 Charlie Taylor           Free agent             -> Derby County 
+2026-07-14 Fernando Calero          Free agent             -> Malaga 
+2026-07-14 Adam Mayor               Millwall               -> Hibernian 
+2026-07-14 Da Mata                  Flamengo               -> Konyaspor 
+2026-07-14 Mason Greenwood          Marseille              -> Fenerbahçe €40M
+2026-07-14 Horatiu Moldovan         Atletico Madrid        -> Eyüpspor 
+2026-07-14 Adrián Pica              Deportivo Alaves       -> Penafiel 
+2026-07-14 Youri Tielemans          Aston Villa            -> Manchester United €41M
+2026-07-15 Gilberto Sepúlveda       Chivas                 -> FC Juarez 
+2026-07-15 Jersson González         Santa Fe               -> FC Orenburg 
+2026-07-15 Shin Yamada              Celtic                 -> OH Leuven 
+2026-07-15 Ángel Almada             Tristan Suarez         -> Deportivo Riestra 
+2026-07-15 Tomás Badaloni           Necaxa                 -> Rosario Central 
+2026-07-15 Jakub Pira               Banik Ostrava          -> Karvina 
+2026-07-15 Yevgeniy Skyba           Karvina                -> Banik Ostrava €1M
+2026-07-15 Lasse Wilhelm            Saarbrücken            -> ADO Den Haag 
+2026-07-15 Jan Zamburek             Heracles               -> ADO Den Haag 
+2026-07-15 Mateo Scheffer Bracco    Carrarese              -> Pineto 
+2026-07-15 Federico Accornero       Carrarese              -> Trento 
+2026-07-15 Lorenzo Ignacchiti       Empoli                 -> Mantova 
+2026-07-15 Filippo Vesentini        Union Brescia          -> Mantova 
+2026-07-15 Coleen Louis             Amiens                 -> Basel 
+2026-07-15 Nicola Patanè            Hellas Verona          -> Juve Stabia 
+2026-07-15 Nicolò Postiglione       Pineto                 -> Catanzaro 
+2026-07-15 Matěj Slouk              FC Zlin                -> FC Silon Taborsko 
+2026-07-15 Andrea Vailati           Monza                  -> Academico 83 
+2026-07-15 Giacomo Corona           Palermo                -> Virtus Entella 
+2026-07-15 Elías Pereyra            Defensa y Justicia     -> Barracas Central 
+2026-07-15 Rui Mendes               FC Groningen           -> Telstar 
+2026-07-15 Tyrese Noslin            Telstar                -> Barnsley 
+2026-07-15 Francesco Belli          Padova                 -> Casertana 
+2026-07-15 Sebastian Mladen         Panetolikos            -> Athens Kallithea FC 
+2026-07-15 Hördur Magnusson         Levadiakos             -> Atromitos 
+2026-07-15 Paulo Díaz               River Plate            -> Atlanta United 
+2026-07-15 Mohammad Mahmoud         Elversberg             -> Austria Salzburg 
+2026-07-15 Umut Meras               Eyüpspor               -> Amed Sportif 
+2026-07-15 André Sousa              Nacional               -> Uniao Santarem 
+2026-07-15 Husein Balic             Free agent             -> WSG Tirol 
+2026-07-15 Rashed Salem             Shabab Al-Ahli Dubai F -> United FC 
+2026-07-15 Khaled Al Senani         Free agent             -> Shabab Al-Ahli Dubai FC 
+2026-07-15 Gustavo Sánchez          Monterrey              -> Atlante 
+2026-07-15 Cristóbal Alfaro         Pachuca                -> Atlante 
+2026-07-15 Martín Fernández         Newell's Old Boys      -> Atlante €0M
+2026-07-15 Mardochée Miguel         Servette               -> Stade Nyonnais 
+2026-07-15 Samuel Fankhauser        Servette               -> Stade Nyonnais 
+2026-07-15 Marwan Aubert            Servette               -> Stade Nyonnais 
+2026-07-15 Zouhair Marour           Union Yacoub El-Mansou -> Dibba Al-Hisn 
+2026-07-15 Rilwanu Sarki            Al-Ain                 -> Khorfakkan 
+2026-07-15 Dramane Koumare          Al-Ain                 -> Al-Dhafra 
+2026-07-15 Eisa Houti               Al Ittihad Kalba       -> Al-Dhafra 
+2026-07-15 Ariel Palacio            Damac FC               -> Al-Dhafra 
+2026-07-15 Sékou Gassama            Al-Ain                 -> Ajman 
+2026-07-15 Michal Skóras            Gent                   -> Lens €6M
+2026-07-15 Luca Di Maggio           Inter                  -> Padova €0M
+2026-07-15 Domingo Blanco           Tijuana                -> Defensa y Justicia 
+2026-07-15 Jobson                   Al-Dhafra              -> Ajman 
+2026-07-15 Andrej Vasovic           Luzern                 -> Club Brugge €6M
+2026-07-15 Kevin Balanta            Santos Laguna          -> Santa Fe 
+2026-07-15 Juan Valencia            Internacional de Bogot -> Necaxa 
+2026-07-15 Francesco Tumiatti       Padova                 -> Mestre 
+2026-07-15 Gilberto Adame           Mazatlan FC            -> Atlante 
+2026-07-15 Alan Franco              Sao Paulo              -> Tigres 
+2026-07-15 Leonardo Sigali          NK Lokomotiva          -> Aldosivi 
+2026-07-15 Bandar Al Ahbabi         Al-Ain                 -> United FC 
+2026-07-15 Maxim Dal                Mainz 05               -> Greuther Fürth 
+2026-07-15 Niama Sissoko            Reims                  -> Ried 
+2026-07-15 Nir Bardea               Hapoel Ramat Gan       -> Bnei Yehuda Tel Aviv 
+2026-07-15 Lourency                 Khorfakkan             -> Ajman 
+2026-07-15 Yousif Ali Almheiri      Al-Wasl                -> Al Ittihad Kalba 
+2026-07-15 Taha Abdi Ali            Malmö FF               -> PAOK Thessaloniki €2M
+2026-07-15 Ariel Uribe              Union Espanola         -> Audax Italiano 
+2026-07-15 Eseosa Sule              West Bromwich Albion   -> St. Mirren 
+2026-07-15 Teo Quintero             Al-Taawoun             -> Al-Wahda 
+2026-07-15 Nassim Chadli            Al-Ain                 -> Al-Nasr SC 
+2026-07-15 Tom Wisbereit            Union Berlin           -> Augsburg 
+2026-07-15 Nahuel Estévez           Free agent             -> Palermo 
+2026-07-15 Fernandinho              Ceara                  -> Mirassol 
+2026-07-15 Leonel Wamba             Al-Wahda               -> Al-Nasr SC 
+2026-07-15 Juninho                  Al-Nasr SC             -> Al Ittihad Kalba 
+2026-07-15 Rúben Canedo             Al-Wahda               -> Al-Jazira 
+2026-07-15 Luca Bacchin             Perugia                -> Modena €0M
+2026-07-15 Daniele Montevago        Perugia                -> Modena €0M
+2026-07-15 Shalom Ekong             GAIS                   -> GIF Sundsvall 
+2026-07-15 Jacopo Sassi             Atalanta               -> Avellino €0M
+2026-07-15 Álvaro Villete           Comerciantes Unidos    -> Free agent 
+2026-07-15 Szymon Kawala            Wisła Kraków           -> Sandecja Nowy Sacz 
+2026-07-15 Harry Winks              Leicester City         -> Cagliari 
+2026-07-15 Jin-Ho Jo                Konyaspor              -> Batman Petrolspor 
+2026-07-15 Ebrima Colley            Young Boys             -> Konyaspor €0M
+2026-07-15 Mihail Polendakov        Sheffield United       -> Ludogorets Razgrad 
+2026-07-15 Lewis Dobbin             Aston Villa            -> Southampton 
+2026-07-15 Paulo Díaz               Atlanta United         -> River Plate 
+2026-07-15 Juan Requena             Union La Calera        -> Universitario de Deportes 
+2026-07-15 Filip Djukic             Viborg                 -> Hvidovre 
+2026-07-15 Roberto Malfitano        Cagliari               -> Barletta 
+2026-07-15 Nikolai Skuseth          Sarpsborg 08           -> Degerfors 
+2026-07-15 Thomas Meunier           Lille                  -> Sunderland 
+2026-07-15 Martin Ens               Paderborn              -> MSV Duisburg 
+2026-07-15 Simon Joergensen         Skála                  -> GAIS €0M
+2026-07-15 Jérémy Guillemenot       Servette               -> Wisła Kraków 
+2026-07-15 Vasco Lopes              Radomiak Radom         -> Südtirol 
+2026-07-15 Jawad El Yamiq           Free agent             -> Eyüpspor 
+2026-07-15 Tymoteusz Gmur           Lech Poznań            -> Stal Mielec 
+2026-07-15 Aleksander Tobolik       Górnik Zabrze          -> Sosnowiec 
+2026-07-15 Florian Kleinhansl       Kaiserslautern         -> Darmstadt 
+2026-07-15 Mattia Liberali          Catanzaro              -> Como €6M
+2026-07-15 Josep Calavera           Tenerife               -> UD Ibiza 
+2026-07-15 Vincent Burlet           Lille                  -> Cracovia 
+2026-07-15 Mattia Motolese          Bologna                -> Virtus Entella 
+2026-07-15 Ibrahim Sehic            Çorum FK               -> Sariyer 
+2026-07-15 Lesley Ugochukwu         Burnley                -> Galatasaray €3M
+2026-07-15 Nihad Mujakic            Partizan Beograd       -> Erzurumspor FK 
+2026-07-15 Elkan Baggott            Ipswich Town           -> Millwall 
+2026-07-15 Kerim Çalhanoglu         Vukovar 91             -> Gaziantep FK 
+2026-07-15 Ismael Konaté            Empoli                 -> Juventus Next Gen 
+2026-07-16 Oliwier Zych             Aston Villa            -> Vitoria de Guimaraes 
+2026-07-16 Salieu Drammeh           Lillestrøm             -> Standard Liege €2M
+2026-07-16 Áron Csongvai            AIK                    -> Saint-Etienne €1M
+2026-07-16 Jake Girdwood-Reich      St. Louis City         -> Motherwell €0M
+2026-07-16 Christ Makosso           Luton Town             -> Auxerre €2M
+2026-07-16 Nicolás Benedetti        Free agent             -> Deportivo Cali 
+2026-07-16 Thiago Gigena            Newell's Old Boys      -> Cancun FC €0M
+2026-07-16 Donat Barany             Debrecen               -> ADO Den Haag 
+2026-07-16 Adriel Ramos             Gremio                 -> Torreense 
+2026-07-16 Diogo Nascimento         Olympiacos             -> Rio Ave 
+2026-07-16 Carlinhos                Flamengo               -> Athletic Club 
+2026-07-16 Iker Pozo                HNK Gorica             -> Rodina €1M
+2026-07-16 Mikel Rodriguez          Real Sociedad B        -> Deportivo Alaves €2M
+2026-07-16 Edoardo Olivieri         Modena                 -> Monopoli 
+2026-07-16 Taha Zidouh              Modena                 -> Dolomiti 
+2026-07-16 Diego Coppola            Brighton & Hove Albion -> Paris FC €18M
+2026-07-16 Iron Gomis               Free agent             -> Troyes 
+2026-07-16 Anton Kovalev            Fakel                  -> BATE Borisov 
+2026-07-16 Georgi Yudintsev         Rodina                 -> FC Rotor Volgograd 
+2026-07-16 Akhmed Davlitgereev      FK Akhmat              -> FC Ufa 
+2026-07-16 Aïssa Mandi              Lille                  -> Levante 
+2026-07-16 Andrés García            Aston Villa            -> Getafe 
+2026-07-16 Isaac Schmidt            Leeds United           -> Young Boys 
+2026-07-16 Álvaro Tejero            Aris Thessaloniki      -> Leganes 
+2026-07-16 Harlen Castillo          Atletico Nacional      -> Gimnasia LP 
+2026-07-16 Mauricio Andrés Copete   Tecnico Universitario  -> Fortaleza FC 
+2026-07-16 Miguel Silva             Fortaleza FC           -> Carabobo FC 
+2026-07-16 Jeison Medina            LDU de Quito           -> Independiente Medellin 
+2026-07-16 José Moya                The Strongest          -> Deportivo Cali 
+2026-07-16 Alfonso Simarra          Universidad Central    -> Independiente Medellin 
+2026-07-16 Alfonso Simarra          Independiente Medellin -> Deportivo Pasto 
+2026-07-16 Imam Jagne               IFK Göteborg           -> Kifisia FC 
+2026-07-16 Cody Baker               Seattle Sounders FC    -> New England Revolution 
+2026-07-16 Robert Taylor            MLS Pool               -> LA Galaxy 
+2026-07-16 Abdallah Haimoud         Al Ta'awon             -> KACM 
+2026-07-16 Mohamed Ammar            Ismaily SC             -> Al Mokawloon Al Arab €0M
+2026-07-16 Thiemoko Diarra          Reims                  -> Kasımpaşa 
+2026-07-16 Vivaldo Semedo           Watford                -> Alverca 
+2026-07-16 Mathias Sauer            Górnik Zabrze          -> Sandefjord 
+2026-07-16 Riccardo Stivanello      Bologna                -> Südtirol 
+2026-07-16 Niklas Pyyhtiä           Bologna                -> Südtirol 
+2026-07-16 Makenzie Kirk            Portsmouth             -> Barnsley 
+2026-07-16 Ermal Krasniqi           Legia Warszawa         -> Amed Sportif 
+2026-07-16 Cornelius Allen          Hilleröd F             -> Lyngby 
+2026-07-16 Wojciech Szafranek       Zagłębie Lubin         -> Olimpia Grudziadz 
+2026-07-16 Alex Král                Union Berlin           -> FC København 
+2026-07-16 Zdravko Dimitrov         Amed Sportif           -> Mardinspor 
+2026-07-16 Omar Traoré              Udinese                -> Watford 
+2026-07-16 Sebastián Alvarado       Sport Boys             -> Bentín Tacna Heroica 
+2026-07-16 Jakes Gorosabel          Real Sociedad B        -> Girona 
+2026-07-16 Ignacio Schor            AD Ceuta FC            -> Free agent 
+2026-07-16 Hodei Arrillaga          Eibar                  -> CD Mirandes 
+2026-07-16 Mathias Ferrante         Napoli                 -> CPR Ospitaletto 
+2026-07-16 Cheick Conde             Venezia                -> Free agent 
+2026-07-16 Diego Mascardi           Spezia                 -> Torino €1M
+2026-07-16 Zeki Çelik               Roma                   -> Juventus 
+2026-07-16 Warren Kamanzi           Toulouse               -> Malmö FF 
+2026-07-16 Conrado                  Atletico GO            -> Radomiak Radom 
+2026-07-16 Osman Bukari             Widzew Łódź            -> FK Crvena Zvezda 
+2026-07-16 Jorge Sánchez            PAOK Thessaloniki      -> Atlas €4M
+2026-07-16 Dennis Praet             Free agent             -> KV Mechelen 
+2026-07-16 Pablo Ortiz              Cordoba                -> UD Ibiza 
+2026-07-17 Tomás Avilés             Inter Miami CF         -> O'Higgins 
+2026-07-17 Joaquín Montecinos       Deportes Limache       -> Deportes Concepcion 
+2026-07-17 Lucas Riisgaard          Aarhus Fremad          -> Silkeborg 
+2026-07-17 Michael Carcelén         Queretaro FC           -> Aucas 
+2026-07-17 Niclas Thiede            Bochum                 -> ADO Den Haag 
+2026-07-17 Julián Mavilla           Belgrano               -> Sarmiento 
+2026-07-17 Daniel Porozo            CDT Real Oruro         -> Sport Huancayo 
+2026-07-17 Chris Bedia              Union Berlin           -> Al-Nasr SC 
+2026-07-17 Luka Jovanovic           Adelaide United        -> San Jose Earthquakes €0M
+2026-07-17 Henry Gray               Ipswich Town           -> Wellington Phoenix 
+2026-07-17 Timothée Pembélé         Sunderland             -> Le Havre 
+2026-07-17 Aurèle Amenda            Eintracht Frankfurt    -> Coventry City €18M
+2026-07-17 Kayky Almeida            Fluminense             -> Sport Recife 
+2026-07-17 Rochinha                 Famalicao              -> Casa Pia AC 
+2026-07-17 Amadou Dante             Arouca                 -> FC Zbrojovka Brno 
+2026-07-17 Benjamin Nyarko          Slovan Liberec         -> Admira Wacker 
+2026-07-17 Timon Wellenreuther      Feyenoord              -> Wolfsburg €1M
+2026-07-17 Aldin Jakupovic          Holstein Kiel          -> NK Bravo 
+2026-07-17 Marvin Akahomen          Basel                  -> Kriens 
+2026-07-17 Adrian Luszkiewicz       Modena                 -> Treviso 
+2026-07-17 Olaus Jair Skarsem       CSKA Sofia             -> Sarpsborg 08 
+2026-07-17 Martin Hellan            Brann                  -> Sandefjord 
+2026-07-17 Ignacio Saavedra         PFC Sochi              -> Rubin Kazan €0M
+2026-07-17 Francesco Di Bartolo     Palermo                -> Team Altamura 
+2026-07-17 Takuya Ogiwara           Urawa Red Diamonds     -> OH Leuven 
+2026-07-17 Nelson Ishiwatari        Cerezo Osaka           -> St.Truiden 
+2026-07-17 Leon King                Rangers                -> Ayr United 
+2026-07-17 Marius Müller            Wolfsburg              -> Aberdeen 
+2026-07-17 Florent Hanin            Angers                 -> Nea Salamis 
+2026-07-17 Goduine Koyalipou        Lens                   -> Kortrijk 
+2026-07-17 Mehdi Zare Mohazabieh    FK Akhmat              -> Persepolis €0M
+2026-07-17 Andrés Chávez            Almagro                -> Aldosivi 
+2026-07-17 Leonardo Valencia        Deportes Concepcion    -> Deportes Limache 
+2026-07-17 Lovro Zvonarek           Bayern München         -> Estrela da Amadora €1M
+2026-07-17 Franco Armani            River Plate            -> Atletico Nacional 
+2026-07-17 Allan Wlk                Olimpia                -> Lanus €1M
+2026-07-17 Giovanni Pavani          Remo                   -> Ceara 
+2026-07-17 Nayel Mehssatou          Standard Liege         -> Kortrijk €0M
+2026-07-17 Niklas Tauer             Mainz 05               -> TSV Havelse 
+2026-07-17 Ben Bobzien              Mainz 05               -> Dynamo Dresden €1M
+2026-07-17 Tjark Ernst              Hertha BSC             -> Feyenoord €5M
+2026-07-17 Elias Saad               Augsburg               -> Nashville SC 
+2026-07-17 Aleksei Sutormin         Krylya Sovetov Samara  -> Fakel 
+2026-07-17 Zan Celar                Queens Park Rangers    -> Basel €1M
+2026-07-17 Pau López                Real Betis             -> Free agent 
+2026-07-17 Samuel Kopásek           Pardubice              -> Lechia Gdańsk 
+2026-07-17 Enzo Pérez               Argentinos Juniors     -> Deportivo Maipu 
+2026-07-17 Tomás Guiacobini         Sarmiento              -> Ciudad de Bolivar 
+2026-07-17 Maxime Estève            Burnley                -> RB Leipzig €25M
+2026-07-17 Nicolai Vallys           Brøndby IF             -> FC Tokyo 
+2026-07-17 Manuel Roffo             Instituto              -> Cerro Porteno €0M
+2026-07-17 Álvaro Santos            Lommel                 -> Atlético Madrileño 
+2026-07-17 Pablo Pagis              Lorient                -> Paris FC €15M
+2026-07-17 Sota Nakamura            Sanfrecce Hiroshima    -> Le Havre 
+2026-07-17 Gustavo Cazonatti        Sporting Cristal       -> Mirassol 
+2026-07-17 Lorenzo Menegazzo        Bologna                -> Lumezzane 
+2026-07-17 Rayan Touzghar           Pau                    -> Standard Liege 
+2026-07-17 Luca Gemello             Perugia                -> Mantova 
+2026-07-17 Francesco Bardi          Palermo                -> Mantova €0M
+2026-07-17 Bodin Tomasevic          Bologna                -> Mantova 
+2026-07-17 Gustavo Furtado          FC Krasnodar           -> NFC Volos 
+2026-07-17 Ismaïl Seydi             Rapid Wien             -> Sønderjyske 
+2026-07-17 Harun Ibrahim            Sharjah Cultural Club  -> Häcken 
+2026-07-17 Aston Oxborough          Motherwell             -> Dunfermline Athletic 
+2026-07-17 Robin Gosens             Fiorentina             -> Schalke 04 
+2026-07-17 Tarik Muharemovic        Sassuolo               -> Leeds United €40M
+2026-07-17 Eric Bailly              Free agent             -> Columbus Crew 
+2026-07-17 Pau López                Free agent             -> FC Andorra 
+2026-07-17 Amir Abedzadeh           Castellon              -> Free agent 
+2026-07-17 Grant-Leon Ranos         Borussia Mönchengladba -> Tenerife €0M
+2026-07-17 Albert Tolosa            Sabadell               -> CE Europa 
+2026-07-17 Pirosch Fischer          FC Utrecht             -> Tenerife 
+2026-07-17 Bartosz Biedrzycki       Cracovia               -> Odra 
+2026-07-17 Hamed Traorè             Marseille              -> Genoa 
+2026-07-17 Dani Requena             Villarreal             -> Levante 
+2026-07-17 Haydar Karatas           Sakaryaspor            -> Kocaelispor 
+2026-07-17 Kai Wagner               Birmingham City        -> Philadelphia Union €3M
+2026-07-17 Julien Yanda             Bayern München         -> Eldense 
+2026-07-17 Ian Hoffmann             Lech Poznań            -> Mjällby 
+2026-07-17 Johan Manzambi           Freiburg               -> Aston Villa €60M
+2026-07-17 Marcos Leonardo          Al Hilal               -> Ajax €19M
+2026-07-17 Pantelis Hatzidiakos     FC København           -> PAOK Thessaloniki €1M
+2026-07-17 Olakunle Olusegun        FC Krasnodar           -> FC Rostov €0M
+2026-07-17 Francesco Fabri          Empoli                 -> Grosseto 
+2026-07-17 Bartosz Glogowski        Śląsk Wrocław          -> Sandecja Nowy Sacz 
+2026-07-17 Maximilian Dietz         Greuther Fürth         -> Górnik Zabrze 
+2026-07-17 Luigi Caccavo            Bologna                -> Juve Stabia 
+2026-07-17 Anthony Partipilo        Parma                  -> Barletta 
+2026-07-17 Daouda Doumbia           Deportivo Alaves       -> NK Istra 1961 
+2026-07-17 Ertugrul Taskiran        Alanyaspor             -> Erzurumspor FK 
+2026-07-17 James Beadle             Brighton & Hove Albion -> Birmingham City 
+2026-07-17 Hasan Ali Kaldirim       Amed Sportif           -> Free agent 
+2026-07-17 Tarkan Serbest           Amed Sportif           -> Free agent 
+2026-07-17 André Poko               Amed Sportif           -> Free agent 
+2026-07-17 Dilhan Demir             Amed Sportif           -> Free agent 
+2026-07-17 Peru Rodríguez           Real Sociedad B        -> CD Mirandes 
+2026-07-17 Halimo                   Pharco FC              -> Wadi Degla FC 
+2026-07-17 Mohamed Alaa             El Gouna FC            -> Ceramica Cleopatra 
+2026-07-18 Pierre-Emerick Aubameyang Marseille              -> Deportivo A Coruña €1M
+2026-07-18 Ilano Silva Timas        MVV Maastricht         -> Excelsior 
+2026-07-18 Tucker Lepley            LA Galaxy              -> Oakland Roots 
+2026-07-18 Calvin Raatsie           Excelsior              -> FC Dordrecht 
+2026-07-18 Celton Biai              FC Dordrecht           -> Excelsior 
+2026-07-18 Francisco Calvo          Al-Ettifaq             -> Nacional 
+2026-07-18 Mohammed Al-Ibrahim      Al Qadasiya            -> Al Khaleej 
+2026-07-18 Nawaf Al-Sadi            Al Shabab              -> Al Khaleej 
+2026-07-18 Meshal Al-Mutairi        Abha                   -> Al Ahli 
+2026-07-18 Suwailem Al-Menhali      Al Riyadh              -> Al-Zulfi 
+2026-07-18 Tobias Lauritsen         Free agent             -> Sampdoria 
+2026-07-18 Daryl Dike               Free agent             -> Orlando City 
+2026-07-18 Mauro Pittón             Union                  -> Tenerife 
+2026-07-18 Terrence Douglas         FC Eindhoven           -> Juve Stabia 
+2026-07-18 Mansour Sinyan           KFUM                   -> Klaksvik 
+2026-07-18 Rasmus Holten            Brann                  -> Sandefjord 
+2026-07-18 Luca Schirone            Pineto                 -> Cesena 
+2026-07-18 Srdjan Hrstic            Häcken                 -> Altach 
+2026-07-18 Simone Ardizzone         Catanzaro              -> Pineto 
+2026-07-18 Viktor Djukanovic        Hammarby               -> Györi ETO 
+2026-07-18 Hlynur Karlsson          Brommapojkarna         -> Breidablik 
+2026-07-18 Beau Reus                SK Beveren             -> Heart of Midlothian 
+2026-07-18 Liam McFarlane           Heart of Midlothian    -> Partick Thistle 
+2026-07-18 Macaulay Tait            Heart of Midlothian    -> St. Johnstone 
+2026-07-18 Kelechi Iheanacho        Celtic                 -> Bursaspor 
+2026-07-18 Maik Nawrocki            Celtic                 -> Lens €2M
+2026-07-18 Radoslaw Majecki         Monaco                 -> Pafos FC 
+2026-07-18 Joaquín Novillo          Aldosivi               -> Quilmes 
+2026-07-18 Mauro Luna Diale         FK Akhmat              -> Union 
+2026-07-18 Álvaro Montero           Millonarios            -> Velez Sarsfield €1M
+2026-07-18 Álvaro Montero           Velez Sarsfield        -> Boca Juniors €3M
+2026-07-18 Sebastián Villa          Independiente Rivadavi -> Boca Juniors €5M
+2026-07-18 Julián Fernández         Palestino              -> Atletico Tucuman 
+2026-07-18 Kevin Gutiérrez          Necaxa                 -> Argentinos Juniors 
+2026-07-18 Newton                   Botafogo RJ            -> Sao Paulo €3M
+2026-07-18 Matheus Cunha            Cruzeiro               -> Internacional 
+2026-07-18 Nelson Weiper            Mainz 05               -> Sturm Graz 
+2026-07-18 Reigan Heskey            Manchester City        -> 1. FC Köln €2M
+2026-07-18 Eiad El Askalny          FC Rostov              -> Pyramids FC 
+2026-07-18 Egor Ushakov             CSKA Moscow            -> Free agent 
+2026-07-18 Daniel Ruiz              CSKA Moscow            -> Free agent 
+2026-07-18 Kirill Stepanov          Baltika                -> Volga Ulyanovsk 
+2026-07-18 Yannik Engelhardt        Como                   -> Freiburg €7M
+2026-07-18 Yeimar Mosquera          Aston Villa            -> Vitoria de Guimaraes €0M
+2026-07-18 Erce Kardesler           Amed Sportif           -> Mardinspor 
+2026-07-18 Joel Roca                Girona                 -> Olympiacos €7M
+2026-07-18 Raúl Lizoain             Free agent             -> Granada 
+2026-07-18 Afonso Duarte            Braga                  -> Santa Clara 
+2026-07-18 Erencan Yardimci         Hoffenheim             -> Kaiserslautern 
+2026-07-18 Joel Jorquera            Moreirense             -> Real Murcia 
+2026-07-18 Jorge Meireles           Estrela da Amadora     -> AVS Futebol SAD 
+2026-07-18 Emmanuel Yeboah          Brøndby IF             -> Corvinul 
+2026-07-18 Kotaro Uchino            Brøndby IF             -> Mito Hollyhock 
+2026-07-18 Dmitri Vorobyov          Lokomotiv Moscow       -> FC Krasnodar €7M
+2026-07-18 Samy Jr. Merheg          Braga                  -> Alverca 
+2026-07-18 Luca Ravanelli           Monza                  -> Sampdoria 
+2026-07-18 Dmytro Ivanisenya        Krylya Sovetov Samara  -> Tekstilshchik 
+2026-07-18 Mërgim Vojvoda           Como                   -> Udinese €1M
+2026-07-18 Cenk Özkacar             Valencia               -> Trabzonspor €1M
+2026-07-18 Rodrigo Rêgo             Brighton & Hove Albion -> Castellon 
+2026-07-18 Niklas Niehoff           Holstein Kiel          -> Altach 
+2026-07-18 Noël Aséko               Bayern München         -> Eintracht Frankfurt €12M
+2026-07-18 Sebastiano Desplanches   Palermo                -> Frosinone 
+2026-07-18 Mattia Fortin            Lens                   -> Palermo 
+2026-07-18 Filip Marchwinski        Lecce                  -> Cracovia 
+2026-07-18 Adama Bojang             Reims                  -> Sporting Charleroi 
+2026-07-18 Malcolm Fry              New England Revolution -> Lexington 
+2026-07-18 Orbelín Pineda           AEK Athens             -> Monterrey €8M
+2026-07-18 Trincão                  Sporting CP            -> Al Ahli €39M
+2026-07-18 Karim El Deeb            Al Ittihad Alexandria  -> Petrojet 
+2026-07-18 Khaled Awad              Tala'ea El Gaish       -> Pyramids FC 
+2026-07-18 Agustín Urzi             FC Juarez              -> Levadiakos 
+2026-07-18 Ali El Gabry             Ceramica Cleopatra     -> Al Ittihad Alexandria 
+2026-07-18 Lucas Sibelius           Västerås SK            -> Varbergs BoIS FC 
+2026-07-18 Tanguy Nianzou           Sevilla                -> Lille 
+2026-07-18 Franciszek Franczak      St. Johnstone          -> Odra 
+2026-07-18 Amir Richardson          Fiorentina             -> Le Havre 
+2026-07-18 Wesley Delgado           Al Fateh FC            -> Al-Nasr SC 
+2026-07-18 Filip Baniowski          Wisła Kraków           -> NKP Podhale 
+2026-07-18 Jakub Kowalski           Korona Kielce          -> Arka Gdynia 
+2026-07-18 Dimitrios Kourbelis      Al Khaleej             -> Asteras Tripolis 
+2026-07-18 Kryspin Szczesniak       Górnik Zabrze          -> Radomiak Radom 
+2026-07-18 Mahir Emreli             Kaiserslautern         -> Raków Częstochowa 
+2026-07-18 Koray Günter             Al Akhdoud             -> Al Ittihad Kalba 
+2026-07-18 Turki Al Jaadi           Al Arabi               -> Al-Taawoun 
+2026-07-18 Hattan Sultan Bahbri     Al Kholood             -> Al-Diraiyah 
+2026-07-18 Ousama Siddiki           Antequera              -> Al Ittihad Alexandria 
+2026-07-19 Rakan Kaabi              Al-Fayha               -> Al Ittihad 
+2026-07-19 Saeed Al-Rubaie          Al Akhdoud             -> Al-Diraiyah 
+2026-07-19 Yoann Barbet             Al Riyadh              -> Al-Ula 
+2026-07-19 Abdullah Al Qahtani      Damac FC               -> Al-Fayha 
+2026-07-19 Abdulrahman Al-Obaid     Al Ittihad             -> Al Kholood 
+2026-07-19 Abdulrahman Hindi        Al-Orobah FC           -> Al-Taawoun 
+2026-07-19 Mohammed Al Owais        Al-Ula                 -> Al Hilal 
+2026-07-19 Jonathan Herrera         Deportivo Riestra      -> Sarmiento 
+2026-07-19 Dylan Escobar            Coquimbo Unido         -> Deportes Limache 
+2026-07-19 Hugo Moura               Vasco da Gama          -> Al-Fayha 
+2026-07-19 Pirosch Fischer          FC Zürich              -> Wil 
+2026-07-19 Sidiki Camara            Servette               -> Etoile Carouge 
+2026-07-19 Hugo Andersson Mella     Sirius                 -> IFK Värnamo 
+2026-07-19 Vasili Cherov            Fakel                  -> Free agent 
+2026-07-19 Wesley Saïd              Lens                   -> Al-Shamal 
+2026-07-19 Nathan Fogaça            Mirassol               -> Fortaleza 
+2026-07-19 Maksim Turishchev        FC Rostov              -> Fakel €0M
+2026-07-19 Show                     Maccabi Haifa          -> Kocaelispor 
+2026-07-19 Nichita Motpan           Fakel                  -> Free agent 
+2026-07-19 Elliot Watt              Motherwell             -> Samsunspor 
+2026-07-19 Oleg Reabciuk            Spartak Moscow         -> Free agent 
+2026-07-19 Théo Bongonda            Spartak Moscow         -> Free agent 
+2026-07-19 Anton Zabolotny          Spartak Moscow         -> Free agent 
+2026-07-19 Arshak Koryan            Rodina                 -> Free agent 
+2026-07-19 Patrick Beach            Melbourne City FC      -> Troyes 
+2026-07-19 Tommaso Pittino          Genoa                  -> Livorno 
+2026-07-19 Yasin Eratilla           Kasımpaşa              -> Sakaryaspor 
+2026-07-19 Mansour Samb             AC Horsens             -> Vendee La Roche sur Yon 
+2026-07-19 Juan Cruz                Leganes                -> Malaga 
+2026-07-19 Aleksandr Tarasov        FC Rostov              -> Spartak Kostroma 
+2026-07-19 Hidajet Hankic           FC Rostov              -> Free agent 
+2026-07-19 Khoren Bayramyan         FC Rostov              -> Ural 
+2026-07-19 Evgeny Chernov           FC Rostov              -> Free agent 
+2026-07-19 Christos Almyras         Asteras Tripolis       -> Djurgården €1M
+2026-07-19 Karlan Grant             West Bromwich Albion   -> Charlton Athletic 
+2026-07-19 Tayyip Talha Sanuç       Beşiktaş               -> Rizespor 
+2026-07-19 Adam Carlén              Excelsior              -> Artis Brno 
+2026-07-19 Stepan Melnikov          FC Rostov              -> Free agent 
+2026-07-19 Danila Vorobyev          Lokomotiv Moscow       -> FC Krasnodar €7M
+2026-07-19 Mehdi Zare Mohazabieh    FK Akhmat              -> Persepolis €0M
+2026-07-19 Rick van Drongelen       Samsunspor             -> Panathinaikos €5M
+2026-07-19 Ahmed Kutucu             Galatasaray            -> Rizespor 
+2026-07-19 Aleksandr Lomovitski     Rubin Kazan            -> Free agent 
+2026-07-19 Dudu                     Aris Thessaloniki      -> FC Akron Tolyatti 
+2026-07-19 Alexander Zotov          Rubin Kazan            -> Free agent 
+2026-07-19 Soufiane Benjdida        MAS Fes                -> Al Ahly SC €2M
+2026-07-19 Nikita Vassiljev         Rubin Kazan            -> Neftekhimik 
+2026-07-19 Stian Kristiansen        Sandefjord             -> Lillestrøm 
+2026-07-19 Mirko Elia               Fiorentina             -> Bari 
+2026-07-20 Lukas Vorlicky           Slavia Prague          -> Slovacko €0M
+2026-07-20 Xaver Kiefersauer        1. FC Nürnberg         -> Würzburger Kickers 
+2026-07-20 Xaver Kiefersauer        1860 München           -> 1. FC Nürnberg €0M
+2026-07-20 Gary Oliver              Falkirk                -> Montrose 
+2026-07-20 Tino Casali              RW Essen               -> Bochum 
+2026-07-20 Karol Mets               St. Pauli              -> Bochum 
+2026-07-20 Agustín Almendra         Necaxa                 -> Cerro Porteno 
+2026-07-20 Emmanouil Faitakis       OFI Crete              -> Athens Kallithea FC 
+2026-07-20 Diamantis Chouchoumis    Kifisia FC             -> Athens Kallithea FC 
+2026-07-20 Yassin Sbai              Lugano                 -> Zeleznicar Pancevo 
+2026-07-20 Emmanuel Iyoha           Fortuna Düsseldorf     -> Magdeburg 
+2026-07-20 Luan Campos              Otelul Galati          -> Hapoel Ramat Gan 
+2026-07-20 Yanis Benchaouch         Monaco                 -> Red Star 
+2026-07-20 Lorenzo Busato           Venezia                -> Sandonà 
+2026-07-20 Carlos Rodriguez         Real Madrid C          -> Iraklis 
+2026-07-20 Kirill Isaev             Dinamo Moscow          -> FK Leningradets Leningradskaya Oblast 
+2026-07-20 Sebastián González       Shabab Al-Ahli Dubai F -> LDU de Quito 
+2026-07-20 Vinicius Rangel          Al-Dhafra              -> Al-Fujairah SC 
+2026-07-20 Andrin Hunziker          Basel                  -> St. Gallen 
+2026-07-20 Martin Ryzek             Slovan Liberec         -> MFK Skalica 
+2026-07-20 Juri Kirchmayr           Grazer AK              -> FC Wacker Innsbruck 
+2026-07-20 Emanuel Aiwu             Sturm Graz             -> Apollon Limassol 
+2026-07-20 Nils Ramming             Brighton & Hove Albion -> Rochdale 
+2026-07-20 Antonín Vanícek          SK Dynamo Ceske Budejo -> FC Zbrojovka Brno 
+2026-07-20 Lukás Hruska             Hradec Kralove         -> FC Silon Taborsko 
+2026-07-20 Ge Nicaise               Super Nova             -> Artis Brno 
+2026-07-20 Anas Tajaouart           Anderlecht             -> RAAL La Louviere 
+2026-07-20 Agustin Urrutia          Ilirija                -> Hartberg 
+2026-07-20 Tyler Dogan              Holstein Kiel          -> TSV Steinbach Haiger 
+2026-07-20 Antoine Lejoly           ADO Den Haag           -> Eupen 
+2026-07-20 Leo Stulac               NK Istra 1961          -> Koper 
+2026-07-20 Andrés Colorado          Necaxa                 -> Once Caldas 
+2026-07-20 Diego Alejandro Novoa    Millonarios            -> Bucaramanga 
+2026-07-20 Kerr Smith               Aston Villa            -> Inverness CT 
+2026-07-20 Víctor Cantillo          Free agent             -> Bucaramanga 
+2026-07-20 Ryotaro Araki            Kashima Antlers        -> St.Truiden 
+2026-07-20 Mathieu Cafaro           Paris FC               -> Nantes 
+2026-07-20 Matheus Felipe           Free agent             -> Remo 
+2026-07-20 Pawel Kosiba             Reggiana               -> Wisła Kraków 
+2026-07-20 Christ Inao Oulaï        Trabzonspor            -> Fiorentina €26M
+2026-07-20 Billy Mitchell           Millwall               -> Sheffield Wednesday 
+2026-07-20 Gabriel Risso            Newell's Old Boys      -> Colon 
+2026-07-20 Cristian Jaime           River Plate            -> Club Atletico Penarol 
+2026-07-20 Gustavo Torres           Free agent             -> Cucuta 
+2026-07-20 Bruno Cabrera            Lanus                  -> San Martin de Tucuman 
+2026-07-20 Hossam Abdelmaguid       Zamalek SC             -> Ludogorets Razgrad €1M
+2026-07-20 Abdelrahman Rashdan      Pharco FC              -> Ghazl Al Mahalla 
+2026-07-20 Carlos Quintana          Rosario Central        -> Deportivo Riestra 
+2026-07-20 Cardoso Varela           Dinamo Zagreb          -> FC Porto 
+2026-07-20 Sean Mackie              Falkirk                -> Arbroath 
+2026-07-20 Joris van Overeem        SC Heerenveen          -> FC Utrecht €0M
+2026-07-20 João Gomes               Wolverhampton Wanderer -> Aston Villa €40M
+2026-07-20 Hamdi Akujobi            Excelsior              -> Free agent 
+2026-07-20 Mike van Duinen          Excelsior              -> Free agent 
+2026-07-20 David Garden             Quick Boys             -> Excelsior 
+2026-07-20 Amine El Ouazzani        Braga                  -> Angers 
+2026-07-20 Talles                   Free agent             -> Hapoel Ironi Kiryat Shmona 
+2026-07-20 Emre Mor                 Free agent             -> NEC Nijmegen 
+2026-07-20 Guilherme Fernandes      Free agent             -> Cordoba 
+2026-07-20 Diego Conde              Villarreal             -> Real Betis 
+2026-07-20 Edwin Mosquera           Santa Fe               -> Free agent 
+2026-07-20 Jhon Meléndez            Santa Fe               -> Aguilas Doradas 
+2026-07-20 Jhomier Guerrero         Junior FC              -> Millonarios €0M
+2026-07-20 Kevin Cataño             Atletico Nacional      -> Internacional de Bogota 
+2026-07-20 Ramiz Zerrouki           Feyenoord              -> FC Twente €2M
+2026-07-20 Przemyslaw Tyton         FC Twente              -> Free agent 
+2026-07-20 Carlo Sickinger          Elversberg             -> Darmstadt 
+2026-07-20 Gonzalo Requena          Instituto              -> Tigre 
+2026-07-20 Juan Álvarez             Gimnasia Mendoza       -> San Lorenzo 
+2026-07-20 Trivante Stewart         Maccabi Haifa          -> Gaziantep FK 
+2026-07-20 Christopher Ramos        Botafogo RJ            -> Real Oviedo 
+2026-07-20 Rahim Alhassane          Real Oviedo            -> Bologna €3M
+2026-07-20 Kasper Junker            Buriram United         -> Randers FC 
+2026-07-20 Shandre Campbell         Club Brugge            -> Kortrijk 
+2026-07-20 Gabriel Batista          Santa Clara            -> Botafogo RJ 
+2026-07-20 In-Beom Hwang            Feyenoord              -> FC Porto €4M
+2026-07-20 André Gomes              Benfica B              -> Casa Pia AC 
+2026-07-20 Eduar Arízalas           Cucuta                 -> Aguilas Doradas 
+2026-07-20 Johan Caicedo            Deportivo Pasto        -> San Luis 
+2026-07-21 Raul Balbarau            Petrolul Ploiesti      -> Bnei Sakhnin 
+2026-07-21 Niv Livnat               Kiryat Yam             -> Bnei Sakhnin 
+2026-07-21 Saná                     Hapoel Haifa           -> Bnei Sakhnin 
+2026-07-21 Iyad Abu Abaid           Maccabi Bnei Raina     -> Bnei Sakhnin 
+2026-07-21 Modestas Vorobjovas      Istanbulspor           -> Bnei Sakhnin 
+2026-07-21 Samir Farhud             Hapoel Beer Sheva      -> Ironi Tiberias 
+2026-07-21 Qays Ghanem              FC Sheriff             -> Ironi Tiberias 
+2026-07-21 Cristian Martínez        Hapoel Ironi Kiryat Sh -> Slovan Bratislava €0M
+2026-07-21 Franck Rivollier         Maccabi Petach Tikva   -> Hapoel Petah Tikva 
+2026-07-21 Lucas Monzón             Racing                 -> Botafogo RJ €0M
+2026-07-21 Warleson                 Cercle Brugge          -> Botafogo RJ €0M
+2026-07-21 Zé Ivaldo                Santos FC              -> Remo 
+2026-07-21 Jhon Durán               Al Nassr FC            -> Benfica 
+2026-07-21 Lorent Tolaj             Plymouth Argyle        -> Bristol City €4M
+2026-07-21 Matt Doherty             Wolverhampton Wanderer -> Sheffield United 
+2026-07-21 Elio Rufener             Young Boys             -> Kriens 
+2026-07-21 Darío Benavides          RAAL La Louviere       -> Dinamo Bucuresti 
+2026-07-21 Majid Surour             Sharjah Cultural Club  -> United FC 
+2026-07-21 Gbemi Arubi              Dundalk                -> Burton Albion 
+2026-07-21 Dylan Williams           Burton Albion          -> Motherwell 
+2026-07-21 Mateusz Kowalski         Parma                  -> Dolomiti 
+2026-07-21 Juan Salomoni            Free agent             -> Union La Calera 
+2026-07-21 Alexei Rojas             Arsenal                -> Penafiel 
+2026-07-21 Agon Rexhaj              Basel                  -> Wil 
+2026-07-21 Paul Bassène             RSB Berkane            -> Al Karma 
+2026-07-21 Andrea Cistana           Cesena                 -> Free agent 
+2026-07-21 Jhon Córdoba             Millonarios            -> Instituto €0M
+2026-07-21 Antonín Rusek            Sigma Olomouc          -> Jablonec €0M
+2026-07-21 Biro                     Sharjah Cultural Club  -> Al Ittihad Kalba 
+2026-07-21 Marwan Fahad Hamza       Shabab Al-Ahli Dubai F -> Al Ittihad Kalba 
+2026-07-21 Tomás Schánelec          Sparta Prague          -> Dukla Praha 
+2026-07-21 Markus Gustav Jensen     OB                     -> Nacional 
+2026-07-21 Valentino Coveri         Cesena                 -> Forlì 
+2026-07-21 Felipe Vizeu             Sporting Cristal       -> Free agent 
+2026-07-21 Luca Sirch               Kaiserslautern         -> Elversberg 
+2026-07-21 Diego González           AD Ceuta FC            -> Real Zaragoza 
+2026-07-21 Eddie Beach              Kilmarnock             -> Shelbourne 
+2026-07-21 Théo De Percin           Auxerre                -> SC Bastia 
+2026-07-21 Ariel Gamarra            Argentinos Juniors     -> Cerro Porteno €0M
+2026-07-21 Felipe Negrucci          Sao Paulo              -> Athletic Club 
+2026-07-21 Yarlen                   Botafogo RJ            -> Athletic Club 
+2026-07-21 Shiloh Zand              Feyenoord              -> Fortuna Sittard 
+2026-07-21 Alen Halilovic           Fortuna Sittard        -> Free agent 
+2026-07-21 Daley Sinkgraven         Fortuna Sittard        -> Free agent 
+2026-07-21 Luka Tunjic              Fortuna Sittard        -> Free agent 
+2026-07-21 Alejo Sarco              Bayer Leverkusen       -> Sporting Gijon 
+2026-07-21 Hasip Korkmazyürek       Fortuna Sittard        -> Free agent 
+2026-07-21 Siebe Wylin              Club NXT               -> Fortuna Sittard 
+2026-07-21 Nick de Groot            FC Den Bosch           -> Fortuna Sittard €0M
+2026-07-21 David Ospina             Atletico Nacional      -> Atlante 
+2026-07-21 Yannick Eduardo          Hoffenheim             -> ADO Den Haag 
+2026-07-21 Lassine Sinayoko         Auxerre                -> Paris FC €8M
+2026-07-21 Derensili Sanches Fernandes Excelsior              -> Huddersfield Town €1M
+2026-07-21 Tyrick Bodak             Telstar                -> Free agent 
+2026-07-21 Emirhan Demircan         FC Utrecht             -> Telstar 
+2026-07-21 Tariq Lamptey            Fiorentina             -> Queens Park Rangers 
+2026-07-21 Mateja Milovanovic       SC Heerenveen          -> Partizan Beograd 
+2026-07-21 Diego Gómez              Deportivo A Coruña     -> SD Huesca 
+2026-07-21 Karoy Anderson           Charlton Athletic      -> Blackpool 
+2026-07-21 Toni Jonker              Cambuur                -> VV Noordbergum 
+2026-07-21 Yaya Bojang              OB                     -> Alverca 
+2026-07-21 Edgar Elizalde           Millonarios            -> Defensor Sporting 
+2026-07-21 Jeremy Agbonifo          Lens                   -> Jagiellonia Białystok 
+2026-07-21 Kayne van Oevelen        FC Volendam            -> Ipswich Town €4M
+2026-07-21 Ginés Sorroche           Real Betis             -> Getafe 
+2026-07-21 Hugo Sotelo              Celta Vigo             -> Levante 
+2026-07-21 Javi Galán               Free agent             -> Celta Vigo 
+2026-07-21 Mame Alassane Niang      Hamarkameratene        -> FC Porto B €1M
+2026-07-21 Mahmoud Abou-Gouda       Al Mokawloon Al Arab   -> Abo Qir Fertilizers 
+2026-07-21 Walid Mostafa            Pharco FC              -> Modern Sport FC 
+2026-07-21 Angelo Gattermayer       Wolfsberger AC         -> Hartberg 
+2026-07-21 Danilo Al Saed           Häcken                 -> Hamarkameratene 
+2026-07-21 Gustavo Silva            Jubilo Iwata           -> Mirassol 
+2026-07-21 Omri Glazer              FK Crvena Zvezda       -> Maccabi Haifa €0M
+2026-07-21 Alessandro Bianco        Fiorentina             -> Modena €1M
+2026-07-21 Filippo Distefano        Fiorentina             -> Empoli €0M
+2026-07-21 Virgil Misidjan          NEC Nijmegen           -> Free agent 
+2026-07-21 Simon Simoni             Eintracht Frankfurt    -> Luzern 
+2026-07-21 Ludvig Richtnér          Elfsborg               -> IFK Mariehamn 
+2026-07-21 Lewis O'Donnell          Dundee United          -> Stenhousemuir 
+2026-07-21 Eric Ramírez             Huracan                -> Union 
+2026-07-21 Ignacio Malcorra         Independiente          -> Union 
+2026-07-21 Kyogo Furuhashi          Birmingham City        -> LA Galaxy €1M
+2026-07-21 Nicolás Figueroa         FBC Melgar             -> Free agent 
+2026-07-21 Guillermo Viscarra       Alianza Lima           -> Free agent 
+2026-07-21 Bless Aniekan            AD Ceuta FC            -> Real Avila 
+2026-07-21 Alexander Buksa          Górnik Zabrze          -> Stal Rzeszow 
+2026-07-21 Daniel Fila              Venezia                -> Avellino 
+2026-07-21 Borna Knezovic           Sassuolo               -> Casarano 
+2026-07-21 Marco Delle Monache      Lecce                  -> Pineto 
+2026-07-21 Guillermo Maripán        Free agent             -> Internacional 
+2026-07-21 Abdul Fatawu             Leicester City         -> Ipswich Town €23M
+2026-07-21 Carlos Dotor             Celta Vigo             -> Malaga 
+2026-07-21 Óscar Zambrano           Maribor                -> Hull City 
+2026-07-22 Callum Perry             Coventry City          -> Cambridge United 
+2026-07-22 Benhur Keser             Rizespor               -> Free agent 
+2026-07-22 Manuel Sánchez           Celta Vigo             -> Levante 
+2026-07-22 Rodrigo Pérez            Olimpia                -> Union La Calera 
+2026-07-22 Gustavo Charrupí         Bucaramanga            -> Everton CD 
+2026-07-22 Davíd Aronsson           Vikingur Reykjavik     -> Lyngby 
+2026-07-22 Leonardo Sequeira        Huracan                -> Central Cordoba de Santiago 
+2026-07-22 Alan Soñora              Cerro Porteno          -> Newell's Old Boys 
+2026-07-22 Kaiky Naves              Palmeiras              -> Necaxa €2M
+2026-07-22 Morgan Rogers            Aston Villa            -> Chelsea €137M
+2026-07-22 Toni Kolega              Lincoln Red Imps FC    -> Rudes 
+2026-07-22 Stjepan Plazonja         Asia Talas             -> Rudes 
+2026-07-22 Jorge Soto               America de Cali        -> Aguilas Doradas 
+2026-07-22 Stjepan Loncar           NK Istra 1961          -> Persija Jakarta €0M
+2026-07-22 Scott Constable          Dundee United          -> Arbroath 
+2026-07-22 Jesús Barea              Real Salt Lake         -> Athletic Club Boise 
+2026-07-22 Santiago Silva           Huachipato             -> Nacional 
+2026-07-22 Gastão                   Estrela da Amadora     -> Farense 
+2026-07-22 Omar Jebali              Start                  -> Moss 
+2026-07-22 Ahmad Faqa               AIK                    -> Degerfors 
+2026-07-22 Per Kristian Bråtveit    Aberdeen               -> FK Haugesund 
+2026-07-22 Giovanni Perini          Cesena                 -> Forlì 
+2026-07-22 Donovan Léon             Auxerre                -> Abha 
+2026-07-22 Malang Sarr              Lens                   -> Neom SC 
+2026-07-22 Lautaro Díaz             Cruzeiro               -> Racing Club 
+2026-07-22 Michal Surzyn            Pardubice              -> SK Prostejov 
+2026-07-22 Marek Halda              Pardubice              -> SK Prostejov 
+2026-07-22 Nathan Fernandes         Botafogo RJ            -> Ludogorets Razgrad 
+2026-07-22 Patson Daka              Free agent             -> Hamburger SV 
+2026-07-22 Breno                    Vitoria                -> Torreense 
+2026-07-22 Filippo Carbone          Genoa                  -> Ostiamare 
+2026-07-22 Samuel Pikolon           Slavia Prague          -> FC Vlasim 
+2026-07-22 Álex Sala                Lecce                  -> Mallorca 
+2026-07-22 Marek Naskos             Slavia Prague          -> FC Vlasim 
+2026-07-22 Darlan Mendes            Santa Clara            -> Buriram United 
+2026-07-22 Fabio Ferraro            FCV Dender EH          -> Westerlo €0M
+2026-07-22 Nicolás Valencia         Chico FC               -> Union Espanola 
+2026-07-22 Ivan Ignatyev            FC Orenburg            -> Free agent 
+2026-07-22 Nichita Motpan           Fakel                  -> SKA-Khabarovsk 
+2026-07-22 Eser Gürbüz              SC Heerenveen          -> Willem II 
+2026-07-22 Darwin Machís            America de Cali        -> Carabobo FC 
+2026-07-22 Franco Ratotti           Union                  -> Union Espanola 
+2026-07-22 Odysseas Lymperakis      Kalamata               -> Zakynthos APS 
+2026-07-22 Nicolás Díaz             Tijuana                -> Alianza Lima 
+2026-07-22 Liam Hermesh             Maccabi Haifa          -> Grazer AK 
+2026-07-22 Alek Álvarez             Toluca                 -> Cancun FC 
+2026-07-22 Osman Hadzikic           Slaven                 -> Budapest Honved 
+2026-07-22 Benjamin Mbunga Kimpioka Sivasspor              -> Asteras Tripolis 
+2026-07-22 Francesco Reita          Monza                  -> Catanzaro 
+2026-07-22 Leandro Frroku           Asteras Tripolis       -> Vora 
+2026-07-22 Christian Cirillo        Juve Stabia            -> ASD Sporting Ponte 2019 
+2026-07-22 Elian Demirovic          Juve Stabia            -> Arka Gdynia 
+2026-07-22 Tommaso Casalino         Sampdoria              -> Pianese 
+2026-07-22 Giulio Manetti           Cesena                 -> Lecco 
+2026-07-22 Filippo Guccione         Arezzo                 -> Pescara 
+2026-07-22 Karol Linetty            Kocaelispor            -> Free agent 
+2026-07-22 Will Lankshear           Tottenham Hotspur      -> Middlesbrough €11M
+2026-07-22 Antonín Barák            Fiorentina             -> APOEL Nicosia 
+2026-07-22 Santeri Väänänen         Rosenborg              -> Karlsruher SC €0M
+2026-07-22 Saad Agouzoul            Auxerre                -> Sochaux 
+2026-07-22 Andrea Oliveri           Atalanta               -> Ascoli 
+2026-07-22 Boston Billups           Eldense                -> Cartagena 
+2026-07-22 Alban Lafont             Nantes                 -> Amed Sportif €1M
+2026-07-22 Tom Dele-Bashiru         Gençlerbirliği         -> Aris Thessaloniki €1M
+2026-07-22 Filip Bilbija            Paderborn              -> Derby County 
+2026-07-22 Issa Diop                Fulham                 -> Ipswich Town €10M
+2026-07-22 Jorge Emanuel Broun      Rosario Central        -> Universidad de Concepcion 
+2026-07-22 Samuel Beltrán           Rosario Central        -> Luqueno 
+2026-07-22 Tomás Escalante          Defensa y Justicia     -> Plaza Colonia 
+2026-07-22 Domingos Andrade         FC Porto B             -> Botafogo RJ 
+2026-07-22 Marko Soldo              Dinamo Zagreb          -> Sigma Olomouc €2M
+2026-07-22 Alejandro Mestanza       Getafe                 -> Académico Viseu FC 
+2026-07-22 Gil Juanpe               Rayo Vallecano         -> CD Mostoles 
+2026-07-22 Pol Tristán              Espanyol               -> Free agent 
+2026-07-22 Maximilian Wöber         Leeds United           -> Schalke 04 
+2026-07-22 Alexandru Matan          Panetolikos            -> St. Louis City 
+2026-07-22 Casemiro                 Manchester United      -> Inter Miami CF 
+2026-07-22 Jesús Bernal             Sporting Gijon         -> Free agent 
+2026-07-22 Unai Sabroso             Cordoba                -> Ponferradina 
+2026-07-22 Kamil Soberka            Górnik Zabrze          -> Stal Stalowa Wola 
+2026-07-22 Akor Adams               Sevilla                -> Venezia €16M
+2026-07-22 Paul Nardi               Free agent             -> Auxerre 
+2026-07-22 Elijah Just              Motherwell             -> Swansea City €5M
+2026-07-22 Matteo Cocchi            Inter                  -> Padova 
+2026-07-22 Endika Bujan             Athletic Club          -> Racing de Ferrol 
+2026-07-22 Rablo Rivera             Sevilla                -> Alcorcon 
+2026-07-22 Diego Morcillo           Deportivo Alaves       -> Real Jaen 
+2026-07-22 Bema Sina                Elche                  -> Rayo Majadahonda 
+2026-07-22 Joan Ruiz                Levante                -> Free agent 
+2026-07-22 Cayetano Romero          Levante                -> Free agent 
+2026-07-23 Edson Tortolero          Carabobo FC            -> America de Cali 
+2026-07-23 Matías Borgogno          San Martin San Juan    -> Defensa y Justicia 
+2026-07-23 Mats Seiler              Young Boys             -> Thun 
+2026-07-23 Sven Köhler              Grasshopper            -> Free agent 
+2026-07-23 Norman Bassette          Coventry City          -> Westerlo 
+2026-07-23 Nassim Zoukit            Etoile Carouge         -> Thun 
+2026-07-23 Kevin Spadanuda          Free agent             -> FC Zürich 
+2026-07-23 Lucas França             Free agent             -> Santa Clara 
+2026-07-23 Ibrahima Ba              Famalicao              -> Sporting CP €21M
+2026-07-23 Jordi Quintillà          St. Gallen             -> Nea Salamis 
+2026-07-23 Loic Lüthi               Winterthur             -> Luzern 
+2026-07-23 Ibrahim Cissoko          Toulouse               -> PEC Zwolle 
+2026-07-23 Elmin Rastoder           Thun                   -> Panathinaikos €3M
+2026-07-23 Rayan Raveloson          Young Boys             -> Amed Sportif €0M
+2026-07-23 Calvin Stengs            Feyenoord              -> Free agent 
+2026-07-23 Pedro Naressi            Ludogorets Razgrad     -> Servette 
+2026-07-23 Witi                     Nacional               -> Pyunik 
+2026-07-23 Clement Bischoff         Salzburg               -> NEC Nijmegen 
+2026-07-23 Wesley                   Avai FC                -> Nacional 
+2026-07-23 Ibrahim Fofana           Amiens                 -> Westerlo 
+2026-07-23 Matteo Lovato            Salernitana            -> Padova 
+2026-07-23 Rasmus Forsell           Degerfors              -> Östersunds FK 
+2026-07-23 Murray Johnson           Hibernian              -> Shelbourne 
+2026-07-23 Achraf Laâziri           Lyon                   -> Ittihad Tanger 
+2026-07-23 Mikayil Faye             Rennes                 -> 1. FC Nürnberg 
+2026-07-23 Zoumana Keita            Anderlecht             -> RSCA Futures 
+2026-07-23 Amin Boudri              Los Angeles FC         -> Hammarby €3M
+2026-07-23 Erkan Kas                Çorum FK               -> Free agent 
+2026-07-23 Matt Targett             Free agent             -> Hull City 
+2026-07-23 Álvaro Killane           Las Palmas             -> SD Huesca 
+2026-07-23 Dan McNamara             Free agent             -> Charlton Athletic 
+2026-07-23 Jefté Betancor           Albacete               -> Las Palmas 
+2026-07-23 Glenn Bijl               Royal Antwerp          -> Free agent 
+2026-07-23 Martín Pedroarena        Osasuna                -> Arenas Getxo 
+2026-07-23 Carlos Lumbreras         Osasuna                -> Eibar 
+2026-07-23 Samuel Calera            Racing Santander       -> Barakaldo 
+2026-07-23 Hatim Essaoubi           Gent                   -> NFC Volos 
+2026-07-23 Rafiu Durosinmi          Pisa                   -> Genk €10M
+2026-07-23 István Átrok             MTK Budapest           -> Zulte Waregem €1M
+2026-07-23 Karim Adeyemi            Borussia Dortmund      -> Barcelona €22M
+2026-07-23 Ulrik Yttergård Jenssen  Rosenborg              -> OB 
+2026-07-23 Williams Barlasina       Newell's Old Boys      -> Fortaleza FC 
+2026-07-23 Carl Björk               Brøndby IF             -> GIF Sundsvall 
+2026-07-23 Cristian Castillo        Aguilas Doradas        -> Estudiantes Merida 
+2026-07-23 Kenyel Michel            Minnesota United       -> LD Alajuelense 
+2026-07-23 Adem Sipic               Nashville SC           -> Gefle 
+2026-07-23 Sebastián Arce           Rodina                 -> Emelec 
+2026-07-23 Karim Emad               Modern Sport FC        -> Pharco FC 
+2026-07-23 Samuel Amadi             Ceramica Cleopatra     -> Al Karma 
+2026-07-23 Mohamed Rabie Hrimat     FAR Rabat              -> Al-Shamal 
+2026-07-23 Filippo Rinaldi          Parma                  -> Catania 
+2026-07-23 Moataz Mohamed           Harras El Hodoud       -> Al Ittihad Alexandria 
+2026-07-23 Younes El Bahraoui       RSB Berkane            -> Al-Taawoun €1M
+2026-07-23 Amine El Ouaad           Ittihad Tanger         -> KACM 
+2026-07-23 Hamza Khabba             FAR Rabat              -> Al Qadasiya 
+2026-07-23 Christos Tzolis          Club Brugge            -> Arsenal €40M
+2026-07-23 Ismaël Gharbi            Braga                  -> Leganes 
+2026-07-23 Hassane Bandé            KV Mechelen            -> Free agent 
+2026-07-23 Kerim Mrabti             KV Mechelen            -> Free agent 
+2026-07-23 Mory Konaté              KV Mechelen            -> Free agent 
+2026-07-23 Juan Pintado             Gimnasia LP            -> Union 
+2026-07-23 Xaver Schlager           Free agent             -> Nottingham Forest 
+2026-07-23 Muhammed Mehmet Damar    Hoffenheim             -> Wolfsburg €5M
+2026-07-23 Victor Okeke             Elfsborg               -> IK Brage 
+2026-07-23 Alejandro Garnacho       Chelsea                -> Aston Villa 
+2026-07-23 Abdoul Kader Bamba       Free agent             -> Granada 
+2026-07-23 Alexander Mitchell       Charlton Athletic      -> Plymouth Argyle 
+2026-07-23 Gaizka Larrazabal        Free agent             -> Bolton Wanderers 
+2026-07-23 Jovane Cabral            Free agent             -> Gremio 
+2026-07-23 Franco Saravia           Los Chankas            -> Comerciantes FC 
+2026-07-23 Joseph Opoku             Zulte Waregem          -> Swansea City €6M
