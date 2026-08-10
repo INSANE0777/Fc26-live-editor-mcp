@@ -26,8 +26,49 @@ from fc26_mcp.fifa_squad import SquadFile, detect_save_type, career_overview
 
 FREE_AGENT_TEAM = 111592  # NG - FA
 
+# FIFA id -> short position name (verified against LE consts.lua)
+POSITION_NAMES = {
+    0: "GK", 1: "SW", 2: "RWB", 3: "RB", 4: "RCB", 5: "CB", 6: "LCB", 7: "LB",
+    8: "LWB", 9: "RDM", 10: "CDM", 11: "LDM", 12: "RM", 13: "RCM", 14: "CM",
+    15: "LCM", 16: "LM", 17: "RAM", 18: "CAM", 19: "LAM", 20: "RF", 21: "CF",
+    22: "LF", 23: "RW", 24: "RS", 25: "ST", 26: "LS", 27: "LW",
+}
+
+PAGE_SIZE = 400
+
 SETTINGS_DIR = Path(os.environ.get("LOCALAPPDATA", "")) / "EA SPORTS FC 26" / "settings"
 DEFAULT_META = Path(__file__).parent / "data" / "fifa_ng_db-meta-fc26.xml"
+
+# Full player-names table (nameid -> name), extracted from the game DB. The squad
+# file itself only carries ~6k edited names, so without this most players show as
+# "Player N". Auto-detected below; override with FC26_NAMES_FILE.
+FULL_NAMES_CANDIDATES = [
+    Path(os.environ.get("FC26_NAMES_FILE", "")),
+    Path.home() / "Downloads" / "Example folder - Copy" / "playernames.txt",
+    Path.home() / "Downloads" / "playernames.txt",
+]
+
+
+def load_full_names():
+    """Return {nameid: name} from the full names table, or {} if not found."""
+    for cand in FULL_NAMES_CANDIDATES:
+        try:
+            if not cand or not cand.exists():
+                continue
+            out = {}
+            with open(cand, encoding="utf-8") as f:
+                f.readline()  # header: nameid commentary id name
+                for line in f:
+                    parts = line.rstrip("\n").split("\t")
+                    if len(parts) >= 3:
+                        try:
+                            out[int(parts[0])] = parts[2]
+                        except ValueError:
+                            pass
+            return out
+        except OSError:
+            continue
+    return {}
 
 
 def club_ids(sq):
@@ -134,42 +175,71 @@ class SquadEditorApp(tk.Tk):
         f = self.tab_players
         row = ttk.Frame(f, padding=6)
         row.pack(fill="x")
-        ttk.Label(row, text="Search name or ID:").pack(side="left")
+        ttk.Label(row, text="Search name / ID / team:").pack(side="left")
         self.pv_search = ttk.Entry(row)
         self.pv_search.pack(side="left", fill="x", expand=True, padx=6)
         self.pv_search.bind("<Return>", lambda e: self.search_players_view())
         ttk.Button(row, text="Search", command=self.search_players_view).pack(side="left")
-        ttk.Button(row, text="Show all", command=self.search_players_view_all).pack(side="left", padx=(4, 0))
+        ttk.Button(row, text="All players", command=self.search_players_view_all).pack(side="left", padx=(4, 0))
+        ttk.Button(row, text="More", command=self.pv_load_more).pack(side="left", padx=(4, 0))
+        self.pv_count = tk.StringVar(value="")
+        ttk.Label(row, textvariable=self.pv_count, foreground="#555").pack(side="left", padx=(10, 0))
 
-        cols = ("playerid", "name", "team")
-        self.pv_tree = ttk.Treeview(f, columns=cols, show="headings", selectmode="browse")
-        for c, w in (("playerid", 90), ("name", 220), ("team", 240)):
+        cols = ("playerid", "name", "team", "ovr", "pot", "pos", "contract")
+        widths = {"playerid": 80, "name": 240, "team": 220, "ovr": 45, "pot": 45, "pos": 45, "contract": 70}
+        wrap = ttk.Frame(f)
+        wrap.pack(fill="both", expand=True, padx=6, pady=(0, 6))
+        self.pv_tree = ttk.Treeview(wrap, columns=cols, show="headings", selectmode="browse")
+        for c in cols:
             self.pv_tree.heading(c, text=c)
-            self.pv_tree.column(c, width=w)
-        self.pv_tree.pack(fill="both", expand=True, padx=6, pady=(0, 6))
+            self.pv_tree.column(c, width=widths[c], anchor="w" if c in ("name", "team") else "center")
+        vsb = ttk.Scrollbar(wrap, orient="vertical", command=self.pv_tree.yview)
+        self.pv_tree.configure(yscrollcommand=vsb.set)
+        self.pv_tree.grid(row=0, column=0, sticky="nsew")
+        vsb.grid(row=0, column=1, sticky="ns")
+        wrap.rowconfigure(0, weight=1)
+        wrap.columnconfigure(0, weight=1)
         self.pv_tree.bind("<Double-1>", self.on_player_view_double)
+        self._pv_results = []    # full (pid, name, team, ovr, pot, pos, contract) rows
+        self._pv_shown = 0
+        self._pv_total = 0
 
     # ---------- Tables tab ----------
     def _build_tables_tab(self):
         f = self.tab_tables
-        row = ttk.Frame(f, padding=6)
+        panes = ttk.PanedWindow(f, orient="horizontal")
+        panes.pack(fill="both", expand=True, padx=6, pady=6)
+
+        # Left: all raw tables, filterable
+        left = ttk.Frame(panes)
+        panes.add(left, weight=1)
+        ttk.Label(left, text="All tables (raw rows):").pack(anchor="w")
+        self.tb_table_filter = ttk.Entry(left)
+        self.tb_table_filter.pack(fill="x", pady=(2, 2))
+        self.tb_table_filter.bind("<KeyRelease>", lambda e: self._filter_table_list())
+        self.tb_list = tk.Listbox(left, width=30)
+        self.tb_list.pack(fill="both", expand=True)
+        self.tb_list.bind("<<ListboxSelect>>", self._on_table_list_select)
+        self._tb_all_tables = []
+
+        # Right: grid for the selected table
+        right = ttk.Frame(panes)
+        panes.add(right, weight=3)
+        row = ttk.Frame(right, padding=(0, 0, 0, 4))
         row.pack(fill="x")
-        ttk.Label(row, text="Table:").pack(side="left")
-        self.tb_combo = ttk.Combobox(row, state="readonly", width=32)
-        self.tb_combo.pack(side="left", padx=6)
-        self.tb_combo.bind("<<ComboboxSelected>>", lambda e: self.load_table())
-        ttk.Label(row, text="Filter:").pack(side="left", padx=(12, 0))
-        self.tb_filter = ttk.Entry(row, width=28)
+        ttk.Label(row, text="Filter rows:").pack(side="left")
+        self.tb_filter = ttk.Entry(row, width=24)
         self.tb_filter.pack(side="left", padx=6)
         self.tb_filter.bind("<Return>", lambda e: self.load_table())
         ttk.Button(row, text="Refresh", command=self.load_table).pack(side="left")
+        ttk.Button(row, text="More", command=self.tb_load_more).pack(side="left", padx=(6, 0))
         ttk.Button(row, text="Edit cell", command=self.edit_cell).pack(side="left", padx=(6, 0))
         ttk.Button(row, text="Delete row", command=self.delete_row).pack(side="left", padx=(6, 0))
         self.tb_count = tk.StringVar(value="")
         ttk.Label(row, textvariable=self.tb_count).pack(side="left", padx=(12, 0))
 
-        wrap = ttk.Frame(f)
-        wrap.pack(fill="both", expand=True, padx=6, pady=(0, 6))
+        wrap = ttk.Frame(right)
+        wrap.pack(fill="both", expand=True)
         self.tb_tree = ttk.Treeview(wrap, show="headings", selectmode="browse")
         vsb = ttk.Scrollbar(wrap, orient="vertical", command=self.tb_tree.yview)
         hsb = ttk.Scrollbar(wrap, orient="horizontal", command=self.tb_tree.xview)
@@ -179,6 +249,9 @@ class SquadEditorApp(tk.Tk):
         hsb.grid(row=1, column=0, sticky="ew")
         wrap.rowconfigure(0, weight=1)
         wrap.columnconfigure(0, weight=1)
+        self._table_records = []
+        self._table_fields = []
+        self._table_shown = 0
 
     # ---------- Log tab ----------
     def _build_log_tab(self):
@@ -215,6 +288,11 @@ class SquadEditorApp(tk.Tk):
             self._dc_cache = {r["nameid"]: r["name"] for r in self.sq.get_table("dcplayernames")}
         except KeyError:
             self._dc_cache = {}
+        # Full names table as fallback: dc (edited) names take priority.
+        self._full_names_cache = load_full_names()
+        self._names_merge_note = ""
+        if self._full_names_cache:
+            self._names_merge_note = f" + {len(self._full_names_cache)} full names (playernames.txt)"
         try:
             self._players_cache = self.sq.get_table("players")
         except KeyError:
@@ -223,40 +301,84 @@ class SquadEditorApp(tk.Tk):
             self._club_ids_cache = club_ids(self.sq)
         except KeyError:
             self._club_ids_cache = set()
+        # pid -> first club teamid (single pass; avoids rescanning links per player)
+        self._club_map = {}
+        try:
+            for l in self.sq.get_table("teamplayerlinks"):
+                if l["teamid"] in self._club_ids_cache and l["playerid"] not in self._club_map:
+                    self._club_map[l["playerid"]] = l["teamid"]
+        except KeyError:
+            pass
         if self.is_career:
             self.log("Career file: player/team/loan tabs need a squad file; use the Tables tab (33 career tables).")
         else:
-            self.log(f"Caches ready: {len(self._players_cache or [])} players, {len(self._teams_cache)} teams")
+            self.log(
+                f"Caches ready: {len(self._players_cache or [])} players, {len(self._teams_cache)} teams, "
+                f"{len(self._dc_cache or {})} edited names" + self._names_merge_note
+            )
+            if not self._full_names_cache:
+                self.log(
+                    "Note: full names table (playernames.txt) not found — most players show as 'Player N'. "
+                    "Set FC26_NAMES_FILE to its path to enable real names."
+                )
 
     def player_name(self, p):
         dc = self._dc_cache or {}
+        common = dc.get(p.get("commonnameid", 0), "")
+        if common:
+            return common
         first = dc.get(p.get("firstnameid", 0), "")
         last = dc.get(p.get("lastnameid", 0), "")
-        common = dc.get(p.get("commonnameid", 0), "")
-        return common or (first + " " + last).strip() or "?"
+        name = (first + " " + last).strip()
+        if name:
+            return name
+        # fallback: full game names table (dcplayernames is a partial delta)
+        fn = self._full_names_cache or {}
+        common = fn.get(p.get("commonnameid", 0), "")
+        if common:
+            return common
+        return (fn.get(p.get("firstnameid", 0), "") + " " + fn.get(p.get("lastnameid", 0), "")).strip() or "?"
 
     def find_player(self, query):
-        """Return list of (playerid, displayname, teamname)."""
+        """Search players by ID, name fragment, or team name.
+
+        Returns full rows for the Players tab: (playerid, name, team, ovr, pot, pos, contract)."""
         query = query.strip()
         if not query or self._players_cache is None:
             return []
-        results = []
         ql = query.lower()
+        # team-name search: list every player of matching team(s)
+        team_hits = [tid for tid, tn in self._teams_cache.items() if ql in tn.lower()]
+        results = []
         for p in self._players_cache:
             pid = p.get("playerid", 0)
             if query.isdigit():
                 if str(pid) != query:
                     continue
+            elif team_hits and self._club_map.get(pid) in team_hits:
+                pass  # matched via team
             else:
                 name = self.player_name(p)
                 if ql not in name.lower():
                     continue
-            # find club link
-            tid = self._player_club_tid(pid)
-            results.append((pid, self.player_name(p), self._teams_cache.get(tid, "") or "(no club)"))
-            if len(results) >= 60:
+            results.append(self._player_row(p))
+            if len(results) >= 2000:
                 break
         return results
+
+    def _player_row(self, p):
+        """Human-readable row for the Players tab."""
+        pid = p.get("playerid", 0)
+        name = self.player_name(p)
+        if not name or name == "?":
+            name = f"Player {pid}"
+        tid = self._club_map.get(pid)
+        team = self._teams_cache.get(tid, "") if tid else "(no club)"
+        ovr = p.get("overallrating", "")
+        pot = p.get("potential", "")
+        pos = POSITION_NAMES.get(p.get("preferredposition1", -1), "")
+        contract = p.get("contractvaliduntil", "")
+        return (pid, name, team, ovr, pot, pos, contract)
 
     def _player_club_tid(self, pid):
         """First club team id for a player (national teams excluded)."""
@@ -319,9 +441,10 @@ class SquadEditorApp(tk.Tk):
         self.refresh_caches()
         self.path_var.set(path + ("    (career save)" if getattr(self, "is_career", False) else ""))
         tables = sorted((m["name"] for m in self.sq.tables_meta if m["name"]), key=str.lower)
-        self.tb_combo["values"] = tables
-        self.tb_combo.set("career_users" if "career_users" in tables else "teamplayerlinks" if "teamplayerlinks" in tables else (tables[0] if tables else ""))
-        self.load_table()
+        self._tb_all_tables = tables
+        self._fill_table_list(tables)
+        default = "career_users" if "career_users" in tables else "teamplayerlinks" if "teamplayerlinks" in tables else (tables[0] if tables else "")
+        self._select_table(default)
         try:
             ov = career_overview(self.sq)
             user = ov.get("user")
@@ -376,7 +499,8 @@ class SquadEditorApp(tk.Tk):
         if not self.require_squad():
             return
         self.pl_list.delete(0, "end")
-        for pid, name, team in self.find_player(self.pl_search.get()):
+        for row in self.find_player(self.pl_search.get()):
+            pid, name, team = row[0], row[1], row[2]
             self.pl_list.insert("end", f"{pid} | {name} | {team}")
         if not self.pl_list.size():
             self.pl_list.insert("end", "(no matches)")
@@ -480,20 +604,33 @@ class SquadEditorApp(tk.Tk):
     def search_players_view(self):
         if not self.require_squad():
             return
-        self.pv_tree.delete(*self.pv_tree.get_children())
-        for pid, name, team in self.find_player(self.pv_search.get()):
-            self.pv_tree.insert("", "end", values=(pid, name, team))
+        self._pv_results = self.find_player(self.pv_search.get())
+        self._pv_total = len(self._pv_results)
+        self._pv_shown = 0
+        self._pv_fill()
 
     def search_players_view_all(self):
-        if not self.require_squad():
+        if not self.require_squad() or self._players_cache is None:
             return
+        self._pv_results = [self._player_row(p) for p in self._players_cache]
+        self._pv_total = len(self._pv_results)
+        self._pv_shown = 0
+        self._pv_fill()
+
+    def pv_load_more(self):
+        self._pv_fill()
+
+    def _pv_fill(self):
         self.pv_tree.delete(*self.pv_tree.get_children())
-        for p in self._players_cache:
-            pid = p["playerid"]
-            tid = self._player_club_tid(pid)
-            self.pv_tree.insert("", "end", values=(pid, self.player_name(p), self._teams_cache.get(tid, "")))
-            if len(self.pv_tree.get_children()) >= 500:
-                break
+        rows = self._pv_results[self._pv_shown:self._pv_shown + PAGE_SIZE]
+        for r in rows:
+            self.pv_tree.insert("", "end", values=r)
+        self._pv_shown += len(rows)
+        remaining = self._pv_total - self._pv_shown
+        if remaining > 0:
+            self.pv_count.set(f"{self._pv_shown}+/{self._pv_total} — click More for next {min(PAGE_SIZE, remaining)}")
+        else:
+            self.pv_count.set(f"{self._pv_total} players")
 
     def on_player_view_double(self, _e):
         sel = self.pv_tree.selection()
@@ -505,10 +642,35 @@ class SquadEditorApp(tk.Tk):
         self.tab_transfers.tkraise()
 
     # ---- tables tab ----
-    def load_table(self):
+    def _fill_table_list(self, tables):
+        self.tb_list.delete(0, "end")
+        for t in tables:
+            self.tb_list.insert("end", t)
+
+    def _filter_table_list(self):
+        q = self.tb_table_filter.get().strip().lower()
+        tables = [t for t in self._tb_all_tables if q in t.lower()] if q else self._tb_all_tables
+        self._fill_table_list(tables)
+
+    def _on_table_list_select(self, _e):
+        sel = self.tb_list.curselection()
+        if not sel:
+            return
+        self._select_table(self.tb_list.get(sel[0]))
+
+    def _select_table(self, name):
+        if not name:
+            return
+        # keep the listbox in sync (caller may pass a non-listed name)
+        if name not in self._tb_all_tables:
+            return
+        self.tb_filter.delete(0, "end")
+        self.load_table(name=name)
+
+    def load_table(self, name=None):
         if not self.require_squad():
             return
-        name = self.tb_combo.get()
+        name = name or (self.tb_list.get("active") if self.tb_list.curselection() else None)
         if not name:
             return
         try:
@@ -523,20 +685,34 @@ class SquadEditorApp(tk.Tk):
         for c in cols:
             self.tb_tree.heading(c, text=c)
             self.tb_tree.column(c, width=90, anchor="w")
-        shown = 0
-        total_shown = 0
-        for rec in records:
+        self._table_records = records
+        self._table_fields = fields
+        self._table_shown = 0
+        self._table_filter = filt
+        self._fill_table_rows()
+
+    def _fill_table_rows(self):
+        filt = self._table_filter
+        cols = [f["name"] for f in self._table_fields]
+        total_matched = 0
+        for i, rec in enumerate(self._table_records):
+            if i < self._table_shown:
+                continue
             if filt and not any(filt in str(v).lower() for v in rec.values() if v is not None):
                 continue
             self.tb_tree.insert("", "end", values=tuple(rec.get(c) for c in cols))
-            shown += 1
-            total_shown += 1
-            if shown >= 300:
+            total_matched += 1
+            self._table_shown = i + 1  # advance past everything scanned (filter-aware)
+            if total_matched >= PAGE_SIZE:
                 break
-        extra = len(records) - total_shown
-        self.tb_count.set(f"{len(records)} rows" + (f" | showing {total_shown}" + (f" (+{extra} more)" if extra > 0 else "") if filt else ""))
-        self._table_records = records
-        self._table_fields = fields
+        n_shown = len(self.tb_tree.get_children())
+        extra = self._table_shown < len(self._table_records)
+        self.tb_count.set(f"{len(self._table_records)} rows | showing {n_shown}" + (" — click More" if extra else ""))
+
+    def tb_load_more(self):
+        if not hasattr(self, "_table_records") or not self._table_records:
+            return
+        self._fill_table_rows()
 
     def edit_cell(self):
         if not self.require_squad() or not hasattr(self, "_table_records"):
