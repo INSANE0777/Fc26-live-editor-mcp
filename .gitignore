@@ -69,3 +69,7 @@ squad_alpha4_*.txt
 
 # local backups
 backups/
+
+# Tauri build artifacts
+src-tauri/target/
+src-tauri/gen/

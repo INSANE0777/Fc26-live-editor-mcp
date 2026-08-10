@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FC 26 Squad Editor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">⚽ FC 26 Squad Editor</div>
+  <div class="open-row">
+    <input id="path-input" type="text" placeholder="Squad file path…" spellcheck="false">
+    <button id="btn-open">Open</button>
+    <button id="btn-save">Save</button>
+    <button id="btn-backup">Backup</button>
+  </div>
+  <div id="status" class="status"></div>
+</header>
+
+<nav class="tabs">
+  <button data-tab="players" class="tab active">Players</button>
+  <button data-tab="tables" class="tab">Raw Tables</button>
+</nav>
+
+<main id="view-players" class="view active">
+  <div class="toolbar">
+    <input id="p-search" type="text" placeholder="Search name, ID, or team…" spellcheck="false">
+    <button id="p-search-btn">Search</button>
+    <button id="p-all">All players</button>
+    <span id="p-count" class="count"></span>
+  </div>
+  <div class="table-wrap">
+    <table id="p-table">
+      <thead><tr>
+        <th data-col="playerid">ID</th>
+        <th data-col="name">Name</th>
+        <th data-col="team">Team</th>
+        <th data-col="ovr">OVR</th>
+        <th data-col="pot">POT</th>
+        <th data-col="pos">Pos</th>
+        <th data-col="contract">Contract</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="pager">
+    <button id="p-prev">← Prev</button>
+    <span id="p-pageinfo">page 0 of 0</span>
+    <button id="p-next">Next →</button>
+  </div>
+</main>
+
+<main id="view-tables" class="view">
+  <div class="table-layout">
+    <div class="table-list">
+      <input id="t-filter-tables" type="text" placeholder="Filter tables…" spellcheck="false">
+      <div id="t-list" class="tlist"></div>
+    </div>
+    <div class="table-main">
+      <div class="toolbar">
+        <span id="t-name" class="tname"></span>
+        <input id="t-filter-rows" type="text" placeholder="Filter rows…" spellcheck="false">
+        <button id="t-refresh">Refresh</button>
+        <button id="t-edit">Edit cell</button>
+        <button id="t-delete">Delete row</button>
+        <span id="t-count" class="count"></span>
+      </div>
+      <div class="table-wrap">
+        <table id="t-table"><thead></thead><tbody></tbody></table>
+      </div>
+      <div class="pager">
+        <button id="t-prev">← Prev</button>
+        <span id="t-pageinfo"></span>
+        <button id="t-next">Next →</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="edit-modal" class="modal hidden">
+  <div class="modal-box">
+    <h3>Edit cell</h3>
+    <label>Field
+      <select id="e-field"></select>
+    </label>
+    <label>Current value <span id="e-cur"></span></label>
+    <label>New value <input id="e-value" type="text"></label>
+    <div class="modal-btns">
+      <button id="e-apply">Apply</button>
+      <button id="e-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
