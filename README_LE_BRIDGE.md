@@ -114,7 +114,7 @@ fc26-mcp-live --bridge-root "C:\Path\To\Your\FC 26 LE\le_bridge"
     "playerid": 220901,
     "new_teamid": 2,
     "transfersum": 0,
-    "wage": 0,
+    "wage": 68000,
     "contract_length": 60
   }
 }
@@ -127,10 +127,18 @@ Or by name:
   "name": "le_transfer_player",
   "arguments": {
     "player": "Raya Martín",
-    "new_club": "Aston Villa"
+    "new_club": "Aston Villa",
+    "wage": 68000,
+    "contract_length": 60
   }
 }
 ```
+
+`le_transfer_player` / `le_loan_player` / `le_release_player` / `le_terminate_loan`
+now VERIFY the result after the native call (e.g. `GetTeamIdFromPlayerId` ==
+target team) — `pcall` alone cannot detect silent native failures like
+"Target Team Squad is Full", so `success` reflects the verified state, not
+just "no Lua error".
 
 ## Example database edit
 
@@ -138,14 +146,23 @@ Or by name:
 {
   "name": "le_edit_db_field",
   "arguments": {
-    "table": "players",
-    "match_field": "playerid",
-    "match_value": 220901,
-    "field": "overallrating",
-    "value": 99
+    "table": "teams",
+    "match_field": "teamid",
+    "match_value": 243,
+    "field": "teamabbreviation",
+    "value": 5
   }
 }
 ```
+
+## Raw DB edits are BLOCKED on transfer-critical tables
+
+`le_edit_db_field`, `le_insert_db_row` and `le_delete_db_row` refuse writes to
+`teamplayerlinks`, `career_playercontract`, `career_presignedcontract`,
+`career_playerloans`, `playerloans` and `career_players`. The game reads
+wage/contract/squad-role/morale state from **in-memory career managers**, not
+from these tables — direct edits corrupt the save (wage −1, contract −1,
+broken morale/sharpness). Use the native handlers for any of those changes.
 
 ## Important
 

@@ -11,6 +11,22 @@
 
 local json = require "imports/external/json"
 
+-- Tables that, when edited raw, break the in-game career managers
+-- (wage/contract/squad-role/morale state lives in memory, not the DB).
+-- Writes to these MUST go through native calls (cTransferPlayer etc).
+local NO_RAW_WRITE_TABLES = {
+    ["teamplayerlinks"] = true,
+    ["career_playercontract"] = true,
+    ["career_presignedcontract"] = true,
+    ["career_playerloans"] = true,
+    ["playerloans"] = true,
+    ["career_players"] = true,
+}
+
+local function is_raw_write_blocked(table_name)
+    return NO_RAW_WRITE_TABLES[table_name] or false
+end
+
 -- Bridge root path. The script expects subfolders: in, out, logs
 -- These folders are created by the fc26-mcp-live Python server. Run it before this script.
 -- Override this with the FC26_BRIDGE_ROOT environment variable, or edit the fallback below.
@@ -373,10 +389,29 @@ function handlers.transfer_player(cmd)
     if not to_teamid then
         return { success = false, error = "Target club not found" }
     end
-    if IsPlayerPresigned(playerid) then DeletePresignedContract(playerid) end
-    if IsPlayerLoanedOut(playerid) then TerminateLoan(playerid) end
-    TransferPlayer(playerid, to_teamid, cmd.transfersum or 0, cmd.wage or 0, cmd.contract_length or 60, cmd.from_teamid or 0, cmd.release_clause or -1)
-    return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), new_teamid = to_teamid, new_club_name = safe_name(GetTeamName(to_teamid)) }
+    local okp, presigned = pcall(IsPlayerPresigned, playerid)
+    if okp and presigned then pcall(DeletePresignedContract, playerid) end
+    local okl, loaned = pcall(IsPlayerLoanedOut, playerid)
+    if okl and loaned then pcall(TerminateLoan, playerid) end
+    -- Native cTransferPlayer: updates the in-memory career managers. pcall is
+    -- NOT proof of success (natives log their own errors and return normally),
+    -- so verify the player's actual team afterwards.
+    local from_teamid = cmd.from_teamid or 0
+    local ok = pcall(cTransferPlayer, playerid, from_teamid, to_teamid,
+        cmd.transfersum or 0, cmd.release_clause or -1, cmd.wage or 0,
+        cmd.contract_length or 60)
+    local verified_teamid = GetTeamIdFromPlayerId(playerid)
+    local success = (verified_teamid == to_teamid)
+    return {
+        success = success,
+        playerid = playerid,
+        name = safe_name(GetPlayerName(playerid)),
+        new_teamid = to_teamid,
+        new_club_name = safe_name(GetTeamName(to_teamid)),
+        verified_teamid = verified_teamid,
+        note = success and "verified via GetTeamIdFromPlayerId"
+               or ("native returned but player not at target team: " .. tostring(verified_teamid)),
+    }
 end
 
 function handlers.loan_player(cmd)
@@ -390,30 +425,40 @@ function handlers.loan_player(cmd)
         and type(DeletePresignedContract) == "function" then DeletePresignedContract(playerid) end
     if type(IsPlayerLoanedOut) == "function" and IsPlayerLoanedOut(playerid)
         and type(TerminateLoan) == "function" then TerminateLoan(playerid) end
-    if type(LoanPlayer) == "function" then
-        LoanPlayer(playerid, to_teamid, cmd.length or 12, cmd.loantobuy or -1)
+    local ok = false
+    if type(cLoanPlayer) == "function" then
+        ok = pcall(cLoanPlayer, playerid, cmd.from_teamid or 0, to_teamid, cmd.length or 12, cmd.loantobuy or -1)
+    elseif type(LoanPlayer) == "function" then
+        ok = pcall(LoanPlayer, playerid, to_teamid, cmd.length or 12, cmd.loantobuy or -1)
     elseif type(TransferPlayer) == "function" then
-        -- Older LE builds without LoanPlayer: free move with zero fee.
-        TransferPlayer(playerid, to_teamid, 0, 0, cmd.length or 12)
-        return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), new_teamid = to_teamid, new_club_name = safe_name(GetTeamName(to_teamid)), fallback = "transfer" }
+        -- Older LE builds without LoanPlayer: free move with zero fee (this does NOT
+        -- create a real loan contract; prefer cLoanPlayer when available).
+        ok = pcall(TransferPlayer, playerid, to_teamid, 0, 0, cmd.length or 12)
+        return { success = ok, playerid = playerid, name = safe_name(GetPlayerName(playerid)), new_teamid = to_teamid, new_club_name = safe_name(GetTeamName(to_teamid)), fallback = "transfer" }
     else
         return { success = false, error = "No loan/transfer API available" }
     end
-    return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)), new_teamid = to_teamid, new_club_name = safe_name(GetTeamName(to_teamid)) }
+    -- Verify the loan actually took (native errors are silent to pcall).
+    local ok2, loaned = pcall(IsPlayerLoanedOut, playerid)
+    local verified = (ok2 and loaned)
+    return { success = verified, playerid = playerid, name = safe_name(GetPlayerName(playerid)), new_teamid = to_teamid, new_club_name = safe_name(GetTeamName(to_teamid)), verified_loan = verified, note = verified and "verified via IsPlayerLoanedOut" or "native returned but player is not loaned out" }
 end
 
 function handlers.release_player(cmd)
     local playerid = normalize_player_arg(cmd.player or cmd.playerid)
     if not playerid then return { success = false, error = "Player not found" } end
-    ReleasePlayerFromTeam(playerid)
-    return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)) }
+    local ok = pcall(ReleasePlayerFromTeam, playerid)
+    local verified = (GetTeamIdFromPlayerId(playerid) == 111592) -- free agents
+    return { success = verified, playerid = playerid, name = safe_name(GetPlayerName(playerid)), verified_free_agent = verified, note = verified and "verified at Free Agents" or "player did not land at Free Agents (111592)" }
 end
 
 function handlers.terminate_loan(cmd)
     local playerid = normalize_player_arg(cmd.player or cmd.playerid)
     if not playerid then return { success = false, error = "Player not found" } end
-    TerminateLoan(playerid)
-    return { success = true, playerid = playerid, name = safe_name(GetPlayerName(playerid)) }
+    local ok = pcall(TerminateLoan, playerid)
+    local ok2, loaned = pcall(IsPlayerLoanedOut, playerid)
+    local verified = (ok2 and not loaned)
+    return { success = verified, playerid = playerid, name = safe_name(GetPlayerName(playerid)), verified_loan_cleared = verified, note = verified and "no longer loaned out" or "player still loaned out" }
 end
 
 function handlers.add_to_transfer_list(cmd)
@@ -573,6 +618,12 @@ end
 function handlers.edit_db_field(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
+    if is_raw_write_blocked(table_name) then
+        return { success = false, error = "Raw edit blocked: '" .. table_name
+            .. "' is transfer-critical — the game reads wage/contract/squad state "
+            .. "from in-memory managers, so direct DB edits corrupt the save. "
+            .. "Use transfer_player/loan_player/release_player (native) instead." }
+    end
     local match_field = cmd.match_field or "playerid"
     if cmd.match_value == nil then return { success = false, error = "match_value required" } end
     local field_name = cmd.field
@@ -602,6 +653,11 @@ end
 function handlers.insert_db_row(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
+    if is_raw_write_blocked(table_name) then
+        return { success = false, error = "Raw insert blocked: '" .. table_name
+            .. "' is transfer-critical — direct DB edits corrupt the save. "
+            .. "Use transfer_player/loan_player (native) instead." }
+    end
     local row_data = cmd.row or {}
     for k, v in pairs(row_data) do
         row_data[k] = tostring(v)
@@ -636,6 +692,11 @@ end
 function handlers.delete_db_row(cmd)
     local table_name = cmd.table
     if not table_name then return { success = false, error = "table required" } end
+    if is_raw_write_blocked(table_name) then
+        return { success = false, error = "Raw delete blocked: '" .. table_name
+            .. "' is transfer-critical — direct DB edits corrupt the save. "
+            .. "Use transfer_player/loan_player/release_player (native) instead." }
+    end
     local target = cmd.row or {}
     if not next(target) then return { success = false, error = "row filter required" } end
 
@@ -694,6 +755,15 @@ end
 function handlers.execute_lua(cmd)
     local code = cmd.code
     if not code then return { success = false, error = "code required" } end
+    -- Enforce the raw-write guard even for arbitrary code: transfer-critical
+    -- tables must not be edited directly (in-memory managers, not the DB,
+    -- hold wage/contract/squad state).
+    for t in pairs(NO_RAW_WRITE_TABLES) do
+        if code:find(t, 1, true) then
+            return { success = false, error = "Raw write blocked: code references transfer-critical table '"
+                .. t .. "'. Use the native handlers (transfer_player/loan_player/etc.) instead." }
+        end
+    end
     local chunk, err = load(code, "=bridge_execute", "t", _G)
     if not chunk then
         return { success = false, error = err }
