@@ -1,8 +1,71 @@
+# Python
 __pycache__/
 *.pyc
 *.egg-info/
 dist/
 build/
+
+# Editors / misc
 *.bak
 tm_latest.html
+
+# --- Scratch / one-off scripts (never commit) ---
+# 131 MB squad dump
 squad_alpha4_real_FULL_DUMP.json
+
+# generated transfer scripts, logs and analysis (kept local only)
+all_transfers.txt
+apply_transfers*.lua
+apply_transfers*.ctx
+apply_transfers*.txt
+apply_transfers_round*.lua
+*full.lua
+native_transfers*.lua
+native_transfers*.json
+*_log.txt
+*_results.json
+*_compare*.json
+*_compare*.txt
+transfers_to_apply.json
+transfer_results.json
+transfer_resolved_all.json
+matches_to_apply.json
+fotmob*.json
+fotmob*.txt
+jul14_*.txt
+check_latest*.py
+check_latest*.json
+fetch_jul14*.py
+fetch_jul14*.log
+*_jul14*.json
+merge_popular.py
+build_transfers_to_apply.py
+apply_squad.py
+gen_full_lua.py
+gen_transfers_lua.py
+
+# scratch probing scripts
+chelsea_*.lua
+chelsea_repair*.lua
+chelsea_repair*.txt
+probe_*.lua
+probe_*.txt
+verify_transfer*.lua
+verify_transfer*.txt
+free_then_transfer*.lua
+free_then_transfer*.txt
+diomande_rm*.lua
+diomande_rm*.txt
+diag_simoni*.lua
+diag_simoni*.txt
+test_native.lua
+re_le.py
+
+# analysis scratch
+compare_*.py
+squad_alpha4_beta4_*.json
+squad_alpha4_pattern.json
+squad_alpha4_*.txt
+
+# local backups
+backups/
