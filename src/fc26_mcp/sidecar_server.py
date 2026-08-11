@@ -13,7 +13,7 @@ import os
 import shutil
 import sys
 import threading
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
@@ -30,6 +30,21 @@ POSITION_NAMES = {
     15: "LCM", 16: "LM", 17: "RAM", 18: "CAM", 19: "LAM", 20: "RF", 21: "CF",
     22: "LF", 23: "RW", 24: "RS", 25: "ST", 26: "LS", 27: "LW",
 }
+
+# FIFA stores dates as Gregorian day numbers (epoch offset 2331205); the
+# stored *birthdate* is one day AFTER the real birthday. Algorithm mirrors
+# Live Editor's core/date.lua FromGregorianDays (verified vs Neymar/Mbappe/Ronaldo).
+def _gregorian_to_date(days):
+    a = days + 2331205
+    b = (4 * a + 3) // 146097
+    c = a - (b * 146097) // 4
+    d = (4 * c + 3) // 1461
+    e = c - (1461 * d) // 4
+    m = (5 * e + 2) // 153
+    day = -((153 * m + 2) // 5) + e + 1
+    month = -(m // 10) * 12 + m + 3
+    year = b * 100 + d - 4800 + m // 10
+    return date(year, month, day)
 
 # Same guard as the tkinter GUI: these tables must NEVER be raw-edited.
 NO_RAW_WRITE_TABLES = frozenset({
@@ -169,6 +184,95 @@ class App:
         page = [self.player_row(self.players[i]) for i in idx[offset:offset + limit]]
         return {"rows": page, "total": len(idx), "offset": offset, "limit": limit}
 
+    # -- player profile ---------------------------------------------------
+    @staticmethod
+    def _birthdate_str(raw):
+        """FIFA stores birthdate as Gregorian day number (epoch 2331205);
+        the stored value is one day AFTER the actual birthday."""
+        if not raw:
+            return ""
+        d = _gregorian_to_date(int(raw)) - timedelta(days=1)
+        return d.isoformat()
+
+    def player_profile(self, pid):
+        p = next((x for x in (self.players or []) if x.get("playerid") == pid), None)
+        if p is None:
+            raise ValueError(f"Player {pid} not found")
+        tid = self.club_map.get(pid)
+        league_id = self.team_league.get(tid) if tid else None
+        pos_ids = [p.get(f"preferredposition{i}", -1) for i in range(1, 8)]
+        pos = [POSITION_NAMES.get(x, "") for x in pos_ids if x and x != -1]
+        # jersey number from teamplayerlinks (non-career squad)
+        jersey = None
+        if "teamplayerlinks" in {m["name"] for m in self.sq.tables_meta if m["name"]}:
+            for l in self.sq.get_table("teamplayerlinks"):
+                if l.get("playerid") == pid:
+                    jersey = l.get("jerseynumber")
+                    break
+        base = self.player_row(p)
+        base.update({
+            "firstname": self._name_str(p.get("firstnameid", 0)),
+            "lastname": self._name_str(p.get("lastnameid", 0)),
+            "jersey_name": self._name_str(p.get("playerjerseynameid", 0)),
+            "birthdate": self._birthdate_str(p.get("birthdate")),
+            "height_cm": p.get("height"),
+            "weight_kg": p.get("weight"),
+            "preferred_foot": p.get("preferredfoot"),
+            "skill_moves": p.get("skillmoves"),
+            "weak_foot": p.get("weakfootabilitytypecode"),
+            "positions": pos,
+            "nationality": p.get("nationality"),
+            "nation_flag": f"/assets/nation/{p.get('nationality')}" if p.get("nationality") else None,
+            "jersey_number": jersey,
+            "is_retiring": p.get("isretiring", 0),
+            "attributes": {
+                "pace": [("Acceleration", p.get("acceleration")), ("Sprint Speed", p.get("sprintspeed"))],
+                "shooting": [("Finishing", p.get("finishing")), ("Long Shots", p.get("longshots")),
+                             ("Positioning", p.get("positioning")), ("Penalties", p.get("penalties")),
+                             ("Volleys", p.get("volleys")), ("Shot Power", p.get("shotpower"))],
+                "passing": [("Crossing", p.get("crossing")), ("Short Pass", p.get("shortpassing")),
+                             ("Long Pass", p.get("longpassing")), ("Vision", p.get("vision")),
+                             ("FK Accuracy", p.get("freekickaccuracy")), ("Curve", p.get("curve"))],
+                "dribbling": [("Dribbling", p.get("dribbling")), ("Agility", p.get("agility")),
+                               ("Balance", p.get("balance")), ("Ball Control", p.get("ballcontrol")),
+                               ("Composure", p.get("composure")), ("Reactions", p.get("reactions"))],
+                "defending": [("Def. Awareness", p.get("defensiveawareness")), ("Interceptions", p.get("interceptions")),
+                               ("Standing Tackle", p.get("standingtackle")), ("Sliding Tackle", p.get("slidingtackle")),
+                               ("Heading Acc.", p.get("headingaccuracy"))],
+                "physical": [("Jumping", p.get("jumping")), ("Stamina", p.get("stamina")),
+                              ("Strength", p.get("strength")), ("Aggression", p.get("aggression"))],
+                "goalkeeping": [("Diving", p.get("gkdiving")), ("Handling", p.get("gkhandling")),
+                                 ("Kicking", p.get("gkkicking")), ("Reflexes", p.get("gkreflexes")),
+                                 ("Speed", p.get("gkspeed")), ("Positioning", p.get("gkpositioning"))],
+            },
+            "team_id": tid,
+            "league_id": league_id,
+            "loaned": self.is_loaned_out(pid),
+            "loan_to_team": self.loan_target(pid),
+        })
+        return base
+
+    def _name_str(self, nid):
+        if not nid:
+            return ""
+        return (self.dc_names.get(nid, "") or self.full_names.get(nid, "") or "")
+
+    def is_loaned_out(self, pid):
+        if "playerloans" not in {m["name"] for m in self.sq.tables_meta if m["name"]}:
+            return False
+        for l in self.sq.get_table("playerloans"):
+            if l.get("playerid") == pid:
+                return True
+        return False
+
+    def loan_target(self, pid):
+        if "playerloans" not in {m["name"] for m in self.sq.tables_meta if m["name"]}:
+            return None
+        for l in self.sq.get_table("playerloans"):
+            if l.get("playerid") == pid and l.get("teamidloanedfrom"):
+                return l.get("teamidloanedfrom")
+        return None
+
     def table_rows(self, name, limit=400, offset=0, filt=""):
         records, fields = self.sq._parse_table(name)
         cols = [f["name"] for f in fields]
@@ -229,8 +333,142 @@ class App:
         )
         return {"dir": str(d), "files": files}
 
+    # -- action scripts (native transfers via Live Editor) ---------------
+    ACTION_LOG = r"C:/fc26-mcp/sidecar_actions_log.txt"
 
+    def _fc_wage(self, ov):
+        if ov >= 90: return 240000
+        if ov >= 88: return 185000
+        if ov >= 86: return 145000
+        if ov >= 84: return 110000
+        if ov >= 82: return 88000
+        if ov >= 80: return 68000
+        if ov >= 78: return 53000
+        if ov >= 76: return 40000
+        if ov >= 74: return 30000
+        if ov >= 72: return 22000
+        if ov >= 70: return 16000
+        if ov >= 68: return 12000
+        if ov >= 66: return 9000
+        if ov >= 64: return 7000
+        if ov >= 62: return 5500
+        if ov >= 60: return 4500
+        return 3000
+
+    def make_action_script(self, kind, pid, tid=None, months=36, wage=None):
+            """Generate a Live Editor Lua script for one native action.
+
+            kind: transfer | loan | terminate | release
+            All calls go through cTransferPlayer / cLoanPlayer / TerminateLoan
+            (native), which update the in-memory career managers — raw DB edits
+            corrupt saves. Semantics:
+              transfer  -> permanent move to another club (cTransferPlayer)
+              loan      -> temporary loan to another club (cLoanPlayer)
+              terminate -> terminate the LOAN, player returns to parent club
+              release   -> release from team: move to Free Agents (111592)
+            Script is idempotent: skips if already at target / not loaned.
+            Every action verifies with GetTeamIdFromPlayerId / IsPlayerLoanedOut;
+            pcall results are NOT trusted (cTransferPlayer logs its own failure
+            and returns without throwing).
+            """
+            p = next((x for x in (self.players or []) if x.get("playerid") == pid), None)
+            if p is None:
+                raise ValueError(f"Player {pid} not found")
+            name = self.player_name(p)
+            ov = int(p.get("overallrating") or 60)
+            wage = int(wage) if wage else self._fc_wage(ov)
+            months = int(months or 36)
+            out = Path(os.environ.get("FC26_MCP_DIR", "C:/fc26-mcp")) / "profile_action.lua"
+
+            header = LOG_HEAD % _lua_str(str(self.ACTION_LOG))
+            nm = _lua_str(name)  # e.g. "Yan Diomande" — valid Lua string literal
+
+            if kind == "terminate":
+                clauses = ["-- profile_action.lua -- Terminate loan (native, idempotent)\n"]
+                clauses.append(header)
+                clauses.append(f"local pid = {pid}\n")
+                clauses.append("log('TERMINATE start pid=' .. pid)\n")
+                clauses.append("local ok, loaned = pcall(IsPlayerLoanedOut, pid)\n")
+                clauses.append("if ok and loaned then\n")
+                clauses.append("    local ok2 = pcall(TerminateLoan, pid)\n")
+                clauses.append("    local ok3, tid = pcall(GetTeamIdFromPlayerId, pid)\n")
+                clauses.append("    local res = (ok3 and tid and tid > 0) and 'OK' or 'FAIL'\n")
+                clauses.append(f"    log('TERMINATE ' .. {nm} .. ' pid=' .. pid .. ' res=' .. res .. ' after=' .. tostring(tid) .. ' pcall=' .. tostring(ok2))\n")
+                clauses.append("else\n")
+                clauses.append(f"    log('TERMINATE ' .. {nm} .. ' not loaned, skip')\n")
+                clauses.append("end\n")
+                clauses.append("log('ACTION DONE')\n")
+                body = "".join(clauses)
+            elif kind == "release":
+                clauses = ["-- profile_action.lua -- Release to free agents (native, idempotent)\n"]
+                clauses.append(header)
+                clauses.append(f"local pid = {pid}\n")
+                clauses.append("log('RELEASE start pid=' .. pid)\n")
+                clauses.append("local ok, cur = pcall(GetTeamIdFromPlayerId, pid)\n")
+                clauses.append(f"if ok and cur and cur > 0 and cur ~= {FREE_AGENT_TEAM} then\n")
+                clauses.append(f"    pcall(cTransferPlayer, pid, cur, {FREE_AGENT_TEAM}, 0, -1, {wage}, {months})\n")
+                clauses.append("    local ok2, cur2 = pcall(GetTeamIdFromPlayerId, pid)\n")
+                clauses.append(f"    local res = (ok2 and cur2 == {FREE_AGENT_TEAM}) and 'OK' or 'FAIL'\n")
+                clauses.append(f"    log('RELEASE ' .. {nm} .. ' pid=' .. pid .. ' res=' .. res .. ' after=' .. tostring(cur2) .. ' pcall=' .. tostring(ok2))\n")
+                clauses.append("else\n")
+                clauses.append(f"    log('RELEASE ' .. {nm} .. ' already free, skip')\n")
+                clauses.append("end\n")
+                clauses.append("log('ACTION DONE')\n")
+                body = "".join(clauses)
+            elif kind in ("transfer", "loan"):
+                if not tid:
+                    raise ValueError("Need target team id")
+                tid = int(tid)
+                clauses = [f"-- profile_action.lua -- NATIVE {kind} (idempotent)\n"]
+                clauses.append(header)
+                clauses.append(f"local pid, tid = {pid}, {tid}\n")
+                clauses.append(f"log('{kind.upper()} start pid=' .. pid .. ' tid=' .. tid)\n")
+                clauses.append("local ok0, cur = pcall(GetTeamIdFromPlayerId, pid)\n")
+                clauses.append("if ok0 and cur == tid then\n")
+                clauses.append(f"    log('{kind.upper()} ' .. {nm} .. ' already at ' .. tid .. ', skip')\n")
+                clauses.append("else\n")
+                clauses.append("    local okl, loaned = pcall(IsPlayerLoanedOut, pid)\n")
+                clauses.append("    if okl and loaned then pcall(TerminateLoan, pid) end\n")
+                clauses.append("    local from = (ok0 and cur and cur > 0) and cur or 0\n")
+                if kind == "loan":
+                    clauses.append(f"    pcall(cLoanPlayer, pid, from, tid, {months}, 0)\n")
+                    clauses.append("    local ok2, cur2 = pcall(GetTeamIdFromPlayerId, pid)\n")
+                    clauses.append("    local ol, lo = pcall(IsPlayerLoanedOut, pid)\n")
+                    clauses.append("    local res = (ol and lo) and 'OK-loan' or '??'\n")
+                    clauses.append(f"    log('LOAN ' .. {nm} .. ' pid=' .. pid .. ' -> ' .. tid .. ' [' .. res .. '] after=' .. tostring(cur2) .. ' loaned=' .. tostring(lo) .. ' pcall=' .. tostring(ok2))\n")
+                else:
+                    clauses.append(f"    pcall(cTransferPlayer, pid, from, tid, 0, -1, {wage}, {months})\n")
+                    clauses.append("    local ok2, cur2 = pcall(GetTeamIdFromPlayerId, pid)\n")
+                    clauses.append("    local res = (ok2 and cur2 == tid) and 'OK' or 'FAIL'\n")
+                    clauses.append(f"    log('TRANSFER ' .. {nm} .. ' pid=' .. pid .. ' -> ' .. tid .. ' [' .. res .. '] after=' .. tostring(cur2) .. ' pcall=' .. tostring(ok2))\n")
+                clauses.append("end\n")
+                clauses.append("log('ACTION DONE')\n")
+                body = "".join(clauses)
+            else:
+                raise ValueError(f"Unknown action kind: {kind}")
+            out.write_text(body, encoding="utf-8")
+            return {
+                "ok": True, "kind": kind, "pid": pid, "player": name,
+                "script": str(out), "log": self.ACTION_LOG,
+                "instruction": (
+                    "Open the script in Live Editor -> Lua Engine -> Run, then SAVE THE CAREER. "
+                    "Native calls update the in-memory managers; direct DB edits corrupt the save. "
+                    "The script is idempotent — rerunning after a crash is safe (verify in "
+                    "%s)." % self.ACTION_LOG),
+            }
+
+
+LOG_HEAD = (
+    "-- log helper\n"
+    "local LOG = %s\n"
+    "local function log(m) local f = io.open(LOG, 'a') if f then "
+    "f:write(os.date('%%Y-%%m-%%d %%H:%%M:%%S') .. ' ' .. m .. string.char(10)) f:close() end end\n"
+)
 app = App()
+
+
+def _lua_str(s):
+    return json.dumps(str(s), ensure_ascii=False)  # valid Lua string literal
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -256,7 +494,15 @@ class Handler(BaseHTTPRequestHandler):
         except OSError:
             data = None
         if not data:
-            self._err(404, "asset not available")
+            # Not cached yet (background download running) or definitively
+            # missing. no-store so the browser stops caching the 404 and
+            # the UI's retry-with-backoff re-fires once the file lands.
+            self.send_response(404)
+            self.send_header("Content-Type", "text/plain")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            self.wfile.write(b"asset not cached yet")
             return
         self.send_response(200)
         self.send_header("Content-Type", "image/png")
@@ -288,6 +534,13 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if u.path.startswith("/assets/"):
                 self._serve_asset(u.path)
+            elif u.path.startswith("/api/player/"):
+                pid = int(u.path.split("/")[-1])
+                self._send(200, {"ok": True, "player": app.player_profile(pid)})
+            elif u.path == "/api/teams":
+                q = parse_qs(u.query).get("q", [""])[0].strip().lower()
+                rows = [{"teamid": t, "name": n} for t, n in sorted(app.teams.items()) if not q or q in (n or "").lower()]
+                self._send(200, {"ok": True, "rows": rows[:500]})
             elif u.path == "/api/status":
                 if app.sq is None:
                     self._send(200, {"ok": True, "open": False})
@@ -325,6 +578,11 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(200, app.save(body.get("path")))
             elif u.path == "/api/backup":
                 self._send(200, app.backup())
+            elif u.path == "/api/action":
+                kind = body.get("kind", "")
+                pid = int(body.get("pid", 0))
+                out = app.make_action_script(kind, pid, body.get("tid"), body.get("months", 36), body.get("wage"))
+                self._send(200, out)
             elif u.path == "/api/edit":
                 app.edit_field(body.get("table"), int(body.get("idx")), body.get("field"), body.get("value"))
                 self._send(200, {"ok": True})

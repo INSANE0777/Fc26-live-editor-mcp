@@ -93,6 +93,51 @@
   </div>
 </div>
 
+<!-- Player profile drawer -->
+<div id="profile" class="drawer hidden">
+  <div class="drawer-head">
+    <div class="drawer-face">
+      <img id="pf-face" alt="">
+      <div class="drawer-ovr"><span id="pf-ovr"></span></div>
+    </div>
+    <div class="drawer-id">
+      <h2 id="pf-name"></h2>
+      <div class="drawer-sub">
+        <img id="pf-badge" alt=""><img id="pf-icon" alt=""><img id="pf-flag" alt="">
+        <span id="pf-team"></span>
+      </div>
+      <div class="drawer-tags">
+        <span id="pf-pos"></span>
+        <span id="pf-age"></span>
+        <span class="tag" id="pf-jersey"></span>
+      </div>
+    </div>
+    <button id="pf-close" class="icon-btn" title="Close">✕</button>
+  </div>
+  <div class="drawer-body">
+    <div class="profile-sections" id="pf-attrs"></div>
+    <div class="drawer-meta" id="pf-meta"></div>
+  </div>
+  <div class="drawer-actions">
+    <button id="pf-transfer" class="act act-primary">⇄ Transfer</button>
+    <button id="pf-loan" class="act">⤳ Loan out</button>
+    <button id="pf-terminate" class="act act-danger">↩ Terminate loan</button>
+    <button id="pf-release" class="act act-danger">⏏ Release</button>
+  </div>
+</div>
+
+<!-- Team picker modal for transfer/loan -->
+<div id="team-modal" class="modal hidden">
+  <div class="modal-box">
+    <h3 id="tm-title">Choose destination club</h3>
+    <input id="tm-search" type="text" placeholder="Search club…" spellcheck="false">
+    <div id="tm-list" class="team-list"></div>
+    <div class="modal-btns">
+      <button id="tm-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <div id="toast" class="toast hidden"></div>
 
 <script src="app.js"></script>

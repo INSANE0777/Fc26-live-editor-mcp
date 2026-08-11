@@ -114,13 +114,12 @@ function renderPlayers() {
   tb.innerHTML = "";
   for (const r of state.pRows) {
     const tr = document.createElement("tr");
+    tr.dataset.pid = r.playerid;
+    tr.className = "prow";
+    tr.addEventListener("click", () => openProfile(r.playerid));
     // face + name
     const tdName = document.createElement("td");
-    const img = document.createElement("img");
-    img.className = "pface";
-    img.loading = "lazy";
-    img.src = API + r.face;
-    img.onerror = () => (img.style.visibility = "hidden");
+    const img = retryImg(API + r.face, "pface");
     const span = document.createElement("span");
     span.textContent = r.name;
     tdName.append(img, span);
@@ -128,20 +127,12 @@ function renderPlayers() {
     // club badge + team
     const tdTeam = document.createElement("td");
     if (r.club_badge) {
-      const b = document.createElement("img");
-      b.className = "cbadge";
-      b.loading = "lazy";
-      b.src = API + r.club_badge;
+      const b = retryImg(API + r.club_badge, "cbadge");
       b.title = r.team;
-      b.onerror = () => (b.style.visibility = "hidden");
       tdTeam.appendChild(b);
     }
     if (r.league_icon) {
-      const li = document.createElement("img");
-      li.className = "cicon";
-      li.loading = "lazy";
-      li.src = API + r.league_icon;
-      li.onerror = () => (li.style.visibility = "hidden");
+      const li = retryImg(API + r.league_icon, "cicon");
       tdTeam.appendChild(li);
     }
     tdTeam.appendChild(document.createTextNode(" " + r.team));
@@ -157,6 +148,31 @@ function renderPlayers() {
   const from = state.pOffset + 1, to = state.pOffset + state.pRows.length;
   $("p-count").textContent = total ? `showing ${from}–${to} of ${total}` : "";
   updatePager("p", total);
+}
+
+// Lazy image with retry-with-backoff. The sidecar downloads assets on a
+// background queue (CDN 30/min throttle), so a 404 is usually "not cached
+// yet" — re-fire a few times before giving up; never hide permanently.
+function retryImg(src, cls) {
+  const img = document.createElement("img");
+  img.className = cls;
+  img.loading = "lazy";
+  img.alt = "";
+  let attempt = 0;
+  const fire = () => {
+    img.src = attempt ? src + "?r=" + attempt : src;
+    if (attempt > 0) img.classList.add("pending");
+  };
+  img.onerror = () => {
+    attempt++;
+    if (attempt <= 3) {
+      setTimeout(fire, 1200 * attempt);
+    } else {
+      img.classList.add("missing"); // placeholder silhouette via CSS
+    }
+  };
+  fire();
+  return img;
 }
 
 // search as you type (debounced)
@@ -338,3 +354,182 @@ function updatePager(kind, total) {
 // ---------- init ----------
 loadSettingsDir();
 setStatus("Open a squad file to begin.");
+
+// ---------- player profile drawer ----------
+let pfPlayer = null;
+let pfPid = null;
+
+async function openProfile(pid) {
+  pfPid = pid;
+  const dr = $("profile");
+  dr.classList.add("open");
+  dr.classList.remove("hidden");
+  $("pf-name").textContent = "Loading…";
+  document.querySelectorAll(".drawer img").forEach((i) => (i.style.visibility = "hidden"));
+  try {
+    const d = await apiGet(`/api/player/${pid}`);
+    pfPlayer = d.player;
+    renderProfile(d.player);
+  } catch (e) {
+    toast(e.message, "err");
+  }
+}
+
+function drawerImg(el, src) {
+  const img = retryImg(API + src, el.className);
+  img.id = el.id;
+  el.replaceWith(img);
+  return img;
+}
+
+const FOOT_LABELS = { 0: "Right", 1: "Left" };
+
+function renderProfile(p) {
+  const $f = (id) => $(id);
+  $f("pf-name").textContent = `${p.name}  (${p.playerid})`;
+  $f("pf-ovr").textContent = p.ovr;
+  $f("pf-team").textContent = p.team;
+  $f("pf-pos").textContent = p.positions.join(" / ");
+  const age = p.birthdate ? Math.floor((Date.now() - new Date(p.birthdate)) / 31557600000) : "";
+  $f("pf-age").textContent = p.birthdate ? `${age} yrs (${p.birthdate})` : "";
+  $f("pf-jersey").textContent = p.jersey_number ? `#${p.jersey_number}` : "";
+  $f("pf-jersey").style.display = p.jersey_number ? "" : "none";
+  // images
+  drawerImg($f("pf-face"), p.face);
+  if (p.club_badge) drawerImg($f("pf-badge"), p.club_badge);
+  if (p.league_icon) drawerImg($f("pf-icon"), p.league_icon);
+  if (p.nation_flag) drawerImg($f("pf-flag"), p.nation_flag);
+  document.querySelectorAll("#profile .drawer-face img, #profile .drawer-sub img").forEach((i) => (i.style.visibility = ""));
+  // attributes grid
+  const sec = $f("pf-attrs");
+  sec.innerHTML = "";
+  for (const [group, items] of Object.entries(p.attributes)) {
+    const real = items.filter(([, v]) => v !== null && v !== undefined);
+    if (!real.length) continue;
+    const blk = document.createElement("div");
+    blk.className = "attr-group";
+    const h = document.createElement("h4");
+    h.textContent = group;
+    blk.appendChild(h);
+    for (const [label, val] of real) {
+      const row = document.createElement("div");
+      row.className = "attr-row";
+      const l = document.createElement("span");
+      l.textContent = label;
+      const bar = document.createElement("div");
+      bar.className = "attr-bar";
+      const fill = document.createElement("div");
+      fill.className = "attr-fill";
+      fill.style.width = Math.min(100, val) + "%";
+      bar.appendChild(fill);
+      const v = document.createElement("span");
+      v.textContent = val;
+      row.append(l, bar, v);
+      blk.appendChild(row);
+    }
+    sec.appendChild(blk);
+  }
+  // meta line
+  const meta = [
+    ["Height", p.height_cm ? `${p.height_cm} cm` : ""],
+    ["Weight", p.weight_kg ? `${p.weight_kg} kg` : ""],
+    ["Foot", FOOT_LABELS[p.preferred_foot] ?? ""],
+    ["Skill moves", p.skill_moves ?? ""],
+    ["Weak foot", p.weak_foot ?? ""],
+    ["Retiring", p.is_retiring ? "Yes" : ""],
+    ["Loaned out", p.loaned ? "Yes" : "No"],
+  ].filter(([, v]) => v !== "" && v !== null && v !== undefined);
+  $f("pf-meta").innerHTML = meta.map(([k, v]) => `<span class="meta"><b>${k}</b> ${v}</span>`).join("");
+  // action buttons
+  $f("pf-terminate").style.display = p.loaned ? "" : "none";
+  $f("pf-transfer").style.display = p.loaned ? "none" : "";
+  $f("pf-loan").style.display = p.loaned ? "none" : "";
+  $f("pf-release").style.display = p.loaned ? "none" : "";
+}
+
+$("pf-close").addEventListener("click", () => {
+  $("profile").classList.add("hidden");
+  $("profile").classList.remove("open");
+});
+
+// ---------- team picker modal ----------
+let tmKind = "transfer";
+let tmTimer = null;
+
+async function pickTeam(kind) {
+  tmKind = kind;
+  $("tm-title").textContent = kind === "transfer" ? "Choose destination club" : "Choose loan club";
+  $("tm-search").value = "";
+  $("tm-list").innerHTML = "<div class='team-row muted'>Type to search…</div>";
+  $("team-modal").classList.remove("hidden");
+  $("tm-search").focus();
+  loadTeams("");
+}
+
+async function loadTeams(q) {
+  try {
+    const d = await apiGet(`/api/teams?q=${encodeURIComponent(q)}`);
+    const list = $("tm-list");
+    list.innerHTML = "";
+    const cur = pfPlayer ? pfPlayer.team_id : null;
+    for (const t of d.rows) {
+      if (t.teamid === cur) continue;
+      const div = document.createElement("div");
+      div.className = "team-row";
+      const b = retryImg(API + `/assets/club/${t.teamid}`, "cbadge");
+      div.append(b, document.createTextNode(` ${t.teamid} | ${t.name}`));
+      div.addEventListener("click", () => runAction(t));
+      list.appendChild(div);
+    }
+    if (!d.rows.length) list.innerHTML = "<div class='team-row muted'>No clubs match</div>";
+  } catch (e) {
+    toast(e.message, "err");
+  }
+}
+
+$("tm-search").addEventListener("input", () => {
+  clearTimeout(tmTimer);
+  tmTimer = setTimeout(() => loadTeams($("tm-search").value.trim()), 250);
+});
+$("tm-cancel").addEventListener("click", () => $("team-modal").classList.add("hidden"));
+
+async function runAction(team) {
+  $("team-modal").classList.add("hidden");
+  const body = { kind: tmKind, pid: pfPid, tid: team.teamid };
+  try {
+    const d = await apiPost("/api/action", body);
+    showActionResult(d);
+  } catch (e) {
+    toast(e.message, "err");
+  }
+}
+
+function showActionResult(d) {
+  const kindNames = { transfer: "Transfer", loan: "Loan", terminate: "Terminate loan", release: "Release" };
+  toast(`${kindNames[d.kind]} script generated for ${d.player}`, "ok");
+  const msg =
+    `${kindNames[d.kind]} script ready for <b>${d.player}</b>.\n\n` +
+    `Script: <code>${d.script}</code>\n\n` +
+    `1. Open Live Editor → Lua Engine\n` +
+    `2. Run <i>${d.script.replace(/\\/g, "/")}</i>\n` +
+    `3. SAVE THE CAREER in-game\n\n` +
+    `Result is logged in <code>${d.log}</code> — ` +
+    `script is idempotent, rerunning after a crash is safe.`;
+  alert(msg);
+}
+
+$("pf-transfer").addEventListener("click", () => pickTeam("transfer"));
+$("pf-loan").addEventListener("click", () => pickTeam("loan"));
+$("pf-terminate").addEventListener("click", async () => {
+  try {
+    const d = await apiPost("/api/action", { kind: "terminate", pid: pfPid });
+    showActionResult(d);
+  } catch (e) { toast(e.message, "err"); }
+});
+$("pf-release").addEventListener("click", async () => {
+  if (!confirm(`Release ${pfPlayer ? pfPlayer.name : ""} to free agents?`)) return;
+  try {
+    const d = await apiPost("/api/action", { kind: "release", pid: pfPid });
+    showActionResult(d);
+  } catch (e) { toast(e.message, "err"); }
+});
