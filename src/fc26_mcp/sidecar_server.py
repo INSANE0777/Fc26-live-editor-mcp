@@ -495,17 +495,27 @@ class Handler(BaseHTTPRequestHandler):
         if kind not in game_assets.KINDS:
             self._err(400, f"unknown asset kind {kind}")
             return
+        state = game_assets.asset_state(kind, int(asset_id))
+        if state == "missing":
+            # definitive CDN 404 (0-byte marker): tell the UI to stop
+            # retrying — no face exists for this player.
+            self.send_response(404)
+            self.send_header("X-Asset-State", "missing")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Cache-Control", "no-store")
+            self.end_headers()
+            return
         lp = game_assets.asset_url(kind, int(asset_id))
         try:
             data = Path(lp).read_bytes() if lp else None
         except OSError:
             data = None
         if not data:
-            # Not cached yet (background download running) or definitively
-            # missing. no-store so the browser stops caching the 404 and
-            # the UI's retry-with-backoff re-fires once the file lands.
+            # Not cached yet (background download running). no-store so the
+            # browser stops caching the 404 and the UI's retry-with-backoff
+            # re-fires once the file lands.
             self.send_response(404)
-            self.send_header("Content-Type", "text/plain")
+            self.send_header("X-Asset-State", "pending")
             self.send_header("Access-Control-Allow-Origin", "*")
             self.send_header("Cache-Control", "no-store")
             self.end_headers()

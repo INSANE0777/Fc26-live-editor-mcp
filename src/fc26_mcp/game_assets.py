@@ -41,9 +41,11 @@ KINDS = {
 }
 
 # The 30/min limit came from fctoolshub.com's site (Laravel API), NOT the
-# DigitalOcean Spaces CDN. The bucket serves static PNGs without a count
-# header; keep a small politeness gap but no long throttle.
-WORKER_GAP = 0.15
+# DigitalOcean Spaces CDN. The bucket serves static PNGs fast and handles
+# parallel fetches (verified). A small worker pool drains the queue in
+# seconds instead of minutes.
+WORKER_GAP = 0.05
+WORKERS = 3
 HTTP_TIMEOUT = 12
 
 _cache_dir = DEFAULT_CACHE
@@ -111,7 +113,21 @@ def _ensure_worker():
     with _lock:
         if not _worker_started:
             _worker_started = True
-            threading.Thread(target=_worker, name="asset-downloader", daemon=True).start()
+            for _ in range(WORKERS):
+                threading.Thread(target=_worker, name="asset-downloader", daemon=True).start()
+
+
+def asset_state(kind, asset_id):
+    """Return 'cached' | 'missing' (definitive CDN 404) | None (downloading).
+    None means the HTTP layer should answer 404 no-store and the browser
+    will retry once the file lands.
+    """
+    lp = _local_path(kind, asset_id)
+    if lp.exists() and lp.stat().st_size > 0:
+        return "cached"
+    if lp.exists() and lp.stat().st_size == 0:
+        return "missing"
+    return None
 
 
 def asset_url(kind, asset_id):

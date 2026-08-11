@@ -155,30 +155,42 @@ function renderPlayers() {
   updatePager("p", total);
 }
 
-// Lazy image with retry-with-backoff. The sidecar downloads assets on a
-// background queue (requested assets jump to the front), so a 404 is
-// usually "not cached yet" — keep re-firing until the file lands or we
-// exhaust retries; never hide permanently.
+// Asset image with state-based retry. The sidecar answers:
+//   200 + image          -> cached, show it
+//   404 X-Asset-State: pending  -> downloading, keep re-checking
+//   404 X-Asset-State: missing  -> no face exists, stop retrying
+// Cached images load instantly (normal <img>); a 404 triggers a state
+// check that either stops (missing) or re-fires after a delay (pending).
 function retryImg(src, cls) {
   const img = document.createElement("img");
   img.className = cls;
   img.loading = "lazy";
   img.alt = "";
-  let attempt = 0;
-  const fire = () => {
-    img.src = attempt ? src + "?r=" + attempt : src;
-    if (attempt > 0) img.classList.add("pending");
-  };
-  img.onerror = () => {
-    attempt++;
-    if (attempt <= 10) {
-      // exponential-ish backoff: 0.5, 1, 1.5 ... 5s, total ~27s window
-      setTimeout(fire, Math.min(500 * attempt, 5000));
+  let timer = null;
+  const poll = async () => {
+    let state;
+    try {
+      const r = await fetch(src);
+      state = r.ok ? "ok" : (r.headers.get("X-Asset-State") || "missing");
+    } catch {
+      state = "pending";
+    }
+    if (state === "ok") {
+      img.src = src + "?r=" + Date.now(); // re-fire now that it's cached
+    } else if (state === "missing") {
+      img.classList.remove("pending");
+      img.classList.add("missing");
     } else {
-      img.classList.add("missing"); // placeholder silhouette via CSS
+      img.classList.add("pending");
+      timer = setTimeout(poll, 1500); // keep polling while downloading
     }
   };
-  fire();
+  img.onerror = () => {
+    if (img.classList.contains("missing")) return;
+    img.classList.add("pending");
+    if (!timer) timer = setTimeout(poll, 400);
+  };
+  img.src = src;
   return img;
 }
 
