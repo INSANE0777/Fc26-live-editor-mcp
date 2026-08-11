@@ -164,7 +164,7 @@ class App:
             "league_icon": f"/assets/league/{league_id}" if league_id else None,
         }
 
-    def search_players(self, q, limit=400, offset=0):
+    def search_players(self, q, limit=400, offset=0, sort=None, dir="asc"):
         q = (q or "").strip()
         ql = q.lower()
         team_hits = [tid for tid, tn in self.teams.items() if tn and ql in tn.lower()]
@@ -181,6 +181,13 @@ class App:
                 if ql not in self.player_name(p).lower():
                     continue
             idx.append(i)
+        if sort:
+            rows = {i: self.player_row(self.players[i]) for i in idx}
+            desc = (dir or "asc") == "desc"
+            def key(i):
+                v = rows[i].get(sort)
+                return (v is None, v)
+            idx.sort(key=key, reverse=desc)
         page = [self.player_row(self.players[i]) for i in idx[offset:offset + limit]]
         return {"rows": page, "total": len(idx), "offset": offset, "limit": limit}
 
@@ -558,7 +565,13 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(200, {"ok": True, **out})
             elif u.path == "/api/players":
                 q = parse_qs(u.query)
-                out = app.search_players(q.get("q", [""])[0], int(q.get("limit", [PAGE_SIZE])[0]), int(q.get("offset", ["0"])[0]))
+                out = app.search_players(
+                    q.get("q", [""])[0],
+                    int(q.get("limit", [PAGE_SIZE])[0]),
+                    int(q.get("offset", ["0"])[0]),
+                    q.get("sort", [None])[0],
+                    q.get("dir", ["asc"])[0],
+                )
                 self._send(200, {"ok": True, **out})
             elif u.path == "/api/settings-dir":
                 self._send(200, {"ok": True, **app.settings_dir_files()})

@@ -12,15 +12,18 @@ CDN base (reverse-engineered from fctoolshub.com Inertia responses):
 The squad file uses the SAME EA ids, so eaId == squad playerid/teamid/
 leagueid/nationid.
 
-Downloads are ASYNC: a single worker queue throttles the CDN (30 req/min
-limit) while the HTTP layer never blocks. Missing assets are served as a
-"not cached yet" signal (404 + no-store) so the browser retries once the
-worker has written the file. Failed/404 CDN responses write a 0-byte marker
-so we never re-hammer the CDN for the same asset.
+Downloads are ASYNC: a single worker processes the queue while the HTTP
+layer never blocks. Missing assets return a "not cached yet" signal
+(404 + no-store) so the browser retries once the file lands. Requested
+assets are promoted to the FRONT of the queue, so the face the user is
+looking at downloads next. Permanent 0-byte markers are written only on
+definitive CDN 404/403/410 (players without a real face); transient
+errors leave no marker and retry on the next request.
 """
 import os
 import queue
 import threading
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -37,13 +40,17 @@ KINDS = {
     "nation": "nations/{}.png",
 }
 
-MIN_INTERVAL = 2.0  # CDN is rate-limited ~30/min -> >=2s between downloads
+# The 30/min limit came from fctoolshub.com's site (Laravel API), NOT the
+# DigitalOcean Spaces CDN. The bucket serves static PNGs without a count
+# header; keep a small politeness gap but no long throttle.
+WORKER_GAP = 0.15
+HTTP_TIMEOUT = 12
 
 _cache_dir = DEFAULT_CACHE
-_queue = queue.Queue()          # (kind, asset_id) download jobs
-_pending = set()                # in-flight or queued (kind, id)
-_waker = threading.Event()      # to wake the worker on new jobs
-_lock = threading.Lock()        # guards _pending
+_queue = queue.deque()          # (kind, asset_id) download jobs, front = next
+_pending = set()                # queued or in-flight (kind, id)
+_waker = threading.Event()
+_lock = threading.Lock()
 _worker_started = False
 
 
@@ -56,59 +63,47 @@ def _local_path(kind, asset_id):
     return _cache_dir / kind / f"{asset_id}.png"
 
 
-def _mark_done(kind, asset_id, ok):
-    with _lock:
-        _pending.discard((kind, asset_id))
-
-
 def _download_job(job):
     kind, asset_id = job
     dest = _local_path(kind, asset_id)
     template = KINDS.get(kind)
     if not template:
-        _mark_done(kind, asset_id, False)
         return
     remote = f"{CDN}/{template.format(asset_id)}"
     try:
         dest.parent.mkdir(parents=True, exist_ok=True)
         req = urllib.request.Request(remote, headers={"User-Agent": "fc26-squad-editor/0.1"})
-        with urllib.request.urlopen(req, timeout=12) as r:
+        with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as r:
             data = r.read()
         if data:
             dest.write_bytes(data)
         else:
-            dest.write_bytes(b"")  # server 404 with empty body -> permanent marker
+            dest.write_bytes(b"")  # 200 with empty body -> treat as missing
     except urllib.error.HTTPError as e:
         if e.code in (404, 403, 410):
             try:
                 dest.write_bytes(b"")  # definitive missing -> permanent marker
             except Exception:
                 pass
-        # other HTTP errors: leave no marker, will retry on next request
     except Exception:
-        # transient network failure: leave no marker, will retry on next request
-        pass
+        pass  # transient: no marker, retried on next request
     finally:
-        _mark_done(kind, asset_id, False)
+        with _lock:
+            _pending.discard(job)
 
 
 def _worker():
     while True:
         job = None
-        try:
-            with _lock:
-                if not _queue.empty():
-                    job = _queue.get_nowait()
-        except queue.Empty:
-            pass
+        with _lock:
+            if _queue:
+                job = _queue.popleft()
         if job is None:
-            _waker.wait(MIN_INTERVAL)
+            _waker.wait(max(WORKER_GAP, 0.05))
             _waker.clear()
             continue
         _download_job(job)
-        # throttle: min interval between CDN hits
-        import time
-        time.sleep(MIN_INTERVAL)
+        time.sleep(WORKER_GAP)
 
 
 def _ensure_worker():
@@ -116,20 +111,22 @@ def _ensure_worker():
     with _lock:
         if not _worker_started:
             _worker_started = True
-            t = threading.Thread(target=_worker, name="asset-downloader", daemon=True)
-            t.start()
+            threading.Thread(target=_worker, name="asset-downloader", daemon=True).start()
 
 
 def asset_url(kind, asset_id):
-    """Return path if the asset is cached (or a known-missing marker),
-    else enqueue a background download and return None.
+    """Return path if cached (or known-missing marker), else enqueue the
+    download (front of queue if already pending) and return None.
 
-    Callers deal with None by returning 'not cached yet' (browser retries)."""
+    None means "not cached yet" — the HTTP layer answers 404 no-store and
+    the browser retries shortly after; the file lands within ~1s of the
+    worker picking it up because fresh requests jump the queue.
+    """
     lp = _local_path(kind, asset_id)
     if lp.exists() and lp.stat().st_size > 0:
         return str(lp)
     if lp.exists() and lp.stat().st_size == 0:
-        return None          # known-missing marker (may be a real 404)
+        return None  # known-missing marker (definitive CDN 404)
     if kind not in KINDS:
         return None
     _ensure_worker()
@@ -137,6 +134,14 @@ def asset_url(kind, asset_id):
         key = (kind, asset_id)
         if key not in _pending:
             _pending.add(key)
-            _queue.put(key)
+            _queue.append(key)
+            _waker.set()
+        else:
+            # already queued — promote to front so the visible face wins
+            try:
+                _queue.remove(key)
+            except ValueError:
+                pass
+            _queue.appendleft(key)
             _waker.set()
     return None

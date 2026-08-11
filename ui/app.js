@@ -103,8 +103,9 @@ let searchTimer = null;
 async function loadPlayers(reset) {
   if (reset) state.pOffset = 0;
   const q = $("p-search").value.trim();
+  const sort = state.pSort ? `&sort=${state.pSort}&dir=${state.pDir}` : "";
   try {
-    const d = await apiGet(`/api/players?q=${encodeURIComponent(q)}&limit=${PAGE}&offset=${state.pOffset}`);
+    const d = await apiGet(`/api/players?q=${encodeURIComponent(q)}&limit=${PAGE}&offset=${state.pOffset}${sort}`);
     state.pRows = d.rows; state.pTotal = d.total; state.pOffset = d.offset;
     renderPlayers();
   } catch (e) { toast(e.message, "err"); }
@@ -117,6 +118,10 @@ function renderPlayers() {
     tr.dataset.pid = r.playerid;
     tr.className = "prow";
     tr.addEventListener("click", () => openProfile(r.playerid));
+    const tdId = document.createElement("td");
+    tdId.className = "pid";
+    tdId.textContent = r.playerid;
+    tr.appendChild(tdId);
     // face + name
     const tdName = document.createElement("td");
     const img = retryImg(API + r.face, "pface");
@@ -151,8 +156,9 @@ function renderPlayers() {
 }
 
 // Lazy image with retry-with-backoff. The sidecar downloads assets on a
-// background queue (CDN 30/min throttle), so a 404 is usually "not cached
-// yet" — re-fire a few times before giving up; never hide permanently.
+// background queue (requested assets jump to the front), so a 404 is
+// usually "not cached yet" — keep re-firing until the file lands or we
+// exhaust retries; never hide permanently.
 function retryImg(src, cls) {
   const img = document.createElement("img");
   img.className = cls;
@@ -165,8 +171,9 @@ function retryImg(src, cls) {
   };
   img.onerror = () => {
     attempt++;
-    if (attempt <= 3) {
-      setTimeout(fire, 1200 * attempt);
+    if (attempt <= 10) {
+      // exponential-ish backoff: 0.5, 1, 1.5 ... 5s, total ~27s window
+      setTimeout(fire, Math.min(500 * attempt, 5000));
     } else {
       img.classList.add("missing"); // placeholder silhouette via CSS
     }
@@ -178,30 +185,32 @@ function retryImg(src, cls) {
 // search as you type (debounced)
 $("p-search").addEventListener("input", () => {
   clearTimeout(searchTimer);
+  state.pSort = null;
+  document.querySelectorAll("#p-table th").forEach((h) => { delete h.dataset.dir; h.textContent = h.textContent.replace(/ [▲▼]$/, ""); });
   searchTimer = setTimeout(() => loadPlayers(true), 250);
 });
 $("p-search-btn").addEventListener("click", () => loadPlayers(true));
-$("p-all").addEventListener("click", () => { $("p-search").value = ""; loadPlayers(true); });
+$("p-all").addEventListener("click", () => { $("p-search").value = ""; state.pSort = null; document.querySelectorAll("#p-table th").forEach((h) => { delete h.dataset.dir; h.textContent = h.textContent.replace(/ [▲▼]$/, ""); }); loadPlayers(true); });
 $("p-prev").addEventListener("click", () => { if (state.pOffset > 0) { state.pOffset -= PAGE; loadPlayers(); } });
 $("p-next").addEventListener("click", () => { if (state.pOffset + PAGE < state.pTotal) { state.pOffset += PAGE; loadPlayers(); } });
 
-// sortable columns (client-side over current page)
+// sortable columns — server-side over the WHOLE database (not just the
+// current 400-row page)
+state.pSort = null;
+state.pDir = "asc";
 document.querySelectorAll("#p-table th").forEach((th) => {
   th.addEventListener("click", () => {
     if (th.classList.contains("no-sort")) return;
     const col = th.dataset.col;
-    const dir = th.dataset.dir === "asc" ? "desc" : "asc";
+    if (state.pSort === col) {
+      state.pDir = state.pDir === "asc" ? "desc" : "asc";
+    } else {
+      state.pSort = col; state.pDir = "asc";
+    }
     document.querySelectorAll("#p-table th").forEach((h) => { delete h.dataset.dir; h.textContent = h.textContent.replace(/ [▲▼]$/, ""); });
-    th.dataset.dir = dir;
-    th.textContent += dir === "asc" ? " ▲" : " ▼";
-    state.pRows.sort((a, b) => {
-      const va = a[col], vb = b[col];
-      if (va === vb) return 0;
-      const na = Number(va), nb = Number(vb);
-      if (!isNaN(na) && !isNaN(nb)) return dir === "asc" ? na - nb : nb - na;
-      return dir === "asc" ? String(va).localeCompare(String(vb)) : String(vb).localeCompare(String(va));
-    });
-    renderPlayers();
+    th.dataset.dir = state.pDir;
+    th.textContent += state.pDir === "asc" ? " ▲" : " ▼";
+    loadPlayers(true);
   });
 });
 
