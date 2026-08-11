@@ -186,3 +186,10 @@ tbody tr:nth-child(even):hover { background: #252a34; }
 
 /* ---- row cursor ---- */
 .prow { cursor: pointer; }
+
+/* ---- toggle filter button ---- */
+.toggle { transition: all .15s; }
+.toggle.active {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+  box-shadow: 0 0 10px rgba(79, 140, 255, .35);
+}

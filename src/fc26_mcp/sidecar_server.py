@@ -164,7 +164,7 @@ class App:
             "league_icon": f"/assets/league/{league_id}" if league_id else None,
         }
 
-    def search_players(self, q, limit=400, offset=0, sort=None, dir="asc"):
+    def search_players(self, q, limit=400, offset=0, sort=None, dir="asc", has_face=False):
         q = (q or "").strip()
         ql = q.lower()
         team_hits = [tid for tid, tn in self.teams.items() if tn and ql in tn.lower()]
@@ -180,6 +180,8 @@ class App:
             else:
                 if ql not in self.player_name(p).lower():
                     continue
+            if has_face and game_assets.asset_state("face", pid) == "missing":
+                continue  # definitively no face on the CDN
             idx.append(i)
         if sort:
             rows = {i: self.player_row(self.players[i]) for i in idx}
@@ -581,6 +583,7 @@ class Handler(BaseHTTPRequestHandler):
                     int(q.get("offset", ["0"])[0]),
                     q.get("sort", [None])[0],
                     q.get("dir", ["asc"])[0],
+                    q.get("has_face", [""])[0] == "1",
                 )
                 self._send(200, {"ok": True, **out})
             elif u.path == "/api/settings-dir":

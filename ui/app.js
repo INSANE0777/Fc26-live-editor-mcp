@@ -100,12 +100,14 @@ $("btn-backup").addEventListener("click", doBackup);
 
 // ---------- players view ----------
 let searchTimer = null;
+state.pFaces = false;
 async function loadPlayers(reset) {
   if (reset) state.pOffset = 0;
   const q = $("p-search").value.trim();
   const sort = state.pSort ? `&sort=${state.pSort}&dir=${state.pDir}` : "";
+  const faces = state.pFaces ? "&has_face=1" : "";
   try {
-    const d = await apiGet(`/api/players?q=${encodeURIComponent(q)}&limit=${PAGE}&offset=${state.pOffset}${sort}`);
+    const d = await apiGet(`/api/players?q=${encodeURIComponent(q)}&limit=${PAGE}&offset=${state.pOffset}${sort}${faces}`);
     state.pRows = d.rows; state.pTotal = d.total; state.pOffset = d.offset;
     renderPlayers();
   } catch (e) { toast(e.message, "err"); }
@@ -202,7 +204,12 @@ $("p-search").addEventListener("input", () => {
   searchTimer = setTimeout(() => loadPlayers(true), 250);
 });
 $("p-search-btn").addEventListener("click", () => loadPlayers(true));
-$("p-all").addEventListener("click", () => { $("p-search").value = ""; state.pSort = null; document.querySelectorAll("#p-table th").forEach((h) => { delete h.dataset.dir; h.textContent = h.textContent.replace(/ [▲▼]$/, ""); }); loadPlayers(true); });
+$("p-faces").addEventListener("click", () => {
+  state.pFaces = !state.pFaces;
+  $("p-faces").classList.toggle("active", state.pFaces);
+  loadPlayers(true);
+});
+$("p-all").addEventListener("click", () => { $("p-search").value = ""; state.pSort = null; state.pFaces = false; $("p-faces").classList.remove("active"); document.querySelectorAll("#p-table th").forEach((h) => { delete h.dataset.dir; h.textContent = h.textContent.replace(/ [▲▼]$/, ""); }); loadPlayers(true); });
 $("p-prev").addEventListener("click", () => { if (state.pOffset > 0) { state.pOffset -= PAGE; loadPlayers(); } });
 $("p-next").addEventListener("click", () => { if (state.pOffset + PAGE < state.pTotal) { state.pOffset += PAGE; loadPlayers(); } });
 
