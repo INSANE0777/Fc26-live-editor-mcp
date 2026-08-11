@@ -473,6 +473,9 @@ function renderProfile(p) {
   $f("pf-transfer").style.display = p.loaned ? "none" : "";
   $f("pf-loan").style.display = p.loaned ? "none" : "";
   $f("pf-release").style.display = p.loaned ? "none" : "";
+  // direct-write row mirrors the same visibility
+  $f("pf-terminate-direct").style.display = p.loaned ? "" : "none";
+  $f("pf-release-direct").style.display = p.loaned ? "none" : "";
 }
 
 $("pf-close").addEventListener("click", () => {
@@ -506,7 +509,7 @@ async function loadTeams(q) {
       div.className = "team-row";
       const b = retryImg(API + `/assets/club/${t.teamid}`, "cbadge");
       div.append(b, document.createTextNode(` ${t.teamid} | ${t.name}`));
-      div.addEventListener("click", () => runAction(t));
+      div.addEventListener("click", () => selectTeam(t));
       list.appendChild(div);
     }
     if (!d.rows.length) list.innerHTML = "<div class='team-row muted'>No clubs match</div>";
@@ -515,18 +518,54 @@ async function loadTeams(q) {
   }
 }
 
+let tmTeam = null;
+function selectTeam(t) {
+  tmTeam = t;
+  $("tm-method").classList.remove("hidden");
+  $("tm-method-label").textContent =
+    `${tmKind === "loan" ? "Loan" : "Transfer"} ${pfPlayer ? pfPlayer.name : ""} → ${t.name} (${t.teamid})`;
+}
+
 $("tm-search").addEventListener("input", () => {
   clearTimeout(tmTimer);
   tmTimer = setTimeout(() => loadTeams($("tm-search").value.trim()), 250);
 });
 $("tm-cancel").addEventListener("click", () => $("team-modal").classList.add("hidden"));
 
-async function runAction(team) {
+async function runAction(kind, team) {
   $("team-modal").classList.add("hidden");
-  const body = { kind: tmKind, pid: pfPid, tid: team.teamid };
+  const body = { kind, pid: pfPid, tid: team ? team.teamid : undefined };
   try {
     const d = await apiPost("/api/action", body);
     showActionResult(d);
+  } catch (e) {
+    toast(e.message, "err");
+  }
+}
+
+async function applyDirect(kind, team) {
+  $("team-modal").classList.add("hidden");
+  const body = { kind, pid: pfPid, tid: team ? team.teamid : undefined };
+  try {
+    const d = await apiPost("/api/direct", body);
+    if (!d.ok) { toast(d.error || "apply failed", "err"); return; }
+    const lbl = { transfer: "Transfer", loan: "Loan", terminate: "Loan terminated", release: "Released" }[kind];
+    const who = pfPlayer ? pfPlayer.name : `#${pfPid}`;
+    if (kind === "terminate") {
+      toast(`${lbl}: ${who} (any loan row removed)`, "ok");
+    } else {
+      toast(`${lbl}: ${who} → ${team ? team.name : "Free Agents"}`, "ok");
+    }
+    alert(
+      `${lbl} applied DIRECTLY to the squads file:\n\n` +
+      `Player: ${who}\n` +
+      (team ? `Club: ${team.name} (${team.teamid})\n` : `Club: Free Agents\n`) +
+      `\nBackup: ${d.backup}\n` +
+      `Tables OK: ${d.tables}` +
+      `\n\n⚠️ This affects NEW careers only. ` +
+      `Start a fresh career (or load the squads file) to see the change. ` +
+      `Your current in-progress career is NOT modified.`
+    );
   } catch (e) {
     toast(e.message, "err");
   }
@@ -548,7 +587,10 @@ function showActionResult(d) {
 
 $("pf-transfer").addEventListener("click", () => pickTeam("transfer"));
 $("pf-loan").addEventListener("click", () => pickTeam("loan"));
+$("tm-direct").addEventListener("click", () => applyDirect(tmKind, tmTeam));
+$("tm-lua").addEventListener("click", () => runAction(tmKind, tmTeam));
 $("pf-terminate").addEventListener("click", async () => {
+  if (!confirm(`Terminate the loan of ${pfPlayer ? pfPlayer.name : ""}? (player returns to parent club — contract untouched)`)) return;
   try {
     const d = await apiPost("/api/action", { kind: "terminate", pid: pfPid });
     showActionResult(d);
@@ -560,4 +602,9 @@ $("pf-release").addEventListener("click", async () => {
     const d = await apiPost("/api/action", { kind: "release", pid: pfPid });
     showActionResult(d);
   } catch (e) { toast(e.message, "err"); }
+});
+$("pf-terminate-direct").addEventListener("click", async () => applyDirect("terminate", null));
+$("pf-release-direct").addEventListener("click", async () => {
+  if (!confirm(`Release ${pfPlayer ? pfPlayer.name : ""} to free agents in the SQUADS FILE?`)) return;
+  applyDirect("release", null);
 });

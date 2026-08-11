@@ -342,6 +342,100 @@ class App:
         )
         return {"dir": str(d), "files": files}
 
+    # -- direct squads-file writes (for NEW careers) --------------------
+    FREE_AGENT_ID = 111592
+
+    def direct_apply(self, kind, pid, tid=None, months=36):
+        """Apply ONE action directly to the open squads file (no Live Editor).
+        Affects new careers only. Always backs up first; writes go through
+        the SquadFile update/insert/delete paths, then the file is re-opened
+        to verify table integrity before returning.
+        """
+        if not self.sq or not self.path:
+            return {"ok": False, "error": "no squad file open"}
+        if kind not in ("transfer", "loan", "terminate", "release"):
+            return {"ok": False, "error": f"unknown action {kind}"}
+        import time as _t
+        bak = f"{self.path}.direct_{_t.strftime('%Y%m%d_%H%M%S')}.bak"
+        import shutil as _sh
+        _sh.copy2(self.path, bak)
+        sq = self.sq
+        ok = False
+        err = None
+        try:
+            meta_names = {m["name"] for m in sq.tables_meta if m["name"]}
+            clubs = {t["teamid"] for t in sq.get_table("teams") if t.get("clubworth", 0) != 0} if "teams" in meta_names else set()
+            links = sq.get_table("teamplayerlinks")
+            # find current main-club link for pid
+            cur = None
+            cur_i = None
+            for i, l in enumerate(links):
+                if l.get("playerid") == pid and l.get("teamid") in clubs | {self.FREE_AGENT_ID}:
+                    cur, cur_i = l["teamid"], i
+                    break
+            if cur is None:
+                err = f"player {pid} has no club link"
+            elif kind == "terminate":
+                # loan termination: delete the playerloans row; player stays put
+                loans = sq.get_table("playerloans")
+                found = False
+                for i in range(len(loans) - 1, -1, -1):
+                    if loans[i].get("playerid") == pid:
+                        sq.delete_record("playerloans", i)
+                        found = True
+                ok = True
+                result = {"kind": kind, "pid": pid, "endedLoans": found}
+            elif kind == "transfer" or kind == "release":
+                dst = tid if kind == "transfer" else self.FREE_AGENT_ID
+                if dst is None:
+                    err = "transfer needs a destination teamid"
+                else:
+                    sq.update_field("teamplayerlinks", cur_i, "teamid", dst)
+                    # a permanent move ends any loan row
+                    loans = sq.get_table("playerloans")
+                    for i in range(len(loans) - 1, -1, -1):
+                        if loans[i].get("playerid") == pid:
+                            sq.delete_record("playerloans", i)
+                    ok = True
+                    result = {"kind": kind, "pid": pid, "from": cur, "to": dst}
+            elif kind == "loan":
+                if tid is None:
+                    err = "loan needs a destination teamid"
+                else:
+                    sq.update_field("teamplayerlinks", cur_i, "teamid", tid)
+                    loans = sq.get_table("playerloans")
+                    li = None
+                    for i, r in enumerate(loans):
+                        if r.get("playerid") == pid:
+                            li = i
+                            break
+                    if li is None:
+                        li = sq.insert_record("playerloans")
+                        sq.update_field("playerloans", li, "playerid", pid)
+                        sq.update_field("playerloans", li, "teamidloanedfrom", cur)
+                    # loandateend uses a serial day count (career day)
+                    sq.update_field("playerloans", li, "loandateend", months * 30)
+                    ok = True
+                    result = {"kind": kind, "pid": pid, "from": cur, "to": tid, "months": months}
+            if ok:
+                sq.save()
+                # reopen + verify table integrity
+                sq2 = SquadFile(self.path, DEFAULT_META)
+                n1 = len(sq2.get_table("players"))
+                n2 = len(sq2.get_table("teamplayerlinks"))
+                n3 = len(sq2.get_table("playerloans"))
+                if n1 < 1000:
+                    err = "saved file failed integrity check (players table broken)"
+                    ok = False
+                else:
+                    result = {"ok": True, "backup": bak, "tables": [n1, n2, n3], **result}
+        except Exception as e:  # noqa
+            ok = False
+            err = f"direct apply failed: {e}"
+        if not ok:
+            return {"ok": False, "error": err or "apply failed"}
+        return result
+
     # -- action scripts (native transfers via Live Editor) ---------------
     ACTION_LOG = r"C:/fc26-mcp/sidecar_actions_log.txt"
 
@@ -608,6 +702,12 @@ class Handler(BaseHTTPRequestHandler):
                 kind = body.get("kind", "")
                 pid = int(body.get("pid", 0))
                 out = app.make_action_script(kind, pid, body.get("tid"), body.get("months", 36), body.get("wage"))
+                self._send(200, out)
+            elif u.path == "/api/direct":
+                kind = body.get("kind", "")
+                pid = int(body.get("pid", 0))
+                tid = body.get("tid")
+                out = app.direct_apply(kind, pid, tid, body.get("months", 36))
                 self._send(200, out)
             elif u.path == "/api/edit":
                 app.edit_field(body.get("table"), int(body.get("idx")), body.get("field"), body.get("value"))

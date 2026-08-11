@@ -125,6 +125,10 @@
     <button id="pf-terminate" class="act act-danger">↩ Terminate loan</button>
     <button id="pf-release" class="act act-danger">⏏ Release</button>
   </div>
+  <div class="drawer-actions">
+    <button id="pf-terminate-direct" class="act act-danger act-direct" title="Write to squads file directly (new careers only)">⚡ Terminate</button>
+    <button id="pf-release-direct" class="act act-danger act-direct" title="Write to squads file directly (new careers only)">⚡ Release</button>
+  </div>
 </div>
 
 <!-- Team picker modal for transfer/loan -->
@@ -133,6 +137,11 @@
     <h3 id="tm-title">Choose destination club</h3>
     <input id="tm-search" type="text" placeholder="Search club…" spellcheck="false">
     <div id="tm-list" class="team-list"></div>
+    <div id="tm-method" class="tm-method hidden">
+      <span id="tm-method-label"></span>
+      <button id="tm-direct" class="act act-primary">⚡ Apply to squads file</button>
+      <button id="tm-lua">📜 Generate Lua (current career)</button>
+    </div>
     <div class="modal-btns">
       <button id="tm-cancel">Cancel</button>
     </div>

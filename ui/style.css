@@ -193,3 +193,12 @@ tbody tr:nth-child(even):hover { background: #252a34; }
   background: var(--accent); border-color: var(--accent); color: #fff;
   box-shadow: 0 0 10px rgba(79, 140, 255, .35);
 }
+
+/* ---- action method bar (direct vs lua) ---- */
+.tm-method {
+  margin-top: 10px; padding: 10px; border: 1px solid var(--border);
+  border-radius: 8px; background: var(--panel2); display: flex;
+  flex-direction: column; gap: 8px;
+}
+.tm-method span { font-size: 12.5px; color: var(--muted); }
+.act-direct { padding: 7px 6px; flex: 1; font-size: 12px; }
